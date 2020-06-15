@@ -1,7 +1,7 @@
 # Domain: mechanical-testing 
 # Status: 
-- [ ] Proposal
-- [X] accepted, under development
+- [X] Proposal
+- [ ] accepted, under development
 - [ ] official 
 This domain ontology is a WIP, it is in the process of being accepted as a task group by the EMMC. 
 * Application submitted: 15 June 2020 
