@@ -1,5 +1,8 @@
 # Domain: mechanical-testing 
-# Status: Proposal 
+# Status: 
+- [ ] Proposal
+- [X] accepted, under development
+- [ ] official 
 This domain ontology is a WIP, it is in the process of being accepted as a task group by the EMMC. 
 * Application submitted: 15 June 2020 
 * Application accepted on: TBD
@@ -27,7 +30,7 @@ The partial contributions formt the following projects and actions are acknoledg
 * ...
 
 
-#License
+# License
 The license is the same as main EMMO CORE.
 "EMMO is released under a Creative Commons license Attribution 4.0
 International (CC BY 4.0)
