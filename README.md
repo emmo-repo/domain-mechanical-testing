@@ -11,4 +11,24 @@ Please refer to the Governance document of up to date information: https://githu
 
 # Maintainer
 
-@ahashibon
+* Adham Hashibon
+
+# Contributers
+
+* 
+*
+
+
+# Acknowledgements 
+The partial contributions formt the following projects and actions are acknoledged 
+* The MARKETPLACE project is funded by Horizon 2020 under H2020-NMBP-25-2017 call with Grant agreement number: 760173
+* Oyster
+* FORCE
+* ...
+
+
+#License
+The license is the same as main EMMO CORE.
+"EMMO is released under a Creative Commons license Attribution 4.0
+International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/legalcode"
