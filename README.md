@@ -12,14 +12,16 @@ Domain ontologies reuse or specialise concepts from the middle and top level EMM
 Please refer to the Governance document of up to date information: https://github.com/emmo-repo/EMMO/blob/1.0.0-alpha2/doc/EMMO_governance.md
 
 
-# Maintainer
+# Maintainers
 
 * Adham Hashibon
+* Joana Francisco Morgado
 
 # Contributers
 
-* 
-*
+* Oyster Project (http://www.oyster-project.eu/, Partners to be explicitly mentioned)
+* Urwerk
+* others.. 
 
 
 # Acknowledgements 
