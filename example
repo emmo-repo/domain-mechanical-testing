@@ -1,0 +1,137 @@
+# pseudocode for the fatigue case
+
+
+
+specimen = cuds.Specimen()
+material = cuds.Material()
+specimen.add(material, rel=HAS_PART)
+# [spacimen --has_part__ material]
+
+
+s1 = "25CrMo4"
+s2 = "EA4T"
+
+material_description1  = cuds.MaterialSpecification().value=s1
+material_description2  = cuds.MaterialSpecification().value=s2
+
+material.add(material_description1)
+material.add(material_description2)
+
+qt = cuds.QuenchAndTempering()
+
+h = cuds.Heating()
+T = cuds.Temperature(value=800, unit=DegreesCelsius()
+t = cuds.Time(value=4.5, unit=Hours())
+h.add(T, t, rel=HAS_PARAMETER))
+
+
+q = cuds.OilQuenching()
+T = cuds.RoomTemperature()  # this is the default if not specified 
+
+qt.add(h, q)
+
+s1 = State()
+s1=State()
+specimen.add(s1)
+specimen.add(s2)
+s1.add(T)
+qt.add(s1, rel=operates_on)
+qt.add(s2, rel=produces)
+qt.add(s1, rel=operates_on)
+qt.add(s2, rel=produces)
+
+# option 2: 
+TR = cuds.RoomTemperature()  
+s1.add(TR)
+
+h.add(s1, rel=operates_on)
+h.add(s2, rel=produces)
+TO = cuds.Temperature(value=799.5, unit)DegreesCelsius())  
+s2.add(TO)
+
+q.add(s2, rel=operates_on)
+1.add(s3, rel=produces)
+TO2 = cuds.RoomTemperature()  
+s3.add(TO2)
+
+
+
+
+qt2 = cuds.QuenchAndTempering()
+qt2.add(h,q)
+
+dsms.add(qt2)  # it adds everything to dsms 
+dsms.commit()
+
+
+
+
+
+
+
+
+
+
+# pseudo code example for the cable ontology use: 
+
+# create an experiment, a test: 
+test = MesomicsBendingTest()
+#create a temperature and relate it to the test as a parameters
+T  = Temperature(value=300, unit=Kelvin())
+
+H = RelativeHumifity(value=50, unit=Percent())
+
+# add both as parameters 
+
+test.add([T, H], rel=HAS_PARAMETER)
+
+# define specimen
+s = MesomicsSpecimen()
+shape = FullCoverage()
+s.add(shape)
+s.add(CrossSection(valu=1, unit=Cm()))
+
+# now the specimen has a taping shape and a cross section, length etc can be added in the same manner. 
+# define and add the machine and other metadata needed. 
+# add a 
+
+
+
+
+
+
+# Notes:
+# 1. Every namespace appearing below is prefixed by 'EMMO_'
+# 2. Namespace FT stands for Fatigue Testing
+# 3. the default relationship is CORE.HAS_PART
+
+specimen = FT.SPECIMEN()
+
+geometry = GEOMETRY.GEOMETRY()
+geometry.add(GEOMETRY.HOURGLASS()) # Should be a class (not an instance). Is it possible?
+geometry.add(GEOMETRY.LENGTH(value=74, unit=UNIT.MM))
+interval = APPLIED_MATH.INTERVAL(unit=UNIT.MM)
+interval.add(APPLIED_MATH.MINIMUN_VALUE(value=8))
+interval.add(APPLIED_MATH.MAXIMUN_VALUE(value=13))
+diameter = GEOMETRY.DIAMETER() # maybe in the future: diameter = GEOMETRY.DIAMETER(value=interval, unit=UNIT.MM)
+diameter.add(interval)
+geometry.add(diameter)
+# ... add other parameters on the same depth
+specimen.add(geometry, rel=CORE.HAS_PART)
+
+al_composition = MATERIAL_COMPOSITION.MASS_PERCENTAGE()
+al_composition.add(IUPAC.Al)
+interval = APPLIED_MATH.INTERVAL(unit=UNIT.PERCENT)
+interval.add(APPLIED_MATH.MINIMUN_VALUE(value=10))
+interval.add(APPLIED_MATH.MAXIMUN_VALUE(value=20))
+al_composition.add(interval)
+specimen.add(composition)
+
+cyclic_stress = FT.CYCLIC_STRESS() 
+
+cyclic_stress.add(specimen, rel=OIE.HAS_INPUT)
+cyclic_stress.add(FT.CRITICAL_STRESS(value=400, unit=UNIT.PA), rel=OIE.HAS_OUTPUT)
+cyclic_stress.add(FT.LIFE_CYCLES(value=1036700, unit=UNIT.UNITLESS), rel=OIE.HAS_OUTPUT)
+...
+
+
