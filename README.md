@@ -24,7 +24,7 @@ Please refer to the Governance document of up to date information: https://githu
 * others.. 
 
 
-# Acknowledgements 
+# Acknowledgements (WIP, if you think your name is missing, please create an issue), 
 The partial contributions formt the following projects and actions are acknoledged 
 * The MARKETPLACE project is funded by Horizon 2020 under H2020-NMBP-25-2017 call with Grant agreement number: 760173
 * Oyster
