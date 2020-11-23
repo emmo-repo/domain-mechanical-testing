@@ -573,6 +573,15 @@
     
 
 
+    <!-- http://emmo.info/emmo-mechanical-testing#EMMO_48ac6a73_fe50_4776_a09b_17b193c202a8 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_48ac6a73_fe50_4776_a09b_17b193c202a8">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_9da17d5e_9193_49bc_8fd5_21d5fffa15d7"/>
+        <skos:prefLabel xml:lang="en">CableBundleHalfTaped</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_4c25ab1b_462c_49a6_bb27_ea3bd020ab2a -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_4c25ab1b_462c_49a6_bb27_ea3bd020ab2a">
@@ -685,6 +694,15 @@
     
 
 
+    <!-- http://emmo.info/emmo-mechanical-testing#EMMO_697147bc_fb00_4f95_8097_d72c4b04195a -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_697147bc_fb00_4f95_8097_d72c4b04195a">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_7ec71ea7_34b3_4165_bf0a_abfa671f0e4e"/>
+        <skos:prefLabel xml:lang="en">CableBundlePartiallyTaped</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_6b218da5_9a74_43fe_a71d_72c13dae4551 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_6b218da5_9a74_43fe_a71d_72c13dae4551">
@@ -780,6 +798,16 @@
     
 
 
+    <!-- http://emmo.info/emmo-mechanical-testing#EMMO_7ec71ea7_34b3_4165_bf0a_abfa671f0e4e -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_7ec71ea7_34b3_4165_bf0a_abfa671f0e4e">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_9ecbe4c2_0fdd_4ee9_8f68_31c290be4bde"/>
+        <owl:disjointWith rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_dc00a14f_8461_406b_b8f9_47af9d0ff41b"/>
+        <skos:prefLabel xml:lang="en">CableBundleTaped</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_804ada5e_70bf_451f_b3dc_868631b22b05 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_804ada5e_70bf_451f_b3dc_868631b22b05">
@@ -833,6 +861,15 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7"/>
         <rdfs:comment>This is the time needed by the instrument to stabilize after initial power up. This time is usually dependent on the thermal characteristics of the measurement system.</rdfs:comment>
         <skos:prefLabel xml:lang="en">MachineStabilizationTime</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo-mechanical-testing#EMMO_8828c7d2_8f7d_4804_8e13_336d37d94ec2 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_8828c7d2_8f7d_4804_8e13_336d37d94ec2">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8"/>
+        <skos:prefLabel xml:lang="en">CableSystem</skos:prefLabel>
     </owl:Class>
     
 
@@ -1008,6 +1045,24 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <skos:prefLabel xml:lang="en">IndentationMeasurement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo-mechanical-testing#EMMO_9da17d5e_9193_49bc_8fd5_21d5fffa15d7 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_9da17d5e_9193_49bc_8fd5_21d5fffa15d7">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_7ec71ea7_34b3_4165_bf0a_abfa671f0e4e"/>
+        <skos:prefLabel xml:lang="en">CableBundleContinuousTaped</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo-mechanical-testing#EMMO_9ecbe4c2_0fdd_4ee9_8f68_31c290be4bde -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_9ecbe4c2_0fdd_4ee9_8f68_31c290be4bde">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_8828c7d2_8f7d_4804_8e13_336d37d94ec2"/>
+        <skos:prefLabel xml:lang="en">CableBundle</skos:prefLabel>
     </owl:Class>
     
 
@@ -1221,6 +1276,15 @@
     
 
 
+    <!-- http://emmo.info/emmo-mechanical-testing#EMMO_dc00a14f_8461_406b_b8f9_47af9d0ff41b -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_dc00a14f_8461_406b_b8f9_47af9d0ff41b">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_9ecbe4c2_0fdd_4ee9_8f68_31c290be4bde"/>
+        <skos:prefLabel xml:lang="en">CableBundleNonTaped</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_dc56a625_9376_4434_a554_2d1153348c97 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_dc56a625_9376_4434_a554_2d1153348c97">
@@ -1265,6 +1329,15 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
         <rdfs:comment>Substrate is a term used in materials science to describe the base material on which processing is conducted to produce new film or layers of material such as deposited coatings.</rdfs:comment>
         <rdfs:isDefinedBy>https://en.wikipedia.org/wiki/Substrate_(materials_science)</rdfs:isDefinedBy>
         <skos:prefLabel xml:lang="en">Substrate</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo-mechanical-testing#EMMO_e199bfdb_f084_4ab0_8951_706248d15c32 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_e199bfdb_f084_4ab0_8951_706248d15c32">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_8828c7d2_8f7d_4804_8e13_336d37d94ec2"/>
+        <skos:prefLabel xml:lang="en">SingleCable</skos:prefLabel>
     </owl:Class>
     
 
@@ -1421,6 +1494,15 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_fe13168c_8e04_4cbf_8462_641669a4b7f3">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_a30a7cdc_f652_4b01_b8c2_cd056f3e3d85"/>
         <skos:prefLabel xml:lang="en">FatigueTestingMachine</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo-mechanical-testing#EMMO_fec3028e_e4ad_46e8_a789_d46d77fe63d4 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_fec3028e_e4ad_46e8_a789_d46d77fe63d4">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_9da17d5e_9193_49bc_8fd5_21d5fffa15d7"/>
+        <skos:prefLabel xml:lang="en">CableBundleFullyTaped</skos:prefLabel>
     </owl:Class>
 </rdf:RDF>
 
