@@ -943,8 +943,13 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_8828c7d2_8f7d_4804_8e13_336d37d94ec2 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_8828c7d2_8f7d_4804_8e13_336d37d94ec2">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_05dbcd32_bdf0_44d2_94c4_78ea47fec79a"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_05dbcd32_bdf0_44d2_94c4_78ea47fec79a"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
