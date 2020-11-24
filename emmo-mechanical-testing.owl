@@ -117,7 +117,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_05dbcd32_bdf0_44d2_94c4_78ea47fec79a">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064"/>
         <isq:EMMO_de178b12_5d35_4bca_8efa_a4193162571d>T0 L-1 M+1 I0 Θ0 N0 J0</isq:EMMO_de178b12_5d35_4bca_8efa_a4193162571d>
-        <skos:prefLabel xml:lang="en">LinearMassDensity</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">LengthDensity</skos:prefLabel>
     </owl:Class>
     
 
@@ -506,6 +506,15 @@
     
 
 
+    <!-- http://emmo.info/emmo-mechanical-testing#EMMO_3b07c236_fcaa_4d7f_9b2b_b59e247a1922 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_3b07c236_fcaa_4d7f_9b2b_b59e247a1922">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_c799b443_c70f_4351_bb0f_e4ab29073481"/>
+        <skos:prefLabel xml:lang="en">EdgeHardness</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_3c7c1148_40e2_4ec2_a0ac_8720d03e356f -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_3c7c1148_40e2_4ec2_a0ac_8720d03e356f">
@@ -642,15 +651,6 @@
     
 
 
-    <!-- http://emmo.info/emmo-mechanical-testing#EMMO_4d58c88f_5782_47c8_aeac_c9dbe6ce6f58 -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_4d58c88f_5782_47c8_aeac_c9dbe6ce6f58">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_ba882f34_0d71_4e4f_9d92_0c076c633a2c"/>
-        <skos:prefLabel xml:lang="en">NumberOfCables</skos:prefLabel>
-    </owl:Class>
-    
-
-
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_509e1730_f02e_432c_87d8_7a553a9d93ac -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_509e1730_f02e_432c_87d8_7a553a9d93ac">
@@ -741,6 +741,24 @@
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_62bba151_6db3_4cb1_b3f7_ca42fe98f849">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d"/>
         <skos:prefLabel xml:lang="en">ColdWorking</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo-mechanical-testing#EMMO_67869907_8e6e_45ac_87f7_41520e861b68 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_67869907_8e6e_45ac_87f7_41520e861b68">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_c799b443_c70f_4351_bb0f_e4ab29073481"/>
+        <skos:prefLabel xml:lang="en">CenterHardness</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo-mechanical-testing#EMMO_68bc845c_5943_47da_ba95_b265bb3780a2 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_68bc845c_5943_47da_ba95_b265bb3780a2">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#EMMO_ec7464a9_d99d_45f8_965b_4e9230ea8356"/>
+        <skos:prefLabel xml:lang="en">MetalSheet</skos:prefLabel>
     </owl:Class>
     
 
@@ -877,7 +895,6 @@
                 <owl:someValuesFrom rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_dc637a06_1988_4f9a_a2b4_05dfbf7e246c"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_dc00a14f_8461_406b_b8f9_47af9d0ff41b"/>
         <skos:prefLabel xml:lang="en">CableBundleTaped</skos:prefLabel>
     </owl:Class>
     
@@ -966,6 +983,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
                 <owl:someValuesFrom rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_400fa2bf_a1b9_4e03_b6bd_7540c8fe5b4a"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_8a5f8323_d356_44a8_9840_af3bfac84505"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <skos:prefLabel xml:lang="en">CableSystem</skos:prefLabel>
@@ -1170,12 +1193,6 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_9ecbe4c2_0fdd_4ee9_8f68_31c290be4bde">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_8828c7d2_8f7d_4804_8e13_336d37d94ec2"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
-                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_4d58c88f_5782_47c8_aeac_c9dbe6ce6f58"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/reductionistic#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
@@ -1399,15 +1416,6 @@
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_dad694df_6f58_4f5f_bb1d_6eb9dea25fb1">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
         <skos:prefLabel xml:lang="en">DynamicContactDepth</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo-mechanical-testing#EMMO_dc00a14f_8461_406b_b8f9_47af9d0ff41b -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_dc00a14f_8461_406b_b8f9_47af9d0ff41b">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_9ecbe4c2_0fdd_4ee9_8f68_31c290be4bde"/>
-        <skos:prefLabel xml:lang="en">CableBundleNonTaped</skos:prefLabel>
     </owl:Class>
     
 
