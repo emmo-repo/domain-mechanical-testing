@@ -58,6 +58,140 @@
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_18be2e24_9665_4349_8dd3_6335c921a0ef -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_18be2e24_9665_4349_8dd3_6335c921a0ef">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_ee09aa64_f477_4e8f_8b0c_f5d30177ba8d"/>
+        <skos:prefLabel xml:lang="en">FilteredDepthWithDynamics</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_59a24d10_ed15_4d81_b8b6_1e3d4744a38c -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_59a24d10_ed15_4d81_b8b6_1e3d4744a38c">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_3c7c1148_40e2_4ec2_a0ac_8720d03e356f"/>
+        <skos:prefLabel xml:lang="en">NanoindentationMachineSpringStiffness</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_68856430_66a2_49fb_b93f_e7124effb6bd -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_68856430_66a2_49fb_b93f_e7124effb6bd">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
+        <skos:prefLabel xml:lang="en">SurfaceApproachDistance</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_68efbbca_549a_4209_bdfc_cf0ddfd27dc9 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_68efbbca_549a_4209_bdfc_cf0ddfd27dc9">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_0329f1f5_8339_4ce4_8505_a264c6d606ba"/>
+        <skos:prefLabel xml:lang="en">SurfaceApproachVelocity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_6a8bfa0e_ef96_4f38_b892_40389eb7d69d -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_6a8bfa0e_ef96_4f38_b892_40389eb7d69d">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_ee09aa64_f477_4e8f_8b0c_f5d30177ba8d"/>
+        <skos:prefLabel xml:lang="en">TargetDepth</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_6d7b5fe0_36a2_4638_8c1c_a1bf399624c1 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_6d7b5fe0_36a2_4638_8c1c_a1bf399624c1">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_852b4ab8_fc29_4749_a8c7_b92d4fca7d5a"/>
+        <skos:prefLabel xml:lang="en">TargetFrequency</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_6f7c111f_ac09_48e9_9a26_575bf4ed878e -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_6f7c111f_ac09_48e9_9a26_575bf4ed878e">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_ca42ed31_3983_4e1a_84f9_a84cab2cdb59"/>
+        <skos:prefLabel xml:lang="en">TargetDynamicDisplacement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_87d31968_0753_420f_bc7d_23a83438e13f -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_87d31968_0753_420f_bc7d_23a83438e13f">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_376c6456_5601_41c2_987c_3063f14408d4"/>
+        <skos:prefLabel xml:lang="en">TargetLoad</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_442c0fb7_09d4_4dae_b45c_8eb1522da38f"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:prefLabel xml:lang="en">NanoindentationMethodSpecification</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_a1c92b74_411d_414c_85e0_36ddd8c8afb6 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_a1c92b74_411d_414c_85e0_36ddd8c8afb6">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7"/>
+        <skos:prefLabel xml:lang="en">TargetUnloadTime</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_ab528a3a_cb4b_40de_acaa_7752ccd968b9 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_ab528a3a_cb4b_40de_acaa_7752ccd968b9">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_f0ad542d_ff13_4998_9e7f_ea27583c5f31"/>
+        <skos:prefLabel xml:lang="en">ReducedModulusFromUnload</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_adff8854_b8f6_4943_99b4_6e3619b6c552 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_adff8854_b8f6_4943_99b4_6e3619b6c552">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_1f087811_06cb_42d5_90fb_25d0e7e068ef"/>
+        <skos:prefLabel xml:lang="en">DynamicForce</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_b424de87_996f_4117_b4bf_b5e52fe5b4d3 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_b424de87_996f_4117_b4bf_b5e52fe5b4d3">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_3c7c1148_40e2_4ec2_a0ac_8720d03e356f"/>
+        <skos:prefLabel xml:lang="en">SquaredStiffnessOverLoad</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_01a098aa_19c5_46f7_83bc_4dd01f8e0d4b -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_01a098aa_19c5_46f7_83bc_4dd01f8e0d4b">
@@ -96,7 +230,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_03ed6a50_3b04_4189_a939_dad066ece197 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_03ed6a50_3b04_4189_a939_dad066ece197">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_7d0c819e_8316_4897_bc3b_3736f86a8087"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7"/>
         <skos:prefLabel xml:lang="en">DynamicTimeConstant</skos:prefLabel>
     </owl:Class>
@@ -115,7 +249,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_05dbcd32_bdf0_44d2_94c4_78ea47fec79a -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_05dbcd32_bdf0_44d2_94c4_78ea47fec79a">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
         <isq:EMMO_de178b12_5d35_4bca_8efa_a4193162571d>T0 L-1 M+1 I0 Θ0 N0 J0</isq:EMMO_de178b12_5d35_4bca_8efa_a4193162571d>
         <skos:prefLabel xml:lang="en">LengthDensity</skos:prefLabel>
     </owl:Class>
@@ -234,19 +368,10 @@
     
 
 
-    <!-- http://emmo.info/emmo-mechanical-testing#EMMO_0f93e880_2d91_4a1e_935c_bfb8faf3aa02 -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_0f93e880_2d91_4a1e_935c_bfb8faf3aa02">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064"/>
-        <skos:prefLabel xml:lang="en">Rate</skos:prefLabel>
-    </owl:Class>
-    
-
-
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_10e7f26e_4cb6_4fb8_84e8_f90fec466e75 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_10e7f26e_4cb6_4fb8_84e8_f90fec466e75">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_7d0c819e_8316_4897_bc3b_3736f86a8087"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7"/>
         <skos:prefLabel xml:lang="en">DriftDeterminationTime</skos:prefLabel>
     </owl:Class>
@@ -427,7 +552,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_3226bd7c_b9d8_436d_ae5f_8a69a92ea128 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_3226bd7c_b9d8_436d_ae5f_8a69a92ea128">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_0f93e880_2d91_4a1e_935c_bfb8faf3aa02"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
         <skos:prefLabel xml:lang="en">ConstantStrainRate</skos:prefLabel>
     </owl:Class>
     
@@ -482,7 +607,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_3650a56b_7f3d_4f44_90e7_c08cfd7d3fdd -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_3650a56b_7f3d_4f44_90e7_c08cfd7d3fdd">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_7d0c819e_8316_4897_bc3b_3736f86a8087"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <skos:prefLabel xml:lang="en">DriftRate</skos:prefLabel>
     </owl:Class>
     
@@ -518,7 +643,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_3c7c1148_40e2_4ec2_a0ac_8720d03e356f -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_3c7c1148_40e2_4ec2_a0ac_8720d03e356f">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
         <rdfs:isDefinedBy>http://dbpedia.org/page/Stiffness</rdfs:isDefinedBy>
         <skos:prefLabel xml:lang="en">Stiffness</skos:prefLabel>
     </owl:Class>
@@ -604,12 +729,6 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_44389354_4c50_4a74_b315_83cdc69d326d">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_19afc39b_eb5c_46e0_b880_8e08ec831ebc"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
-                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_9baf3f15_f039_4edc_ba99_eb4abf81cf33"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <skos:prefLabel xml:lang="en">NanoindentationMachine</skos:prefLabel>
     </owl:Class>
     
@@ -683,8 +802,8 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_5589aa4e_6cb7_4194_b549_73854ab8aaa6 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_5589aa4e_6cb7_4194_b549_73854ab8aaa6">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_376c6456_5601_41c2_987c_3063f14408d4"/>
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_7d0c819e_8316_4897_bc3b_3736f86a8087"/>
         <rdfs:comment>The maximum load attained during a nanoindentation test.</rdfs:comment>
         <skos:prefLabel xml:lang="en">MaximumLoad</skos:prefLabel>
     </owl:Class>
@@ -721,7 +840,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_5dffae98_f5b7_4287_96ce_94f2314b8bae -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_5dffae98_f5b7_4287_96ce_94f2314b8bae">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_0f93e880_2d91_4a1e_935c_bfb8faf3aa02"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
         <skos:prefLabel xml:lang="en">ApproachLoadingRate</skos:prefLabel>
     </owl:Class>
     
@@ -785,7 +904,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_6dee097b_7b39_4299_a322_b83eb2948428 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_6dee097b_7b39_4299_a322_b83eb2948428">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_7d0c819e_8316_4897_bc3b_3736f86a8087"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <skos:prefLabel xml:lang="en">DynamicLoadRequired</skos:prefLabel>
     </owl:Class>
     
@@ -812,7 +931,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_73e0c7f8_20db_46c7_af69_22ad5616f8dc -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_73e0c7f8_20db_46c7_af69_22ad5616f8dc">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_9baf3f15_f039_4edc_ba99_eb4abf81cf33"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <skos:prefLabel xml:lang="en">DisplacementResolution</skos:prefLabel>
     </owl:Class>
     
@@ -833,6 +952,12 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_44389354_4c50_4a74_b315_83cdc69d326d"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <skos:prefLabel xml:lang="en">NanoindentationMeasurement</skos:prefLabel>
     </owl:Class>
     
@@ -862,25 +987,6 @@
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_7bbc9593_ad1d_4e80_a957_815b7daca408">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_2f9a266b_ffe6_4b3e_8222_eca6001174a2"/>
         <skos:prefLabel xml:lang="en">PendantDropMethod</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo-mechanical-testing#EMMO_7d0c819e_8316_4897_bc3b_3736f86a8087 -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_7d0c819e_8316_4897_bc3b_3736f86a8087">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_442c0fb7_09d4_4dae_b45c_8eb1522da38f"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <skos:prefLabel xml:lang="en">NanoindentationProperty</skos:prefLabel>
     </owl:Class>
     
 
@@ -949,7 +1055,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_87cf41f0_9efa_47da_9826_57eeb34a33f1 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_87cf41f0_9efa_47da_9826_57eeb34a33f1">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_9baf3f15_f039_4edc_ba99_eb4abf81cf33"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7"/>
         <rdfs:comment>This is the time needed by the instrument to stabilize after initial power up. This time is usually dependent on the thermal characteristics of the measurement system.</rdfs:comment>
         <skos:prefLabel xml:lang="en">MachineStabilizationTime</skos:prefLabel>
@@ -1035,7 +1141,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_8aa746fa_0cfa_4be7_9e5b_a691a860032e -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_8aa746fa_0cfa_4be7_9e5b_a691a860032e">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_9baf3f15_f039_4edc_ba99_eb4abf81cf33"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:comment>In load frames of finite stiffness, the load applied via the indenter induces displacement in both the sample and the load frame. Frame compliance must be identified and subtracted from the total indenter displacement to account properly for sample deformation.</rdfs:comment>
         <skos:prefLabel xml:lang="en">LoadFrameCompliance</skos:prefLabel>
     </owl:Class>
@@ -1063,7 +1169,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_91fd8d2f_af9a_47e7_b26d_01946f952e49 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_91fd8d2f_af9a_47e7_b26d_01946f952e49">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_7d0c819e_8316_4897_bc3b_3736f86a8087"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7"/>
         <skos:prefLabel xml:lang="en">DriftSettleTime</skos:prefLabel>
     </owl:Class>
@@ -1116,35 +1222,10 @@
     
 
 
-    <!-- http://emmo.info/emmo-mechanical-testing#EMMO_9baf3f15_f039_4edc_ba99_eb4abf81cf33 -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_9baf3f15_f039_4edc_ba99_eb4abf81cf33">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty>
-                    <rdf:Description>
-                        <owl:inverseOf rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
-                    </rdf:Description>
-                </owl:onProperty>
-                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_44389354_4c50_4a74_b315_83cdc69d326d"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <skos:prefLabel xml:lang="en">NanoindentationMachineProperty</skos:prefLabel>
-    </owl:Class>
-    
-
-
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_463bcfda_867b_41d9_a967_211d4d437cfb"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_a079cf37_e495_41f1_af01_d544e886eacb"/>
-                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_376c6456_5601_41c2_987c_3063f14408d4"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_a079cf37_e495_41f1_af01_d544e886eacb"/>
@@ -1159,14 +1240,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
-                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_19afc39b_eb5c_46e0_b880_8e08ec831ebc"/>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_a079cf37_e495_41f1_af01_d544e886eacb"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_1f087811_06cb_42d5_90fb_25d0e7e068ef"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
-                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_5d4ab23c_859a_4def_844c_c57b82fea44d"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_19afc39b_eb5c_46e0_b880_8e08ec831ebc"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1241,7 +1322,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_b39aa045_49f3_4c29_a197_c2d65f352cfb -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_b39aa045_49f3_4c29_a197_c2d65f352cfb">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_7d0c819e_8316_4897_bc3b_3736f86a8087"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7"/>
         <skos:prefLabel xml:lang="en">MaximumLoadHoldingTime</skos:prefLabel>
     </owl:Class>
@@ -1279,7 +1360,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_ba4f6d96_699f_48ba_a432_6676521587f1 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_ba4f6d96_699f_48ba_a432_6676521587f1">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_7d0c819e_8316_4897_bc3b_3736f86a8087"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7"/>
         <skos:prefLabel xml:lang="en">IndentationTime</skos:prefLabel>
     </owl:Class>
@@ -1341,6 +1422,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_c799b443_c70f_4351_bb0f_e4ab29073481 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_c799b443_c70f_4351_bb0f_e4ab29073481">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_eda29fc2_7d48_4997_8593_38fd9b344fe2"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
         <skos:prefLabel xml:lang="en">Hardness</skos:prefLabel>
     </owl:Class>
@@ -1405,7 +1487,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_d552bbb0_ea25_40dc_bb74_ed8ff63b7998 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_d552bbb0_ea25_40dc_bb74_ed8ff63b7998">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_0f93e880_2d91_4a1e_935c_bfb8faf3aa02"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
         <skos:prefLabel xml:lang="en">DataAcquisitionRate</skos:prefLabel>
     </owl:Class>
     
@@ -1423,7 +1505,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_dc56a625_9376_4434_a554_2d1153348c97 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_dc56a625_9376_4434_a554_2d1153348c97">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_7d0c819e_8316_4897_bc3b_3736f86a8087"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_ee09aa64_f477_4e8f_8b0c_f5d30177ba8d"/>
         <rdfs:comment>The maximum penetration depth attained during a nanoindentation test.</rdfs:comment>
         <skos:prefLabel xml:lang="en">MaximumDepth</skos:prefLabel>
@@ -1511,7 +1593,7 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_ebb3c390_173a_4c23_a338_12b6a75ddab2 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_ebb3c390_173a_4c23_a338_12b6a75ddab2">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_9baf3f15_f039_4edc_ba99_eb4abf81cf33"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <skos:prefLabel xml:lang="en">DisplacementNoiseFloor</skos:prefLabel>
     </owl:Class>
     
@@ -1567,7 +1649,7 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_f0ad542d_ff13_4998_9e7f_ea27583c5f31 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_f0ad542d_ff13_4998_9e7f_ea27583c5f31">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
         <skos:prefLabel xml:lang="en">ElasticModulus</skos:prefLabel>
     </owl:Class>
     
