@@ -1,4 +1,5 @@
-# Domain: mechanical-testing 
+# Domain: mechanical-testing
+A domain ontology for mechanical testing based on EMMO. 
 # Status: 
 - [ ] Proposal
 - [X] accepted, under development
@@ -19,17 +20,20 @@ Please refer to the Governance document of up to date information: https://githu
 
 # Contributers
 
-* Oyster Project (http://www.oyster-project.eu/, Partners to be explicitly mentioned)
-* Urwerk
-* others.. 
+* Oyster Project (http://www.oyster-project.eu/)
+    - Yoav Nahshon from Fraunhofer IWM
+    - Gerhard Goldbeck from Goldbeck Consulting Ltd
+    - Marco Sebastiani from University "Roma Tre", Rome, Italy
+* Urwerk Project (https://www.itwm.fraunhofer.de/en/departments/mf/cables-hoses-flexible-structures/urwerk.html)
+
+* MarketPlace (https://www.the-marketplace-project.eu/)
 
 
 # Acknowledgements (WIP, if you think your name is missing, please create an issue), 
-The partial contributions formt the following projects and actions are acknoledged 
-* The MARKETPLACE project is funded by Horizon 2020 under H2020-NMBP-25-2017 call with Grant agreement number: 760173
-* Oyster
-* FORCE
-* ...
+The partial contributions from the following projects and actions are acknowledged 
+* **The MarketPlace** project is funded by Horizon 2020 under H2020-NMBP-25-2017 call with Grant agreement number: 760173
+* **Oyster** project is funded by Horizon 2020 under H2020-NMBP-2017 call with Grant agreement number: 760827
+* **UrWerk**
 
 
 # License
