@@ -12,6 +12,14 @@ Domain ontologies reuse or specialise concepts from the middle and top level EMM
 
 Please refer to the Governance document of up to date information: https://github.com/emmo-repo/EMMO/blob/1.0.0-alpha2/doc/EMMO_governance.md
 
+# Requirements
+The Mechanical Testing ontology is built on top of EMMO. The following table describes the version compatibility between imported ontologies.
+
+| Ontology            | Version           |
+| ------------------- | ----------------- |
+| Mechanical Testing  | 0.9.0             |
+| EMMO                | 1.0.0-alpha2      |
+
 
 # Maintainers
 
