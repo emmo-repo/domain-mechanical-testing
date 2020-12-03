@@ -20,13 +20,13 @@ Please refer to the Governance document of up to date information: https://githu
 
 # Contributers
 
-* Oyster Project (http://www.oyster-project.eu/)
+* [Oyster Project](http://www.oyster-project.eu/)
     - Yoav Nahshon from Fraunhofer IWM
     - Gerhard Goldbeck from Goldbeck Consulting Ltd
     - Marco Sebastiani from University "Roma Tre", Rome, Italy
-* Urwerk Project (https://www.itwm.fraunhofer.de/en/departments/mf/cables-hoses-flexible-structures/urwerk.html)
+* [Urwerk Project](https://www.itwm.fraunhofer.de/en/departments/mf/cables-hoses-flexible-structures/urwerk.html)
 
-* MarketPlace (https://www.the-marketplace-project.eu/)
+* [MarketPlace](https://www.the-marketplace-project.eu/)
 
 
 # Acknowledgements (WIP, if you think your name is missing, please create an issue), 
