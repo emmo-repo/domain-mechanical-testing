@@ -373,6 +373,15 @@
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_910e2406_659f_4770_93cc_90ba9e9c6c9e -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_910e2406_659f_4770_93cc_90ba9e9c6c9e">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/models#EMMO_a4b14b83_9392_4a5f_a2e8_b2b58793f59b"/>
+        <skos:prefLabel xml:lang="en">MesomicsMachineLearningModel</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f">
@@ -568,6 +577,15 @@
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_e8c8c152_484e_4053_8e35_82346b3fc927">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#EMMO_c74da218_9147_4f03_92d1_8894abca55f3"/>
         <skos:prefLabel xml:lang="en">SpecimenShape</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_f77b52b9_0750_4dbf_a131_faecbbb7f6a4 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_f77b52b9_0750_4dbf_a131_faecbbb7f6a4">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e"/>
+        <skos:prefLabel xml:lang="en">MesomicsSpecimen</skos:prefLabel>
     </owl:Class>
     
 
@@ -1769,15 +1787,6 @@
     
 
 
-    <!-- http://emmo.info/emmo-mechanical-testing#EMMO_b5d33ab5_886a_4831_9438_b4263c3ceab7 -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_b5d33ab5_886a_4831_9438_b4263c3ceab7">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_0747262d_9356_4b7b_ac5d_90e2504e0968"/>
-        <skos:prefLabel xml:lang="en">MesomicsBendingAnalysis</skos:prefLabel>
-    </owl:Class>
-    
-
-
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_b5e76617_a340_4ab5_8fee_4c9de18db6c6 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_b5e76617_a340_4ab5_8fee_4c9de18db6c6">
@@ -1883,6 +1892,30 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_d0a86d56_1b66_4562_bc96_4075527463ed">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_10f4d440_33d0_456d_b27c_83bf1d9811c0"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo#EMMO_f77b52b9_0750_4dbf_a131_faecbbb7f6a4"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_0b47a9ad_2854_43d0_9707_ff5f81f5b7d8"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_3407d408_5d15_4090_8161_43d5e288a864"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_400fa2bf_a1b9_4e03_b6bd_7540c8fe5b4a"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <skos:prefLabel xml:lang="en">MesomicsMeasurement</skos:prefLabel>
     </owl:Class>
     
