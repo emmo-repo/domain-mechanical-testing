@@ -1506,14 +1506,6 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_8828c7d2_8f7d_4804_8e13_336d37d94ec2 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_8828c7d2_8f7d_4804_8e13_336d37d94ec2">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_9ecbe4c2_0fdd_4ee9_8f68_31c290be4bde"/>
-                    <rdf:Description rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_e199bfdb_f084_4ab0_8951_706248d15c32"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1721,6 +1713,18 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_9ecbe4c2_0fdd_4ee9_8f68_31c290be4bde -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_9ecbe4c2_0fdd_4ee9_8f68_31c290be4bde">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_8828c7d2_8f7d_4804_8e13_336d37d94ec2"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/reductionistic#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_e199bfdb_f084_4ab0_8951_706248d15c32"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_8828c7d2_8f7d_4804_8e13_336d37d94ec2"/>
         <rdfs:subClassOf>
             <owl:Restriction>
