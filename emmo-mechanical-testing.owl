@@ -79,6 +79,15 @@
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_0ba19cad_5314_452c_9410_76183326694d -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_0ba19cad_5314_452c_9410_76183326694d">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_2e9a014f_9337_42f7_ad91_b73f150a9901"/>
+        <skos:prefLabel xml:lang="en">BainiteHardening</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_0d9c3564_5955_4804_9d96_dd15ff7ba441 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_0d9c3564_5955_4804_9d96_dd15ff7ba441">
@@ -94,6 +103,15 @@
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_0e0b318d_d7f3_4d35_852c_9d4385019612">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
         <skos:prefLabel xml:lang="en">Width</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_0e30b15f_1b1e_4ff7_8699_a2fffdbc80d2 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_0e30b15f_1b1e_4ff7_8699_a2fffdbc80d2">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_bf5ed681_bd31_4994_a05b_85d1443d23b1"/>
+        <skos:prefLabel xml:lang="en">Nitration</skos:prefLabel>
     </owl:Class>
     
 
@@ -122,15 +140,6 @@
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_167562c3_4474_40a1_a07d_5ec8e21f3fef">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_463bcfda_867b_41d9_a967_211d4d437cfb"/>
         <skos:prefLabel xml:lang="en">ChemicalCompositionMeasurement</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo#EMMO_16e10104_178e_43dc_9ab7_338972d84a19 -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_16e10104_178e_43dc_9ab7_338972d84a19">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_9604f3f8_7642_4790_b387_0faad7c3bfb7"/>
-        <skos:prefLabel xml:lang="en">Polishing</skos:prefLabel>
     </owl:Class>
     
 
@@ -186,6 +195,101 @@
     
 
 
+ issue4
+    <!-- http://emmo.info/emmo#EMMO_2ff88734_1272_45d0_a720_0e476b55af26 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_2ff88734_1272_45d0_a720_0e476b55af26">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_929f8ef1_ff51_49c5_ab3e_c654b156960c"/>
+        <skos:prefLabel xml:lang="en">Grinding</skos:prefLabel>
+
+    <!-- http://emmo.info/emmo#EMMO_21d06317_5b59_4940_8d02_804279fe07ad -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_21d06317_5b59_4940_8d02_804279fe07ad">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://emmo.info/emmo#EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://emmo.info/emmo#EMMO_68ee637e_eee7_4edc_ab24_1fe4135fb71c"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0"/>
+                                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                        <owl:onClass>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://emmo.info/emmo/middle/math#EMMO_18d180e4_5e3e_42f7_820c_e08951223486"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/math#EMMO_faf79f53_749d_40b2_807c_d34244c192f4"/>
+                                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:hasValue>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:onClass>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e"/>
+        <owl:disjointWith rdf:resource="http://emmo.info/emmo#EMMO_d5b0d9de_0ce0_4e28_8c17_9e5706baba43"/>
+        <skos:prefLabel xml:lang="en">UnnotchedSpecimen</skos:prefLabel>
+ master
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_3c93b3eb_f08f_4c25_940c_fac690e012c6 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_3c93b3eb_f08f_4c25_940c_fac690e012c6">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8"/>
+        <rdfs:comment>A language object following a specific rules for specifying the chemical composition of chemical species.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">ChemicalCompositionSpecificationStandard</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_3cd2f82b_e17f_4098_b014_dd773e8de8c1 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_3cd2f82b_e17f_4098_b014_dd773e8de8c1">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
+        <skos:prefLabel xml:lang="en">Thickness</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_3f227fda_ccf8_4cac_8eec_cd074a006b06 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_3f227fda_ccf8_4cac_8eec_cd074a006b06">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_c9c8f824_9127_4f93_bc21_69fe78a7f6f2"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/perceptual#EMMO_23b579e1_8088_45b5_9975_064014026c42"/>
+                <owl:hasValue>HB</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Brinell Hardness unit</rdfs:comment>
+        <skos:prefLabel xml:lang="en">BrinellHardnessUnit</skos:prefLabel>
+    </owl:Class>
+    
+
+
+issue4
+    <!-- http://emmo.info/emmo#EMMO_48e3eddc_de6b_4e9e_891d_99169d9f0883 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_48e3eddc_de6b_4e9e_891d_99169d9f0883">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b"/>
+        <skos:prefLabel xml:lang="en">Metalworking</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_21d06317_5b59_4940_8d02_804279fe07ad -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_21d06317_5b59_4940_8d02_804279fe07ad">
@@ -228,41 +332,8 @@
     
 
 
-    <!-- http://emmo.info/emmo#EMMO_3c93b3eb_f08f_4c25_940c_fac690e012c6 -->
 
-    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_3c93b3eb_f08f_4c25_940c_fac690e012c6">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8"/>
-        <rdfs:comment>A language object following a specific rules for specifying the chemical composition of chemical species.</rdfs:comment>
-        <skos:prefLabel xml:lang="en">ChemicalCompositionSpecificationStandard</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo#EMMO_3cd2f82b_e17f_4098_b014_dd773e8de8c1 -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_3cd2f82b_e17f_4098_b014_dd773e8de8c1">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
-        <skos:prefLabel xml:lang="en">Thickness</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo#EMMO_3f227fda_ccf8_4cac_8eec_cd074a006b06 -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_3f227fda_ccf8_4cac_8eec_cd074a006b06">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_c9c8f824_9127_4f93_bc21_69fe78a7f6f2"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/perceptual#EMMO_23b579e1_8088_45b5_9975_064014026c42"/>
-                <owl:hasValue>HB</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Brinell Hardness unit</rdfs:comment>
-        <skos:prefLabel xml:lang="en">BrinellHardnessUnit</skos:prefLabel>
-    </owl:Class>
-    
-
-
+ master
     <!-- http://emmo.info/emmo#EMMO_59a24d10_ed15_4d81_b8b6_1e3d4744a38c -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_59a24d10_ed15_4d81_b8b6_1e3d4744a38c">
@@ -277,6 +348,15 @@
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_5dc819b6_0173_41ab_84b4_f4cc73a10a29">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
         <skos:prefLabel xml:lang="en">Diameter</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_5f5b81c8_f10a_409c_8ae7_20924f801826 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_5f5b81c8_f10a_409c_8ae7_20924f801826">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_2e9a014f_9337_42f7_ad91_b73f150a9901"/>
+        <skos:prefLabel xml:lang="en">MartensiteHardening</skos:prefLabel>
     </owl:Class>
     
 
@@ -329,21 +409,21 @@
     
 
 
-    <!-- http://emmo.info/emmo#EMMO_6d29becf_b5d2_4ee3_a221_29b1b6c80a7b -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_6d29becf_b5d2_4ee3_a221_29b1b6c80a7b">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_9604f3f8_7642_4790_b387_0faad7c3bfb7"/>
-        <skos:prefLabel xml:lang="en">ShotPeening</skos:prefLabel>
-    </owl:Class>
-    
-
-
     <!-- http://emmo.info/emmo#EMMO_6d7b5fe0_36a2_4638_8c1c_a1bf399624c1 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_6d7b5fe0_36a2_4638_8c1c_a1bf399624c1">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_852b4ab8_fc29_4749_a8c7_b92d4fca7d5a"/>
         <skos:prefLabel xml:lang="en">TargetFrequency</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_6e5dfdf2_c936_479c_a4dd_2eb50084c4a1 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_6e5dfdf2_c936_479c_a4dd_2eb50084c4a1">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_f3dd74c0_f480_49e8_9764_33b78638c235"/>
+        <skos:prefLabel xml:lang="en">RollingDirection</skos:prefLabel>
     </owl:Class>
     
 
@@ -382,6 +462,15 @@
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_7dc73553_7d3f_4dc2_bb7b_f47775207457">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
         <skos:prefLabel xml:lang="en">YoungsModulus</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_87286423_f048_47ac_b8df_3235e824f277 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_87286423_f048_47ac_b8df_3235e824f277">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b"/>
+        <skos:prefLabel xml:lang="en">Machining</skos:prefLabel>
     </owl:Class>
     
 
@@ -555,16 +644,33 @@
     
 
 
+    <!-- http://emmo.info/emmo#EMMO_c43a755d_f7c7_4699_8498_4d84f92bf6df -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_c43a755d_f7c7_4699_8498_4d84f92bf6df">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_2e9a014f_9337_42f7_ad91_b73f150a9901"/>
+        <skos:prefLabel xml:lang="en">PearliteHardening</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo#EMMO_d39c0421_949a_41ad_96aa_bbf055760668 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_d39c0421_949a_41ad_96aa_bbf055760668">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://emmo.info/emmo#EMMO_6f5deb88_b02f_48a1_b177_ea123082d703"/>
+                    <rdf:Description rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_4c57e181_8205_4e51_a164_d17c4bea891d"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_4c25ab1b_462c_49a6_bb27_ea3bd020ab2a"/>
         <skos:prefLabel xml:lang="en">QuenchingAndTempering</skos:prefLabel>
     </owl:Class>
     
 
 
-    <!-- http://emmo.info/emmo#EMMO_d5b0d9de_0ce0_4e28_8c17_9e5706baba43 -->
+     <!-- http://emmo.info/emmo#EMMO_d5b0d9de_0ce0_4e28_8c17_9e5706baba43 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_d5b0d9de_0ce0_4e28_8c17_9e5706baba43">
         <owl:equivalentClass>
@@ -629,6 +735,18 @@
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_e8c8c152_484e_4053_8e35_82346b3fc927">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#EMMO_c74da218_9147_4f03_92d1_8894abca55f3"/>
         <skos:prefLabel xml:lang="en">CrossSectionGeometry</skos:prefLabel>
+ issue4
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo#EMMO_f42ef6fc_110b_4491_8534_80bd6cfa80cb -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_f42ef6fc_110b_4491_8534_80bd6cfa80cb">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_bf5ed681_bd31_4994_a05b_85d1443d23b1"/>
+        <skos:prefLabel xml:lang="en">Nitrocarburizing</skos:prefLabel>
+
+ master
     </owl:Class>
     
 
@@ -996,7 +1114,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_2db2865b_2cd9_4c96_ab3e_6e81964f7436 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_2db2865b_2cd9_4c96_ab3e_6e81964f7436">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_48e3eddc_de6b_4e9e_891d_99169d9f0883"/>
         <skos:prefLabel xml:lang="en">Rolling</skos:prefLabel>
     </owl:Class>
     
@@ -1246,7 +1364,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_4c25ab1b_462c_49a6_bb27_ea3bd020ab2a -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_4c25ab1b_462c_49a6_bb27_ea3bd020ab2a">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_48e3eddc_de6b_4e9e_891d_99169d9f0883"/>
         <skos:prefLabel xml:lang="en">HeatTreatment</skos:prefLabel>
     </owl:Class>
     
@@ -1255,7 +1373,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_4c57e181_8205_4e51_a164_d17c4bea891d -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_4c57e181_8205_4e51_a164_d17c4bea891d">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_4c25ab1b_462c_49a6_bb27_ea3bd020ab2a"/>
         <skos:prefLabel xml:lang="en">Hardening</skos:prefLabel>
     </owl:Class>
     
@@ -1341,7 +1459,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_606f7573_61f6_4bbd_8d42_1d86ab1caadb -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_606f7573_61f6_4bbd_8d42_1d86ab1caadb">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_48e3eddc_de6b_4e9e_891d_99169d9f0883"/>
         <skos:prefLabel xml:lang="en">SheetForming</skos:prefLabel>
     </owl:Class>
     
@@ -1350,7 +1468,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_62bba151_6db3_4cb1_b3f7_ca42fe98f849 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_62bba151_6db3_4cb1_b3f7_ca42fe98f849">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_48e3eddc_de6b_4e9e_891d_99169d9f0883"/>
         <skos:prefLabel xml:lang="en">ColdWorking</skos:prefLabel>
     </owl:Class>
     
@@ -1653,7 +1771,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b"/>
-        <skos:prefLabel xml:lang="en">MetallurgicalMetalworking</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Metallurgy</skos:prefLabel>
     </owl:Class>
     
 
@@ -1671,7 +1789,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_929f8ef1_ff51_49c5_ab3e_c654b156960c -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_929f8ef1_ff51_49c5_ab3e_c654b156960c">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/holistic#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_87286423_f048_47ac_b8df_3235e824f277"/>
         <skos:prefLabel xml:lang="en">Cutting</skos:prefLabel>
     </owl:Class>
     
@@ -1692,15 +1810,6 @@
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_9560b3d4_c573_458a_a9c4_5e00383979cf">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/semiotics#EMMO_d7788d1a_020d_4c78_85a1_13563fcec168"/>
         <skos:prefLabel xml:lang="en">ContactAngleMeasurementStateImage</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo-mechanical-testing#EMMO_9604f3f8_7642_4790_b387_0faad7c3bfb7 -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_9604f3f8_7642_4790_b387_0faad7c3bfb7">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d"/>
-        <skos:prefLabel xml:lang="en">SurfaceTreatment</skos:prefLabel>
     </owl:Class>
     
 
@@ -1814,16 +1923,6 @@
     
 
 
-    <!-- http://emmo.info/emmo-mechanical-testing#EMMO_a80c1452_78bc_4a1d_b89f_2c5d785517e3 -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_a80c1452_78bc_4a1d_b89f_2c5d785517e3">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_929f8ef1_ff51_49c5_ab3e_c654b156960c"/>
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_9604f3f8_7642_4790_b387_0faad7c3bfb7"/>
-        <skos:prefLabel xml:lang="en">Grinding</skos:prefLabel>
-    </owl:Class>
-    
-
-
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_b39aa045_49f3_4c29_a197_c2d65f352cfb -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_b39aa045_49f3_4c29_a197_c2d65f352cfb">
@@ -1928,7 +2027,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_c83ab749_46e6_46fa_be0f_12575a28a30f -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_c83ab749_46e6_46fa_be0f_12575a28a30f">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_48e3eddc_de6b_4e9e_891d_99169d9f0883"/>
         <skos:prefLabel xml:lang="en">Forming</skos:prefLabel>
     </owl:Class>
     
@@ -1998,7 +2097,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_d502b7c5_e898_4dfe_a0fe_6c64e922d14b -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_d502b7c5_e898_4dfe_a0fe_6c64e922d14b">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_48e3eddc_de6b_4e9e_891d_99169d9f0883"/>
         <skos:prefLabel xml:lang="en">MetalJoining</skos:prefLabel>
     </owl:Class>
     
