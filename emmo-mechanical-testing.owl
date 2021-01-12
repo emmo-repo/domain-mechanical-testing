@@ -195,11 +195,52 @@
     
 
 
+ issue4
     <!-- http://emmo.info/emmo#EMMO_2ff88734_1272_45d0_a720_0e476b55af26 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_2ff88734_1272_45d0_a720_0e476b55af26">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_929f8ef1_ff51_49c5_ab3e_c654b156960c"/>
         <skos:prefLabel xml:lang="en">Grinding</skos:prefLabel>
+
+    <!-- http://emmo.info/emmo#EMMO_21d06317_5b59_4940_8d02_804279fe07ad -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo#EMMO_21d06317_5b59_4940_8d02_804279fe07ad">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://emmo.info/emmo#EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://emmo.info/emmo#EMMO_68ee637e_eee7_4edc_ab24_1fe4135fb71c"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0"/>
+                                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                        <owl:onClass>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://emmo.info/emmo/middle/math#EMMO_18d180e4_5e3e_42f7_820c_e08951223486"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/math#EMMO_faf79f53_749d_40b2_807c_d34244c192f4"/>
+                                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:hasValue>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:onClass>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e"/>
+        <owl:disjointWith rdf:resource="http://emmo.info/emmo#EMMO_d5b0d9de_0ce0_4e28_8c17_9e5706baba43"/>
+        <skos:prefLabel xml:lang="en">UnnotchedSpecimen</skos:prefLabel>
+ master
     </owl:Class>
     
 
@@ -239,6 +280,7 @@
     
 
 
+issue4
     <!-- http://emmo.info/emmo#EMMO_48e3eddc_de6b_4e9e_891d_99169d9f0883 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_48e3eddc_de6b_4e9e_891d_99169d9f0883">
@@ -290,6 +332,8 @@
     
 
 
+
+ master
     <!-- http://emmo.info/emmo#EMMO_59a24d10_ed15_4d81_b8b6_1e3d4744a38c -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_59a24d10_ed15_4d81_b8b6_1e3d4744a38c">
@@ -483,12 +527,6 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_94376acf_9d21_497a_85e4_12c84dba4645">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_bd8e17c8_167a_4c72_b4ab_e8b2f69034f1"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/reductionistic#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
-                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo#EMMO_1a019aef_e953_46dc_86c3_b70aa159ba59"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <skos:prefLabel xml:lang="en">FlatNotchedSpecimen</skos:prefLabel>
     </owl:Class>
     
@@ -697,6 +735,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_e8c8c152_484e_4053_8e35_82346b3fc927">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#EMMO_c74da218_9147_4f03_92d1_8894abca55f3"/>
         <skos:prefLabel xml:lang="en">CrossSectionGeometry</skos:prefLabel>
+ issue4
     </owl:Class>
     
 
@@ -706,6 +745,8 @@
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_f42ef6fc_110b_4491_8534_80bd6cfa80cb">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_bf5ed681_bd31_4994_a05b_85d1443d23b1"/>
         <skos:prefLabel xml:lang="en">Nitrocarburizing</skos:prefLabel>
+
+ master
     </owl:Class>
     
 
