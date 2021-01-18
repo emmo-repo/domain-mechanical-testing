@@ -12,6 +12,7 @@
      xmlns:annotations="http://emmo.info/emmo/top/annotations#">
     <owl:Ontology rdf:about="http://emmo.info/emmo-mechanical-testing">
         <owl:versionIRI rdf:resource="http://emmo.info/emmo-mechanical-testing/0.9.0"/>
+        <owl:imports rdf:resource="http://emmo.info/chemistry_mapping/0.9.0"/>
         <owl:imports rdf:resource="http://emmo.info/emmo/1.0.0-alpha2"/>
         <dcterms:abstract xml:lang="en">A domain ontology for Mechanical Testing based on EMMO.</dcterms:abstract>
         <dcterms:contributor>Fraunhofer IWM, DE</dcterms:contributor>
@@ -307,7 +308,7 @@
     <!-- http://emmo.info/emmo#EMMO_3c93b3eb_f08f_4c25_940c_fac690e012c6 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_3c93b3eb_f08f_4c25_940c_fac690e012c6">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_f8e7cbf1_8120_441f_9fa4_56994a2d3df9"/>
         <rdfs:comment>A language object following a specific rules for specifying the chemical composition of chemical species.</rdfs:comment>
         <skos:prefLabel xml:lang="en">ChemicalCompositionSpecification</skos:prefLabel>
     </owl:Class>
@@ -676,7 +677,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo#EMMO_b82033a4_faa1_4f97_8c31_ee9148e120be">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_c3c23bd2_2720_4acb_9f76_e1bb6579afca"/>
-        <skos:prefLabel xml:lang="en">RoughnessRz</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Rz</skos:prefLabel>
     </owl:Class>
     
 
@@ -2159,7 +2160,7 @@
     <!-- http://emmo.info/emmo-mechanical-testing#EMMO_c799b443_c70f_4351_bb0f_e4ab29073481 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo-mechanical-testing#EMMO_c799b443_c70f_4351_bb0f_e4ab29073481">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_c46f091c_0420_4c1a_af30_0a2c8ebcf7d7"/>
         <skos:prefLabel xml:lang="en">Hardness</skos:prefLabel>
     </owl:Class>
     
@@ -2522,6 +2523,14 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo-mechanical-testing#EMMO_9da17d5e_9193_49bc_8fd5_21d5fffa15d7"/>
         <skos:prefLabel xml:lang="en">CableBundleFullyTaped</skos:prefLabel>
     </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/middle/isq#EMMO_7c055d65_2929_40e1_af4f_4bf10995ad50 -->
+
+    <rdf:Description rdf:about="http://emmo.info/emmo/middle/isq#EMMO_7c055d65_2929_40e1_af4f_4bf10995ad50">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo#EMMO_c3c916d3_36f0_4b12_9ead_ba3bef63b234"/>
+    </rdf:Description>
 </rdf:RDF>
 
 
