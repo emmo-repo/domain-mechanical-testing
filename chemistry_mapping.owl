@@ -13,7 +13,7 @@
     <owl:Ontology rdf:about="http://emmo.info/chemistry_mapping">
         <owl:versionIRI rdf:resource="http://emmo.info/chemistry_mapping/0.9.0"/>
         <owl:imports rdf:resource="http://emmo.info/emmo/1.0.0-alpha2"/>
-        <dcterms:abstract xml:lang="en">Minimal ontology that maps emmo-beta chemistry module. </dcterms:abstract>
+        <dcterms:abstract xml:lang="en">Minimal ontology with entities from emmo-beta chemistry module. </dcterms:abstract>
         <dcterms:contributor>Fraunhofer IWM, DE</dcterms:contributor>
         <dcterms:contributor>Goldbeck Consulting Ltd (UK)</dcterms:contributor>
         <dcterms:creator>Adham Hashibon</dcterms:creator>
