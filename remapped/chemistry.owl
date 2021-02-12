@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:ns0="http://emmo.info/emmo/middle/chemistry#">
+
+  <owl:Ontology rdf:about="http://emmo.info/emmo/middle/chemistry">
+    <owl:versionIRI rdf:resource="http://emmo.info/emmo/1.0.0-beta/middle/chemistry"/>
+    <owl:imports rdf:resource="http://emmo.info/emmo/1.0.0-beta/middle"/>
+  </owl:Ontology>
+
+  <rdf:Description rdf:about="http://emmo.info/emmo/middle/isq#AmountFraction">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalCompositionQuantity"/>
+  </rdf:Description>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#TotalComposition">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/reductionistic#hasSpatialDirectPart"/>
+        <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/middle/chemistry#SingleComponentComposition"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <skos:prefLabel xml:lang="en">TotalComposition</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#IUPACName">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#ChemicalName">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalNomenclature"/>
+        <skos:prefLabel xml:lang="en">ChemicalName</skos:prefLabel>
+      </owl:Class>
+    </rdfs:subClassOf>
+
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#IUPACNomencalture"/>
+    <skos:prefLabel xml:lang="en">IUPACName</skos:prefLabel>
+  </owl:Class>
+
+  <rdf:Description rdf:about="http://emmo.info/emmo/middle/isq#MassConcentration">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalCompositionQuantity"/>
+  </rdf:Description>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#SingleComponentComposition">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/reductionistic#hasSpatialDirectPart"/>
+        <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalCompositionQuantity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/reductionistic#hasSpatialDirectPart"/>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#ChemicalSpecies">
+            <owl:equivalentClass>
+              <owl:Class>
+                <owl:unionOf>
+                  <rdf:Description>
+                    <rdf:first rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalElement"/>
+                    <rdf:rest>
+                      <rdf:Description>
+                        <rdf:first rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalNomenclature"/>
+                        <rdf:rest>
+                          <rdf:Description>
+                            <rdf:first rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalFormula"/>
+                            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          </rdf:Description>
+                        </rdf:rest>
+
+                      </rdf:Description>
+                    </rdf:rest>
+
+                  </rdf:Description>
+                </owl:unionOf>
+
+              </owl:Class>
+            </owl:equivalentClass>
+
+            <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#Chemical"/>
+            <ns0:elucidation>Specific form of an element defined as to isotopic composition, electronic or oxidation state, and/or complex or molecular structure.
+
+Chemical species is the macroscopic equivalent of molecular entity and refers to sets or ensembles of molecular entities.</ns0:elucidation>
+            <ns0:iupacDoi>https://doi.org/10.1351/goldbook.CT06859</ns0:iupacDoi>
+            <rdfs:comment>Following nominalistic approach a species is simply a name that can point to an element name, a chemical formula or a chemical compound.
+
+So everything addressed by these classes of names can be calleded a chemical species.</rdfs:comment>
+            <rdfs:comment>N2
+Methane
+CH4
+Fe
+Sodium Chloride</rdfs:comment>
+            <skos:prefLabel xml:lang="en">ChemicalSpecies</skos:prefLabel>
+          </owl:Class>
+        </owl:someValuesFrom>
+
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <skos:prefLabel xml:lang="en">SingleComponentComposition</skos:prefLabel>
+  </owl:Class>
+
+  <rdf:Description rdf:about="http://emmo.info/emmo/middle/materials#MolecularEntity">
+    <ns0:example>Hydrogen molecule is an adequate definition of a certain molecular entity for some purposes, whereas for others it is necessary to distinguish the electronic state and/or vibrational state and/or nuclear spin, etc. of the hydrogen molecule.</ns0:example>
+    <ns0:example>Methane, may mean a single molecule of CH4 (molecular entity) or a molar amount, specified or not (chemical species), participating in a reaction. The degree of precision necessary to describe a molecular entity depends on the context.</ns0:example>
+    <rdfs:comment>Molecular entity is used as a general term for singular entities, irrespective of their nature, while chemical species stands for sets or ensembles of molecular entities.
+
+Note that the name of a compound may refer to the respective molecular entity or to the chemical species,</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://emmo.info/emmo/middle/materials#Molecule">
+    <owl:disjointUnionOf>
+      <rdf:Description>
+        <rdf:first>
+          <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#Heteronuclear">
+            <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/materials#Molecule"/>
+            <skos:prefLabel xml:lang="en">Heteronuclear</skos:prefLabel>
+          </owl:Class>
+        </rdf:first>
+
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first>
+              <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#Homonuclear">
+                <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/materials#Molecule"/>
+                <skos:altLabel>ElementalMolecule</skos:altLabel>
+                <skos:prefLabel xml:lang="en">Homonuclear</skos:prefLabel>
+              </owl:Class>
+            </rdf:first>
+
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </rdf:Description>
+        </rdf:rest>
+
+      </rdf:Description>
+    </owl:disjointUnionOf>
+
+  </rdf:Description>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#MolecularFormula">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalFormula"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/reductionistic#hasSpatialDirectPart"/>
+        <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalElement"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <ns0:elucidation>An expression that provides information about the element types that constiture a molecule or a molecular substance and their number.</ns0:elucidation>
+    <ns0:example>Hydrogen peroxide is H2O2</ns0:example>
+    <skos:prefLabel xml:lang="en">MolecularFormula</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#ElementalSubstance">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalSubstance"/>
+    <ns0:elucidation>A chemical substance composed of atoms with the same number of protons in the atomic nucleus.</ns0:elucidation>
+    <ns0:iupacDoi>https://doi.org/10.1351/goldbook.C01022</ns0:iupacDoi>
+    <skos:altLabel xml:lang="en">PureSubstance</skos:altLabel>
+    <skos:prefLabel>ElementalSubstance</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#ChemicalEntity">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/physicalistic#Matter"/>
+    <owl:disjointUnionOf>
+      <rdf:Description>
+        <rdf:first rdf:resource="http://emmo.info/emmo/middle/chemistry#MolecularEntity"/>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalSubstance"/>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </rdf:Description>
+        </rdf:rest>
+
+      </rdf:Description>
+    </owl:disjointUnionOf>
+
+    <rdfs:comment>A chemical entity comprises the two different ways to represents matter: as single recognizable particle entity (molecular entity) and as a composition of particle entities (substance).
+
+This distinction is not well assessed in actual chemical nomenclature, in which an element name refers to both the pure elemental substance or the atom.
+
+In the EMMO we force the adoption of a more strict categorization based on mereotopology.
+
+The class Material hosts the subclasses for which a substance can be identified without necessarily considering its nature of molecule/atom or substance (e.g. hydrocarbon is the class of both hydrocarbon molecules or gases).</rdfs:comment>
+    <skos:prefLabel xml:lang="en">ChemicalEntity</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#InorganicCompound">
+    <skos:prefLabel xml:lang="en">InorganicCompound</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#ChemicalElement">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#Symbol"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#Chemical"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/perceptual#hasSymbolData"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <ns0:elucidation>The symbol for a specific chemical element, that can stand both for an atom or a substance.</ns0:elucidation>
+    <ns0:iupacDoi>https://doi.org/10.1351/goldbook.C01022</ns0:iupacDoi>
+    <rdfs:comment>The IUPAC Gold Book defines the a chemical element both as:
+- a species of atoms; all atoms with the same number of protons in the atomic nucleus
+-  a pure chemical substance composed of atoms with the same number of protons in the atomic nucleus
+
+This qualifies a chemical element as a name and not a matter obejct that can stand for an atom or a substance.</rdfs:comment>
+    <rdfs:seeAlso>http://publications.iupac.org/ci/2005/2701/ud.html</rdfs:seeAlso>
+    <skos:prefLabel xml:lang="en">ChemicalElement</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#ChemicalNomenclature">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#Chemical"/>
+    <ns0:elucidation>A language object following a specific nomenclature rules for defining univocal names of chemical compounds.</ns0:elucidation>
+    <rdfs:comment>A chemical numenclature should not be confused with the chemical formula.</rdfs:comment>
+    <skos:prefLabel xml:lang="en">ChemicalNomenclature</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#HydrogenSymbol">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalElement"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/perceptual#hasSymbolData"/>
+        <owl:hasValue>H</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <skos:prefLabel xml:lang="en">HydrogenSymbol</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#EmpiricalFormula">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalFormula"/>
+    <ns0:elucidation>An expression that provide information about the element type of a compound and their relative ratio.</ns0:elucidation>
+    <ns0:example>Hydrogen peroxide is HO</ns0:example>
+    <skos:prefLabel xml:lang="en">EmpiricalFormula</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#OrganicCompound">
+    <skos:prefLabel xml:lang="en">OrganicCompound</skos:prefLabel>
+  </owl:Class>
+
+  <rdf:Description rdf:about="http://emmo.info/emmo/middle/isql#MassFraction">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalCompositionQuantity"/>
+  </rdf:Description>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#ChemicalComposition">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#SymbolicComposition"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#Chemical"/>
+    <owl:disjointUnionOf>
+      <rdf:Description>
+        <rdf:first rdf:resource="http://emmo.info/emmo/middle/chemistry#TotalComposition"/>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first rdf:resource="http://emmo.info/emmo/middle/chemistry#SingleComponentComposition"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first>
+                  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#PartialComposition">
+                    <rdfs:subClassOf>
+                      <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/reductionistic#hasSpatialDirectPart"/>
+                        <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/middle/chemistry#SingleComponentComposition"/>
+                      </owl:Restriction>
+                    </rdfs:subClassOf>
+
+                    <skos:prefLabel xml:lang="en">PartialComposition</skos:prefLabel>
+                  </owl:Class>
+                </rdf:first>
+
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </rdf:rest>
+
+      </rdf:Description>
+    </owl:disjointUnionOf>
+
+    <ns0:elucidation>A language construct that provides information about the consitutents of a substance and their fractions or amounts.</ns0:elucidation>
+    <skos:prefLabel xml:lang="en">ChemicalComposition</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#UraniumSymbol">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalElement"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/perceptual#hasSymbolData"/>
+        <owl:hasValue>U</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <skos:prefLabel xml:lang="en">UraniumSymbol</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#ArgonSymbol">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalElement"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/perceptual#hasSymbolData"/>
+        <owl:hasValue>Ar</owl:hasValue>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <skos:prefLabel xml:lang="en">ArgonSymbol</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#ChemicalMaterial">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/physicalistic#Material"/>
+    <skos:prefLabel xml:lang="en">ChemicalMaterial</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#IUPACNomencalture">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalNomenclature"/>
+    <skos:prefLabel xml:lang="en">IUPACNomencalture</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#ChemicalFormula">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#Chemical"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/reductionistic#hasSpatialDirectPart"/>
+        <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalElement"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+
+    <ns0:elucidation>A symbolic construct that provides informations about the chemical proportions of the elements that constitute a chemical compound or a specific molecule.</ns0:elucidation>
+    <rdfs:comment>A chemical formula may also include other symbols such as parentheses, plus and minus signs, brackets</rdfs:comment>
+    <skos:prefLabel xml:lang="en">ChemicalFormula</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#PolyatomicEntity">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/materials#MolecularEntity"/>
+    <skos:prefLabel xml:lang="en">PolyatomicEntity</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#ElementalMaterial">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalMaterial"/>
+    <skos:prefLabel xml:lang="en">ElementalMaterial</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#Macromolecule">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#PolyatomicEntity"/>
+    <skos:prefLabel xml:lang="en">Macromolecule</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#ChemicalCompositionQuantity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://emmo.info/emmo/middle/metrology#PhysicoChemical">
+      </owl:Class>
+    </rdfs:subClassOf>
+
+    <skos:prefLabel xml:lang="en">ChemicalCompositionQuantity</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#StructuralFormula">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#ChemicalRepresentation">
+        <rdfs:subClassOf>
+          <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#Representation">
+            <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#Graphical"/>
+            <ns0:elucidation>A graphical object aimed to represent schematically the conceptual, tempral or spatial structure of another object.</ns0:elucidation>
+            <skos:prefLabel xml:lang="en">Representation</skos:prefLabel>
+          </owl:Class>
+        </rdfs:subClassOf>
+
+        <ns0:elucidation>A representation of objects belonging to the chemistry field.</ns0:elucidation>
+        <skos:prefLabel xml:lang="en">ChemicalRepresentation</skos:prefLabel>
+      </owl:Class>
+    </rdfs:subClassOf>
+
+    <ns0:elucidation>A graphical representation of a molecular structure showing the relative position in space of the atomic constituents and their bonds.</ns0:elucidation>
+    <skos:prefLabel xml:lang="en">StructuralFormula</skos:prefLabel>
+  </owl:Class>
+
+  <rdf:Description rdf:about="http://emmo.info/emmo/middle/isq#VolumeFraction">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalCompositionQuantity"/>
+  </rdf:Description>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#Chemical">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#Language"/>
+    <ns0:elucidation>A language object that follows the syntactic rules used in the chemical field.</ns0:elucidation>
+    <skos:prefLabel xml:lang="en">Chemical</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#ChemicalSymbolicConstruct">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf>
+          <rdf:Description>
+            <rdf:first rdf:resource="http://emmo.info/emmo/middle/perceptual#SymbolicComposition"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first rdf:resource="http://emmo.info/emmo/middle/chemistry#Chemical"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </owl:intersectionOf>
+
+      </owl:Class>
+    </owl:equivalentClass>
+
+    <skos:prefLabel xml:lang="en">ChemicalSymbolicConstruct</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#CondensedFormula">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalFormula"/>
+    <ns0:example>An expression that provides information about the element types that constiture a molecule or a molecular substance and their number, together with simple information about the connectivity of its groups by using parenthesis or by goruping element names according to its molecular structure.</ns0:example>
+    <skos:prefLabel xml:lang="en">CondensedFormula</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#CASRN">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalNomenclature"/>
+    <ns0:elucidation>Chemical Abstact Service registry number for a chemical substance from the American Chemical Society</ns0:elucidation>
+    <ns0:example>Water is 7732-18-5</ns0:example>
+    <skos:prefLabel xml:lang="en">CASRN</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#ChemicalSymbol">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf>
+          <rdf:Description>
+            <rdf:first rdf:resource="http://emmo.info/emmo/middle/perceptual#Symbol"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first rdf:resource="http://emmo.info/emmo/middle/chemistry#Chemical"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </owl:intersectionOf>
+
+      </owl:Class>
+    </owl:equivalentClass>
+
+    <skos:prefLabel xml:lang="en">ChemicalSymbol</skos:prefLabel>
+  </owl:Class>
+
+  <rdf:Description rdf:about="http://emmo.info/emmo/middle/isq#AmountConcentration">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalCompositionQuantity"/>
+  </rdf:Description>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#InChI">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#IUPACNomencalture"/>
+    <ns0:elucidation>The International Chemical Identifier (InChI) textual identifier proposed by IUPAC to provide a standard encoding for databases of molecular information.</ns0:elucidation>
+    <skos:prefLabel xml:lang="en">InChI</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#ChemicalSubstance">
+    <ns0:elucidation>Matter of constant composition best characterized by the entities (molecules, formula units, atoms) it is composed of.</ns0:elucidation>
+    <ns0:iupacDoi>https://doi.org/10.1351/goldbook.C01039</ns0:iupacDoi>
+    <rdfs:comment>A substance is always composed of more than one molecular entity. It lays in the continuum or mesoscopic domain.</rdfs:comment>
+    <skos:prefLabel xml:lang="en">ChemicalSubstance</skos:prefLabel>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://emmo.info/emmo/middle/chemistry#ChemicalCompound">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#ChemicalSubstance"/>
+    <owl:disjointUnionOf>
+      <rdf:Description>
+        <rdf:first rdf:resource="http://emmo.info/emmo/middle/chemistry#InorganicCompound"/>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first rdf:resource="http://emmo.info/emmo/middle/chemistry#OrganicCompound"/>
+            <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+          </rdf:Description>
+        </rdf:rest>
+
+      </rdf:Description>
+    </owl:disjointUnionOf>
+
+    <ns0:elucidation>A chemical substance composed of many identical molecules (or molecular entities) composed of atoms from more than one element held together by chemical bonds.</ns0:elucidation>
+    <ns0:wikipediaEntry>https://en.wikipedia.org/wiki/Chemical_compound</ns0:wikipediaEntry>
+    <skos:prefLabel xml:lang="en">ChemicalCompound</skos:prefLabel>
+  </owl:Class>
+
+  <rdf:Description rdf:about="http://emmo.info/emmo/middle/materials#Atom">
+    <skos:altLabel>ChemicalElement</skos:altLabel>
+  </rdf:Description>
+
+</rdf:RDF>
