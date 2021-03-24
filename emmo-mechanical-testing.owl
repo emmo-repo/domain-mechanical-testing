@@ -1716,7 +1716,7 @@
 <rdf:Description rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_81dd7f19_073d_4153_9517_823edac9fac7">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
 	<rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_580f1bd6_5505_4f31_9a8a_b4e9a17bc604"/>
-	<skos:prefLabel xml:lang="en">Tapping</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Taping</skos:prefLabel>
 </rdf:Description>
 <!--  -->
 <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_82723ac0_2abd_46d4_a850_7616d1ac2fa0 -->
@@ -1743,7 +1743,7 @@
 <rdf:Description rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_851f6719_2e5c_454b_b0d1_439fbdac11b5">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
 	<rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_81dd7f19_073d_4153_9517_823edac9fac7"/>
-	<skos:prefLabel xml:lang="en">HalfTapping</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">HalfTaping</skos:prefLabel>
 </rdf:Description>
 <!--  -->
 <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_86a5bfa9_fb77_4365_9894_81c0454ad7d0 -->
@@ -2227,7 +2227,7 @@
 <rdf:Description rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_a9974b61_d31e_4f5c_9fee_13c777ad93ff">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
 	<rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_81dd7f19_073d_4153_9517_823edac9fac7"/>
-	<skos:prefLabel xml:lang="en">PartialTapping</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">PartialTaping</skos:prefLabel>
 </rdf:Description>
 <!--  -->
 <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_ab528a3a_cb4b_40de_acaa_7752ccd968b9 -->
@@ -3221,7 +3221,7 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
 <rdf:Description rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_f8448aef_c62e_448a_87e3_b7e670566de3">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
 	<rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_81dd7f19_073d_4153_9517_823edac9fac7"/>
-	<skos:prefLabel xml:lang="en">FullyTapping</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">FullyTaping</skos:prefLabel>
 </rdf:Description>
 <!--  -->
 <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_fa443ad2_dac1_418e_b7ff_8051096e27e4 -->
