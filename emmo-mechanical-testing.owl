@@ -482,6 +482,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_0e559791_8595_4d85_b666_3d75baba8cc8">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3c7c1148_40e2_4ec2_a0ac_8720d03e356f"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <isq:physicalDimension>T-2 L+2 M+1 I0 Θ0 N0 J0</isq:physicalDimension>
         <rdfs:comment>The value of the stiffness that takes into account the appropriate calculation for both dynamic and non-dynamic portions of the experiment.</rdfs:comment>
         <skos:prefLabel xml:lang="en">DynamicStiffness</skos:prefLabel>
@@ -1696,6 +1697,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_59a24d10_ed15_4d81_b8b6_1e3d4744a38c">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3c7c1148_40e2_4ec2_a0ac_8720d03e356f"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <skos:prefLabel xml:lang="en">NanoindentationMachineSpringStiffness</skos:prefLabel>
     </owl:Class>
     
@@ -2075,6 +2077,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
                 <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_44389354_4c50_4a74_b315_83cdc69d326d"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_5d4ab23c_859a_4def_844c_c57b82fea44d"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <skos:prefLabel xml:lang="en">NanoindentationMeasurement</skos:prefLabel>
@@ -2903,6 +2911,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_b424de87_996f_4117_b4bf_b5e52fe5b4d3">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3c7c1148_40e2_4ec2_a0ac_8720d03e356f"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <skos:prefLabel xml:lang="en">SquaredStiffnessOverLoad</skos:prefLabel>
     </owl:Class>
     
