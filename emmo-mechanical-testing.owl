@@ -70,7 +70,7 @@
 
     <owl:ObjectProperty rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_a079cf37_e495_41f1_af01_d544e886eacb">
         <rdfs:subPropertyOf rdf:resource="http://emmo.info/emmo/middle/holistic#EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1"/>
-        <rdfs:domain rdf:resource="http://emmo.info/emmo/middle/holistic#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce"/>
+        <rdfs:comment>Relates a Process to its direct outputs.</rdfs:comment>
         <skos:prefLabel xml:lang="en">hasOutput</skos:prefLabel>
     </owl:ObjectProperty>
     
@@ -80,6 +80,7 @@
 
     <owl:ObjectProperty rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_dc4c5477_e02e_40ac_b5a4_0d4e8e36c74d">
         <rdfs:subPropertyOf rdf:resource="http://emmo.info/emmo/middle/holistic#EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1"/>
+        <rdfs:comment>Relates a process to its inputs.</rdfs:comment>
         <skos:prefLabel xml:lang="en">hasInput</skos:prefLabel>
     </owl:ObjectProperty>
     
