@@ -125,6 +125,8 @@
                 </owl:oneOf>
             </rdfs:Datatype>
         </rdfs:range>
+        <rdfs:comment>A run out is a specimen that survives a certain amount of cycles (cycle limit e. g. 10^7) without failure.</rdfs:comment>
+        <rdfs:comment>a data propery introduced to be able to describe very simply the existing dataset that categorizes runout into 3 categories - true, false and unknown.To be changed!</rdfs:comment>
         <skos:prefLabel xml:lang="en">hasRunOut</skos:prefLabel>
     </owl:DatatypeProperty>
     
@@ -158,6 +160,7 @@
                 </owl:oneOf>
             </rdfs:Datatype>
         </rdfs:range>
+        <rdfs:comment>a data propery introduced to be able to describe very simply the existing dataset that categorizes hardening into 3 categories - true, false and unknown.To be changed!</rdfs:comment>
         <skos:prefLabel xml:lang="en">hasHardening</skos:prefLabel>
     </owl:DatatypeProperty>
     
@@ -191,6 +194,7 @@
                 </owl:oneOf>
             </rdfs:Datatype>
         </rdfs:range>
+        <rdfs:comment>a data propery introduced to be able to describe very simply the existing dataset that categorizes case hardening into 3 categories - true, false and unknown.To be changed!</rdfs:comment>
         <skos:prefLabel xml:lang="en">hasCaseHardening</skos:prefLabel>
     </owl:DatatypeProperty>
     
@@ -238,6 +242,17 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_01751749_c384_4a73_b1f1_291447712a92">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/math#EMMO_18d180e4_5e3e_42f7_820c_e08951223486"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c4cb32e6_69d4_4807_b781_b1dcc867eef1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Slope k of the SN curve in high cycle fatigue regime (HCF). High cycle fatigue is the range of fatigue life Nf between 10^4 and approximately 10^6 cycles (depending on the material).</rdfs:comment>
         <skos:prefLabel xml:lang="en">SNCurveSlope</skos:prefLabel>
     </owl:Class>
     
@@ -274,6 +289,7 @@
                 <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_f2d6622f_83f7_4b66_b75c_d4576ad5d986"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>The hardware set consisting of the indenter column, indenter tip, the support springs, the displacement capacitive sensor, the actuation coil the metal case and the interface with the control electronics.</rdfs:comment>
         <skos:prefLabel xml:lang="en">IndenterHead</skos:prefLabel>
     </owl:Class>
     
@@ -284,6 +300,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_03ed6a50_3b04_4189_a939_dad066ece197">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7"/>
+        <rdfs:comment>The time constant used to measure the Dynamic displacement (time over which the RMS value of the displacement is computed). Generally equivalent to at least five waves at the target frequency and being an integer number of waves. This dramatically reduces noise .</rdfs:comment>
         <skos:prefLabel xml:lang="en">DynamicTimeConstant</skos:prefLabel>
     </owl:Class>
     
@@ -304,6 +321,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_0527f1f8_41d4_4414_b1fa_8afbc8651ecb">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_ba882f34_0d71_4e4f_9d92_0c076c633a2c"/>
+        <rdfs:comment>Number of cycles until the fatigue test stopped due to failure or run out.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Cycles</skos:prefLabel>
     </owl:Class>
     
@@ -315,6 +333,7 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#CableBundleUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
         <isq:physicalDimension>T0 L-1 M+1 I0 Θ0 N0 J0</isq:physicalDimension>
+        <rdfs:comment>The length density is a physical quantity that represents the is mass per unit length.</rdfs:comment>
         <skos:prefLabel xml:lang="en">LengthDensity</skos:prefLabel>
     </owl:Class>
     
@@ -351,6 +370,7 @@
                 <owl:allValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_bd59ce5c_09a5_4912_961b_91cfbbd087f2"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Is a derived quantity that is determined using a standard Vickers Hardness test.</rdfs:comment>
         <skos:prefLabel xml:lang="en">VickersHardness</skos:prefLabel>
     </owl:Class>
     
@@ -360,6 +380,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_099c40dc_9ddb_4ee1_b7c8_1e14d9a19fbb">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_2e9a014f_9337_42f7_ad91_b73f150a9901"/>
+        <rdfs:comment>Induction hardening is a type of surface hardening in which a metal part is induction-heated and then quenched. The quenched metal undergoes a martensitic transformation, increasing the hardness and brittleness of the part. Induction hardening is used to selectively harden areas of a part or assembly without affecting the properties of the part as a whole.</rdfs:comment>
         <skos:prefLabel xml:lang="en">InductionHardening</skos:prefLabel>
     </owl:Class>
     
@@ -369,7 +390,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_0ae01f99_b2ed_4dd0_959d_60baad0ab475">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55"/>
         <rdfs:comment>The amplitude of the displacement value oscillation reading while in contact with the sample, with respect to its quasi static value.</rdfs:comment>
         <skos:prefLabel xml:lang="en">AmplitudeOfOscillatoryDepthReading</skos:prefLabel>
     </owl:Class>
@@ -399,6 +420,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_0d41e0d2_f6d3_4d76_97b3_0367b546f492">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_24af8df2_9438_44f6_8c5f_755beb459a49"/>
+        <rdfs:comment>Corresponds to the Yield stress at 1% plastic strain.</rdfs:comment>
         <skos:prefLabel xml:lang="en">RP1.0</skos:prefLabel>
     </owl:Class>
     
@@ -454,7 +476,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_0d9c3564_5955_4804_9d96_dd15ff7ba441">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3c93b3eb_f08f_4c25_940c_fac690e012c6"/>
-        <rdfs:comment>Society of Automotive Engineers</rdfs:comment>
+        <rdfs:comment>Label secified following the Society of Automotive Engineers (SAE) standards.</rdfs:comment>
         <skos:prefLabel xml:lang="en">SAE</skos:prefLabel>
     </owl:Class>
     
@@ -506,6 +528,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_0f73321c_c4fd_40ed_9b58_eccd9b7d8e15">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/holistic#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce"/>
+        <rdfs:comment>Represents a Process (or the sequence of processes) by which the metrological chain is defined or in other words a full “recipe” describing the workflow of an entire indentation experiment.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Method</skos:prefLabel>
     </owl:Class>
     
@@ -517,6 +540,7 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7"/>
+        <rdfs:comment>The time over which the drift rate is measured.</rdfs:comment>
         <skos:prefLabel xml:lang="en">DriftDeterminationTime</skos:prefLabel>
     </owl:Class>
     
@@ -559,12 +583,24 @@
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_13a8ef22_4ade_4c89_af34_0b4c7044517d -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_13a8ef22_4ade_4c89_af34_0b4c7044517d">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81"/>
+        <rdfs:comment>The mean stress S_m is the averaged value of the stresses during fatigue testing (S_m = (S_min + S_max)/2).</rdfs:comment>
+        <skos:prefLabel xml:lang="en">MeanStress</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_1481b773_15d8_4f1a_bf37_3a704958c9d3 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_1481b773_15d8_4f1a_bf37_3a704958c9d3">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3c93b3eb_f08f_4c25_940c_fac690e012c6"/>
         <annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>Label after DIN EN 10027-2. This label is the unique material number. Applies only if the material is defined according to DIN standard. For other standards, this cell is left empty.</annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
         <rdfs:comment>European Standards (abbreviated ENs owing to the more literal translation from French/German as European Norms)</rdfs:comment>
+        <rdfs:seeAlso>https://www.beuth.de/en/standard/din-en-10027-2/223407681</rdfs:seeAlso>
         <skos:prefLabel xml:lang="en">MaterialNumber</skos:prefLabel>
     </owl:Class>
     
@@ -610,6 +646,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_18be2e24_9665_4349_8dd3_6335c921a0ef">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_ee09aa64_f477_4e8f_8b0c_f5d30177ba8d"/>
+        <rdfs:comment>The depth of the indentation when dynamics are in use. It is the zeroed value of the Filtered Displacement corrected for load frame stiffness, drift rate and the Dynamic Displacement. It is zero prior to surface detection.</rdfs:comment>
         <skos:prefLabel xml:lang="en">FilteredDepthWithDynamics</skos:prefLabel>
     </owl:Class>
     
@@ -706,6 +743,8 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_1f2e03be_012a_4560_9d1b_417f530fdf3b">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c21ab500_db9a_43a3_a7ef_d43fb64bf856"/>
+        <rdfs:comment>A digital object identifier represents a persistent identifier or handle used to identify objects uniquely, standardized by the International Organization for Standardization (ISO).</rdfs:comment>
+        <rdfs:seeAlso>https://www.iso.org/obp/ui/#iso:std:iso:26324:ed-1:v1:en</rdfs:seeAlso>
         <skos:prefLabel xml:lang="en">DigitalObjectIdentifier</skos:prefLabel>
     </owl:Class>
     
@@ -748,6 +787,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e"/>
         <owl:disjointWith rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_d5b0d9de_0ce0_4e28_8c17_9e5706baba43"/>
+        <rdfs:comment>UnnotchedSpecimen is a MechanicalTestingSpecimen that has homogeneous. An unnotched specimen has a stress concentration factor equal to 1.</rdfs:comment>
         <skos:prefLabel xml:lang="en">UnnotchedSpecimen</skos:prefLabel>
     </owl:Class>
     
@@ -789,6 +829,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_24af8df2_9438_44f6_8c5f_755beb459a49">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81"/>
+        <rdfs:comment>The Yield Point also known by by yield stress or yield strength corresponds to the stress above which the material starts deforming plastically. It indicates the limit of elastic behaviour and the beginning of plastic behaviour.</rdfs:comment>
         <skos:prefLabel xml:lang="en">YieldPoint</skos:prefLabel>
     </owl:Class>
     
@@ -828,6 +869,7 @@
                 <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_897678f5_488b_4489_8b84_1ab548db1512"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A method that is fully compliant with ISO 14577 standard.</rdfs:comment>
         <skos:prefLabel xml:lang="en">StandardNanoindentationMeasurementMethod</skos:prefLabel>
     </owl:Class>
     
@@ -903,6 +945,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_2b89063d_6ed4_4bf0_9443_e0d3dcb265b8">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c16d56fc_ad1f_420d_9d61_edbe4a28136a"/>
+        <rdfs:comment>An indentation test where both the applied load and resulting displacement are monitored during the test.</rdfs:comment>
         <skos:prefLabel xml:lang="en">DepthSensingIndentation</skos:prefLabel>
     </owl:Class>
     
@@ -977,7 +1020,8 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3226bd7c_b9d8_436d_ae5f_8a69a92ea128">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55"/>
+        <rdfs:comment>Constant strain rate testing involves the application of load so that the depth measurements follow a pre-defined relationship. Set the loading rate to give a constant rate of strain within the specimen material.</rdfs:comment>
         <skos:prefLabel xml:lang="en">ConstantStrainRate</skos:prefLabel>
     </owl:Class>
     
@@ -1052,6 +1096,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3650a56b_7f3d_4f44_90e7_c08cfd7d3fdd">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
+        <rdfs:comment>The rate of change in the displacement measured in contact with the specimen.</rdfs:comment>
         <skos:prefLabel xml:lang="en">DriftRate</skos:prefLabel>
     </owl:Class>
     
@@ -1062,6 +1107,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_376c6456_5601_41c2_987c_3063f14408d4">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_1f087811_06cb_42d5_90fb_25d0e7e068ef"/>
+        <rdfs:comment>The Load applied to the sample. It is the zeroed value of the Force corrected for spring deflection. It is zero prior to surface detection Dynamics are not considered.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Load</skos:prefLabel>
     </owl:Class>
     
@@ -1077,6 +1123,7 @@
             <rdf:Description rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_d27a86dd_6e4d_4f89_979f_c7500876928a"/>
             <rdf:Description rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_f234208c_b6ce_4890_9535_254b3a67edb7"/>
         </owl:disjointUnionOf>
+        <rdfs:comment>A symbolic that identifies the differnt types of loading applied that should be part of teh series (tension/compression, bending, shearing, torsion).</rdfs:comment>
         <skos:prefLabel xml:lang="en">LoadingType</skos:prefLabel>
     </owl:Class>
     
@@ -1163,7 +1210,6 @@
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_3c93b3eb_f08f_4c25_940c_fac690e012c6 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3c93b3eb_f08f_4c25_940c_fac690e012c6">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_21d06317_5b59_4940_8d02_804279fe07ad"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_abf7efbe_6b04_41b8_8326_4dd0f6be753e"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1277,7 +1323,19 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_40af5a74_ab01_4457_83aa_216a5d7889ee">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c799b443_c70f_4351_bb0f_e4ab29073481"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_eda29fc2_7d48_4997_8593_38fd9b344fe2"/>
+        <rdfs:comment>The hardness of the specimen as calculated form the maximum load, the maximum depth and the unloading data following the “Oliver and Pharr” calculation steps.</rdfs:comment>
         <skos:prefLabel xml:lang="en">HardnessFromUnload</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_4136ef18_9624_4f92_b556_c9295b088806 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4136ef18_9624_4f92_b556_c9295b088806">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81"/>
+        <rdfs:comment>The maximum stress S_max is the highest occuring stress during fatigue testing.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">MaximumStress</skos:prefLabel>
     </owl:Class>
     
 
@@ -1324,6 +1382,7 @@
                 <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_7461cbb7_9056_48ba_87fc_a2693a086c71"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A depth sensing indentation test where measured displacement is in the nanometer range (0-1000 nm).</rdfs:comment>
         <skos:prefLabel xml:lang="en">Nanoindentation</skos:prefLabel>
     </owl:Class>
     
@@ -1342,6 +1401,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_44c9b071_54a1_4366_84e4_b14b055ec633">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_24af8df2_9438_44f6_8c5f_755beb459a49"/>
+        <rdfs:comment>Corresponds to the Yield stress at 0.2% plastic strain.</rdfs:comment>
         <skos:prefLabel xml:lang="en">RP0.2</skos:prefLabel>
     </owl:Class>
     
@@ -1512,8 +1572,8 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>Typically a series contains data from multiple experiments/specimens of similar type and material, but at different stress amplitude aiming at determination of a SN curve. Furthermore, a series contains secondary data such as the fatigue strength and slope of the SN-curve which puts the results of the individual experiments in a context.</annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
         <rdfs:comment>This label should be made more specific since it represents a very specific series to the FatigueTestUseCase</rdfs:comment>
+        <rdfs:comment>Typically a series contains data from multiple experiments/specimens of similar type and material, but at different stress amplitude aiming at determination of a SN curve. Furthermore, a series contains secondary data such as the fatigue strength and slope of the SN-curve which puts the results of the individual experiments in a context.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Series</skos:prefLabel>
     </owl:Class>
     
@@ -1534,7 +1594,8 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_46d03bc9_dc95_4fa3_82e5_25b499393275">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_0527f1f8_41d4_4414_b1fa_8afbc8651ecb"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_646b0170_e349_4382_8291_4fa2cca982ea"/>
-        <skos:prefLabel xml:lang="en">LimitingNumberOfLoadCycles</skos:prefLabel>
+        <rdfs:comment>Number of load cycles after which the test is terminated and the specimen is treated as a run out.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">CycleLimit</skos:prefLabel>
     </owl:Class>
     
 
@@ -1553,6 +1614,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4ba72a55_218b_4ead_8a55_2ca1ac5fea33">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c21ab500_db9a_43a3_a7ef_d43fb64bf856"/>
+        <rdfs:seeAlso>Represents a label (symbolic) that uniquely identifies a series.</rdfs:seeAlso>
         <skos:prefLabel xml:lang="en">SeriesID</skos:prefLabel>
     </owl:Class>
     
@@ -1571,6 +1633,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4c57e181_8205_4e51_a164_d17c4bea891d">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4c25ab1b_462c_49a6_bb27_ea3bd020ab2a"/>
+        <rdfs:comment>Hardening is a metalurgical metalworking process used to increase the hardness of a metal. It requires heating the material above a certain temperature and quenchening it afterwards.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Hardening</skos:prefLabel>
     </owl:Class>
     
@@ -1580,6 +1643,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4d5b1eee_cda4_4bc7_8a0e_612fcf7f0c82">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c21ab500_db9a_43a3_a7ef_d43fb64bf856"/>
+        <rdfs:comment>Represents a label (symbolic) that uniquely identifies a specimen.</rdfs:comment>
         <skos:prefLabel xml:lang="en">SpecimenID</skos:prefLabel>
     </owl:Class>
     
@@ -1611,6 +1675,7 @@
                 <owl:allValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3f227fda_ccf8_4cac_8eec_cd074a006b06"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Brinnel hardness is a derived quantity that is determined using a standard Brinnel Hardness test.</rdfs:comment>
         <skos:prefLabel xml:lang="en">BrinnelHardness</skos:prefLabel>
     </owl:Class>
     
@@ -1630,7 +1695,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_50c344b9_35d9_4029_a68b_a713b0bcc6ad">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_f0ad542d_ff13_4998_9e7f_ea27583c5f31"/>
-        <rdfs:comment>The average value of the modulus measured using the “Continuous Stiffness Measurement” technique. It is calculated by averaging the elastic modulus coming from the calculations performed according to the Oliver and Pharr method [ref] over a specific, user-selected, penetration depth range.</rdfs:comment>
+        <rdfs:comment>The average value of the modulus measured using the “Continuous Stiffness Measurement” technique. It is calculated by averaging the elastic modulus coming from the calculations performed according to the Oliver and Pharr method over a specific, user-selected, penetration depth range.</rdfs:comment>
         <skos:prefLabel xml:lang="en">AverageDynamicModulus</skos:prefLabel>
     </owl:Class>
     
@@ -1730,6 +1795,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_59a24d10_ed15_4d81_b8b6_1e3d4744a38c">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3c7c1148_40e2_4ec2_a0ac_8720d03e356f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
+        <rdfs:comment>The stiffness of the support springs. It is calibrated as a function of the displacement.</rdfs:comment>
         <skos:prefLabel xml:lang="en">NanoindentationMachineSpringStiffness</skos:prefLabel>
     </owl:Class>
     
@@ -1789,7 +1855,8 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_5dffae98_f5b7_4287_96ce_94f2314b8bae">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55"/>
+        <rdfs:comment>The loading rate required to achieve the “Surface approach velocity”. It depends on the value of the support springs stiffness (“Spring stiffness”).</rdfs:comment>
         <skos:prefLabel xml:lang="en">ApproachLoadingRate</skos:prefLabel>
     </owl:Class>
     
@@ -1834,6 +1901,16 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_6294b181_baf5_460a_9880_7f183bba9aae">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef"/>
+        <rdfs:comment>Stress ratio is defined as the ratio of minimum stress to maximum stress.
+(need to add further logics)
+Relation of S_min to S_max (R = S_min / S_max). 
+0 &lt; R &lt; 1 describes tension-tension loading,
+R = 0 describes pulsating stress (S_m = S_a = S_max), 
+-1 &lt; R &lt; 0 describes partly reversed tension-compression loading,
+R = -1 describes fully reversed loading, 
+-&quot;infinte&quot; &lt; R &lt; -1 describes partly reversed compression  loading,
+R = -&quot;infinite&quot; is compression pulsating stress,
+R &gt; 1 describes compression-compression loading</rdfs:comment>
         <skos:prefLabel xml:lang="en">StressRatio</skos:prefLabel>
     </owl:Class>
     
@@ -1889,6 +1966,7 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
+        <rdfs:comment>The distance from the last known value of the displacement associated with the surface at which the system will establish the “Approach Velocity” and start looking for the surface.</rdfs:comment>
         <skos:prefLabel xml:lang="en">SurfaceApproachDistance</skos:prefLabel>
     </owl:Class>
     
@@ -1937,6 +2015,7 @@
                 </owl:onClass>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>The stress concentration factor Kt expresses the ratio of the highest stress to a nominal stress of the cross cross section (Kt = S_max/S_nominal). For an unnotched specimen, K_t = 1, for notched specimens K_t &gt; 1</rdfs:comment>
         <skos:prefLabel xml:lang="en">StressConcentrationFactor</skos:prefLabel>
     </owl:Class>
     
@@ -1948,6 +2027,7 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_0329f1f5_8339_4ce4_8505_a264c6d606ba"/>
+        <rdfs:comment>The velocity of the probe as it approaches the surface.</rdfs:comment>
         <skos:prefLabel xml:lang="en">SurfaceApproachVelocity</skos:prefLabel>
     </owl:Class>
     
@@ -1958,6 +2038,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_6a8bfa0e_ef96_4f38_b892_40389eb7d69d">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_ee09aa64_f477_4e8f_8b0c_f5d30177ba8d"/>
+        <rdfs:comment>The targeted maximum depth. The experiment will stop loading at this point or if the maximum target load is reached.</rdfs:comment>
         <skos:prefLabel xml:lang="en">TargetDepth</skos:prefLabel>
     </owl:Class>
     
@@ -1999,6 +2080,7 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_852b4ab8_fc29_4749_a8c7_b92d4fca7d5a"/>
+        <rdfs:comment>The frequency used to excite the contact for dynamic testing. The dynamic force will be oscillated at this frequency.</rdfs:comment>
         <skos:prefLabel xml:lang="en">TargetFrequency</skos:prefLabel>
     </owl:Class>
     
@@ -2008,6 +2090,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_6dee097b_7b39_4299_a322_b83eb2948428">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
+        <rdfs:comment>This value is used to control Dynamic Force to obtain a constant value of Dynamic Displacement.</rdfs:comment>
         <skos:prefLabel xml:lang="en">DynamicLoadRequired</skos:prefLabel>
     </owl:Class>
     
@@ -2028,6 +2111,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_6e5dfdf2_c936_479c_a4dd_2eb50084c4a1">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_f3dd74c0_f480_49e8_9764_33b78638c235"/>
+        <rdfs:comment>Specification of the rolling direction. Metal stock is passed through one or more pairs of rolls to reduce thickness, to make the thickness uniform, and/or to impart a desired mechanical property.</rdfs:comment>
         <skos:prefLabel xml:lang="en">RollingDirection</skos:prefLabel>
     </owl:Class>
     
@@ -2037,6 +2121,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_6f5deb88_b02f_48a1_b177_ea123082d703">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4c25ab1b_462c_49a6_bb27_ea3bd020ab2a"/>
+        <rdfs:comment>Annealing is a heat treatment that alters the physical and sometimes chemical properties of a material to increase ist ductility and reduce ist hardness, making it more workable. It involves heating a material above ist recrystallization temperature, maintaining a suitable temperature for an appropriate amount of time and then cooling.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Annealing</skos:prefLabel>
     </owl:Class>
     
@@ -2047,6 +2132,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_6f7c111f_ac09_48e9_9a26_575bf4ed878e">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_ca42ed31_3983_4e1a_84f9_a84cab2cdb59"/>
+        <rdfs:comment>The system will try to maintain this value of the Dynamic displacement as long as the Dynamic load is less than Dynamic max fraction of load fraction of the applied load.</rdfs:comment>
         <skos:prefLabel xml:lang="en">TargetDynamicDisplacement</skos:prefLabel>
     </owl:Class>
     
@@ -2080,6 +2166,7 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3c93b3eb_f08f_4c25_940c_fac690e012c6"/>
         <annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>Label after DIN EN 10027-1, often short form of material name.</annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
         <rdfs:comment>Deutsches Institut für Normung</rdfs:comment>
+        <rdfs:seeAlso>https://www.beuth.de/en/standard/din-en-10027-1/262540217</rdfs:seeAlso>
         <skos:prefLabel xml:lang="en">ShortName</skos:prefLabel>
     </owl:Class>
     
@@ -2089,6 +2176,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_73e0c7f8_20db_46c7_af69_22ad5616f8dc">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
+        <rdfs:comment>The displacement resolution is typically found by dividing the maximum displacement voltage reading by the number of bits in the data acquisition system.</rdfs:comment>
         <skos:prefLabel xml:lang="en">DisplacementResolution</skos:prefLabel>
     </owl:Class>
     
@@ -2193,6 +2281,7 @@
         <owl:equivalentClass rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_f0ad542d_ff13_4998_9e7f_ea27583c5f31"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
+        <rdfs:comment>Describes the stiffness, which is the ability of a material to withstand elastic deformation.</rdfs:comment>
         <skos:prefLabel xml:lang="en">YoungsModulus</skos:prefLabel>
     </owl:Class>
     
@@ -2224,6 +2313,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_80a5c2f7_deda_411a_842a_9e023bddde65">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_24af8df2_9438_44f6_8c5f_755beb459a49"/>
+        <rdfs:comment>Corresponds to the Yield stress at 0.1% plastic strain.</rdfs:comment>
         <skos:prefLabel xml:lang="en">RP0.1</skos:prefLabel>
     </owl:Class>
     
@@ -2302,6 +2392,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_86a5bfa9_fb77_4365_9894_81c0454ad7d0">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_ca42ed31_3983_4e1a_84f9_a84cab2cdb59"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
+        <rdfs:comment>The RMS value of the displacement at the target frequency when dynamics are switched on during the test (e.g. Continuous Stiffness Measurement ).</rdfs:comment>
         <skos:prefLabel xml:lang="en">DynamicDisplacement</skos:prefLabel>
     </owl:Class>
     
@@ -2333,6 +2424,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_87d31968_0753_420f_bc7d_23a83438e13f">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_376c6456_5601_41c2_987c_3063f14408d4"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
+        <rdfs:comment>The targeted maximum load to be applied. The experiment will stop loading at this point or if the Target Depth is reached.</rdfs:comment>
         <skos:prefLabel xml:lang="en">TargetLoad</skos:prefLabel>
     </owl:Class>
     
@@ -2431,6 +2523,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8beaaf27_f05f_4235_ae3d_6af594eadf87">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c799b443_c70f_4351_bb0f_e4ab29073481"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_eda29fc2_7d48_4997_8593_38fd9b344fe2"/>
+        <rdfs:comment>The average value of the hardness measured using the “Continuous Stiffness Measurement” technique. It is calculated by averaging, over the user selected penetration depth range, the ratio between the load applied to the sample (also considering its dynamic component) and the tip contact area. (according to the Oliver and Pharr method)</rdfs:comment>
         <skos:prefLabel xml:lang="en">AverageDynamicHardness</skos:prefLabel>
     </owl:Class>
     
@@ -2494,6 +2587,7 @@
                 <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_442c0fb7_09d4_4dae_b45c_8eb1522da38f"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Represents the Nanoindentation method specification.</rdfs:comment>
         <skos:prefLabel xml:lang="en">NanoindentationMethodSpecification</skos:prefLabel>
     </owl:Class>
     
@@ -2505,6 +2599,7 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7"/>
+        <rdfs:comment>The time at constant load prior to taking drift data.</rdfs:comment>
         <skos:prefLabel xml:lang="en">DriftSettleTime</skos:prefLabel>
     </owl:Class>
     
@@ -2609,6 +2704,7 @@
                 <owl:allValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_ac324c09_8830_4b04_bda5_8646a8dee0d4"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Represents the percentage by volume (vol%) that is used to express the composition of a mixture.</rdfs:comment>
         <skos:prefLabel xml:lang="en">VolumePercent</skos:prefLabel>
     </owl:Class>
     
@@ -2618,6 +2714,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_9b84bd4e_adfa_48b6_b4f7_f597bb40dae1">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c21ab500_db9a_43a3_a7ef_d43fb64bf856"/>
+        <rdfs:comment>A simbolic symbolic representation of the source of infomation (e.g.: a string that represents the path to a file).</rdfs:comment>
         <skos:prefLabel xml:lang="en">Reference</skos:prefLabel>
     </owl:Class>
     
@@ -2762,6 +2859,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A symbolic that represents the type of environment in which a measureemnt has been carried out.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Environment</skos:prefLabel>
     </owl:Class>
     
@@ -2773,6 +2871,7 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7"/>
+        <rdfs:comment>This is the time specified to linearly reduce the load on the contact form it’s maximum value to zero.</rdfs:comment>
         <skos:prefLabel xml:lang="en">TargetUnloadTime</skos:prefLabel>
     </owl:Class>
     
@@ -2853,6 +2952,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_ab528a3a_cb4b_40de_acaa_7752ccd968b9">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_f0ad542d_ff13_4998_9e7f_ea27583c5f31"/>
+        <rdfs:comment>The reduced modulus of the specimen and indenter tip as calculated from the maximum load, the maximum depth and the unloading data following the “Oliver and Pharr” calculation steps.</rdfs:comment>
         <skos:prefLabel xml:lang="en">ReducedModulusFromUnload</skos:prefLabel>
     </owl:Class>
     
@@ -2889,6 +2989,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_adff8854_b8f6_4943_99b4_6e3619b6c552">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_1f087811_06cb_42d5_90fb_25d0e7e068ef"/>
+        <rdfs:comment>The RMS value of the Force at the target frequency.</rdfs:comment>
         <skos:prefLabel xml:lang="en">DynamicForce</skos:prefLabel>
     </owl:Class>
     
@@ -2900,7 +3001,8 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81"/>
         <isq:physicalDimension>T-2 L-1 M+1 I0 Θ0 N0 J0</isq:physicalDimension>
-        <rdfs:comment>Fatigue strength is the highest stress that a material can endure for a given number of cycles without breaking.</rdfs:comment>
+        <rdfs:comment>Corresponding strength value to a given number of cycles as determined from an S-N diagram (usually given for 50 % probability of survival).</rdfs:comment>
+        <rdfs:isDefinedBy>https://www.astm.org/Standards/E1823.htm</rdfs:isDefinedBy>
         <skos:prefLabel xml:lang="en">FatigueStrength</skos:prefLabel>
     </owl:Class>
     
@@ -2910,6 +3012,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_b2a234a8_579a_422c_9305_b8f7e72c76cd">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e8c8c152_484e_4053_8e35_82346b3fc927"/>
+        <rdfs:comment>Circular cross section is a cross section with circular shape.</rdfs:comment>
         <skos:prefLabel xml:lang="en">CirclularCrossSection</skos:prefLabel>
     </owl:Class>
     
@@ -2921,6 +3024,7 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7"/>
+        <rdfs:comment>When the &quot;Target Load&quot; or the &quot;Target Depth&quot; is reached, the &quot;Load&quot; is held constant for this time.</rdfs:comment>
         <skos:prefLabel xml:lang="en">MaximumLoadHoldingTime</skos:prefLabel>
     </owl:Class>
     
@@ -2947,6 +3051,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_b424de87_996f_4117_b4bf_b5e52fe5b4d3">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3c7c1148_40e2_4ec2_a0ac_8720d03e356f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
+        <rdfs:comment>The squared value of the stiffness from unloading divided by the maximum load. Is a parameter that should be insensitive to the area function. It can be used to determine load frame stiffness.</rdfs:comment>
         <skos:prefLabel xml:lang="en">SquaredStiffnessOverLoad</skos:prefLabel>
     </owl:Class>
     
@@ -2993,6 +3098,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_b82033a4_faa1_4f97_8c31_ee9148e120be">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c3c23bd2_2720_4acb_9f76_e1bb6579afca"/>
+        <rdfs:comment>Surface roughness as a result from machining process (e.g. turning, milling, grinding, polishing etc.) given in terms of Rz. Average Rz value over assessement length (Rzi=maximum peak to valley height of profile, within a single sampling length i). This is equivalent to Ry5.</rdfs:comment>
         <skos:prefLabel xml:lang="en">RoughnessRz</skos:prefLabel>
     </owl:Class>
     
@@ -3004,6 +3110,7 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7"/>
+        <rdfs:comment>This is the average time of a typical indentation cycle from load to full unload.</rdfs:comment>
         <skos:prefLabel xml:lang="en">IndentationTime</skos:prefLabel>
     </owl:Class>
     
@@ -3037,6 +3144,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_bc7a1ff8_9c74_4147_a417_08e7867aac77">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e8c8c152_484e_4053_8e35_82346b3fc927"/>
+        <rdfs:comment>Rectangular cross section is a cross section with rectangualr shape.</rdfs:comment>
         <skos:prefLabel xml:lang="en">RectanglularCrossSection</skos:prefLabel>
     </owl:Class>
     
@@ -3053,7 +3161,8 @@
                 <owl:allValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_ac324c09_8830_4b04_bda5_8646a8dee0d4"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <annotations:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84>The equivalent carbon content concept it used on ferrous materials, to determine various properties of the alloy when more than just carbon is used as an alloyant.</annotations:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84>
+        <annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>The idea is to convert the percentage of alloying elements other than carbon to the equivalent carbon percentage. CEV = C + Mn/6 + (Cu + Ni)/15 + (Cr + Mo + V)/5 .</annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+        <rdfs:comment>The equivalent carbon content concept it used on ferrous materials, to determine various properties of the alloy when more than just carbon is used as an alloyant.</rdfs:comment>
         <skos:altLabel>CEV</skos:altLabel>
         <skos:prefLabel xml:lang="en">EquivalentCarbonContent</skos:prefLabel>
     </owl:Class>
@@ -3110,6 +3219,7 @@
                 <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_bc7a1ff8_9c74_4147_a417_08e7867aac77"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>FlatSpecimen represents a mechanical testing specimen that has rectangular cross section.</rdfs:comment>
         <skos:prefLabel xml:lang="en">FlatSpecimen</skos:prefLabel>
     </owl:Class>
     
@@ -3153,6 +3263,7 @@
                 <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A single indentation experiment.</rdfs:comment>
         <skos:prefLabel xml:lang="en">IndentationTest</skos:prefLabel>
     </owl:Class>
     
@@ -3178,6 +3289,8 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>An identifier is a name that identifies (that is, labels the identity of) either a unique object or a unique class of objects.</rdfs:comment>
+        <rdfs:seeAlso>https://en.wikipedia.org/wiki/Identifier</rdfs:seeAlso>
         <skos:prefLabel xml:lang="en">Identifier</skos:prefLabel>
     </owl:Class>
     
@@ -3378,6 +3491,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4c25ab1b_462c_49a6_bb27_ea3bd020ab2a"/>
+        <rdfs:comment>Quenching is the rapid cooling of a workpiece in water, oil or air in order to obtain certain material properties. It is most commonly used to harden steel by inducing a martensite transformation.
+Tempering is a heat treatment technique applied to ferrous alloys, such as steel or cast iron, to achieve greater tougness by decreasing the hardness of the alloy. The reduction in hardness is usually accompanied by an increase in ductility, thereby decreasing the brittleness of the metal. It is usually applied after quenching.</rdfs:comment>
         <skos:prefLabel xml:lang="en">QuenchingAndTempering</skos:prefLabel>
     </owl:Class>
     
@@ -3406,7 +3521,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_d552bbb0_ea25_40dc_bb74_ed8ff63b7998">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55"/>
         <skos:prefLabel xml:lang="en">DataAcquisitionRate</skos:prefLabel>
     </owl:Class>
     
@@ -3467,6 +3582,7 @@
                 <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_1a019aef_e953_46dc_86c3_b70aa159ba59"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Notched Specimen is a MechanicalTestingSpecimen that has a notch or in other words a change in the cross section that results in an uneven stress distribution. A notched specimen has a Stress concentration factor higher than 1.</rdfs:comment>
         <skos:prefLabel xml:lang="en">NotchedSpecimen</skos:prefLabel>
     </owl:Class>
     
@@ -3492,7 +3608,29 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_d7744a44_6cfe_47cd_9e10_9ec3be7f8d0c">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/math#EMMO_18d180e4_5e3e_42f7_820c_e08951223486"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c4cb32e6_69d4_4807_b781_b1dcc867eef1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Depending on the type of the SN-curve model, one or several knee points exist, where the SN curve changes its slope. For ferritic steels, there is usually a constant, non-zero slope of the SN-curve in the high cycle fatigue regime (e.g. 10^4 &lt; n &lt; 10^6), followed by a horizontal shape of the SN curve after reaching the fatigue strength / endurance limit. In this case the knee point corresponds to the endurance limit. For other materials (e.g. aluminium or austenitic steels), a horizontal slope is never reached, but there are at least two regions with different slope, which are separated by the knee point (in terms of cycles).</rdfs:comment>
         <skos:prefLabel xml:lang="en">KneePoint</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_d87db143_a9d9_4fe4_a61b_05ea26355783 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_d87db143_a9d9_4fe4_a61b_05ea26355783">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81"/>
+        <rdfs:comment>The minimum stress S_min is the lowest occuring stress during fatigue testing.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">MinimumStress</skos:prefLabel>
     </owl:Class>
     
 
@@ -3502,6 +3640,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_dad694df_6f58_4f5f_bb1d_6eb9dea25fb1">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
+        <rdfs:comment>The contact depth calculated from dynamics and the Oliver and Pharr method.</rdfs:comment>
         <skos:prefLabel xml:lang="en">DynamicContactDepth</skos:prefLabel>
     </owl:Class>
     
@@ -3667,6 +3806,7 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e8c8c152_484e_4053_8e35_82346b3fc927">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd"/>
+        <rdfs:comment>Represents the geometry/shape of the cross section</rdfs:comment>
         <skos:prefLabel xml:lang="en">CrossSectionGeometry</skos:prefLabel>
     </owl:Class>
     
@@ -3676,6 +3816,7 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_ebb3c390_173a_4c23_a338_12b6a75ddab2">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
+        <rdfs:comment>The noise floor in the displacement measurement system will determine what the minimum useable indentation depth.</rdfs:comment>
         <skos:prefLabel xml:lang="en">DisplacementNoiseFloor</skos:prefLabel>
     </owl:Class>
     
@@ -3685,6 +3826,7 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_ecc66886_7f39_42a5_99f4_c260b74ed7f5">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c16d56fc_ad1f_420d_9d61_edbe4a28136a"/>
+        <rdfs:comment>An indentation test where only the maximum applied load is controlled.</rdfs:comment>
         <skos:prefLabel xml:lang="en">StaticIndentation</skos:prefLabel>
     </owl:Class>
     
@@ -3705,6 +3847,7 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
                 <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_5d4ab23c_859a_4def_844c_c57b82fea44d"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Represents the properties properties of the NanoindentationSpecimen.</rdfs:comment>
         <skos:prefLabel xml:lang="en">NanoindentationSpecimenProperty</skos:prefLabel>
     </owl:Class>
     
@@ -3725,6 +3868,7 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_f01503f3_f77d_49ec_b97f_56440ea8e2a2">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_bf5ed681_bd31_4994_a05b_85d1443d23b1"/>
+        <rdfs:comment>Surface hardening (or case-hardening) is the process of hardening the surface of a metal object while allowing the metal deeper underneath to remain soft, thus forming a thin layer of harder metal at the surface. This creates a hardness profile across the cross section of the material. In the end, increased hardness at the surface is combined with a ductile core, which prevents the material from becoming brittle.</rdfs:comment>
         <skos:prefLabel xml:lang="en">CaseHardening</skos:prefLabel>
     </owl:Class>
     
@@ -3868,7 +4012,7 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_fb0dd8d8_1dc7_489d_b3f5_7c04ba7df433">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55"/>
         <isq:physicalDimension>T-2 L+1 M+1 I0 Θ0 N0 J0</isq:physicalDimension>
         <rdfs:comment>The amplitude of the force value oscillation reading, with respect to its quasi static value.</rdfs:comment>
         <skos:prefLabel xml:lang="en">AmplitudeOfOscillatoryForce</skos:prefLabel>
@@ -3903,6 +4047,7 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
                 <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_b2a234a8_579a_422c_9305_b8f7e72c76cd"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>RoundSpecimen represents a mechanical testing specimen that has circular cross section.</rdfs:comment>
         <skos:prefLabel xml:lang="en">RoundSpecimen</skos:prefLabel>
     </owl:Class>
     
@@ -3927,6 +4072,7 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
                 <owl:allValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8fc8a9e8_e8c3_476c_a417_031267a0206a"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Rockwell hardness is a derived quantity that is determined using an apparatus called the Rockwell hardness tester.</rdfs:comment>
         <skos:prefLabel xml:lang="en">RockwellCHardness</skos:prefLabel>
     </owl:Class>
     
