@@ -324,6 +324,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_0747262d_9356_4b7b_ac5d_90e2504e0968">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_f210d615_89a5_483f_a8b2_923ff6fcf4ab"/>
+        <rdfs:comment>Bending test post processing is a generic class that holds for description of bending tests post-processing approaches.</rdfs:comment>
         <skos:prefLabel xml:lang="en">BendingTestPostProcessing</skos:prefLabel>
     </owl:Class>
     
@@ -493,6 +494,7 @@
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_0ece9cba_617c_4452_bbdc_1c564129e393 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_0ece9cba_617c_4452_bbdc_1c564129e393">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e3665cba_b1a8_4fcf_8194_493187fcd25a"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_f210d615_89a5_483f_a8b2_923ff6fcf4ab"/>
         <skos:prefLabel xml:lang="en">ContactAngleMeasurementPostProcessing</skos:prefLabel>
     </owl:Class>
@@ -525,6 +527,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_10f4d440_33d0_456d_b27c_83bf1d9811c0">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#CableBundleUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_463bcfda_867b_41d9_a967_211d4d437cfb"/>
+        <rdfs:comment>Bending measurement is a measurement that follows a bending test method and is carried out for testing materials in terms of their bending strength and other important properties.</rdfs:comment>
         <skos:prefLabel xml:lang="en">BendingMeasurement</skos:prefLabel>
     </owl:Class>
     
@@ -1116,6 +1119,17 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3407d408_5d15_4090_8161_43d5e288a864"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_a079cf37_e495_41f1_af01_d544e886eacb"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_5ae58bc1_85e1_45e4_be56_c1331bee7d75"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Averaged Tensile Stifness is a phyiscal quantity of the type of tensile stiffness that results from a calculation of the type arithmetic mean.</rdfs:comment>
         <skos:prefLabel xml:lang="en">AveragedTensileStiffness</skos:prefLabel>
     </owl:Class>
     
@@ -1126,7 +1140,8 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3c7c1148_40e2_4ec2_a0ac_8720d03e356f">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#CableBundleUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
-        <rdfs:isDefinedBy>http://dbpedia.org/page/Stiffness</rdfs:isDefinedBy>
+        <rdfs:comment>Stiffness is the extent to which an object resists deformation in response to an applied force. The complementary concept is flexibility or pliability: the more flexible an object is, the less stiff it is.</rdfs:comment>
+        <rdfs:seeAlso>http://dbpedia.org/page/Stiffness</rdfs:seeAlso>
         <skos:prefLabel xml:lang="en">Stiffness</skos:prefLabel>
     </owl:Class>
     
@@ -1139,6 +1154,7 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/holistic#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce"/>
+        <rdfs:comment>Is a type of activity/computation that is part of a process or in other words a participant in a process and a process itself that involves the transformation of inputs into results (outputs). The calculation defines in more detail very specific tasks within a process (simulation) that are executed. Each of this tasks or calculations have a specific role within the simulation.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Calculation</skos:prefLabel>
     </owl:Class>
     
@@ -1250,6 +1266,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_400fa2bf_a1b9_4e03_b6bd_7540c8fe5b4a">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3c7c1148_40e2_4ec2_a0ac_8720d03e356f"/>
         <isq:physicalDimension>T-2 L+3 M+1 I0 Θ0 N0 J0</isq:physicalDimension>
+        <rdfs:comment>In beam theory, a bending stiffness describes the effective stiffness of the beam for bending deformation. Formally, it is given as product of Young’s modulus and the second moment of inertia. But in practice, the bending stiffness is an individual effective parameter, that must not be separated into a material and a geometrical property.</rdfs:comment>
         <skos:prefLabel xml:lang="en">BendingStiffness</skos:prefLabel>
     </owl:Class>
     
@@ -1506,6 +1523,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_460d3ba4_a8e5_449d_8423_7d4d1cca6d76">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_a30a7cdc_f652_4b01_b8c2_cd056f3e3d85"/>
+        <rdfs:comment>Mechanical testing machine that is designed for a a very specific purpose.</rdfs:comment>
         <skos:prefLabel xml:lang="en">SpecialPurposeTestingMachine</skos:prefLabel>
     </owl:Class>
     
@@ -1626,6 +1644,7 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#EMMO_ec7464a9_d99d_45f8_965b_4e9230ea8356"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/semiotics#EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b"/>
+        <rdfs:comment>Specimen is a limited quantity of a real world object which is intended to be similar to and represent a larger amount of it. It can be defined as a sample or a portion of a real world object that has been prepared based on the measureemnt protocol.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Specimen</skos:prefLabel>
     </owl:Class>
     
@@ -1650,6 +1669,17 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_400fa2bf_a1b9_4e03_b6bd_7540c8fe5b4a"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_a079cf37_e495_41f1_af01_d544e886eacb"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_5ae58bc1_85e1_45e4_be56_c1331bee7d75"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Averaged bending stifness is a phyiscal quantity of the type of bending stiffness that results from a calculation of the type arithmetic mean.</rdfs:comment>
         <skos:prefLabel xml:lang="en">AveragedBendingStiffness</skos:prefLabel>
     </owl:Class>
     
@@ -1678,7 +1708,9 @@
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_580f1bd6_5505_4f31_9a8a_b4e9a17bc604 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_580f1bd6_5505_4f31_9a8a_b4e9a17bc604">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#CableBundleUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#EMMO_ec7464a9_d99d_45f8_965b_4e9230ea8356"/>
+        <rdfs:comment>Represents the cover of a Cable Bundle and it describes how it is spacially distributed across the cable bundle length.</rdfs:comment>
         <skos:prefLabel xml:lang="en">BundleCover</skos:prefLabel>
     </owl:Class>
     
@@ -1728,6 +1760,7 @@
                 <owl:onClass rdf:resource="http://emmo.info/emmo/top/physical#EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>It is a measure of central tendency in a data set. It is defined as the sum of a collection of numbers divided by the count of numbers in the collection.</rdfs:comment>
         <skos:prefLabel xml:lang="en">ArithmeticMean</skos:prefLabel>
     </owl:Class>
     
@@ -1984,6 +2017,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_6e37e2b7_8cce_487c_ad40_36b4b7f030e3">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_0747262d_9356_4b7b_ac5d_90e2504e0968"/>
+        <rdfs:comment>Mesomics bending analysis is a general class that is used to represent the set of Mesomics bensing analysis post-processing calculations.</rdfs:comment>
         <skos:prefLabel xml:lang="en">MesomicsBendingAnalysis</skos:prefLabel>
     </owl:Class>
     
@@ -2023,6 +2057,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_6f7f288a_ec43_41f7_ac6c_8e4941d2d29d">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#CableBundleUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8"/>
+        <rdfs:comment>An optional description of single cable details. The cable core usually corresponds to the conducting metal part.</rdfs:comment>
         <skos:prefLabel xml:lang="en">CableCore</skos:prefLabel>
     </owl:Class>
     
@@ -2033,6 +2068,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_709d4e04_e972_4f57_9589_bf99ea08d2ea">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#CableBundleUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#EMMO_ec7464a9_d99d_45f8_965b_4e9230ea8356"/>
+        <rdfs:comment>An electrical insulating material is a material that reduces or prevents the transmission of heat, sound or electricity. For instance, an electrical insulating material prevents electricity  voltage-carrying conductors against one another as well as against earth.</rdfs:comment>
         <skos:prefLabel xml:lang="en">InsulatingMaterial</skos:prefLabel>
     </owl:Class>
     
@@ -2213,6 +2249,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_81dd7f19_073d_4153_9517_823edac9fac7">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_580f1bd6_5505_4f31_9a8a_b4e9a17bc604"/>
+        <rdfs:comment>Represents a cable bundle cover based on Tape and how the tape is placed across the bundle.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Taping</skos:prefLabel>
     </owl:Class>
     
@@ -2254,6 +2291,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_851f6719_2e5c_454b_b0d1_439fbdac11b5">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_81dd7f19_073d_4153_9517_823edac9fac7"/>
+        <rdfs:comment>Taping that covers half of he cable bundle lateral surface area.</rdfs:comment>
         <skos:prefLabel xml:lang="en">HalfTaping</skos:prefLabel>
     </owl:Class>
     
@@ -2335,6 +2373,7 @@
                 <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8a5f8323_d356_44a8_9840_af3bfac84505"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A cable system is a generic term to represent different types of cable systems such as a cable bundle or a single cable.</rdfs:comment>
         <skos:prefLabel xml:lang="en">CableSystem</skos:prefLabel>
     </owl:Class>
     
@@ -2371,6 +2410,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8a5f8323_d356_44a8_9840_af3bfac84505">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_b50db598_cfea_4582_9168_46fbc0b9ec4f"/>
+        <rdfs:comment>Represents the distance between the ouside edge of a circular cross section and its center.</rdfs:comment>
         <skos:prefLabel xml:lang="en">OuterRadius</skos:prefLabel>
     </owl:Class>
     
@@ -2435,16 +2475,6 @@
         </rdfs:subClassOf>
         <rdfs:comment>Rockwell C Hardness unit</rdfs:comment>
         <skos:prefLabel xml:lang="en">RockwellCHardnessUnit</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_910e2406_659f_4770_93cc_90ba9e9c6c9e -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_910e2406_659f_4770_93cc_90ba9e9c6c9e">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/models#EMMO_a4b14b83_9392_4a5f_a2e8_b2b58793f59b"/>
-        <skos:prefLabel xml:lang="en">MesomicsMachineLearningModel</skos:prefLabel>
     </owl:Class>
     
 
@@ -2597,6 +2627,8 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_9b8fd21c_cf02_40bd_8d0b_748556612573">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_460d3ba4_a8e5_449d_8423_7d4d1cca6d76"/>
+        <rdfs:comment>MeSOMICS, stands for Measurement System for the Optically Monitored Identification of Cable Stiffnesses. The mesomics measurement enables the determination of the bending stiffness of a cable bundle using a MeSOMICS machine.</rdfs:comment>
+        <rdfs:seeAlso>https://www.itwm.fraunhofer.de/content/dam/itwm/de/documents/MDF_Infomaterial/mdf_flyer_MeSOMICS_EN.pdf</rdfs:seeAlso>
         <skos:prefLabel xml:lang="en">Mesomics</skos:prefLabel>
     </owl:Class>
     
@@ -2697,6 +2729,7 @@
                 <owl:onClass rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e199bfdb_f084_4ab0_8951_706248d15c32"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A component containing several single cables, that are bundled together by a certain type of taping. A cable bundle has simple effective properties (bending stiffness, etc.) describing the macroscopic structure.</rdfs:comment>
         <skos:prefLabel xml:lang="en">CableBundle</skos:prefLabel>
     </owl:Class>
     
@@ -2765,6 +2798,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_a30a7cdc_f652_4b01_b8c2_cd056f3e3d85">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_1b0a92ef_c509_40ee_8abe_408181aafaad"/>
+        <rdfs:comment>Is a device that is used to determine mechanical properties of materials in paricular it is used to test the tensile strength and compressive strength of materials. It represents a measuremt device that is used in mechanical testing experiments.</rdfs:comment>
         <skos:prefLabel xml:lang="en">MechanicalTestingMachine</skos:prefLabel>
     </owl:Class>
     
@@ -2809,6 +2843,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_a9974b61_d31e_4f5c_9fee_13c777ad93ff">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_81dd7f19_073d_4153_9517_823edac9fac7"/>
+        <rdfs:comment>Taping that covers only at specific discrete locations across the cable bundle overall length.</rdfs:comment>
         <skos:prefLabel xml:lang="en">PartialTaping</skos:prefLabel>
     </owl:Class>
     
@@ -2922,6 +2957,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_b50db598_cfea_4582_9168_46fbc0b9ec4f">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#CableBundleUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
+        <rdfs:comment>In classical geometry, a radius of a circle or sphere is any of the line segments from its center to its perimeter.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Radius</skos:prefLabel>
     </owl:Class>
     
@@ -3297,9 +3333,16 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_9b8fd21c_cf02_40bd_8d0b_748556612573"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
                 <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_f77b52b9_0750_4dbf_a131_faecbbb7f6a4"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>A measurement performed using the MeSOMICS machine.</rdfs:comment>
         <skos:prefLabel xml:lang="en">MesomicsMeasurement</skos:prefLabel>
     </owl:Class>
     
@@ -3483,6 +3526,17 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_0b47a9ad_2854_43d0_9707_ff5f81f5b7d8"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_a079cf37_e495_41f1_af01_d544e886eacb"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_5ae58bc1_85e1_45e4_be56_c1331bee7d75"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>AveragedTorsionalStifness is a phyiscal quantity of the type of torsional stiffness that results from a calculation of the type arithmetic mean.</rdfs:comment>
         <skos:prefLabel xml:lang="en">AveragedTorsionalStiffness</skos:prefLabel>
     </owl:Class>
     
@@ -3504,6 +3558,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_dc637a06_1988_4f9a_a2b4_05dfbf7e246c">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#CableBundleUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#EMMO_ec7464a9_d99d_45f8_965b_4e9230ea8356"/>
+        <rdfs:comment>Tape represents an engineered material. It is defined as a strip of material, typically used to hold something.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Tape</skos:prefLabel>
     </owl:Class>
     
@@ -3567,6 +3622,7 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
                 <owl:onClass rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_6f7f288a_ec43_41f7_ac6c_8e4941d2d29d"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>One single cable, e.g. a sensor cable with effective properties (e.g. bending stiffness).</rdfs:comment>
         <skos:prefLabel xml:lang="en">SingleCable</skos:prefLabel>
     </owl:Class>
     
@@ -3584,6 +3640,15 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
             </owl:Restriction>
         </rdfs:subClassOf>
         <skos:prefLabel xml:lang="en">AluminiumSymbol</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_e3665cba_b1a8_4fcf_8194_493187fcd25a -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e3665cba_b1a8_4fcf_8194_493187fcd25a">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#MechanicalTestingOntology"/>
+        <skos:prefLabel xml:lang="en">ContactAngleUseCase</skos:prefLabel>
     </owl:Class>
     
 
@@ -3679,6 +3744,7 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_f210d615_89a5_483f_a8b2_923ff6fcf4ab">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3c835c69_11a9_458d_9b3f_bc68c0348c7d"/>
+        <rdfs:comment>Post processing is a process/operation on the data set that enables extrating useful information from the data.  There are diffrent type of post-processors such as visualizers, converters, extractors.</rdfs:comment>
         <skos:prefLabel xml:lang="en">DataPostProcessing</skos:prefLabel>
     </owl:Class>
     
@@ -3733,6 +3799,7 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_f386fe2e_f871_4dcb_ba95_90663bcd6129">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_709d4e04_e972_4f57_9589_bf99ea08d2ea"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_dc637a06_1988_4f9a_a2b4_05dfbf7e246c"/>
+        <rdfs:comment>Insulating tape (electrical insulating tape) is a type of pressure-sensitive tape used to insulate electrical wires and other materials that conduct electricity. It describes the type of tape as insulating material in cable bundles.</rdfs:comment>
         <skos:prefLabel xml:lang="en">InsulatingTape</skos:prefLabel>
     </owl:Class>
     
@@ -3762,6 +3829,7 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_f77b52b9_0750_4dbf_a131_faecbbb7f6a4">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e"/>
+        <rdfs:comment>Mesomics specimen is a mechanical testing specimen, sample that is used in a mesomics measurement. A mesomics specimen consists of a cable sample.</rdfs:comment>
         <skos:prefLabel xml:lang="en">MesomicsSpecimen</skos:prefLabel>
     </owl:Class>
     
@@ -3780,6 +3848,7 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_f8448aef_c62e_448a_87e3_b7e670566de3">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_81dd7f19_073d_4153_9517_823edac9fac7"/>
+        <rdfs:comment>Taping that covers the cable bundle entire lateral surface area.</rdfs:comment>
         <skos:prefLabel xml:lang="en">FullyTaping</skos:prefLabel>
     </owl:Class>
     
