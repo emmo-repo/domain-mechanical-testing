@@ -1187,6 +1187,8 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3c7c1148_40e2_4ec2_a0ac_8720d03e356f">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#CableBundleUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
         <rdfs:comment>Stiffness is the extent to which an object resists deformation in response to an applied force. The complementary concept is flexibility or pliability: the more flexible an object is, the less stiff it is.</rdfs:comment>
         <rdfs:seeAlso>http://dbpedia.org/page/Stiffness</rdfs:seeAlso>
@@ -2770,12 +2772,6 @@ R &gt; 1 describes compression-compression loading</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_19afc39b_eb5c_46e0_b880_8e08ec831ebc"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
-                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c799b443_c70f_4351_bb0f_e4ab29073481"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <skos:prefLabel xml:lang="en">IndentationMeasurement</skos:prefLabel>
     </owl:Class>
     
@@ -3348,7 +3344,7 @@ R &gt; 1 describes compression-compression loading</rdfs:comment>
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c799b443_c70f_4351_bb0f_e4ab29073481">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_c46f091c_0420_4c1a_af30_0a2c8ebcf7d7"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
         <skos:prefLabel xml:lang="en">Hardness</skos:prefLabel>
     </owl:Class>
     
