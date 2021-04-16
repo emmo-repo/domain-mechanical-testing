@@ -1505,13 +1505,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/reductionistic#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c799b443_c70f_4351_bb0f_e4ab29073481"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/semiotics#EMMO_60577dea_9019_4537_ac41_80b0fb563d41"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4ba72a55_218b_4ead_8a55_2ca1ac5fea33"/>
