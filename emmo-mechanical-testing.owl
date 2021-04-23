@@ -529,7 +529,7 @@
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_0f73321c_c4fd_40ed_9b58_eccd9b7d8e15">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/holistic#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce"/>
-        <rdfs:comment>Represents a Process (or the sequence of processes) by which the metrological chain is defined or in other words a full “recipe” describing the workflow of an entire indentation experiment.</rdfs:comment>
+        <rdfs:comment>Represents a Process (or the sequence of processes) by which the metrological chain is defined or in other words a full “recipe” describing the workflow of an entire experiment (e.g.: indentation experiement).</rdfs:comment>
         <skos:prefLabel xml:lang="en">Method</skos:prefLabel>
     </owl:Class>
     
@@ -1417,6 +1417,12 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/reductionistic#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+                <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4d5b1eee_cda4_4bc7_8a0e_612fcf7f0c82"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://emmo.info/emmo/top/physical#EMMO_f68030be_94b8_4c61_a161_886468558054"/>
                 <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_01751749_c384_4a73_b1f1_291447712a92"/>
             </owl:Restriction>
@@ -1487,13 +1493,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/reductionistic#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4d5b1eee_cda4_4bc7_8a0e_612fcf7f0c82"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/reductionistic#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_71200c24_44fe_4533_96be_55ecb299681c"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1521,7 +1520,8 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_52813850_bc0e_450f_8a62_4832288ca1b2"/>
-                <owl:someValuesFrom>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
                     <rdfs:Datatype>
                         <owl:oneOf>
                             <rdf:Description>
@@ -1543,13 +1543,14 @@
                             </rdf:Description>
                         </owl:oneOf>
                     </rdfs:Datatype>
-                </owl:someValuesFrom>
+                </owl:onDataRange>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_a7dddd8f_51f4_4cf5_a8a2_a7aba83e8a72"/>
-                <owl:someValuesFrom>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
                     <rdfs:Datatype>
                         <owl:oneOf>
                             <rdf:Description>
@@ -1571,7 +1572,7 @@
                             </rdf:Description>
                         </owl:oneOf>
                     </rdfs:Datatype>
-                </owl:someValuesFrom>
+                </owl:onDataRange>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>This label should be made more specific since it represents a very specific series to the FatigueTestUseCase</rdfs:comment>
