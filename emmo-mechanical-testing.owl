@@ -3607,6 +3607,13 @@ Tempering is a heat treatment technique applied to ferrous alloys, such as steel
                             </owl:Class>
                         </owl:someValuesFrom>
                     </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/reductionistic#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
                         <owl:someValuesFrom rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_1a019aef_e953_46dc_86c3_b70aa159ba59"/>
