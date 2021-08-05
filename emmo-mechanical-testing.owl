@@ -6,6 +6,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:emmo="http://emmo.info/emmo#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcterms="http://purl.org/dc/terms/"
@@ -611,6 +612,27 @@
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_16b98788_0d34_47d8_9cec_91511a9ef000 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_16b98788_0d34_47d8_9cec_91511a9ef000">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c8e9f573_1b9a_48f6_a274_61a441f3a7c4"/>
+        <rdfs:comment>Steel category according to JIS standard:
+High speed tool steels (JIS)</rdfs:comment>
+        <rdfs:label xml:lang="de">High speed tool steels (JIS)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_16cfb313_1fea_414f_99ca_aec999e93e0c -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_16cfb313_1fea_414f_99ca_aec999e93e0c">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_abf7efbe_6b04_41b8_8326_4dd0f6be753e"/>
+        <rdfs:comment>Steel nomenclature contains steel groups / categories as defined in the standards DIN, SAE and JIS and superclasses in which the categories from the different standards are combined</rdfs:comment>
+        <rdfs:label xml:lang="de">SteelNomenclature</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_16d31733_248f_4e55_b870_dfc96d3e2c3b -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_16d31733_248f_4e55_b870_dfc96d3e2c3b">
@@ -946,6 +968,17 @@
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_2bd00836_2e7a_4e95_ad4e_50cb370c288c -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_2bd00836_2e7a_4e95_ad4e_50cb370c288c">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8630b1ff_7985_444e_8572_373816c0d3b5"/>
+        <rdfs:comment>Steel category according to SAE standard:
+Metals with special properties (SAE)</rdfs:comment>
+        <rdfs:label xml:lang="de">Metals with special properties (SAE)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_2d48b136_0b7f_4c7c_86a8_cb9a1a287893 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_2d48b136_0b7f_4c7c_86a8_cb9a1a287893">
@@ -1050,6 +1083,15 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <skos:prefLabel xml:lang="en">IronSymbol</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_3361ecb7_0340_4475_8e42_b2ae29af2420 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3361ecb7_0340_4475_8e42_b2ae29af2420">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_7452b52c_82ea_47da_b84f_493317c8f03e"/>
+        <rdfs:label xml:lang="de">Roller bearing steels</rdfs:label>
     </owl:Class>
     
 
@@ -1600,6 +1642,17 @@
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_4533a4e3_b817_46b1_8784_d8ba08b70910 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4533a4e3_b817_46b1_8784_d8ba08b70910">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_ce1fea85_f31d_4ad4_a717_8ef7612f651f"/>
+        <rdfs:comment>Steel category according to DIN standard:
+Alloyed construction, engineering and pressure vessel steels (DIN 10027-2)</rdfs:comment>
+        <rdfs:label xml:lang="de">Alloyed construction, engineering and pressure vessel steels (DIN 10027-2)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_460d3ba4_a8e5_449d_8423_7d4d1cca6d76 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_460d3ba4_a8e5_449d_8423_7d4d1cca6d76">
@@ -1656,6 +1709,17 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4c25ab1b_462c_49a6_bb27_ea3bd020ab2a"/>
         <rdfs:comment>Hardening is a metalurgical metalworking process used to increase the hardness of a metal. It requires heating the material above a certain temperature and quenchening it afterwards.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Hardening</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_4d068e58_f7d2_4629_bb8c_e3f8251cdf07 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4d068e58_f7d2_4629_bb8c_e3f8251cdf07">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_76471eff_11f6_4b51_a6e0_3923a7ecfa2e"/>
+        <rdfs:comment>Steel category according to JIS standard:
+Construction steels (JIS)</rdfs:comment>
+        <rdfs:label xml:lang="de">Construction steels (JIS)</rdfs:label>
     </owl:Class>
     
 
@@ -2054,6 +2118,17 @@ R &gt; 1 describes compression-compression loading</rdfs:comment>
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_698316f5_e359_4774_b7fb_a0967be129bb -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_698316f5_e359_4774_b7fb_a0967be129bb">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c8e9f573_1b9a_48f6_a274_61a441f3a7c4"/>
+        <rdfs:comment>Steel category according to JIS standard:
+Alloyed tool steels (JIS)</rdfs:comment>
+        <rdfs:label xml:lang="de">Alloyed tool steels (JIS)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_6a8bfa0e_ef96_4f38_b892_40389eb7d69d -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_6a8bfa0e_ef96_4f38_b892_40389eb7d69d">
@@ -2203,6 +2278,15 @@ R &gt; 1 describes compression-compression loading</rdfs:comment>
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_7452b52c_82ea_47da_b84f_493317c8f03e -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_7452b52c_82ea_47da_b84f_493317c8f03e">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_16cfb313_1fea_414f_99ca_aec999e93e0c"/>
+        <rdfs:label xml:lang="de">Alloyed steels</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_7461cbb7_9056_48ba_87fc_a2693a086c71 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_7461cbb7_9056_48ba_87fc_a2693a086c71">
@@ -2235,11 +2319,31 @@ R &gt; 1 describes compression-compression loading</rdfs:comment>
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_76471eff_11f6_4b51_a6e0_3923a7ecfa2e -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_76471eff_11f6_4b51_a6e0_3923a7ecfa2e">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_7452b52c_82ea_47da_b84f_493317c8f03e"/>
+        <rdfs:label xml:lang="de">Construction steels</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_76dba92f_a761_409f_83d8_5a0c9c73b349 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_76dba92f_a761_409f_83d8_5a0c9c73b349">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_f210d615_89a5_483f_a8b2_923ff6fcf4ab"/>
         <skos:prefLabel xml:lang="en">IndentationTestPostProcessing</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_77cfb822_431d_436f_8617_ceb4a461b403 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_77cfb822_431d_436f_8617_ceb4a461b403">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8630b1ff_7985_444e_8572_373816c0d3b5"/>
+        <rdfs:comment>Steel category according to JIS standard:
+High carbon steel wire rods (JIS)</rdfs:comment>
+        <rdfs:label xml:lang="de">High carbon steel wire rods (JIS)</rdfs:label>
     </owl:Class>
     
 
@@ -2304,6 +2408,17 @@ R &gt; 1 describes compression-compression loading</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
         <rdfs:comment>Describes the stiffness, which is the ability of a material to withstand elastic deformation.</rdfs:comment>
         <skos:prefLabel xml:lang="en">YoungsModulus</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_7de63ea0_5f60_4818_8dba_5df52ac11c77 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_7de63ea0_5f60_4818_8dba_5df52ac11c77">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8630b1ff_7985_444e_8572_373816c0d3b5"/>
+        <rdfs:comment>Steel category according to DIN standard:
+Materials with increased temperature properties (DIN 10027-2)</rdfs:comment>
+        <rdfs:label xml:lang="de">Materials with increased temperature properties (DIN 10027-2)</rdfs:label>
     </owl:Class>
     
 
@@ -2404,6 +2519,26 @@ R &gt; 1 describes compression-compression loading</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_81dd7f19_073d_4153_9517_823edac9fac7"/>
         <rdfs:comment>Taping that covers half of he cable bundle lateral surface area.</rdfs:comment>
         <skos:prefLabel xml:lang="en">HalfTaping</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_8571817a_da81_42c2_b97d_ba974d0119b1 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8571817a_da81_42c2_b97d_ba974d0119b1">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_cc1df6d0_cf70_41e1_b757_7bdad7cc459e"/>
+        <rdfs:comment>Steel category according to JIS standard:
+Spring steels (JIS)</rdfs:comment>
+        <rdfs:label xml:lang="de">Spring steels (JIS)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_8630b1ff_7985_444e_8572_373816c0d3b5 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8630b1ff_7985_444e_8572_373816c0d3b5">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_7452b52c_82ea_47da_b84f_493317c8f03e"/>
+        <rdfs:label xml:lang="de">Other steels</rdfs:label>
     </owl:Class>
     
 
@@ -2515,6 +2650,15 @@ R &gt; 1 describes compression-compression loading</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <skos:prefLabel xml:lang="en">StandardNanoindentationMeasurementOliverPharrPostProcessing</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_89be8d21_79a7_4970_9b0a_ee18cec63e62 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_89be8d21_79a7_4970_9b0a_ee18cec63e62">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_bb2485f3_e956_489b_8434_6f71333ae16c"/>
+        <rdfs:label xml:lang="de">Unalloyed construction, engineering and pressure vessel steels</rdfs:label>
     </owl:Class>
     
 
@@ -2661,6 +2805,15 @@ R &gt; 1 describes compression-compression loading</rdfs:comment>
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_93c88738_64bc_49d7_9d43_f4c177a3b72e -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_93c88738_64bc_49d7_9d43_f4c177a3b72e">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_bb2485f3_e956_489b_8434_6f71333ae16c"/>
+        <rdfs:label xml:lang="de">Low-alloyed construction, engineering and pressure vessel steels</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_94376acf_9d21_497a_85e4_12c84dba4645 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_94376acf_9d21_497a_85e4_12c84dba4645">
@@ -2776,6 +2929,17 @@ R &gt; 1 describes compression-compression loading</rdfs:comment>
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_9c3dfc81_ccd9_4c91_a4ca_e52153f9e4e0 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_9c3dfc81_ccd9_4c91_a4ca_e52153f9e4e0">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3361ecb7_0340_4475_8e42_b2ae29af2420"/>
+        <rdfs:comment>Steel category according to DIN standard:
+Roller bearing steels (DIN 10027-2)</rdfs:comment>
+        <rdfs:label xml:lang="de">Roller bearing steels (DIN 10027-2)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_9d12d5ce_2af4_4784_a2b0_6c19db27d8ce -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_9d12d5ce_2af4_4784_a2b0_6c19db27d8ce">
@@ -2883,6 +3047,17 @@ R &gt; 1 describes compression-compression loading</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <skos:prefLabel xml:lang="en">OxygenSymbol</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_a0d796f3_02e1_47d4_b9c0_9995ebf6e7a4 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_a0d796f3_02e1_47d4_b9c0_9995ebf6e7a4">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8630b1ff_7985_444e_8572_373816c0d3b5"/>
+        <rdfs:comment>Steel category according to DIN standard:
+Materials with special physical properties including Ni (DIN 10027-2)</rdfs:comment>
+        <rdfs:label xml:lang="de">Materials with special physical properties including Ni (DIN 10027-2)</rdfs:label>
     </owl:Class>
     
 
@@ -3179,6 +3354,15 @@ R &gt; 1 describes compression-compression loading</rdfs:comment>
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_bb2485f3_e956_489b_8434_6f71333ae16c -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_bb2485f3_e956_489b_8434_6f71333ae16c">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_16cfb313_1fea_414f_99ca_aec999e93e0c"/>
+        <rdfs:label xml:lang="de">Low-alloyed steels</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_bc7a1ff8_9c74_4147_a417_08e7867aac77 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_bc7a1ff8_9c74_4147_a417_08e7867aac77">
@@ -3408,6 +3592,15 @@ R &gt; 1 describes compression-compression loading</rdfs:comment>
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_c8e9f573_1b9a_48f6_a274_61a441f3a7c4 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c8e9f573_1b9a_48f6_a274_61a441f3a7c4">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_7452b52c_82ea_47da_b84f_493317c8f03e"/>
+        <rdfs:label xml:lang="de">Tool steels</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_c9cc79d7_37cd_4b8b_b4e4_95b09ffa20b3 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c9cc79d7_37cd_4b8b_b4e4_95b09ffa20b3">
@@ -3456,6 +3649,24 @@ R &gt; 1 describes compression-compression loading</rdfs:comment>
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_cbd4cff7_fc88_43f3_882c_acc604c6d853">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_37824926_963f_4e3d_ac3c_7c323e969ff6"/>
         <skos:prefLabel xml:lang="en">Shearing</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_cc1df6d0_cf70_41e1_b757_7bdad7cc459e -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_cc1df6d0_cf70_41e1_b757_7bdad7cc459e">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_7452b52c_82ea_47da_b84f_493317c8f03e"/>
+        <rdfs:label xml:lang="de">Spring steels</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_ce1fea85_f31d_4ad4_a717_8ef7612f651f -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_ce1fea85_f31d_4ad4_a717_8ef7612f651f">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_7452b52c_82ea_47da_b84f_493317c8f03e"/>
+        <rdfs:label xml:lang="de">Alloyed construction, engineering and pressure vessel steels</rdfs:label>
     </owl:Class>
     
 
@@ -3829,6 +4040,15 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_e32ab9e8_a962_42df_afc0_a45e1ec00e1b -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e32ab9e8_a962_42df_afc0_a45e1ec00e1b">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_fe655c2d_4f4c_43ce_9528_8bcb2a81485d"/>
+        <rdfs:label xml:lang="de">Heat-resisting and stainless steels</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_e3665cba_b1a8_4fcf_8194_493187fcd25a -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e3665cba_b1a8_4fcf_8194_493187fcd25a">
@@ -3863,6 +4083,17 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd"/>
         <rdfs:comment>Represents the geometry/shape of the cross section</rdfs:comment>
         <skos:prefLabel xml:lang="en">CrossSectionGeometry</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_e8ed26aa_3a68_4ca0_b064_ca6c4dad1140 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e8ed26aa_3a68_4ca0_b064_ca6c4dad1140">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c8e9f573_1b9a_48f6_a274_61a441f3a7c4"/>
+        <rdfs:comment>Steel category according to JIS standard:
+Carbon tool steels (JIS)</rdfs:comment>
+        <rdfs:label xml:lang="de">Carbon tool steels (JIS)</rdfs:label>
     </owl:Class>
     
 
@@ -4034,6 +4265,17 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_f7ce04b7_d252_4e30_b3ce_eb2346951a6b -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_f7ce04b7_d252_4e30_b3ce_eb2346951a6b">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_76471eff_11f6_4b51_a6e0_3923a7ecfa2e"/>
+        <rdfs:comment>Steel category (no specific standard):
+Construction steels (Misc.)</rdfs:comment>
+        <rdfs:label xml:lang="de">Construction steels (Misc.)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_f80b05af_5a68_495f_b722_25b4ac3fdfa9 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_f80b05af_5a68_495f_b722_25b4ac3fdfa9">
@@ -4122,6 +4364,15 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_fe13168c_8e04_4cbf_8462_641669a4b7f3">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_a30a7cdc_f652_4b01_b8c2_cd056f3e3d85"/>
         <skos:prefLabel xml:lang="en">FatigueTestingMachine</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_fe655c2d_4f4c_43ce_9528_8bcb2a81485d -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_fe655c2d_4f4c_43ce_9528_8bcb2a81485d">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_16cfb313_1fea_414f_99ca_aec999e93e0c"/>
+        <rdfs:label xml:lang="de">Stainless steels</rdfs:label>
     </owl:Class>
     
 
