@@ -9,6 +9,8 @@
      xmlns:emmo="http://emmo.info/emmo#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:emmo1="http://emmo.info/emmo#3"
+     xmlns:emmo2="http://emmo.info/emmo#1"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:chemistry="http://emmo.info/emmo/middle/chemistry#"
      xmlns:annotations="http://emmo.info/emmo/top/annotations#">
@@ -388,7 +390,7 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e32ab9e8_a962_42df_afc0_a45e1ec00e1b"/>
         <rdfs:comment>Steel category according to DIN standard:
 Stainless steels with special additives (DIN 10027-2)</rdfs:comment>
-        <rdfs:label xml:lang="de">Stainless steels with special additives (DIN 10027-2)</rdfs:label>
+        <rdfs:label xml:lang="en">StainlessSteelsWithSpecialAdditivesDIN10027</rdfs:label>
     </owl:Class>
     
 
@@ -629,7 +631,7 @@ Stainless steels with special additives (DIN 10027-2)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c8e9f573_1b9a_48f6_a274_61a441f3a7c4"/>
         <rdfs:comment>Steel category according to JIS standard:
 High speed tool steels (JIS)</rdfs:comment>
-        <rdfs:label xml:lang="de">High speed tool steels (JIS)</rdfs:label>
+        <rdfs:label xml:lang="en">HighSpeedToolSteelsJIS</rdfs:label>
     </owl:Class>
     
 
@@ -639,7 +641,7 @@ High speed tool steels (JIS)</rdfs:comment>
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_16cfb313_1fea_414f_99ca_aec999e93e0c">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_abf7efbe_6b04_41b8_8326_4dd0f6be753e"/>
         <rdfs:comment>Steel nomenclature contains steel groups / categories as defined in the standards DIN, SAE and JIS and superclasses in which the categories from the different standards are combined</rdfs:comment>
-        <rdfs:label xml:lang="de">SteelNomenclature</rdfs:label>
+        <rdfs:label xml:lang="en">SteelNomenclature</rdfs:label>
     </owl:Class>
     
 
@@ -985,7 +987,7 @@ High speed tool steels (JIS)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8630b1ff_7985_444e_8572_373816c0d3b5"/>
         <rdfs:comment>Steel category according to SAE standard:
 Metals with special properties (SAE)</rdfs:comment>
-        <rdfs:label xml:lang="de">Metals with special properties (SAE)</rdfs:label>
+        <rdfs:label xml:lang="en">MetalsWithSpecialPropertiesSAE</rdfs:label>
     </owl:Class>
     
 
@@ -1103,7 +1105,7 @@ Metals with special properties (SAE)</rdfs:comment>
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3361ecb7_0340_4475_8e42_b2ae29af2420">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_7452b52c_82ea_47da_b84f_493317c8f03e"/>
         <rdfs:comment>Steel nomenclature contains steel groups / categories as defined in the standards DIN, SAE and JIS and superclasses in which the categories from the different standards are combined</rdfs:comment>
-        <rdfs:label xml:lang="de">Roller bearing steels</rdfs:label>
+        <rdfs:label xml:lang="en">RollerBearingSteels</rdfs:label>
     </owl:Class>
     
 
@@ -1660,7 +1662,7 @@ Metals with special properties (SAE)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_ce1fea85_f31d_4ad4_a717_8ef7612f651f"/>
         <rdfs:comment>Steel category according to DIN standard:
 Alloyed construction, engineering and pressure vessel steels (DIN 10027-2)</rdfs:comment>
-        <rdfs:label xml:lang="de">Alloyed construction, engineering and pressure vessel steels (DIN 10027-2)</rdfs:label>
+        <rdfs:label xml:lang="en">AlloyedConstructionEngineeringAndPressureVesselSteelsDIN10027</rdfs:label>
     </owl:Class>
     
 
@@ -1702,7 +1704,7 @@ Alloyed construction, engineering and pressure vessel steels (DIN 10027-2)</rdfs
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_89be8d21_79a7_4970_9b0a_ee18cec63e62"/>
         <rdfs:comment>Steel category according to DIN standard:
 Unalloyed construction, engineering and pressure vessel steels with C &lt; 0,5 % (DIN 10027-2)</rdfs:comment>
-        <rdfs:label xml:lang="de">Unalloyed construction, engineering and pressure vessel steels with C &lt; 0,5 % (DIN 10027-2)</rdfs:label>
+        <rdfs:label xml:lang="en">UnalloyedConstructionEngineeringAndPressureVesselSteelsWithCBelow0p5PercentDIN10027</rdfs:label>
     </owl:Class>
     
 
@@ -1742,7 +1744,7 @@ Unalloyed construction, engineering and pressure vessel steels with C &lt; 0,5 %
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_76471eff_11f6_4b51_a6e0_3923a7ecfa2e"/>
         <rdfs:comment>Steel category according to JIS standard:
 Construction steels (JIS)</rdfs:comment>
-        <rdfs:label xml:lang="de">Construction steels (JIS)</rdfs:label>
+        <rdfs:label xml:lang="en">ConstructionSteelsJIS</rdfs:label>
     </owl:Class>
     
 
@@ -1795,7 +1797,7 @@ Construction steels (JIS)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_93c88738_64bc_49d7_9d43_f4c177a3b72e"/>
         <rdfs:comment>Steel category according to DIN standard:
 Construction, engineering and pressure vessel steels, Cr-Mo with Mo &lt; 0,35 % Cr-Mo-B (DIN 10027-2)</rdfs:comment>
-        <rdfs:label xml:lang="de">Construction, engineering and pressure vessel steels, Cr-Mo with Mo &lt; 0,35 % Cr-Mo-B (DIN 10027-2)</rdfs:label>
+        <rdfs:label xml:lang="en">ConstructionEngineeringAndPressureVesselSteelsCrMoWithMoBelow0p35PercentDIN10027</rdfs:label>
     </owl:Class>
     
 
@@ -2067,7 +2069,7 @@ R &gt; 1 describes compression-compression loading</rdfs:comment>
         <rdfs:comment>Steel category according to DIN standard:
 Unalloyed construction, engineering and pressure vessel steels with 
 special requirements (DIN 10027-2)</rdfs:comment>
-        <rdfs:label xml:lang="de">Unalloyed construction, engineering and pressure vessel steels with special requirements (DIN 10027-2)</rdfs:label>
+        <rdfs:label xml:lang="en">UnalloyedConstructionEngineeringAndPressureVesselSteelsWithSpecialRequirementsDIN10027</rdfs:label>
     </owl:Class>
     
 
@@ -2170,7 +2172,7 @@ special requirements (DIN 10027-2)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c8e9f573_1b9a_48f6_a274_61a441f3a7c4"/>
         <rdfs:comment>Steel category according to JIS standard:
 Alloyed tool steels (JIS)</rdfs:comment>
-        <rdfs:label xml:lang="de">Alloyed tool steels (JIS)</rdfs:label>
+        <rdfs:label xml:lang="en">AlloyedToolSteelsJIS</rdfs:label>
     </owl:Class>
     
 
@@ -2203,7 +2205,7 @@ Alloyed tool steels (JIS)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_89be8d21_79a7_4970_9b0a_ee18cec63e62"/>
         <rdfs:comment>Steel category according to DIN standard:
 Unalloyed construction, engineering and pressure vessel steels with C &gt; 0,5 % (DIN 10027-2)</rdfs:comment>
-        <rdfs:label xml:lang="de">Unalloyed construction, engineering and pressure vessel steels with C &gt; 0,5 % (DIN 10027-2)</rdfs:label>
+        <rdfs:label xml:lang="en">UnalloyedConstructionEngineeringAndPressureVesselSteelsWithCAbove0p5PercentDIN10027</rdfs:label>
     </owl:Class>
     
 
@@ -2340,7 +2342,7 @@ Unalloyed construction, engineering and pressure vessel steels with C &gt; 0,5 %
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_7452b52c_82ea_47da_b84f_493317c8f03e">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_16cfb313_1fea_414f_99ca_aec999e93e0c"/>
         <rdfs:comment>Steel nomenclature contains steel groups / categories as defined in the standards DIN, SAE and JIS and superclasses in which the categories from the different standards are combined</rdfs:comment>
-        <rdfs:label xml:lang="de">Alloyed steels</rdfs:label>
+        <rdfs:label xml:lang="en">AlloyedSteels</rdfs:label>
     </owl:Class>
     
 
@@ -2382,7 +2384,7 @@ Unalloyed construction, engineering and pressure vessel steels with C &gt; 0,5 %
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_76471eff_11f6_4b51_a6e0_3923a7ecfa2e">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_7452b52c_82ea_47da_b84f_493317c8f03e"/>
         <rdfs:comment>Steel nomenclature contains steel groups / categories as defined in the standards DIN, SAE and JIS and superclasses in which the categories from the different standards are combined</rdfs:comment>
-        <rdfs:label xml:lang="de">Construction steels</rdfs:label>
+        <rdfs:label xml:lang="en">ConstructionSteels</rdfs:label>
     </owl:Class>
     
 
@@ -2402,7 +2404,7 @@ Unalloyed construction, engineering and pressure vessel steels with C &gt; 0,5 %
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8630b1ff_7985_444e_8572_373816c0d3b5"/>
         <rdfs:comment>Steel category according to JIS standard:
 High carbon steel wire rods (JIS)</rdfs:comment>
-        <rdfs:label xml:lang="de">High carbon steel wire rods (JIS)</rdfs:label>
+        <rdfs:label xml:lang="en">HighCarbonSteelWireRodsJIS</rdfs:label>
     </owl:Class>
     
 
@@ -2477,7 +2479,7 @@ High carbon steel wire rods (JIS)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8630b1ff_7985_444e_8572_373816c0d3b5"/>
         <rdfs:comment>Steel category according to DIN standard:
 Materials with increased temperature properties (DIN 10027-2)</rdfs:comment>
-        <rdfs:label xml:lang="de">Materials with increased temperature properties (DIN 10027-2)</rdfs:label>
+        <rdfs:label xml:lang="en">MaterialsWithIncreasedTemperaturePropertiesDIN10027</rdfs:label>
     </owl:Class>
     
 
@@ -2588,7 +2590,7 @@ Materials with increased temperature properties (DIN 10027-2)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_cc1df6d0_cf70_41e1_b757_7bdad7cc459e"/>
         <rdfs:comment>Steel category according to JIS standard:
 Spring steels (JIS)</rdfs:comment>
-        <rdfs:label xml:lang="de">Spring steels (JIS)</rdfs:label>
+        <rdfs:label xml:lang="en">SpringSteelsJIS</rdfs:label>
     </owl:Class>
     
 
@@ -2598,7 +2600,7 @@ Spring steels (JIS)</rdfs:comment>
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8630b1ff_7985_444e_8572_373816c0d3b5">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_7452b52c_82ea_47da_b84f_493317c8f03e"/>
         <rdfs:comment>Steel nomenclature contains steel groups / categories as defined in the standards DIN, SAE and JIS and superclasses in which the categories from the different standards are combined</rdfs:comment>
-        <rdfs:label xml:lang="de">Other steels</rdfs:label>
+        <rdfs:label xml:lang="en">OtherSteels</rdfs:label>
     </owl:Class>
     
 
@@ -2719,7 +2721,7 @@ Spring steels (JIS)</rdfs:comment>
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_89be8d21_79a7_4970_9b0a_ee18cec63e62">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_bb2485f3_e956_489b_8434_6f71333ae16c"/>
         <rdfs:comment>Steel nomenclature contains steel groups / categories as defined in the standards DIN, SAE and JIS and superclasses in which the categories from the different standards are combined</rdfs:comment>
-        <rdfs:label xml:lang="de">Unalloyed construction, engineering and pressure vessel steels</rdfs:label>
+        <rdfs:label xml:lang="en">UnalloyedConstructionEngineeringAndPressureVesselSteels</rdfs:label>
     </owl:Class>
     
 
@@ -2771,7 +2773,7 @@ Spring steels (JIS)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_93c88738_64bc_49d7_9d43_f4c177a3b72e"/>
         <rdfs:comment>Steel category according to JIS standard:
 Low-alloyed steels for machine structural use (JIS)</rdfs:comment>
-        <rdfs:label xml:lang="de">Low-alloyed steels for machine structural use (JIS)</rdfs:label>
+        <rdfs:label xml:lang="en">LowAlloyedSteelsForMachineStructuralUseJIS</rdfs:label>
     </owl:Class>
     
 
@@ -2882,7 +2884,7 @@ Low-alloyed steels for machine structural use (JIS)</rdfs:comment>
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_93c88738_64bc_49d7_9d43_f4c177a3b72e">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_bb2485f3_e956_489b_8434_6f71333ae16c"/>
         <rdfs:comment>Steel nomenclature contains steel groups / categories as defined in the standards DIN, SAE and JIS and superclasses in which the categories from the different standards are combined</rdfs:comment>
-        <rdfs:label xml:lang="de">Low-alloyed construction, engineering and pressure vessel steels</rdfs:label>
+        <rdfs:label xml:lang="en">LowAlloyedConstructionEngineeringAndPressureVesselSteels</rdfs:label>
     </owl:Class>
     
 
@@ -3008,7 +3010,7 @@ Low-alloyed steels for machine structural use (JIS)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3361ecb7_0340_4475_8e42_b2ae29af2420"/>
         <rdfs:comment>Steel category according to DIN standard:
 Roller bearing steels (DIN 10027-2)</rdfs:comment>
-        <rdfs:label xml:lang="de">Roller bearing steels (DIN 10027-2)</rdfs:label>
+        <rdfs:label xml:lang="en">RollerBearingSteelsDIN10027</rdfs:label>
     </owl:Class>
     
 
@@ -3130,7 +3132,7 @@ Roller bearing steels (DIN 10027-2)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8630b1ff_7985_444e_8572_373816c0d3b5"/>
         <rdfs:comment>Steel category according to DIN standard:
 Materials with special physical properties including Ni (DIN 10027-2)</rdfs:comment>
-        <rdfs:label xml:lang="de">Materials with special physical properties including Ni (DIN 10027-2)</rdfs:label>
+        <rdfs:label xml:lang="en">MaterialsWithSpecialPhysicalPropertiesIncludingNiDIN10027</rdfs:label>
     </owl:Class>
     
 
@@ -3432,7 +3434,7 @@ Materials with special physical properties including Ni (DIN 10027-2)</rdfs:comm
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_bb2485f3_e956_489b_8434_6f71333ae16c">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_16cfb313_1fea_414f_99ca_aec999e93e0c"/>
         <rdfs:comment>Steel nomenclature contains steel groups / categories as defined in the standards DIN, SAE and JIS and superclasses in which the categories from the different standards are combined</rdfs:comment>
-        <rdfs:label xml:lang="de">Low-alloyed steels</rdfs:label>
+        <rdfs:label xml:lang="en">LowAlloyedSteels</rdfs:label>
     </owl:Class>
     
 
@@ -3572,7 +3574,7 @@ Materials with special physical properties including Ni (DIN 10027-2)</rdfs:comm
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e32ab9e8_a962_42df_afc0_a45e1ec00e1b"/>
         <rdfs:comment>Steel category according to SAE standard:
 Heat-resisting stainless steels (SAE)</rdfs:comment>
-        <rdfs:label xml:lang="de">Heat-resisting stainless steels (SAE)</rdfs:label>
+        <rdfs:label xml:lang="en">HeatResistingStainlessSteelsSAE</rdfs:label>
     </owl:Class>
     
 
@@ -3682,7 +3684,7 @@ Heat-resisting stainless steels (SAE)</rdfs:comment>
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c8e9f573_1b9a_48f6_a274_61a441f3a7c4">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_7452b52c_82ea_47da_b84f_493317c8f03e"/>
         <rdfs:comment>Steel nomenclature contains steel groups / categories as defined in the standards DIN, SAE and JIS and superclasses in which the categories from the different standards are combined</rdfs:comment>
-        <rdfs:label xml:lang="de">Tool steels</rdfs:label>
+        <rdfs:label xml:lang="en">ToolSteels</rdfs:label>
     </owl:Class>
     
 
@@ -3693,7 +3695,7 @@ Heat-resisting stainless steels (SAE)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_93c88738_64bc_49d7_9d43_f4c177a3b72e"/>
         <rdfs:comment>Steel category according to DIN standard:
 Construction, engineering and pressure vessel steels, Cr-Mo with Mo &lt; 0,4 % and Ni &lt; 2 % (DIN 10027-2)</rdfs:comment>
-        <rdfs:label xml:lang="de">Construction, engineering and pressure vessel steels, Cr-Mo with Mo &lt; 0,4 % and Ni &lt; 2 % (DIN 10027-2)</rdfs:label>
+        <rdfs:label xml:lang="en">ConstructionEngineeringAndPressureVesselSteelsCrMoWithMoBelow0p4PercentAndNiBelow2PercentDIN10027</rdfs:label>
     </owl:Class>
     
 
@@ -3755,7 +3757,7 @@ Construction, engineering and pressure vessel steels, Cr-Mo with Mo &lt; 0,4 % a
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_cc1df6d0_cf70_41e1_b757_7bdad7cc459e">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_7452b52c_82ea_47da_b84f_493317c8f03e"/>
         <rdfs:comment>Steel nomenclature contains steel groups / categories as defined in the standards DIN, SAE and JIS and superclasses in which the categories from the different standards are combined</rdfs:comment>
-        <rdfs:label xml:lang="de">Spring steels</rdfs:label>
+        <rdfs:label xml:lang="en">SpringSteels</rdfs:label>
     </owl:Class>
     
 
@@ -3765,7 +3767,7 @@ Construction, engineering and pressure vessel steels, Cr-Mo with Mo &lt; 0,4 % a
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_ce1fea85_f31d_4ad4_a717_8ef7612f651f">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_7452b52c_82ea_47da_b84f_493317c8f03e"/>
         <rdfs:comment>Steel nomenclature contains steel groups / categories as defined in the standards DIN, SAE and JIS and superclasses in which the categories from the different standards are combined</rdfs:comment>
-        <rdfs:label xml:lang="de">Alloyed construction, engineering and pressure vessel steels</rdfs:label>
+        <rdfs:label xml:lang="en">AlloyedConstructionEngineeringAndPressureVesselSteels</rdfs:label>
     </owl:Class>
     
 
@@ -4144,7 +4146,7 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e32ab9e8_a962_42df_afc0_a45e1ec00e1b">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_fe655c2d_4f4c_43ce_9528_8bcb2a81485d"/>
         <rdfs:comment>Steel nomenclature contains steel groups / categories as defined in the standards DIN, SAE and JIS and superclasses in which the categories from the different standards are combined</rdfs:comment>
-        <rdfs:label xml:lang="de">Heat-resisting and stainless steels</rdfs:label>
+        <rdfs:label xml:lang="en">HeatResistingAndStainlessSteels</rdfs:label>
     </owl:Class>
     
 
@@ -4193,7 +4195,7 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c8e9f573_1b9a_48f6_a274_61a441f3a7c4"/>
         <rdfs:comment>Steel category according to JIS standard:
 Carbon tool steels (JIS)</rdfs:comment>
-        <rdfs:label xml:lang="de">Carbon tool steels (JIS)</rdfs:label>
+        <rdfs:label xml:lang="en">CarbonToolSteelsJIS</rdfs:label>
     </owl:Class>
     
 
@@ -4204,7 +4206,7 @@ Carbon tool steels (JIS)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e32ab9e8_a962_42df_afc0_a45e1ec00e1b"/>
         <rdfs:comment>Steel category according to JIS standard:
 Heat-resisting steel bars and wire rods (JIS)</rdfs:comment>
-        <rdfs:label xml:lang="de">Heat-resisting steel bars and wire rods (JIS)</rdfs:label>
+        <rdfs:label xml:lang="en">HeatResistingSteelBarsAndWireRodsJIS</rdfs:label>
     </owl:Class>
     
 
@@ -4382,7 +4384,7 @@ Heat-resisting steel bars and wire rods (JIS)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_76471eff_11f6_4b51_a6e0_3923a7ecfa2e"/>
         <rdfs:comment>Steel category (no specific standard):
 Construction steels (Misc.)</rdfs:comment>
-        <rdfs:label xml:lang="de">Construction steels (Misc.)</rdfs:label>
+        <rdfs:label xml:lang="en">ConstructionSteelsMisc</rdfs:label>
     </owl:Class>
     
 
@@ -4476,7 +4478,7 @@ Construction steels (Misc.)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e32ab9e8_a962_42df_afc0_a45e1ec00e1b"/>
         <rdfs:comment>Steel category according to JIS standard:
 Stainless steels (JIS)</rdfs:comment>
-        <rdfs:label xml:lang="de">Stainless steels (JIS)</rdfs:label>
+        <rdfs:label xml:lang="en">StainlessSteelsJIS</rdfs:label>
     </owl:Class>
     
 
@@ -4495,7 +4497,7 @@ Stainless steels (JIS)</rdfs:comment>
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_fe655c2d_4f4c_43ce_9528_8bcb2a81485d">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_16cfb313_1fea_414f_99ca_aec999e93e0c"/>
         <rdfs:comment>Steel nomenclature contains steel groups / categories as defined in the standards DIN, SAE and JIS and superclasses in which the categories from the different standards are combined</rdfs:comment>
-        <rdfs:label xml:lang="de">Stainless steels</rdfs:label>
+        <rdfs:label xml:lang="en">StainlessSteels</rdfs:label>
     </owl:Class>
     
 
@@ -4563,8 +4565,4 @@ Stainless steels (JIS)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_a293f923_954c_4af5_9f97_9600ebd362cb"/>
     </rdf:Description>
 </rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
