@@ -9,8 +9,6 @@
      xmlns:emmo="http://emmo.info/emmo#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:emmo1="http://emmo.info/emmo#3"
-     xmlns:emmo2="http://emmo.info/emmo#1"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:chemistry="http://emmo.info/emmo/middle/chemistry#"
      xmlns:annotations="http://emmo.info/emmo/top/annotations#">
