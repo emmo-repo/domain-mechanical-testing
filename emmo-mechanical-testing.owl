@@ -3,10 +3,10 @@
      xml:base="http://emmo.info/emmo/domain/mechanical-testing"
      xmlns:isq="http://emmo.info/emmo/middle/isq#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-	 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:chemistry="http://emmo.info/emmo/middle/chemistry#"
@@ -1685,6 +1685,18 @@ Alloyed construction, engineering and pressure vessel steels (DIN 10027-2)</rdfs
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_473ac6ab_620f_4195_97ed_23591b27a5ef -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_473ac6ab_620f_4195_97ed_23591b27a5ef">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef"/>
+        <rdfs:comment xml:lang="en">The mean stress sensitivity is a numerical value that indicates how sensible a steel is reacting to mean stress influence. It is calculated via the parameters/constants a_M and b_M (which are specified further in &quot;FKM-Richtlinie - Rechnerischer Festigkeitsnachweis (2012)&quot; and the tensile strength of the material. 
+mean stress sensitivity M_sig = f(Rm, a_M, b_M)</rdfs:comment>
+        <rdfs:label xml:lang="en">MeanStressSensitivity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_48e3eddc_de6b_4e9e_891d_99169d9f0883 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_48e3eddc_de6b_4e9e_891d_99169d9f0883">
@@ -2090,6 +2102,17 @@ special requirements (DIN 10027-2)</rdfs:comment>
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_67c583bf_57d9_4580_b68c_d16b40564b23 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_67c583bf_57d9_4580_b68c_d16b40564b23">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c8e9f573_1b9a_48f6_a274_61a441f3a7c4"/>
+        <rdfs:comment xml:lang="en">Steel category according to DIN standard:
+Cr-Mo-V Tool Steels (DIN 10027-2)</rdfs:comment>
+        <rdfs:label xml:lang="en">CrMoVToolSteelsDIN10027</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_68856430_66a2_49fb_b93f_e7124effb6bd -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_68856430_66a2_49fb_b93f_e7124effb6bd">
@@ -2402,6 +2425,18 @@ Unalloyed construction, engineering and pressure vessel steels with C &gt; 0,5 %
         <rdfs:comment>Steel category according to JIS standard:
 High carbon steel wire rods (JIS)</rdfs:comment>
         <rdfs:label xml:lang="en">HighCarbonSteelWireRodsJIS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_78ddc826_66d5_4be3_8eeb_d8b39e02c9d6 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_78ddc826_66d5_4be3_8eeb_d8b39e02c9d6">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef"/>
+        <rdfs:comment xml:lang="en">The mean stress factor is a numerical value calculated by the mean stress sensitivity and the stress ratio. The formula is depending on the stress ratio value. The mean stress factor indicates the influence of mean stress on the fatigue strength of a material (see &quot;FKM-Richtlinie - Rechnerischer Festigkeitsnachweis (2012)&quot;)
+mean stress factor K_AK = f(M_sig, R)</rdfs:comment>
+        <rdfs:label xml:lang="en">MeanStressFactor</rdfs:label>
     </owl:Class>
     
 
@@ -3339,6 +3374,19 @@ Materials with special physical properties including Ni (DIN 10027-2)</rdfs:comm
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:comment>The squared value of the stiffness from unloading divided by the maximum load. Is a parameter that should be insensitive to the area function. It can be used to determine load frame stiffness.</rdfs:comment>
         <skos:prefLabel xml:lang="en">SquaredStiffnessOverLoad</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_b4d92a5c_5267_46ab_abed_f000b890b9db -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_b4d92a5c_5267_46ab_abed_f000b890b9db">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81"/>
+        <isq:physicalDimension>T-2 L-1 M+1 I0 Θ0 N0 J0</isq:physicalDimension>
+        <rdfs:comment xml:lang="en">According to &quot;FKM-Richtlinie - Rechnerischer Festigkeitsnachweis (2012)&quot;, the alternating strength is a numerical value that is calculated via the fatigue strength of a material and the mean stress factor. The alternating strength allows the engineer to compare fatigue strengths obtained from tests with different stress ratios (mean stress). It converts the fatigue strength value to an alternate strength value for R=-1.
+alternating strength S_WK = fatigue strength / K_AK.</rdfs:comment>
+        <rdfs:label xml:lang="en">AlternatingStrength</rdfs:label>
     </owl:Class>
     
 
@@ -4562,4 +4610,8 @@ Stainless steels (JIS)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_a293f923_954c_4af5_9f97_9600ebd362cb"/>
     </rdf:Description>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
