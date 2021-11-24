@@ -206,17 +206,6 @@
     
 
 
-    <!-- http://emmo.info/emmo/domain/mechanical-testing#Austenitising -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#Austenitising">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4c57e181_8205_4e51_a164_d17c4bea891d"/>
-        <rdfs:comment>Austenitizing describes the process of heating a steel above the austenitizing temperature (GSE line in the iron carbon diagram). This process changes the lattice structure from a body centered cubic structure (BCC) to a face centered cubic structure (FCC), allowing a martensitic transformation via quenching.</rdfs:comment>
-        <skos:altLabel>Austenitizing</skos:altLabel>
-        <skos:prefLabel>Austenitising</skos:prefLabel>
-    </owl:Class>
-    
-
-
     <!-- http://emmo.info/emmo/domain/mechanical-testing#CableBundleUseCase -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#CableBundleUseCase">
@@ -227,20 +216,10 @@
     
 
 
-    <!-- http://emmo.info/emmo/domain/mechanical-testing#Deoxidization -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#Deoxidization">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d"/>
-        <rdfs:comment>Deoxidization is a method used in metallurgy to remove the oxygen content during steel manufacturing. Deoxidation is important in the steelmaking process as oxygen is often detrimental to the quality of steel produced. Deoxidization is mainly achieved by adding a separate chemical species to neutralize the effects of oxygen or by directly removing the oxygen.</rdfs:comment>
-        <skos:prefLabel>Deoxidization</skos:prefLabel>
-    </owl:Class>
-    
-
-
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_0059f168_0cf0_4a84_8bab_ab313a2d27d7 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_0059f168_0cf0_4a84_8bab_ab313a2d27d7">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -256,7 +235,7 @@
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_01751749_c384_4a73_b1f1_291447712a92 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_01751749_c384_4a73_b1f1_291447712a92">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/math#EMMO_18d180e4_5e3e_42f7_820c_e08951223486"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -335,7 +314,7 @@
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_0527f1f8_41d4_4414_b1fa_8afbc8651ecb -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_0527f1f8_41d4_4414_b1fa_8afbc8651ecb">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_ba882f34_0d71_4e4f_9d92_0c076c633a2c"/>
         <rdfs:comment>Number of cycles until the fatigue test stopped due to failure or run out.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Cycles</skos:prefLabel>
@@ -351,6 +330,16 @@
         <isq:physicalDimension>T0 L-1 M+1 I0 Θ0 N0 J0</isq:physicalDimension>
         <rdfs:comment>The length density is a physical quantity that represents the is mass per unit length.</rdfs:comment>
         <skos:prefLabel xml:lang="en">LengthDensity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_06390646_6edb_4410_b22b_f7adbd6025c4 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_06390646_6edb_4410_b22b_f7adbd6025c4">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
+        <rdfs:comment>Microstructures are compositional/structural inhomogeneities that may consist of spatially distributed phases of different compositions/structures, grains of different orientations, structural defects.</rdfs:comment>
+        <skos:prefLabel xml:lang="de">Microstructure</skos:prefLabel>
     </owl:Class>
     
 
@@ -513,7 +502,7 @@ Stainless steels with special additives (DIN 10027-2)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_0e0b318d_d7f3_4d35_852c_9d4385019612 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_0e0b318d_d7f3_4d35_852c_9d4385019612">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
         <skos:prefLabel xml:lang="en">Width</skos:prefLabel>
     </owl:Class>
@@ -588,7 +577,7 @@ Stainless steels with special additives (DIN 10027-2)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_12c76f15_6daa_43a9_b535_c2df84dbf9e1 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_12c76f15_6daa_43a9_b535_c2df84dbf9e1">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -604,7 +593,7 @@ Stainless steels with special additives (DIN 10027-2)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_12e5e93b_764f_476f_8532_7aab62291399 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_12e5e93b_764f_476f_8532_7aab62291399">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_acf636d4_9ac2_4ce3_960a_d54338e6cae3"/>
         <skos:prefLabel xml:lang="en">FatigueStrain</skos:prefLabel>
     </owl:Class>
@@ -614,7 +603,7 @@ Stainless steels with special additives (DIN 10027-2)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_13a8ef22_4ade_4c89_af34_0b4c7044517d -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_13a8ef22_4ade_4c89_af34_0b4c7044517d">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81"/>
         <rdfs:comment>The mean stress S_m is the averaged value of the stresses during fatigue testing (S_m = (S_min + S_max)/2).</rdfs:comment>
         <skos:prefLabel xml:lang="en">MeanStress</skos:prefLabel>
@@ -637,9 +626,19 @@ Stainless steels with special additives (DIN 10027-2)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_167562c3_4474_40a1_a07d_5ec8e21f3fef -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_167562c3_4474_40a1_a07d_5ec8e21f3fef">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_463bcfda_867b_41d9_a967_211d4d437cfb"/>
         <skos:prefLabel xml:lang="en">ChemicalCompositionMeasurement</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_169db6cf_3388_48f6_8d13_3848f69f84a5 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_169db6cf_3388_48f6_8d13_3848f69f84a5">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d"/>
+        <rdfs:comment>Vacuum arc remelting (VAR) is a secondary melting process for production of metal ingots with elevated chemical and mechanical homogeneity for highly demanding applications. The alloy to undergo VAR is formed into a cylinder typically by vacuum induction melting (VIM).</rdfs:comment>
+        <skos:prefLabel>VIMVAR</skos:prefLabel>
     </owl:Class>
     
 
@@ -670,7 +669,7 @@ High speed tool steels (JIS)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_16d31733_248f_4e55_b870_dfc96d3e2c3b -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_16d31733_248f_4e55_b870_dfc96d3e2c3b">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#EMMO_89a0c87c_0804_4013_937a_6fe234d9499c"/>
         <skos:prefLabel xml:lang="en">DataSet</skos:prefLabel>
     </owl:Class>
@@ -680,7 +679,7 @@ High speed tool steels (JIS)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_1834f628_a7ad_460a_b858_3112c906ef00 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_1834f628_a7ad_460a_b858_3112c906ef00">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -718,10 +717,20 @@ High speed tool steels (JIS)</rdfs:comment>
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_19d0ed3f_38b8_4879_9ba1_7ce54c8443fd -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_19d0ed3f_38b8_4879_9ba1_7ce54c8443fd">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d"/>
+        <rdfs:comment>Spray forming, also known as spray casting, is a method of casting near net shape metal components with homogeneous microstructures via the deposition of semi-solid sprayed droplets onto a shaped substrate. The spray-forming subprocess is part of the metallurgy process and has the output material after spray-forming.</rdfs:comment>
+        <skos:prefLabel>SprayForming</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_1a019aef_e953_46dc_86c3_b70aa159ba59 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_1a019aef_e953_46dc_86c3_b70aa159ba59">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/top/physical#EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -750,7 +759,7 @@ High speed tool steels (JIS)</rdfs:comment>
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_1b0a92ef_c509_40ee_8abe_408181aafaad">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#CableBundleUseCase"/>
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_f2d5d3ad_2e00_417f_8849_686f3988d929"/>
@@ -763,7 +772,7 @@ High speed tool steels (JIS)</rdfs:comment>
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_535baaec_5360_48e8_ada4_72c6e6848957"/>
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1019,7 +1028,7 @@ High speed tool steels (JIS)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_23273603_7ee7_4012_a0bb_d484433083de -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_23273603_7ee7_4012_a0bb_d484433083de">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_463bcfda_867b_41d9_a967_211d4d437cfb"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1051,7 +1060,7 @@ High speed tool steels (JIS)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_24af8df2_9438_44f6_8c5f_755beb459a49 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_24af8df2_9438_44f6_8c5f_755beb459a49">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81"/>
         <rdfs:comment>The Yield Point also known by by yield stress or yield strength corresponds to the stress above which the material starts deforming plastically. It indicates the limit of elastic behaviour and the beginning of plastic behaviour.</rdfs:comment>
         <skos:prefLabel xml:lang="en">YieldPoint</skos:prefLabel>
@@ -1062,7 +1071,7 @@ High speed tool steels (JIS)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_26707f23_c0f3_462a_91d7_5db51cd14cf4 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_26707f23_c0f3_462a_91d7_5db51cd14cf4">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/siunits#EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1237,7 +1246,7 @@ Metals with special properties (SAE)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_2ff88734_1272_45d0_a720_0e476b55af26 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_2ff88734_1272_45d0_a720_0e476b55af26">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#Finishing"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_b71e5f70_227c_4798_8a8a_ee7b70afd10f"/>
         <rdfs:comment>Grinding is a type of abrasive machining process which uses grinding wheel as cutting tool. Grinding is a subset of cutting, as grinding is a true metal-cutting process.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Grinding</skos:prefLabel>
     </owl:Class>
@@ -1267,7 +1276,7 @@ Metals with special properties (SAE)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_3261d0d2_d0f7_4ec5_bd5a_0e0ad8372311 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3261d0d2_d0f7_4ec5_bd5a_0e0ad8372311">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1283,7 +1292,7 @@ Metals with special properties (SAE)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_326d02f6_8ca0_42ac_9658_ba041231574a -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_326d02f6_8ca0_42ac_9658_ba041231574a">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1342,7 +1351,7 @@ Metals with special properties (SAE)</rdfs:comment>
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_35d0fcf5_b574_4e43_94ae_874a6117aab3">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#CableBundleUseCase"/>
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/semiotics#EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b"/>
         <rdfs:subClassOf>
@@ -1396,7 +1405,7 @@ Metals with special properties (SAE)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_38b58e82_8019_4d19_978a_d47901acce17 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_38b58e82_8019_4d19_978a_d47901acce17">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#Roughing"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_87985f48_7967_4ed1_b23f_33357576c47d"/>
         <rdfs:comment>Milling is the process of machining using rotary cutters to remove material by advancing a cutter into a workpiece. This may be done varying direction on one or several axes, cutter head speed, and pressure.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Milling</skos:prefLabel>
     </owl:Class>
@@ -1452,7 +1461,7 @@ Metals with special properties (SAE)</rdfs:comment>
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3c7c1148_40e2_4ec2_a0ac_8720d03e356f">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#CableBundleUseCase"/>
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
         <rdfs:comment>Stiffness is the extent to which an object resists deformation in response to an applied force. The complementary concept is flexibility or pliability: the more flexible an object is, the less stiff it is.</rdfs:comment>
@@ -1466,7 +1475,7 @@ Metals with special properties (SAE)</rdfs:comment>
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3c835c69_11a9_458d_9b3f_bc68c0348c7d">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#CableBundleUseCase"/>
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/holistic#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce"/>
         <rdfs:comment>Is a type of activity/computation that is part of a process or in other words a participant in a process and a process itself that involves the transformation of inputs into results (outputs). The calculation defines in more detail very specific tasks within a process (simulation) that are executed. Each of this tasks or calculations have a specific role within the simulation.</rdfs:comment>
@@ -1505,7 +1514,7 @@ Metals with special properties (SAE)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_3cd2f82b_e17f_4098_b014_dd773e8de8c1 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3cd2f82b_e17f_4098_b014_dd773e8de8c1">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
         <skos:prefLabel xml:lang="en">Thickness</skos:prefLabel>
     </owl:Class>
@@ -1526,7 +1535,7 @@ Metals with special properties (SAE)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_3f227fda_ccf8_4cac_8eec_cd074a006b06 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3f227fda_ccf8_4cac_8eec_cd074a006b06">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_c9c8f824_9127_4f93_bc21_69fe78a7f6f2"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1554,7 +1563,7 @@ Metals with special properties (SAE)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_3fe87ba8_b79f_4c33_ad30_bf81eaaee46b -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_3fe87ba8_b79f_4c33_ad30_bf81eaaee46b">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#EMMO_89a0c87c_0804_4013_937a_6fe234d9499c"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1609,7 +1618,7 @@ Metals with special properties (SAE)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_4136ef18_9624_4f92_b556_c9295b088806 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4136ef18_9624_4f92_b556_c9295b088806">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81"/>
         <rdfs:comment>The maximum stress S_max is the highest occuring stress during fatigue testing.</rdfs:comment>
         <skos:prefLabel xml:lang="en">MaximumStress</skos:prefLabel>
@@ -1620,7 +1629,7 @@ Metals with special properties (SAE)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_416da557_8833_4161_b469_7cc7373399a1 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_416da557_8833_4161_b469_7cc7373399a1">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1636,7 +1645,7 @@ Metals with special properties (SAE)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_43db3609_c443_4f24_8bc2_0b7cf27ac12a -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_43db3609_c443_4f24_8bc2_0b7cf27ac12a">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1688,7 +1697,7 @@ Metals with special properties (SAE)</rdfs:comment>
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_44e81349_11f5_406c_beb1_457184586cf8">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_16d31733_248f_4e55_b870_dfc96d3e2c3b"/>
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/reductionistic#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
@@ -1896,7 +1905,7 @@ Alloyed construction, engineering and pressure vessel steels (DIN 10027-2)</rdfs
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_473ac6ab_620f_4195_97ed_23591b27a5ef -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_473ac6ab_620f_4195_97ed_23591b27a5ef">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef"/>
         <rdfs:comment xml:lang="en">The mean stress sensitivity is a numerical value that indicates how sensible a steel is reacting to mean stress influence. It is calculated via the parameters/constants a_M and b_M (which are specified further in &quot;FKM-Richtlinie - Rechnerischer Festigkeitsnachweis (2012)&quot; and the tensile strength of the material. 
 mean stress sensitivity M_sig = f(Rm, a_M, b_M)</rdfs:comment>
@@ -1908,7 +1917,7 @@ mean stress sensitivity M_sig = f(Rm, a_M, b_M)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_48e3eddc_de6b_4e9e_891d_99169d9f0883 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_48e3eddc_de6b_4e9e_891d_99169d9f0883">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b"/>
         <skos:prefLabel xml:lang="en">Metalworking</skos:prefLabel>
     </owl:Class>
@@ -1982,7 +1991,7 @@ Construction steels (JIS)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_4e0b694c_0a16_4cac_b5e3_991aa7f282eb -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4e0b694c_0a16_4cac_b5e3_991aa7f282eb">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2047,7 +2056,7 @@ Construction, engineering and pressure vessel steels, Cr-Mo with Mo &lt; 0,35 % 
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_535baaec_5360_48e8_ada4_72c6e6848957">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#CableBundleUseCase"/>
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#EMMO_ec7464a9_d99d_45f8_965b_4e9230ea8356"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/semiotics#EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b"/>
@@ -2186,7 +2195,7 @@ Construction, engineering and pressure vessel steels, Cr-Mo with Mo &lt; 0,35 % 
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_5dc819b6_0173_41ab_84b4_f4cc73a10a29 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_5dc819b6_0173_41ab_84b4_f4cc73a10a29">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
         <skos:prefLabel xml:lang="en">Diameter</skos:prefLabel>
     </owl:Class>
@@ -2207,7 +2216,7 @@ Construction, engineering and pressure vessel steels, Cr-Mo with Mo &lt; 0,35 % 
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_5f4390fd_cc6a_4f20_8af4_fe76d54af476 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_5f4390fd_cc6a_4f20_8af4_fe76d54af476">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2241,7 +2250,7 @@ Construction, engineering and pressure vessel steels, Cr-Mo with Mo &lt; 0,35 % 
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_6294b181_baf5_460a_9880_7f183bba9aae -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_6294b181_baf5_460a_9880_7f183bba9aae">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef"/>
         <rdfs:comment>Stress ratio is defined as the ratio of minimum stress to maximum stress.
 (need to add further logics)
@@ -2270,7 +2279,7 @@ R &gt; 1 describes compression-compression loading</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_6354c7de_cb63_446e_a6d0_f832844f0633 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_6354c7de_cb63_446e_a6d0_f832844f0633">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2299,9 +2308,19 @@ special requirements (DIN 10027-2)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_646b0170_e349_4382_8291_4fa2cca982ea -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_646b0170_e349_4382_8291_4fa2cca982ea">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8"/>
         <skos:prefLabel xml:lang="en">LoadingEntity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_66f6b324_8190_44d6_a504_0388d74c86be -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_66f6b324_8190_44d6_a504_0388d74c86be">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_06390646_6edb_4410_b22b_f7adbd6025c4"/>
+        <rdfs:comment>Austenite that does not transform to martensite upon quenching is called retained austenite.  This retained austenite occurs when the steel is not quenched to  a temperature low enough to form 100% martensite. Amount of austenite present in the microstructure after the hardening process is completed.</rdfs:comment>
+        <skos:prefLabel xml:lang="de">RetainedAustenite</skos:prefLabel>
     </owl:Class>
     
 
@@ -2343,7 +2362,7 @@ Cr-Mo-V Tool Steels (DIN 10027-2)</rdfs:comment>
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_68bc845c_5943_47da_ba95_b265bb3780a2">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#CableBundleUseCase"/>
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#EMMO_ec7464a9_d99d_45f8_965b_4e9230ea8356"/>
         <skos:prefLabel xml:lang="en">MetalSheet</skos:prefLabel>
@@ -2354,7 +2373,7 @@ Cr-Mo-V Tool Steels (DIN 10027-2)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_68ee637e_eee7_4edc_ab24_1fe4135fb71c -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_68ee637e_eee7_4edc_ab24_1fe4135fb71c">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2500,7 +2519,7 @@ Unalloyed construction, engineering and pressure vessel steels with C &gt; 0,5 %
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_6e5dfdf2_c936_479c_a4dd_2eb50084c4a1 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_6e5dfdf2_c936_479c_a4dd_2eb50084c4a1">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_f3dd74c0_f480_49e8_9764_33b78638c235"/>
         <rdfs:comment>Specification of the rolling direction. Metal stock is passed through one or more pairs of rolls to reduce thickness, to make the thickness uniform, and/or to impart a desired mechanical property.</rdfs:comment>
         <skos:prefLabel xml:lang="en">RollingDirection</skos:prefLabel>
@@ -2651,7 +2670,7 @@ High carbon steel wire rods (JIS)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_78ddc826_66d5_4be3_8eeb_d8b39e02c9d6 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_78ddc826_66d5_4be3_8eeb_d8b39e02c9d6">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef"/>
         <rdfs:comment xml:lang="en">The mean stress factor is a numerical value calculated by the mean stress sensitivity and the stress ratio. The formula is depending on the stress ratio value. The mean stress factor indicates the influence of mean stress on the fatigue strength of a material (see &quot;FKM-Richtlinie - Rechnerischer Festigkeitsnachweis (2012)&quot;)
 mean stress factor K_AK = f(M_sig, R)</rdfs:comment>
@@ -2663,7 +2682,7 @@ mean stress factor K_AK = f(M_sig, R)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_795fa324_2330_44ee_90c7_5bbf59c1ec53 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_795fa324_2330_44ee_90c7_5bbf59c1ec53">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2690,7 +2709,7 @@ mean stress factor K_AK = f(M_sig, R)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_7ac33acb_e6b5_4660_86d3_3a174c3486b7 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_7ac33acb_e6b5_4660_86d3_3a174c3486b7">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2739,7 +2758,7 @@ Materials with increased temperature properties (DIN 10027-2)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_804ada5e_70bf_451f_b3dc_868631b22b05 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_804ada5e_70bf_451f_b3dc_868631b22b05">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_463bcfda_867b_41d9_a967_211d4d437cfb"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2771,7 +2790,7 @@ Materials with increased temperature properties (DIN 10027-2)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_8101f160_1b9c_49cc_8e37_6eb832f85b4b -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8101f160_1b9c_49cc_8e37_6eb832f85b4b">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2780,6 +2799,17 @@ Materials with increased temperature properties (DIN 10027-2)</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <skos:prefLabel xml:lang="en">CarbonSymbol</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_81c57565_463f_4281_bd64_59eb7a56c952 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_81c57565_463f_4281_bd64_59eb7a56c952">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_b71e5f70_227c_4798_8a8a_ee7b70afd10f"/>
+        <rdfs:comment>Polishing and buffing are finishing processes for smoothing a workpiece&apos;s surface. While used less extensively than traditional mechanical polishing, electropolishing is an alternative form of polishing that uses the principles of electrochemistry to remove microscopic layers of metal from a base surface.</rdfs:comment>
+        <skos:altLabel>Buffing</skos:altLabel>
+        <skos:prefLabel>Polishing</skos:prefLabel>
     </owl:Class>
     
 
@@ -2813,7 +2843,7 @@ Materials with increased temperature properties (DIN 10027-2)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_841ccb1b_518f_4277_baf5_8f97529dfb00 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_841ccb1b_518f_4277_baf5_8f97529dfb00">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2873,10 +2903,20 @@ Spring steels (JIS)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_87286423_f048_47ac_b8df_3235e824f277 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_87286423_f048_47ac_b8df_3235e824f277">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b"/>
         <rdfs:comment>Machining is a process in which a material (often metal) is cut to a desired final shape and size by a controlled material-removal process. The processes that have this common theme are collectively called subtractive manufacturing.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Machining</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_87985f48_7967_4ed1_b23f_33357576c47d -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_87985f48_7967_4ed1_b23f_33357576c47d">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_87286423_f048_47ac_b8df_3235e824f277"/>
+        <rdfs:comment>Roughing cuts are used to remove large amount of material from the starting workpart as rapidly as possible, i.e. with a large Material Removal Rate (MRR), in order to produce a shape close to the desired form, but leaving some material on the piece for a subsequent finishing operation.</rdfs:comment>
+        <skos:prefLabel>Roughing</skos:prefLabel>
     </owl:Class>
     
 
@@ -3016,7 +3056,7 @@ Spring steels (JIS)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/manufacturing#EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b"/>
         <rdfs:comment>In production engineering, metallurgy is concerned with the production of metallic components for use in consumer or engineering products.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Metallurgy</skos:prefLabel>
@@ -3039,7 +3079,7 @@ Low-alloyed steels for machine structural use (JIS)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_8fab8d45_c53b_475f_997a_125646067051 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8fab8d45_c53b_475f_997a_125646067051">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3055,7 +3095,7 @@ Low-alloyed steels for machine structural use (JIS)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_8fc8a9e8_e8c3_476c_a417_031267a0206a -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8fc8a9e8_e8c3_476c_a417_031267a0206a">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_c9c8f824_9127_4f93_bc21_69fe78a7f6f2"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3105,7 +3145,7 @@ Low-alloyed steels for machine structural use (JIS)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_926d14c7_4f78_4c37_99b4_dfb0a531db64 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_926d14c7_4f78_4c37_99b4_dfb0a531db64">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81"/>
         <rdfs:comment>Tensile strength is the maximum tensile stress a material can withstand prior to fracture.</rdfs:comment>
         <skos:prefLabel xml:lang="en">TensileStrength</skos:prefLabel>
@@ -3116,7 +3156,7 @@ Low-alloyed steels for machine structural use (JIS)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_9294b602_0926_4063_9c68_7d541728856d -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_9294b602_0926_4063_9c68_7d541728856d">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3132,7 +3172,7 @@ Low-alloyed steels for machine structural use (JIS)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_929f8ef1_ff51_49c5_ab3e_c654b156960c -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_929f8ef1_ff51_49c5_ab3e_c654b156960c">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#Roughing"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_87985f48_7967_4ed1_b23f_33357576c47d"/>
         <rdfs:comment>Cutting is manufacturing by removal of material (DIN 8580; CIRP Dictionary 2004). Particles of material, the chips, are mechanically removed from the raw material or from an unfinished part by cutting edges of a tool. The tool has one or several cutting edges, which can be geometrically defined by number, shape, and position (cutting by geometrically defined cutting edges), whereas in abrasive processes the separation of chips takes place by numerous cutting edges which have to be statistically described and which are randomly distributed inside the tool (cutting by geometrically undefined cutting edges).</rdfs:comment>
         <rdfs:isDefinedBy>https://www.beuth.de/de/norm/din-8580/65031153</rdfs:isDefinedBy>
         <skos:prefLabel xml:lang="en">Cutting</skos:prefLabel>
@@ -3190,7 +3230,7 @@ Low-alloyed steels for machine structural use (JIS)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_959181b4_1765_4fee_8ca7_139d4728b2a5 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_959181b4_1765_4fee_8ca7_139d4728b2a5">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/siunits#EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3214,7 +3254,7 @@ Low-alloyed steels for machine structural use (JIS)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_962bea7f_4fd4_4a16_8dc0_183efcc620bb -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_962bea7f_4fd4_4a16_8dc0_183efcc620bb">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3230,7 +3270,7 @@ Low-alloyed steels for machine structural use (JIS)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_9731faf5_4cb1_46bd_891c_686e6340c83f">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_a293f923_954c_4af5_9f97_9600ebd362cb"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef"/>
         <rdfs:subClassOf>
@@ -3281,7 +3321,7 @@ Roller bearing steels (DIN 10027-2)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_9d12d5ce_2af4_4784_a2b0_6c19db27d8ce -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_9d12d5ce_2af4_4784_a2b0_6c19db27d8ce">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3376,7 +3416,7 @@ Roller bearing steels (DIN 10027-2)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_9ee6424d_55a9_4645_891d_58dac89c5ee6 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_9ee6424d_55a9_4645_891d_58dac89c5ee6">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3404,7 +3444,7 @@ Materials with special physical properties including Ni (DIN 10027-2)</rdfs:comm
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_a11352bc_9b81_4c0c_92e8_f47ea2c5c68b -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_a11352bc_9b81_4c0c_92e8_f47ea2c5c68b">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3433,7 +3473,7 @@ Materials with special physical properties including Ni (DIN 10027-2)</rdfs:comm
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_a1fb2461_3dc8_45bd_a7f3_4c1cff1ba432 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_a1fb2461_3dc8_45bd_a7f3_4c1cff1ba432">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3456,6 +3496,15 @@ Materials with special physical properties including Ni (DIN 10027-2)</rdfs:comm
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_a579af48_7803_4f5f_8f5f_ae1198b3eb85 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_a579af48_7803_4f5f_8f5f_ae1198b3eb85">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_06390646_6edb_4410_b22b_f7adbd6025c4"/>
+        <skos:prefLabel xml:lang="de">Martensite</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_a5fb2228_53f8_4d1a_a929_ae166b9ea7ac -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_a5fb2228_53f8_4d1a_a929_ae166b9ea7ac">
@@ -3469,7 +3518,7 @@ Materials with special physical properties including Ni (DIN 10027-2)</rdfs:comm
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_a7841c32_22a5_46ee_8298_fe4f4d6473b0 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_a7841c32_22a5_46ee_8298_fe4f4d6473b0">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3478,6 +3527,16 @@ Materials with special physical properties including Ni (DIN 10027-2)</rdfs:comm
             </owl:Restriction>
         </rdfs:subClassOf>
         <skos:prefLabel xml:lang="en">MolybdenumSymbol</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_a8df9a6f_36ee_4396_9e3d_732a86318386 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_a8df9a6f_36ee_4396_9e3d_732a86318386">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d"/>
+        <rdfs:comment>Deoxidization is a method used in metallurgy to remove the oxygen content during steel manufacturing. Deoxidation is important in the steelmaking process as oxygen is often detrimental to the quality of steel produced. Deoxidization is mainly achieved by adding a separate chemical species to neutralize the effects of oxygen or by directly removing the oxygen.</rdfs:comment>
+        <skos:prefLabel>Deoxidization</skos:prefLabel>
     </owl:Class>
     
 
@@ -3505,7 +3564,7 @@ Materials with special physical properties including Ni (DIN 10027-2)</rdfs:comm
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_ab7acd0c_c199_47f7_ae2a_0ea5f579771b -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_ab7acd0c_c199_47f7_ae2a_0ea5f579771b">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3528,6 +3587,15 @@ Materials with special physical properties including Ni (DIN 10027-2)</rdfs:comm
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_acc0ae8c_0726_461d_acab_834e84eaad69 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_acc0ae8c_0726_461d_acab_834e84eaad69">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_06390646_6edb_4410_b22b_f7adbd6025c4"/>
+        <skos:prefLabel xml:lang="de">Pearlite</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_adff8854_b8f6_4943_99b4_6e3619b6c552 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_adff8854_b8f6_4943_99b4_6e3619b6c552">
@@ -3542,7 +3610,7 @@ Materials with special physical properties including Ni (DIN 10027-2)</rdfs:comm
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_af7886a4_c996_469b_a0ed_23bb31448a19 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_af7886a4_c996_469b_a0ed_23bb31448a19">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81"/>
         <isq:physicalDimension>T-2 L-1 M+1 I0 Θ0 N0 J0</isq:physicalDimension>
         <rdfs:comment>Corresponding strength value to a given number of cycles as determined from an S-N diagram (usually given for 50 % probability of survival).</rdfs:comment>
@@ -3577,7 +3645,7 @@ Materials with special physical properties including Ni (DIN 10027-2)</rdfs:comm
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_b3ad6907_7206_4cc9_952b_2cdf34b578ea -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_b3ad6907_7206_4cc9_952b_2cdf34b578ea">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3604,7 +3672,7 @@ Materials with special physical properties including Ni (DIN 10027-2)</rdfs:comm
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_b4d92a5c_5267_46ab_abed_f000b890b9db -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_b4d92a5c_5267_46ab_abed_f000b890b9db">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81"/>
         <isq:physicalDimension>T-2 L-1 M+1 I0 Θ0 N0 J0</isq:physicalDimension>
         <rdfs:comment xml:lang="en">According to &quot;FKM-Richtlinie - Rechnerischer Festigkeitsnachweis (2012)&quot;, the alternating strength is a numerical value that is calculated via the fatigue strength of a material and the mean stress factor. The alternating strength allows the engineer to compare fatigue strengths obtained from tests with different stress ratios (mean stress). It converts the fatigue strength value to an alternate strength value for R=-1.
@@ -3638,7 +3706,7 @@ alternating strength S_WK = fatigue strength / K_AK.</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_b70a0653_b4aa_4cc5_81a7_594fa04d0730 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_b70a0653_b4aa_4cc5_81a7_594fa04d0730">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3647,6 +3715,16 @@ alternating strength S_WK = fatigue strength / K_AK.</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
         <skos:prefLabel xml:lang="en">SilverSymbol</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_b71e5f70_227c_4798_8a8a_ee7b70afd10f -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_b71e5f70_227c_4798_8a8a_ee7b70afd10f">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_87286423_f048_47ac_b8df_3235e824f277"/>
+        <rdfs:comment>Finishing cuts are used to complete the part and achieve the final dimension, tolerances, and surface finish.</rdfs:comment>
+        <skos:prefLabel>Finishing</skos:prefLabel>
     </owl:Class>
     
 
@@ -3676,7 +3754,7 @@ alternating strength S_WK = fatigue strength / K_AK.</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_baf5bb96_05ea_4f78_bdb7_a556342c8b6a -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_baf5bb96_05ea_4f78_bdb7_a556342c8b6a">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/siunits#EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3721,7 +3799,7 @@ alternating strength S_WK = fatigue strength / K_AK.</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_bcfa65e9_ddf4_4a16_81ff_b02ae29c0a27 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_bcfa65e9_ddf4_4a16_81ff_b02ae29c0a27">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3740,7 +3818,7 @@ alternating strength S_WK = fatigue strength / K_AK.</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_bd59ce5c_09a5_4912_961b_91cfbbd087f2 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_bd59ce5c_09a5_4912_961b_91cfbbd087f2">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_c9c8f824_9127_4f93_bc21_69fe78a7f6f2"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3861,7 +3939,7 @@ Heat-resisting stainless steels (SAE)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_c21ab500_db9a_43a3_a7ef_d43fb64bf856 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c21ab500_db9a_43a3_a7ef_d43fb64bf856">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3879,7 +3957,7 @@ Heat-resisting stainless steels (SAE)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_c3c23bd2_2720_4acb_9f76_e1bb6579afca -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c3c23bd2_2720_4acb_9f76_e1bb6579afca">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
         <skos:prefLabel xml:lang="en">Roughness</skos:prefLabel>
     </owl:Class>
@@ -3895,10 +3973,20 @@ Heat-resisting stainless steels (SAE)</rdfs:comment>
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_c4532221_a9f8_41bd_b8d4_3869164aaf4f -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c4532221_a9f8_41bd_b8d4_3869164aaf4f">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d"/>
+        <rdfs:comment>Melt processes convert a liquid melt into a solid article with a defined structure and shape.</rdfs:comment>
+        <skos:prefLabel>Melting</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_c4cb32e6_69d4_4807_b781_b1dcc867eef1 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c4cb32e6_69d4_4807_b781_b1dcc867eef1">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/math#EMMO_e56ee3eb_7609_4ae1_8bed_51974f0960a6"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd"/>
         <rdfs:subClassOf>
@@ -3933,7 +4021,7 @@ Heat-resisting stainless steels (SAE)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_c799b443_c70f_4351_bb0f_e4ab29073481 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c799b443_c70f_4351_bb0f_e4ab29073481">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/metrology#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3"/>
         <skos:prefLabel xml:lang="en">Hardness</skos:prefLabel>
     </owl:Class>
@@ -3975,7 +4063,7 @@ Construction, engineering and pressure vessel steels, Cr-Mo with Mo &lt; 0,4 % a
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_c9cc79d7_37cd_4b8b_b4e4_95b09ffa20b3 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c9cc79d7_37cd_4b8b_b4e4_95b09ffa20b3">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3991,7 +4079,7 @@ Construction, engineering and pressure vessel steels, Cr-Mo with Mo &lt; 0,4 % a
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_c9e3e11c_a837_4b6f_a0f6_48f1a3447616 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c9e3e11c_a837_4b6f_a0f6_48f1a3447616">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -4035,6 +4123,16 @@ Construction, engineering and pressure vessel steels, Cr-Mo with Mo &lt; 0,4 % a
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_cd736720_7091_493d_a1ae_3fd31721ff36 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_cd736720_7091_493d_a1ae_3fd31721ff36">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d"/>
+        <rdfs:comment>Casting is a process in which a liquid metal is delivered into a mold that contains a negative impression of the intended shape (in this case an ingot). The metal is poured into the mold through a hollow channel called a sprue. The metal and mold are then cooled, and the metal part (the casting) is extracted. Ingots usually require a second procedure of shaping, such as cold/hot working, cutting, or milling to produce a useful final product.</rdfs:comment>
+        <skos:prefLabel>IngotCasting</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_ce1fea85_f31d_4ad4_a717_8ef7612f651f -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_ce1fea85_f31d_4ad4_a717_8ef7612f651f">
@@ -4042,6 +4140,26 @@ Construction, engineering and pressure vessel steels, Cr-Mo with Mo &lt; 0,4 % a
         <rdfs:comment>Steel nomenclature contains steel groups / categories as defined in the standards DIN, SAE and JIS and superclasses in which the categories from the different standards are combined</rdfs:comment>
         <rdfs:label xml:lang="de">Alloyed construction, engineering and pressure vessel steels</rdfs:label>
         <skos:prefLabel xml:lang="en">AlloyedConstructionEngineeringAndPressureVesselSteels</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_cfc07446_bcc0_4697_b854_f9ec00240297 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_cfc07446_bcc0_4697_b854_f9ec00240297">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_87985f48_7967_4ed1_b23f_33357576c47d"/>
+        <rdfs:comment>Turning is a machining process in which a cutting tool, typically a non-rotary tool bit, describes a helix toolpath by moving more or less linearly while the workpiece rotates.</rdfs:comment>
+        <skos:prefLabel>Turning</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_cfcbcb56_e951_4377_bd80_0c51a9d6fe6f -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_cfcbcb56_e951_4377_bd80_0c51a9d6fe6f">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4c57e181_8205_4e51_a164_d17c4bea891d"/>
+        <rdfs:comment>Quenching after austenitizing is used to suppress the normal breakdown of austenite into ferrite and cementite, and to cause a partial decomposition at such a low temperature to produce martensite. To obtain this, steel requires a critical cooling velocity, which is greatly reduced by the presence of alloying elements, which therefore cause hardening with mild quenching (e.g. oil and hardening steels).</rdfs:comment>
+        <skos:prefLabel>Quenching</skos:prefLabel>
     </owl:Class>
     
 
@@ -4228,7 +4346,7 @@ Tempering is a heat treatment technique applied to ferrous alloys, such as steel
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_d7029930_e902_418a_91b1_76040840d977 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_d7029930_e902_418a_91b1_76040840d977">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -4264,10 +4382,20 @@ Tempering is a heat treatment technique applied to ferrous alloys, such as steel
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_d87db143_a9d9_4fe4_a61b_05ea26355783 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_d87db143_a9d9_4fe4_a61b_05ea26355783">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81"/>
         <rdfs:comment>The minimum stress S_min is the lowest occuring stress during fatigue testing.</rdfs:comment>
         <skos:prefLabel xml:lang="en">MinimumStress</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_da0493fd_72f9_4fc2_8650_2a2965606188 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_da0493fd_72f9_4fc2_8650_2a2965606188">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4c57e181_8205_4e51_a164_d17c4bea891d"/>
+        <rdfs:comment>Tempering is a process of heat treating, which is used to increase the toughness of iron-based alloys. Tempering is usually performed after hardening, to reduce some of the excess hardness, and is done by heating the metal to some temperature below the critical point for a certain period of time, then allowing it to cool in still air.</rdfs:comment>
+        <skos:prefLabel>Tempering</skos:prefLabel>
     </owl:Class>
     
 
@@ -4369,7 +4497,7 @@ Tempering is a heat treatment technique applied to ferrous alloys, such as steel
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_df1db910_9601_4420_82b0_3a6ddaf93094">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#CableBundleUseCase"/>
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/semiotics#EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b"/>
         <annotations:elucidation>A typical substrate might be a metal, onto which a coating might be deposited.
@@ -4407,7 +4535,7 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_e30fc4f3_fbb6_4bf0_afc3_d3aeb802f2e0 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e30fc4f3_fbb6_4bf0_afc3_d3aeb802f2e0">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/chemistry#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -4440,6 +4568,27 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#MechanicalTestingOntology"/>
+        <rdfs:comment>This is the artificial parent concept of the classes related to the Fatigue Use Case within this ontology.</rdfs:comment>
+        <skos:prefLabel xml:lang="en">FatigueUseCase</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_e6d1f1d4_6280_4c52_9a09_288c4b58e416 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e6d1f1d4_6280_4c52_9a09_288c4b58e416">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4c57e181_8205_4e51_a164_d17c4bea891d"/>
+        <rdfs:comment>Austenitizing describes the process of heating a steel above the austenitizing temperature (GSE line in the iron carbon diagram). This process changes the lattice structure from a body centered cubic structure (BCC) to a face centered cubic structure (FCC), allowing a martensitic transformation via quenching.</rdfs:comment>
+        <skos:altLabel>Austenitizing</skos:altLabel>
+        <skos:prefLabel>Austenitising</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_e767adc2_9823_4cdd_88c7_6b698d89b720 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e767adc2_9823_4cdd_88c7_6b698d89b720">
@@ -4461,7 +4610,7 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_e8c8c152_484e_4053_8e35_82346b3fc927 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e8c8c152_484e_4053_8e35_82346b3fc927">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd"/>
         <rdfs:comment>Represents the geometry/shape of the cross section</rdfs:comment>
         <skos:prefLabel xml:lang="en">CrossSectionGeometry</skos:prefLabel>
@@ -4541,6 +4690,15 @@ Heat-resisting steel bars and wire rods (JIS)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac"/>
         <rdfs:comment>The depth of the indentation. It is the zeroed value of the displacement corrected for load frame stiffness and drift rate- It is zero prior to surface detection.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Depth</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_ee7743e6_9de1_4a64_a784_c49a49f4be25 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_ee7743e6_9de1_4a64_a784_c49a49f4be25">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_06390646_6edb_4410_b22b_f7adbd6025c4"/>
+        <skos:prefLabel xml:lang="de">Bainite</skos:prefLabel>
     </owl:Class>
     
 
@@ -4803,51 +4961,11 @@ Stainless steels (JIS)</rdfs:comment>
     
 
 
-    <!-- http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#FatigueUseCase">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#MechanicalTestingOntology"/>
-        <rdfs:comment>This is the artificial parent concept of the classes related to the Fatigue Use Case within this ontology.</rdfs:comment>
-        <skos:prefLabel xml:lang="en">FatigueUseCase</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo/domain/mechanical-testing#Finishing -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#Finishing">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_87286423_f048_47ac_b8df_3235e824f277"/>
-        <rdfs:comment>Finishing cuts are used to complete the part and achieve the final dimension, tolerances, and surface finish.</rdfs:comment>
-        <skos:prefLabel>Finishing</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo/domain/mechanical-testing#IngotCasting -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#IngotCasting">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d"/>
-        <rdfs:comment>Casting is a process in which a liquid metal is delivered into a mold that contains a negative impression of the intended shape (in this case an ingot). The metal is poured into the mold through a hollow channel called a sprue. The metal and mold are then cooled, and the metal part (the casting) is extracted. Ingots usually require a second procedure of shaping, such as cold/hot working, cutting, or milling to produce a useful final product.</rdfs:comment>
-        <skos:prefLabel>IngotCasting</skos:prefLabel>
-    </owl:Class>
-    
-
-
     <!-- http://emmo.info/emmo/domain/mechanical-testing#MechanicalTestingOntology -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#MechanicalTestingOntology">
         <rdfs:comment>This is the root class of the Mechanical Testing Ontology.</rdfs:comment>
         <skos:prefLabel xml:lang="en">MechanicalTestingOntology</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo/domain/mechanical-testing#Melting -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#Melting">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d"/>
-        <rdfs:comment>Melt processes convert a liquid melt into a solid article with a defined structure and shape.</rdfs:comment>
-        <skos:prefLabel>Melting</skos:prefLabel>
     </owl:Class>
     
 
@@ -4858,77 +4976,6 @@ Stainless steels (JIS)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#MechanicalTestingOntology"/>
         <rdfs:comment>This is the artificial parent concept of the classes related to the Nanoindentation Use Case within this ontology.</rdfs:comment>
         <skos:prefLabel xml:lang="en">NanoindentationUseCase</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo/domain/mechanical-testing#Polishing -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#Polishing">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#Finishing"/>
-        <rdfs:comment>Polishing and buffing are finishing processes for smoothing a workpiece&apos;s surface. While used less extensively than traditional mechanical polishing, electropolishing is an alternative form of polishing that uses the principles of electrochemistry to remove microscopic layers of metal from a base surface.</rdfs:comment>
-        <skos:altLabel>Buffing</skos:altLabel>
-        <skos:prefLabel>Polishing</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo/domain/mechanical-testing#Quenching -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#Quenching">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4c57e181_8205_4e51_a164_d17c4bea891d"/>
-        <rdfs:comment>Quenching after austenitizing is used to suppress the normal breakdown of austenite into ferrite and cementite, and to cause a partial decomposition at such a low temperature to produce martensite. To obtain this, steel requires a critical cooling velocity, which is greatly reduced by the presence of alloying elements, which therefore cause hardening with mild quenching (e.g. oil and hardening steels).</rdfs:comment>
-        <skos:prefLabel>Quenching</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo/domain/mechanical-testing#Roughing -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#Roughing">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_87286423_f048_47ac_b8df_3235e824f277"/>
-        <rdfs:comment>Roughing cuts are used to remove large amount of material from the starting workpart as rapidly as possible, i.e. with a large Material Removal Rate (MRR), in order to produce a shape close to the desired form, but leaving some material on the piece for a subsequent finishing operation.</rdfs:comment>
-        <skos:prefLabel>Roughing</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo/domain/mechanical-testing#SprayForming -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#SprayForming">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d"/>
-        <rdfs:comment>Spray forming, also known as spray casting, is a method of casting near net shape metal components with homogeneous microstructures via the deposition of semi-solid sprayed droplets onto a shaped substrate. The spray-forming subprocess is part of the metallurgy process and has the output material after spray-forming.</rdfs:comment>
-        <skos:prefLabel>SprayForming</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo/domain/mechanical-testing#Tempering -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#Tempering">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4c57e181_8205_4e51_a164_d17c4bea891d"/>
-        <rdfs:comment>Tempering is a process of heat treating, which is used to increase the toughness of iron-based alloys. Tempering is usually performed after hardening, to reduce some of the excess hardness, and is done by heating the metal to some temperature below the critical point for a certain period of time, then allowing it to cool in still air.</rdfs:comment>
-        <skos:prefLabel>Tempering</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo/domain/mechanical-testing#Turning -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#Turning">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#Roughing"/>
-        <rdfs:comment>Turning is a machining process in which a cutting tool, typically a non-rotary tool bit, describes a helix toolpath by moving more or less linearly while the workpiece rotates.</rdfs:comment>
-        <skos:prefLabel>Turning</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo/domain/mechanical-testing#VIMVAR -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#VIMVAR">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d"/>
-        <rdfs:comment>Vacuum arc remelting (VAR) is a secondary melting process for production of metal ingots with elevated chemical and mechanical homogeneity for highly demanding applications. The alloy to undergo VAR is formed into a cylinder typically by vacuum induction melting (VIM).</rdfs:comment>
-        <skos:prefLabel>VIMVAR</skos:prefLabel>
     </owl:Class>
     
 
