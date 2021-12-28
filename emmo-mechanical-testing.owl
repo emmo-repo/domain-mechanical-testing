@@ -626,6 +626,7 @@ Stainless steels with special additives (DIN 10027-2)</rdfs:comment>
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_142c4b97_9011_4608_849b_08d1fdd642ce">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81"/>
         <rdfs:comment>Residual stresses are stresses that remain in a solid material after the original cause of the stresses has been removed.</rdfs:comment>
         <rdfs:label xml:lang="de">ResidualStress</rdfs:label>
     </owl:Class>
