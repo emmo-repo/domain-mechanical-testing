@@ -1,33 +1,33 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://emmo.info/emmo/domain/mechanical-testing"
+<rdf:RDF xmlns="http://emmo.info/emmo/domain/mechanical-testing#"
      xml:base="http://emmo.info/emmo/domain/mechanical-testing"
-     xmlns:isq="http://emmo.info/emmo/middle/isq#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:chemistry="http://emmo.info/emmo/middle/chemistry#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:isq="http://emmo.info/emmo/middle/isq#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:chemistry="http://emmo.info/emmo/middle/chemistry#"
-     xmlns:annotations="http://emmo.info/emmo/top/annotations#">
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:annotations="http://emmo.info/emmo/top/annotations#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://emmo.info/emmo/domain/mechanical-testing">
         <owl:versionIRI rdf:resource="http://emmo.info/emmo/domain/mechanical-testing/1.0.0"/>
         <owl:imports rdf:resource="http://emmo.info/emmo/1.0.0-alpha2"/>
         <owl:imports rdf:resource="http://emmo.info/emmo/middle/chemistry"/>
-        <dcterms:abstract xml:lang="en">A domain ontology for Mechanical Testing based on EMMO.</dcterms:abstract>
-        <dcterms:contributor>Fraunhofer IWM, DE</dcterms:contributor>
-        <dcterms:contributor>Goldbeck Consulting Ltd (UK)</dcterms:contributor>
         <dcterms:creator>Adham Hashibon</dcterms:creator>
-        <dcterms:creator>Daniele Toti</dcterms:creator>
-        <dcterms:creator>Gerhard Goldbeck</dcterms:creator>
-        <dcterms:creator>Joana Francisco Morgado</dcterms:creator>
         <dcterms:creator>Yoav Nahshon</dcterms:creator>
-        <dcterms:license>https://creativecommons.org/licenses/by/4.0/legalcode</dcterms:license>
+        <dcterms:contributor>Goldbeck Consulting Ltd (UK)</dcterms:contributor>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
         <dcterms:publisher>EMMC ASBL</dcterms:publisher>
         <dcterms:title xml:lang="en">Domain Mechanical Testing</dcterms:title>
         <rdfs:comment xml:lang="en">This ontology is a joint colaboration between different projects: OYSTER, UrWerk and MarketPlace.</rdfs:comment>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <dcterms:contributor>Fraunhofer IWM, DE</dcterms:contributor>
+        <dcterms:creator>Joana Francisco Morgado</dcterms:creator>
+        <dcterms:license>https://creativecommons.org/licenses/by/4.0/legalcode</dcterms:license>
+        <dcterms:creator>Daniele Toti</dcterms:creator>
+        <dcterms:abstract xml:lang="en">A domain ontology for Mechanical Testing based on EMMO.</dcterms:abstract>
+        <dcterms:creator>Gerhard Goldbeck</dcterms:creator>
     </owl:Ontology>
     
 
