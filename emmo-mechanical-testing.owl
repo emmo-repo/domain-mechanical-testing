@@ -1,33 +1,34 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://emmo.info/emmo/domain/mechanical-testing#"
      xml:base="http://emmo.info/emmo/domain/mechanical-testing"
-     xmlns:chemistry="http://emmo.info/emmo/middle/chemistry#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:isq="http://emmo.info/emmo/middle/isq#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:emmo="http://emmo.info/emmo#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:annotations="http://emmo.info/emmo/top/annotations#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:chemistry="http://emmo.info/emmo/middle/chemistry#"
+     xmlns:annotations="http://emmo.info/emmo/top/annotations#">
     <owl:Ontology rdf:about="http://emmo.info/emmo/domain/mechanical-testing">
         <owl:versionIRI rdf:resource="http://emmo.info/emmo/domain/mechanical-testing/1.0.0"/>
         <owl:imports rdf:resource="http://emmo.info/emmo/1.0.0-alpha2"/>
         <owl:imports rdf:resource="http://emmo.info/emmo/middle/chemistry"/>
-        <dcterms:creator>Adham Hashibon</dcterms:creator>
-        <dcterms:creator>Yoav Nahshon</dcterms:creator>
+        <dcterms:abstract xml:lang="en">A domain ontology for Mechanical Testing based on EMMO.</dcterms:abstract>
+        <dcterms:contributor>Fraunhofer IWM, DE</dcterms:contributor>
         <dcterms:contributor>Goldbeck Consulting Ltd (UK)</dcterms:contributor>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <dcterms:creator>Adham Hashibon</dcterms:creator>
+        <dcterms:creator>Daniele Toti</dcterms:creator>
+        <dcterms:creator>Gerhard Goldbeck</dcterms:creator>
+        <dcterms:creator>Joana Francisco Morgado</dcterms:creator>
+        <dcterms:creator>Yoav Nahshon</dcterms:creator>
+        <dcterms:license>https://creativecommons.org/licenses/by/4.0/legalcode</dcterms:license>
         <dcterms:publisher>EMMC ASBL</dcterms:publisher>
         <dcterms:title xml:lang="en">Domain Mechanical Testing</dcterms:title>
         <rdfs:comment xml:lang="en">This ontology is a joint colaboration between different projects: OYSTER, UrWerk and MarketPlace.</rdfs:comment>
-        <dcterms:contributor>Fraunhofer IWM, DE</dcterms:contributor>
-        <dcterms:creator>Joana Francisco Morgado</dcterms:creator>
-        <dcterms:license>https://creativecommons.org/licenses/by/4.0/legalcode</dcterms:license>
-        <dcterms:creator>Daniele Toti</dcterms:creator>
-        <dcterms:abstract xml:lang="en">A domain ontology for Mechanical Testing based on EMMO.</dcterms:abstract>
-        <dcterms:creator>Gerhard Goldbeck</dcterms:creator>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -814,7 +815,6 @@ High speed tool steels (JIS)</rdfs:comment>
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_535baaec_5360_48e8_ada4_72c6e6848957"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
@@ -5259,12 +5259,6 @@ Stainless steels (JIS)</rdfs:comment>
     <!-- http://emmo.info/emmo/middle/metrology#EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/middle/metrology#EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error1 -->
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
