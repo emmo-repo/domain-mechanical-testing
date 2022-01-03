@@ -628,7 +628,7 @@ Stainless steels with special additives (DIN 10027-2)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81"/>
         <rdfs:comment>Residual stresses are stresses that remain in a solid material after the original cause of the stresses has been removed.</rdfs:comment>
-        <rdfs:label xml:lang="de">ResidualStress</rdfs:label>
+        <skos:prefLabel xml:lang="de">ResidualStress</skos:prefLabel>
     </owl:Class>
     
 
@@ -729,7 +729,7 @@ High speed tool steels (JIS)</rdfs:comment>
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_197b6afe_74cb_41bd_83a4_54fda6bea1e4">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4"/>
         <rdfs:comment>A pore is a very small opening, cavity or depression. Pores occur in metals during melting and casting processes. Gases dissolved in the melt still escape while the melt solidifies, so the gas bubbles remain trapped and form pores in the material.</rdfs:comment>
-        <rdfs:label xml:lang="de">Pore</rdfs:label>
+        <skos:prefLabel xml:lang="de">Pore</skos:prefLabel>
     </owl:Class>
     
 
@@ -791,7 +791,7 @@ High speed tool steels (JIS)</rdfs:comment>
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_1afcac36_c92e_439b_a4e2_ed24fc6c60d4">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e8c8c152_484e_4053_8e35_82346b3fc927"/>
-        <rdfs:label xml:lang="de">ElongatedCrossSection</rdfs:label>
+        <skos:prefLabel xml:lang="de">ElongatedCrossSection</skos:prefLabel>
     </owl:Class>
     
 
@@ -1017,7 +1017,7 @@ High speed tool steels (JIS)</rdfs:comment>
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_1f213db4_5e4d_45d3_963e_8b7c7693707b">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_cc6faafc_5942_4724_9af8_14c2be17a64a"/>
         <rdfs:comment>{1..N} Elements the inclusion consists of.</rdfs:comment>
-        <rdfs:label xml:lang="de">InclusionElements</rdfs:label>
+        <skos:prefLabel xml:lang="de">InclusionElements</skos:prefLabel>
     </owl:Class>
     
 
@@ -1040,7 +1040,7 @@ High speed tool steels (JIS)</rdfs:comment>
         <rdfs:comment>Mechanical testing covers a wide range of tests, which can be divided broadly into two types:
 1. those that aim to determine a material&apos;s mechanical properties, independent of geometry.
 2. those that determine the response of a structure to a given action, e.g. testing of composite beams, aircraft structures to destruction, etc.</rdfs:comment>
-        <rdfs:label xml:lang="de">MechanicalTesting</rdfs:label>
+        <skos:prefLabel xml:lang="de">MechanicalTesting</skos:prefLabel>
     </owl:Class>
     
 
@@ -1196,7 +1196,7 @@ High speed tool steels (JIS)</rdfs:comment>
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_2a706af8_27ae_468f_9688_fbbe4ca13a86">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8fb5442e_d864_4d85_aad1_8d638f6a5fd3"/>
         <rdfs:comment>Specifies, where the crack started on the cross section.</rdfs:comment>
-        <rdfs:label xml:lang="de">FailureType</rdfs:label>
+        <skos:prefLabel xml:lang="de">FailureType</skos:prefLabel>
     </owl:Class>
     
 
@@ -1263,7 +1263,7 @@ High speed tool steels (JIS)</rdfs:comment>
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_2aa65ba7_afb2_4deb_b566_3e2c25a89feb">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:comment>Elongation at break, also known as fracture strain, is the ratio between changed length and initial length after breakage of the test specimen. Plastic strain at fracture.</rdfs:comment>
-        <rdfs:label xml:lang="de">FractureStrain</rdfs:label>
+        <skos:prefLabel xml:lang="de">FractureStrain</skos:prefLabel>
     </owl:Class>
     
 
@@ -2104,7 +2104,7 @@ Construction steels (JIS)</rdfs:comment>
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_4ea93487_28ea_4e1b_8973_12b73e895c64">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_207b3e76_c121_47f6_8278_7871292ce73f"/>
         <rdfs:comment>Tensile testing, also known as tension testing, is a fundamental materials science and engineering test in which a sample is subjected to a controlled tension until failure. Properties that are directly measured via a tensile test are ultimate tensile strength, breaking strength, maximum elongation and reduction in area. From these measurements the following properties can also be determined: Young&apos;s modulus, Poisson&apos;s ratio, yield strength, and strain-hardening characteristics. Uniaxial tensile testing is the most commonly used for obtaining the mechanical characteristics of isotropic materials. Some materials use biaxial tensile testing. The main difference between these testing machines being how load is applied on the materials.</rdfs:comment>
-        <rdfs:label xml:lang="de">TensileTesting</rdfs:label>
+        <skos:prefLabel xml:lang="de">TensileTesting</skos:prefLabel>
     </owl:Class>
     
 
@@ -2698,7 +2698,7 @@ Unalloyed construction, engineering and pressure vessel steels with C &gt; 0,5 %
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_71f86460_7451_43be_9e29_bb653724e231">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_2a706af8_27ae_468f_9688_fbbe4ca13a86"/>
         <rdfs:comment>Crack-origin at specimen surface.</rdfs:comment>
-        <rdfs:label xml:lang="de">SurfaceFailure</rdfs:label>
+        <skos:prefLabel xml:lang="de">SurfaceFailure</skos:prefLabel>
     </owl:Class>
     
 
@@ -2718,7 +2718,7 @@ Unalloyed construction, engineering and pressure vessel steels with C &gt; 0,5 %
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_740dc009_8db5_4a11_b063_206016ec6cc9">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8fb5442e_d864_4d85_aad1_8d638f6a5fd3"/>
         <rdfs:comment>Comment on unique features of the failure</rdfs:comment>
-        <rdfs:label xml:lang="de">FailureComment</rdfs:label>
+        <skos:prefLabel xml:lang="de">FailureComment</skos:prefLabel>
     </owl:Class>
     
 
@@ -3200,7 +3200,7 @@ Spring steels (JIS)</rdfs:comment>
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8e789c90_a34a_425a_a685_36865e342c82">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4"/>
         <rdfs:comment>No special feature detected at crack-origin.</rdfs:comment>
-        <rdfs:label xml:lang="de">Featureless</rdfs:label>
+        <skos:prefLabel xml:lang="de">Featureless</skos:prefLabel>
     </owl:Class>
     
 
@@ -3249,7 +3249,7 @@ Low-alloyed steels for machine structural use (JIS)</rdfs:comment>
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8fb5442e_d864_4d85_aad1_8d638f6a5fd3">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:comment>Fractography describes all data resulting from examination of the fracture surface after fatigue testing. The goal is to find the information necessary to describe the failure behaviour and reason.</rdfs:comment>
-        <rdfs:label xml:lang="de">Fractography</rdfs:label>
+        <skos:prefLabel xml:lang="de">Fractography</skos:prefLabel>
     </owl:Class>
     
 
@@ -3347,7 +3347,7 @@ Low-alloyed steels for machine structural use (JIS)</rdfs:comment>
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_9314e1c3_70db_4634_8ed8_4b840d9e9df4">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_23273603_7ee7_4012_a0bb_d484433083de"/>
         <rdfs:comment>Describes the method used to determine the fatigue cycles of the specimen, e.g. stair case method or constant amplitude testing.</rdfs:comment>
-        <rdfs:label xml:lang="de">TestType</rdfs:label>
+        <skos:prefLabel xml:lang="de">TestType</skos:prefLabel>
     </owl:Class>
     
 
@@ -3672,7 +3672,7 @@ Materials with special physical properties including Ni (DIN 10027-2)</rdfs:comm
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_a522e3fa_fde7_4d20_9246_ee6b0f073d6d">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8fb5442e_d864_4d85_aad1_8d638f6a5fd3"/>
-        <rdfs:label xml:lang="de">FailureOrigin</rdfs:label>
+        <skos:prefLabel xml:lang="de">FailureOrigin</skos:prefLabel>
     </owl:Class>
     
 
@@ -4068,7 +4068,7 @@ alternating strength S_WK = fatigue strength / K_AK.</rdfs:comment>
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c0b46f83_fd24_420e_8cda_642fb7bf3e49">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
-        <rdfs:label xml:lang="de">OutputParameterSet</rdfs:label>
+        <skos:prefLabel xml:lang="de">OutputParameterSet</skos:prefLabel>
     </owl:Class>
     
 
@@ -4077,7 +4077,7 @@ alternating strength S_WK = fatigue strength / K_AK.</rdfs:comment>
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c141a264_e73e_49a9_bc16_9c77b8e856bf">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
-        <rdfs:label xml:lang="de">InputParameterSet</rdfs:label>
+        <skos:prefLabel xml:lang="de">InputParameterSet</skos:prefLabel>
     </owl:Class>
     
 
@@ -4330,7 +4330,7 @@ Construction, engineering and pressure vessel steels, Cr-Mo with Mo &lt; 0,4 % a
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_cc6faafc_5942_4724_9af8_14c2be17a64a">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4"/>
         <rdfs:comment>Non-metallic inclusions are chemical compounds and nonmetals that are present in steel and other alloys. They are the product of chemical reactions, physical effects, and contamination that occurs during the melting and pouring process.</rdfs:comment>
-        <rdfs:label xml:lang="de">Inclusion</rdfs:label>
+        <skos:prefLabel xml:lang="de">Inclusion</skos:prefLabel>
     </owl:Class>
     
 
@@ -4439,7 +4439,7 @@ Construction, engineering and pressure vessel steels, Cr-Mo with Mo &lt; 0,4 % a
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_d291bbdb_322f_4758_a9cd_39ad0b91fac5">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_2a706af8_27ae_468f_9688_fbbe4ca13a86"/>
         <rdfs:comment>Crack-origin in specimen volume.</rdfs:comment>
-        <rdfs:label xml:lang="de">VolumeFailure</rdfs:label>
+        <skos:prefLabel xml:lang="de">VolumeFailure</skos:prefLabel>
     </owl:Class>
     
 
@@ -4627,7 +4627,7 @@ Tempering is a heat treatment technique applied to ferrous alloys, such as steel
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8fb5442e_d864_4d85_aad1_8d638f6a5fd3"/>
         <rdfs:comment>Explanation for crack-initiation at origin.</rdfs:comment>
-        <rdfs:label xml:lang="de">FailureReason</rdfs:label>
+        <skos:prefLabel xml:lang="de">FailureReason</skos:prefLabel>
     </owl:Class>
     
 
