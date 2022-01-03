@@ -1263,6 +1263,7 @@ High speed tool steels (JIS)</rdfs:comment>
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_2aa65ba7_afb2_4deb_b566_3e2c25a89feb">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_acf636d4_9ac2_4ce3_960a_d54338e6cae3"/>
         <rdfs:comment>Elongation at break, also known as fracture strain, is the ratio between changed length and initial length after breakage of the test specimen. Plastic strain at fracture.</rdfs:comment>
         <skos:prefLabel xml:lang="en">FractureStrain</skos:prefLabel>
     </owl:Class>
