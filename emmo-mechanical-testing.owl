@@ -4068,6 +4068,7 @@ alternating strength S_WK = fatigue strength / K_AK.</rdfs:comment>
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c0b46f83_fd24_420e_8cda_642fb7bf3e49">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_ecb41be6_be55_4d5a_9c23_f5a1063cf74d"/>
         <skos:prefLabel xml:lang="en">OutputParameterSet</skos:prefLabel>
     </owl:Class>
     
@@ -4077,6 +4078,7 @@ alternating strength S_WK = fatigue strength / K_AK.</rdfs:comment>
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_c141a264_e73e_49a9_bc16_9c77b8e856bf">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_ecb41be6_be55_4d5a_9c23_f5a1063cf74d"/>
         <skos:prefLabel xml:lang="en">InputParameterSet</skos:prefLabel>
     </owl:Class>
     
@@ -4891,6 +4893,15 @@ Heat-resisting steel bars and wire rods (JIS)</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f"/>
         <rdfs:comment>The noise floor in the displacement measurement system will determine what the minimum useable indentation depth.</rdfs:comment>
         <skos:prefLabel xml:lang="en">DisplacementNoiseFloor</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_ecb41be6_be55_4d5a_9c23_f5a1063cf74d -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_ecb41be6_be55_4d5a_9c23_f5a1063cf74d">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
+        <skos:prefLabel xml:lang="en">ParameterSet</skos:prefLabel>
     </owl:Class>
     
 
