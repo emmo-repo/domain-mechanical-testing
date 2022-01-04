@@ -339,6 +339,7 @@
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_06390646_6edb_4410_b22b_f7adbd6025c4">
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#EMMO_c74da218_9147_4f03_92d1_8894abca55f3"/>
         <rdfs:comment>Microstructures are compositional/structural inhomogeneities that may consist of spatially distributed phases of different compositions/structures, grains of different orientations, structural defects.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Microstructure</skos:prefLabel>
     </owl:Class>
@@ -1195,7 +1196,8 @@ High speed tool steels (JIS)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_2a706af8_27ae_468f_9688_fbbe4ca13a86 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_2a706af8_27ae_468f_9688_fbbe4ca13a86">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8fb5442e_d864_4d85_aad1_8d638f6a5fd3"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/perceptual#EMMO_c74da218_9147_4f03_92d1_8894abca55f3"/>
         <rdfs:comment>Specifies, where the crack started on the cross section.</rdfs:comment>
         <skos:prefLabel xml:lang="en">FailureType</skos:prefLabel>
     </owl:Class>
@@ -2713,7 +2715,7 @@ Unalloyed construction, engineering and pressure vessel steels with C &gt; 0,5 %
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_740dc009_8db5_4a11_b063_206016ec6cc9 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_740dc009_8db5_4a11_b063_206016ec6cc9">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8fb5442e_d864_4d85_aad1_8d638f6a5fd3"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:comment>Comment on unique features of the failure</rdfs:comment>
         <skos:prefLabel xml:lang="en">FailureComment</skos:prefLabel>
     </owl:Class>
@@ -3669,7 +3671,7 @@ Materials with special physical properties including Ni (DIN 10027-2)</rdfs:comm
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_a522e3fa_fde7_4d20_9246_ee6b0f073d6d -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_a522e3fa_fde7_4d20_9246_ee6b0f073d6d">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8fb5442e_d864_4d85_aad1_8d638f6a5fd3"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <skos:prefLabel xml:lang="en">FailureOrigin</skos:prefLabel>
     </owl:Class>
     
@@ -4636,7 +4638,7 @@ Tempering is a heat treatment technique applied to ferrous alloys, such as steel
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8fb5442e_d864_4d85_aad1_8d638f6a5fd3"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
         <rdfs:comment>Explanation for crack-initiation at origin.</rdfs:comment>
         <skos:prefLabel xml:lang="en">FailureReason</skos:prefLabel>
     </owl:Class>
