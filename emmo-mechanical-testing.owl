@@ -3246,8 +3246,8 @@ Low-alloyed steels for machine structural use (JIS)</rdfs:comment>
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_8fb5442e_d864_4d85_aad1_8d638f6a5fd3 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_8fb5442e_d864_4d85_aad1_8d638f6a5fd3">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_aa24344e_3c40_4594_9f49_5cb4153b8070"/>
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e"/>
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_463bcfda_867b_41d9_a967_211d4d437cfb"/>
         <rdfs:comment>Fractography describes all data resulting from examination of the fracture surface after fatigue testing. The goal is to find the information necessary to describe the failure behaviour and reason.</rdfs:comment>
         <skos:prefLabel xml:lang="en">Fractography</skos:prefLabel>
     </owl:Class>
@@ -3730,16 +3730,6 @@ Materials with special physical properties including Ni (DIN 10027-2)</rdfs:comm
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_81dd7f19_073d_4153_9517_823edac9fac7"/>
         <rdfs:comment>Taping that covers only at specific discrete locations across the cable bundle overall length.</rdfs:comment>
         <skos:prefLabel xml:lang="en">PartialTaping</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_aa24344e_3c40_4594_9f49_5cb4153b8070 -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_aa24344e_3c40_4594_9f49_5cb4153b8070">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#MechanicalTestingOntology"/>
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/properties#EMMO_463bcfda_867b_41d9_a967_211d4d437cfb"/>
-        <skos:prefLabel xml:lang="en">Microscopy</skos:prefLabel>
     </owl:Class>
     
 
