@@ -1,34 +1,34 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://emmo.info/emmo/domain/mechanical-testing#"
      xml:base="http://emmo.info/emmo/domain/mechanical-testing"
-     xmlns:isq="http://emmo.info/emmo/middle/isq#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:chemistry="http://emmo.info/emmo/middle/chemistry#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:emmo="http://emmo.info/emmo#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:isq="http://emmo.info/emmo/middle/isq#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:emmo="http://emmo.info/emmo#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:chemistry="http://emmo.info/emmo/middle/chemistry#"
-     xmlns:annotations="http://emmo.info/emmo/top/annotations#">
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:annotations="http://emmo.info/emmo/top/annotations#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://emmo.info/emmo/domain/mechanical-testing">
         <owl:versionIRI rdf:resource="http://emmo.info/emmo/domain/mechanical-testing/1.0.0"/>
         <owl:imports rdf:resource="http://emmo.info/emmo/1.0.0-alpha2"/>
         <owl:imports rdf:resource="http://emmo.info/emmo/middle/chemistry"/>
-        <dcterms:abstract xml:lang="en">A domain ontology for Mechanical Testing based on EMMO.</dcterms:abstract>
-        <dcterms:contributor>Fraunhofer IWM, DE</dcterms:contributor>
-        <dcterms:contributor>Goldbeck Consulting Ltd (UK)</dcterms:contributor>
         <dcterms:creator>Adham Hashibon</dcterms:creator>
-        <dcterms:creator>Daniele Toti</dcterms:creator>
-        <dcterms:creator>Gerhard Goldbeck</dcterms:creator>
-        <dcterms:creator>Joana Francisco Morgado</dcterms:creator>
         <dcterms:creator>Yoav Nahshon</dcterms:creator>
-        <dcterms:license>https://creativecommons.org/licenses/by/4.0/legalcode</dcterms:license>
+        <dcterms:contributor>Goldbeck Consulting Ltd (UK)</dcterms:contributor>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
         <dcterms:publisher>EMMC ASBL</dcterms:publisher>
         <dcterms:title xml:lang="en">Domain Mechanical Testing</dcterms:title>
         <rdfs:comment xml:lang="en">This ontology is a joint colaboration between different projects: OYSTER, UrWerk and MarketPlace.</rdfs:comment>
-        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <dcterms:contributor>Fraunhofer IWM, DE</dcterms:contributor>
+        <dcterms:creator>Joana Francisco Morgado</dcterms:creator>
+        <dcterms:license>https://creativecommons.org/licenses/by/4.0/legalcode</dcterms:license>
+        <dcterms:creator>Daniele Toti</dcterms:creator>
+        <dcterms:abstract xml:lang="en">A domain ontology for Mechanical Testing based on EMMO.</dcterms:abstract>
+        <dcterms:creator>Gerhard Goldbeck</dcterms:creator>
     </owl:Ontology>
     
 
@@ -298,6 +298,15 @@
         <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/middle/isq#EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7"/>
         <rdfs:comment>The time constant used to measure the Dynamic displacement (time over which the RMS value of the displacement is computed). Generally equivalent to at least five waves at the target frequency and being an integer number of waves. This dramatically reduces noise .</rdfs:comment>
         <skos:prefLabel xml:lang="en">DynamicTimeConstant</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_04de9b50_35ef_4531_afbd_ded7ce5fffa1 -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_04de9b50_35ef_4531_afbd_ded7ce5fffa1">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_23273603_7ee7_4012_a0bb_d484433083de"/>
+        <skos:prefLabel>StaircaseMethod</skos:prefLabel>
     </owl:Class>
     
 
@@ -2626,6 +2635,15 @@ Unalloyed construction, engineering and pressure vessel steels with C &gt; 0,5 %
     
 
 
+    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_6e59c5d5_6b2c_46a6_a598_ae692a35a4dc -->
+
+    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_6e59c5d5_6b2c_46a6_a598_ae692a35a4dc">
+        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_23273603_7ee7_4012_a0bb_d484433083de"/>
+        <skos:prefLabel>SingleStepLoading</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_6e5dfdf2_c936_479c_a4dd_2eb50084c4a1 -->
 
     <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_6e5dfdf2_c936_479c_a4dd_2eb50084c4a1">
@@ -3338,16 +3356,6 @@ Low-alloyed steels for machine structural use (JIS)</rdfs:comment>
         <rdfs:comment>Cutting is manufacturing by removal of material (DIN 8580; CIRP Dictionary 2004). Particles of material, the chips, are mechanically removed from the raw material or from an unfinished part by cutting edges of a tool. The tool has one or several cutting edges, which can be geometrically defined by number, shape, and position (cutting by geometrically defined cutting edges), whereas in abrasive processes the separation of chips takes place by numerous cutting edges which have to be statistically described and which are randomly distributed inside the tool (cutting by geometrically undefined cutting edges).</rdfs:comment>
         <rdfs:isDefinedBy>https://www.beuth.de/de/norm/din-8580/65031153</rdfs:isDefinedBy>
         <skos:prefLabel xml:lang="en">Cutting</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://emmo.info/emmo/domain/mechanical-testing#EMMO_9314e1c3_70db_4634_8ed8_4b840d9e9df4 -->
-
-    <owl:Class rdf:about="http://emmo.info/emmo/domain/mechanical-testing#EMMO_9314e1c3_70db_4634_8ed8_4b840d9e9df4">
-        <rdfs:subClassOf rdf:resource="http://emmo.info/emmo/domain/mechanical-testing#EMMO_23273603_7ee7_4012_a0bb_d484433083de"/>
-        <rdfs:comment>Describes the method used to determine the fatigue cycles of the specimen, e.g. stair case method or constant amplitude testing.</rdfs:comment>
-        <skos:prefLabel xml:lang="en">TestType</skos:prefLabel>
     </owl:Class>
     
 
@@ -5278,5 +5286,5 @@ Stainless steels (JIS)</rdfs:comment>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
