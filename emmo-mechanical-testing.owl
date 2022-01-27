@@ -14,6 +14,7 @@
         <owl:versionIRI rdf:resource="http://emmo.info/emmo/domain/mechanical-testing/1.0.0"/>
         <owl:imports rdf:resource="http://emmo.info/emmo/1.0.0-alpha2"/>
         <owl:imports rdf:resource="http://emmo.info/emmo/middle/chemistry"/>
+        <owl:imports rdf:resource="http://emmo.info/emmo/domain/materials"/>
         <terms:abstract xml:lang="en">A domain ontology for Mechanical Testing based on EMMO.</terms:abstract>
         <terms:contributor>Fraunhofer IWM, DE</terms:contributor>
         <terms:contributor>Goldbeck Consulting Ltd (UK)</terms:contributor>
