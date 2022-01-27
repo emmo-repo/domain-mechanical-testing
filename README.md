@@ -24,14 +24,16 @@ The Mechanical Testing ontology is built on top of EMMO. The following table des
 # Maintainers
 
 * Adham Hashibon
+* Daniele Toti
 * Joana Francisco Morgado
 
 # Contributers
 
 * [Oyster Project](http://www.oyster-project.eu/)
     - Yoav Nahshon from Fraunhofer IWM
-    - Gerhard Goldbeck from Goldbeck Consulting Ltd
-    - Marco Sebastiani from University "Roma Tre", Rome, Italy
+    - Gerhard Goldbeck from Goldbeck Consulting Ltd, Cambridge, UK
+    - Marco Sebastiani from Roma Tre University, Rome, Italy
+    - Pierluigi Del Nostro from Goldbeck Consulting Ltd, Cambridge, UK
 * [Urwerk Project](https://www.itwm.fraunhofer.de/en/departments/mf/cables-hoses-flexible-structures/urwerk.html)
 
 * [MarketPlace](https://www.the-marketplace-project.eu/)
