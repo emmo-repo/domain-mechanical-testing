@@ -16,6 +16,7 @@
         <owl:versionIRI rdf:resource="http://emmo.info/emmo/domain/mechanical-testing/1.0.0"/>
         <owl:imports rdf:resource="http://emmo.info/emmo/1.0.0-alpha2"/>
         <owl:imports rdf:resource="http://emmo.info/emmo/middle/chemistry"/>
+		<owl:imports rdf:resource="http://emmo.info/emmo/middle/ordinal"/>																  
         <dcterms:creator>Adham Hashibon</dcterms:creator>
         <dcterms:creator>Yoav Nahshon</dcterms:creator>
         <dcterms:contributor>Goldbeck Consulting Ltd (UK)</dcterms:contributor>
