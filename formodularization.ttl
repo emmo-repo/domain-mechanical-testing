@@ -15,7 +15,8 @@
                                                                <http://emmo.info/emmo/1.0.0-beta4/perspectives> ,
                                                                <http://emmo.info/emmo/1.0.0-beta4/multiperspective> ,
                                                                <http://emmo.info/emmo/1.0.0-beta4/disciplines> ,
-                                                               <http://emmo.info/emmo/1.0.0-beta4/domain> ;
+                                                               <http://emmo.info/emmo/1.0.0-beta4/domain> ,
+                                                               <https://raw.githubusercontent.com/emmo-repo/domain-characterisation-methodology/main/chameo.ttl> ;
                                                    dcterms:creator "Adham Hashibon" ,
                                                                    "Yoav Nahshon" ;
                                                    owl:versionInfo "1.0.0" ;
