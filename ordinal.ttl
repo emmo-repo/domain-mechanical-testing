@@ -18,7 +18,7 @@
 #    Object Properties
 #################################################################
 
-###  http://emmo.info/emmo#EMMO_050b47b6_2583_43f7_95eb_a216b41cd5f6
+###  http://emmo.info/emmo#EMMO_050b47b6_2583_43f7_95eb_a216b41cd5f6  -> missing
 :EMMO_050b47b6_2583_43f7_95eb_a216b41cd5f6 rdf:type owl:ObjectProperty ;
                                            rdfs:subPropertyOf <http://emmo.info/emmo/middle/reductionistic#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> ;
                                            rdf:type owl:FunctionalProperty ,
@@ -29,7 +29,7 @@
                                            skos:prefLabel "hasSpatialLast"@en .
 
 
-###  http://emmo.info/emmo#EMMO_2a9fcd79_bc67_4b1a_8e64_9dfe505a0007
+###  http://emmo.info/emmo#EMMO_2a9fcd79_bc67_4b1a_8e64_9dfe505a0007  -> missing
 :EMMO_2a9fcd79_bc67_4b1a_8e64_9dfe505a0007 rdf:type owl:ObjectProperty ;
                                            rdfs:subPropertyOf <http://emmo.info/emmo/middle/reductionistic#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> ;
                                            rdf:type owl:FunctionalProperty ,
@@ -40,7 +40,7 @@
                                            skos:prefLabel "hasSpatialFirst"@en .
 
 
-###  http://emmo.info/emmo#EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d
+###  http://emmo.info/emmo#EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d  -> renamed to "hasNext"
 :EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d rdf:type owl:ObjectProperty ;
                                            rdfs:subPropertyOf :EMMO_52d08d7d_e9e4_43e5_8508_d353e7e3a23a ;
                                            rdf:type owl:AsymmetricProperty ,
@@ -50,7 +50,7 @@
                                            skos:prefLabel "hasTemporalNext"@en .
 
 
-###  http://emmo.info/emmo#EMMO_52d08d7d_e9e4_43e5_8508_d353e7e3a23a
+###  http://emmo.info/emmo#EMMO_52d08d7d_e9e4_43e5_8508_d353e7e3a23a  -> obsolete: EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d
 :EMMO_52d08d7d_e9e4_43e5_8508_d353e7e3a23a rdf:type owl:ObjectProperty ;
                                            rdfs:subPropertyOf <http://emmo.info/emmo/top/mereotopology#EMMO_4d6504f1_c470_4ce9_b941_bbbebc9ab05d> ;
                                            rdf:type owl:AsymmetricProperty ,
@@ -60,7 +60,7 @@
                                            skos:prefLabel "hasNext"@en .
 
 
-###  http://emmo.info/emmo#EMMO_651013cf_00ee_4e66_9d4e_fdfb20d991d2
+###  http://emmo.info/emmo#EMMO_651013cf_00ee_4e66_9d4e_fdfb20d991d2  -> missing
 :EMMO_651013cf_00ee_4e66_9d4e_fdfb20d991d2 rdf:type owl:ObjectProperty ;
                                            rdfs:subPropertyOf <http://emmo.info/emmo/top/mereotopology#EMMO_4d6504f1_c470_4ce9_b941_bbbebc9ab05d> ;
                                            rdf:type owl:AsymmetricProperty ,
@@ -68,7 +68,7 @@
                                            skos:prefLabel "hasRest"@en .
 
 
-###  http://emmo.info/emmo#EMMO_66873eb5_7e42_4566_a906_bd97a832f19b
+###  http://emmo.info/emmo#EMMO_66873eb5_7e42_4566_a906_bd97a832f19b  -> missing
 :EMMO_66873eb5_7e42_4566_a906_bd97a832f19b rdf:type owl:ObjectProperty ;
                                            rdfs:subPropertyOf :EMMO_651013cf_00ee_4e66_9d4e_fdfb20d991d2 ;
                                            rdf:type owl:AsymmetricProperty ,
@@ -78,7 +78,7 @@
                                            skos:prefLabel "hasSpatialRest"@en .
 
 
-###  http://emmo.info/emmo#EMMO_8785be5a_2493_4b12_8f39_31907ab11748
+###  http://emmo.info/emmo#EMMO_8785be5a_2493_4b12_8f39_31907ab11748  -> renamed to "hasContactWith"
 :EMMO_8785be5a_2493_4b12_8f39_31907ab11748 rdf:type owl:ObjectProperty ;
                                            rdfs:subPropertyOf :EMMO_52d08d7d_e9e4_43e5_8508_d353e7e3a23a ;
                                            rdf:type owl:AsymmetricProperty ,
@@ -88,7 +88,7 @@
                                            skos:prefLabel "hasSpatialNext"@en .
 
 
-###  http://emmo.info/emmo#EMMO_c0f48dc6_4a32_4d9a_a956_d68415954a8e
+###  http://emmo.info/emmo#EMMO_c0f48dc6_4a32_4d9a_a956_d68415954a8e  -> in EMMO beta4.
 :EMMO_c0f48dc6_4a32_4d9a_a956_d68415954a8e rdf:type owl:ObjectProperty ;
                                            rdfs:subPropertyOf <http://emmo.info/emmo/middle/reductionistic#EMMO_65a2c5b8_e4d8_4a51_b2f8_e55effc0547d> ;
                                            rdf:type owl:FunctionalProperty ,
@@ -99,7 +99,7 @@
                                            skos:prefLabel "hasTemporalLast"@en .
 
 
-###  http://emmo.info/emmo#EMMO_fb168b10_a27b_4409_a002_35671319d170
+###  http://emmo.info/emmo#EMMO_fb168b10_a27b_4409_a002_35671319d170  -> missing
 :EMMO_fb168b10_a27b_4409_a002_35671319d170 rdf:type owl:ObjectProperty ;
                                            rdfs:subPropertyOf :EMMO_651013cf_00ee_4e66_9d4e_fdfb20d991d2 ;
                                            rdf:type owl:AsymmetricProperty ,
@@ -109,7 +109,7 @@
                                            skos:prefLabel "hasTemporalRest"@en .
 
 
-###  http://emmo.info/emmo#EMMO_fe63194f_7c04_4dbd_a244_524b38b6699b
+###  http://emmo.info/emmo#EMMO_fe63194f_7c04_4dbd_a244_524b38b6699bv  -> in EMMO beta4.
 :EMMO_fe63194f_7c04_4dbd_a244_524b38b6699b rdf:type owl:ObjectProperty ;
                                            rdfs:subPropertyOf <http://emmo.info/emmo/middle/reductionistic#EMMO_65a2c5b8_e4d8_4a51_b2f8_e55effc0547d> ;
                                            rdf:type owl:FunctionalProperty ,
@@ -124,7 +124,7 @@
 #    Classes
 #################################################################
 
-###  http://emmo.info/emmo#EMMO_25a3da5e_eab1_42dd_8081_61dd09d34e1b
+###  http://emmo.info/emmo#EMMO_25a3da5e_eab1_42dd_8081_61dd09d34e1b  -> obsolete: EMMO_36c79456_e29c_400d_8bd3_0eedddb82652
 :EMMO_25a3da5e_eab1_42dd_8081_61dd09d34e1b rdf:type owl:Class ;
                                            rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                              owl:onProperty <http://emmo.info/emmo/middle/reductionistic#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> ;
@@ -138,7 +138,7 @@
                                            skos:prefLabel "Arrangement"@en .
 
 
-###  http://emmo.info/emmo#EMMO_2e9ace8a_1155_45b5_a066_d5fd9774e76c
+###  http://emmo.info/emmo#EMMO_2e9ace8a_1155_45b5_a066_d5fd9774e76c  -> missing
 :EMMO_2e9ace8a_1155_45b5_a066_d5fd9774e76c rdf:type owl:Class ;
                                            owl:equivalentClass [ rdf:type owl:Class ;
                                                                  owl:unionOf ( :EMMO_42fc460a_4bf3_4d0b_8dee_3c7efcefebb5
@@ -149,7 +149,7 @@
                                            skos:prefLabel "OrderedElement"@en .
 
 
-###  http://emmo.info/emmo#EMMO_406f9b74_c927_4e05_b9af_5edbe5e280c5
+###  http://emmo.info/emmo#EMMO_406f9b74_c927_4e05_b9af_5edbe5e280c5  -> obsolete: EMMO_92829beb_6ed4_4c88_bbd5_3bc7403e2895
 :EMMO_406f9b74_c927_4e05_b9af_5edbe5e280c5 rdf:type owl:Class ;
                                            rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                              owl:onProperty <http://emmo.info/emmo/middle/reductionistic#EMMO_65a2c5b8_e4d8_4a51_b2f8_e55effc0547d> ;
@@ -163,13 +163,13 @@
                                            skos:prefLabel "Sequence"@en .
 
 
-###  http://emmo.info/emmo#EMMO_42fc460a_4bf3_4d0b_8dee_3c7efcefebb5
+###  http://emmo.info/emmo#EMMO_42fc460a_4bf3_4d0b_8dee_3c7efcefebb5  -> missing
 :EMMO_42fc460a_4bf3_4d0b_8dee_3c7efcefebb5 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_2e9ace8a_1155_45b5_a066_d5fd9774e76c ;
                                            skos:prefLabel "SpatialOrderedElement"@en .
 
 
-###  http://emmo.info/emmo#EMMO_c03bab53_fed3_4142_9741_cc7fc806f0a6
+###  http://emmo.info/emmo#EMMO_c03bab53_fed3_4142_9741_cc7fc806f0a6  -> missing
 :EMMO_c03bab53_fed3_4142_9741_cc7fc806f0a6 rdf:type owl:Class ;
                                            owl:equivalentClass [ rdf:type owl:Class ;
                                                                  owl:unionOf ( :EMMO_25a3da5e_eab1_42dd_8081_61dd09d34e1b
@@ -180,7 +180,7 @@
                                            skos:prefLabel "Ordered"@en .
 
 
-###  http://emmo.info/emmo#EMMO_e0954911_fc88_492a_9830_fdb238e28cc2
+###  http://emmo.info/emmo#EMMO_e0954911_fc88_492a_9830_fdb238e28cc2  -> missing
 :EMMO_e0954911_fc88_492a_9830_fdb238e28cc2 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_2e9ace8a_1155_45b5_a066_d5fd9774e76c ;
                                            skos:prefLabel "TemporalOrderedElement"@en .

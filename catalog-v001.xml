@@ -33,7 +33,10 @@
         <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/metrology"           uri="../EMMO/disciplines/metrology.ttl"/>
         <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/models"              uri="../EMMO/disciplines/models.ttl"/>
 
-
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/domain"                          uri="../EMMO/domain/domain.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/domain/siunits"                  uri="../EMMO/domain/siunits.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/domain/units-extension"          uri="../EMMO/domain/units-extension.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/domain/periodic-table"           uri="../EMMO/domain/periodic-table.ttl"/>
         
     </group>
 </catalog>

@@ -4,7 +4,6 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix emmo: <http://emmo.info/emmo#> .
-@prefix isq: <http://emmo.info/emmo/middle/isq#> . 
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -15,7 +14,8 @@
                                                    owl:imports <http://emmo.info/emmo/1.0.0-beta4> ,
                                                                <http://emmo.info/emmo/1.0.0-beta4/perspectives> ,
                                                                <http://emmo.info/emmo/1.0.0-beta4/multiperspective> ,
-                                                               <http://emmo.info/emmo/1.0.0-beta4/disciplines> ;
+                                                               <http://emmo.info/emmo/1.0.0-beta4/disciplines> ,
+                                                               <http://emmo.info/emmo/1.0.0-beta4/domain> ;
                                                    dcterms:creator "Adham Hashibon" ,
                                                                    "Yoav Nahshon" ;
                                                    owl:versionInfo "1.0.0" ;
@@ -34,8 +34,14 @@
 #    Annotation properties
 #################################################################
 
-###  http://emmo.info/emmo/middle/isq#physicalDimension
-isq:physicalDimension rdf:type owl:AnnotationProperty .
+###  http://emmo.info/emmo#EMMO_de178b12_5d35_4bca_8efa_a4193162571d   # for: physicalDimension, faulty in EMMO, copied from https://raw.githubusercontent.com/emmo-repo/EMMO/master/middle/isq.ttl#physicalDimension
+emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d rdf:type owl:AnnotationProperty ;
+                                           rdfs:comment """A unique string describing the physical dimensionality of a physical quantity.
+
+See the comments of PhysicalDimension for a description of this \"regex\" string."""@en ;
+                                           skos:prefLabel "physicalDimension"@en ;
+                                           rdfs:subPropertyOf rdfs:comment ;
+                                           rdfs:range xsd:string .
 
 
 ###  http://emmo.info/emmo#EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc
@@ -68,24 +74,27 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_a079cf37_e495_41f1_af01_d544e886eacb
 :EMMO_a079cf37_e495_41f1_af01_d544e886eacb rdf:type owl:ObjectProperty ;
-                                           rdfs:subPropertyOf <http://emmo.info/emmo/middle/holistic#EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1> ;
+                                           rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1> ;
                                            rdfs:comment "Relates a Process to its direct outputs." ;
                                            skos:prefLabel "hasOutput"@en .
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_dc4c5477_e02e_40ac_b5a4_0d4e8e36c74d
 :EMMO_dc4c5477_e02e_40ac_b5a4_0d4e8e36c74d rdf:type owl:ObjectProperty ;
-                                           rdfs:subPropertyOf <http://emmo.info/emmo/middle/holistic#EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1> ;
+                                           rdfs:subPropertyOf <http://emmo.info/emmo#EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1> ;
                                            rdfs:comment "Relates a process to its inputs." ;
                                            skos:prefLabel "hasInput"@en .
 
 
-###  http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a
-<http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> rdf:type owl:ObjectProperty .
+###  http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a
+<http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> rdf:type owl:ObjectProperty .
 
 
-###  http://emmo.info/emmo/middle/holistic#EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1
-<http://emmo.info/emmo/middle/holistic#EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1> rdf:type owl:ObjectProperty .
+###  http://emmo.info/emmo#EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1  # hasProperParticipant -> not implemented in beta4 yet, copied from https://raw.githubusercontent.com/emmo-repo/EMMO/master/middle/holistic.ttl#EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1
+<http://emmo.info/emmo#EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1> rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ,
+                                                              emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                           skos:prefLabel "hasProperParticipant"@en .
 
 
 ###  http://emmo.info/emmo#EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296
@@ -273,7 +282,7 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 :EMMO_05dbcd32_bdf0_44d2_94c4_78ea47fec79a rdf:type owl:Class ;
                                            rdfs:subClassOf :CableBundleUseCase ,
                                                            <http://emmo.info/emmo#EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3> ;
-                                           isq:physicalDimension "T0 L-1 M+1 I0 Θ0 N0 J0" ;
+                                           emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d  "T0 L-1 M+1 I0 Θ0 N0 J0" ;
                                            rdfs:comment "The length density is a physical quantity that represents the is mass per unit length." ;
                                            skos:prefLabel "LengthDensity"@en .
 
@@ -339,7 +348,7 @@ Stainless steels with special additives (DIN 10027-2)""" ;
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_0b47a9ad_2854_43d0_9707_ff5f81f5b7d8
 :EMMO_0b47a9ad_2854_43d0_9707_ff5f81f5b7d8 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_3c7c1148_40e2_4ec2_a0ac_8720d03e356f ;
-                                           isq:physicalDimension "T-2 L+2 M+1 I0 Θ0 N0 J0" ;
+                                           emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d  "T-2 L+2 M+1 I0 Θ0 N0 J0" ;
                                            skos:prefLabel "TorsionalStiffness"@en .
 
 
@@ -361,23 +370,23 @@ Stainless steels with special additives (DIN 10027-2)""" ;
                                            rdfs:subClassOf :NanoindentationUseCase ,
                                                            <http://emmo.info/emmo#EMMO_463bcfda_867b_41d9_a967_211d4d437cfb> ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
                                                              owl:someValuesFrom :EMMO_04f76b8a_0cb9_4a9e_8c94_dab5eb82d0e8
                                                            ] ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
                                                              owl:someValuesFrom :EMMO_07696442_2e6d_416a_b4f0_81c4aff90de8
                                                            ] ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
                                                              owl:someValuesFrom :EMMO_0ece9cba_617c_4452_bbdc_1c564129e393
                                                            ] ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
                                                              owl:someValuesFrom :EMMO_d4d0a51f_3b70_49ca_aca4_20b3f4648958
                                                            ] ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
                                                              owl:someValuesFrom :EMMO_df1db910_9601_4420_82b0_3a6ddaf93094
                                                            ] ,
                                                            [ rdf:type owl:Restriction ;
@@ -411,7 +420,7 @@ Stainless steels with special additives (DIN 10027-2)""" ;
 :EMMO_0e559791_8595_4d85_b666_3d75baba8cc8 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_3c7c1148_40e2_4ec2_a0ac_8720d03e356f ,
                                                            :NanoindentationUseCase ;
-                                           isq:physicalDimension "T-2 L+2 M+1 I0 Θ0 N0 J0" ;
+                                           emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d  "T-2 L+2 M+1 I0 Θ0 N0 J0" ;
                                            rdfs:comment "The value of the stiffness that takes into account the appropriate calculation for both dynamic and non-dynamic portions of the experiment." ;
                                            skos:prefLabel "DynamicStiffness"@en .
 
@@ -434,7 +443,7 @@ Stainless steels with special additives (DIN 10027-2)""" ;
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_0f73321c_c4fd_40ed_9b58_eccd9b7d8e15
 :EMMO_0f73321c_c4fd_40ed_9b58_eccd9b7d8e15 rdf:type owl:Class ;
                                            rdfs:subClassOf :NanoindentationUseCase ,
-                                                           <http://emmo.info/emmo/middle/holistic#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce> ;
+                                                           <http://emmo.info/emmo#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce> ;
                                            rdfs:comment "Represents a Process (or the sequence of processes) by which the metrological chain is defined or in other words a full “recipe” describing the workflow of an entire indentation experiment." ;
                                            skos:prefLabel "Method"@en .
 
@@ -830,7 +839,7 @@ High speed tool steels (JIS)""" ;
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_26707f23_c0f3_462a_91d7_5db51cd14cf4
 :EMMO_26707f23_c0f3_462a_91d7_5db51cd14cf4 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
-                                                           <http://emmo.info/emmo/middle/siunits#EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106> ,
+                                                           <http://emmo.info/emmo#EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106> ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty <http://emmo.info/emmo#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> ;
                                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -839,7 +848,7 @@ High speed tool steels (JIS)""" ;
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty <http://emmo.info/emmo#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> ;
                                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                             owl:onClass <http://emmo.info/emmo/middle/siunits#EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928>
+                                                             owl:onClass <http://emmo.info/emmo#EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928>
                                                            ] ;
                                            skos:prefLabel "MegaPascal"@en .
 
@@ -848,7 +857,7 @@ High speed tool steels (JIS)""" ;
 :EMMO_26708d5b_4bf7_4059_969f_3ba03c587051 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_442c0fb7_09d4_4dae_b45c_8eb1522da38f ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
                                                              owl:someValuesFrom :EMMO_897678f5_488b_4489_8b84_1ab548db1512
                                                            ] ;
                                            rdfs:comment "A method that is fully compliant with ISO 14577 standard." ;
@@ -1017,7 +1026,7 @@ Metals with special properties (SAE)""" ;
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_3407d408_5d15_4090_8161_43d5e288a864
 :EMMO_3407d408_5d15_4090_8161_43d5e288a864 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_3c7c1148_40e2_4ec2_a0ac_8720d03e356f ;
-                                           isq:physicalDimension "T-2 L+2 M+1 I0 Θ0 N0 J0" ;
+                                           emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d  "T-2 L+2 M+1 I0 Θ0 N0 J0" ;
                                            skos:prefLabel "TensileStiffness"@en .
 
 
@@ -1126,7 +1135,7 @@ Metals with special properties (SAE)""" ;
                                            rdfs:subClassOf :CableBundleUseCase ,
                                                            :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
                                                            :NanoindentationUseCase ,
-                                                           <http://emmo.info/emmo/middle/holistic#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce> ;
+                                                           <http://emmo.info/emmo#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce> ;
                                            rdfs:comment "Is a type of activity/computation that is part of a process or in other words a participant in a process and a process itself that involves the transformation of inputs into results (outputs). The calculation defines in more detail very specific tasks within a process (simulation) that are executed. Each of this tasks or calculations have a specific role within the simulation." ;
                                            skos:prefLabel "Calculation"@en .
 
@@ -1206,7 +1215,7 @@ Metals with special properties (SAE)""" ;
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_400fa2bf_a1b9_4e03_b6bd_7540c8fe5b4a
 :EMMO_400fa2bf_a1b9_4e03_b6bd_7540c8fe5b4a rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_3c7c1148_40e2_4ec2_a0ac_8720d03e356f ;
-                                           isq:physicalDimension "T-2 L+3 M+1 I0 Θ0 N0 J0" ;
+                                           emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d  "T-2 L+3 M+1 I0 Θ0 N0 J0" ;
                                            rdfs:comment "In beam theory, a bending stiffness describes the effective stiffness of the beam for bending deformation. Formally, it is given as product of Young’s modulus and the second moment of inertia. But in practice, the bending stiffness is an individual effective parameter, that must not be separated into a material and a geometrical property." ;
                                            skos:prefLabel "BendingStiffness"@en .
 
@@ -1259,7 +1268,7 @@ Metals with special properties (SAE)""" ;
 :EMMO_442c0fb7_09d4_4dae_b45c_8eb1522da38f rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_2b89063d_6ed4_4bf0_9443_e0d3dcb265b8 ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
                                                              owl:someValuesFrom :EMMO_7461cbb7_9056_48ba_87fc_a2693a086c71
                                                            ] ;
                                            rdfs:comment "A depth sensing indentation test where measured displacement is in the nanometer range (0-1000 nm)." ;
@@ -1813,7 +1822,7 @@ Unalloyed construction, engineering and pressure vessel steels with C > 0,5 % (D
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty [ owl:inverseOf <http://emmo.info/emmo#EMMO_60577dea_9019_4537_ac41_80b0fb563d41>
                                                                             ] ;
-                                                             owl:someValuesFrom <http://emmo.info/emmo/middle/units-extension#EMMO_c10b7090_7284_4719_8e15_c743b13ca6ad>
+                                                             owl:someValuesFrom <http://emmo.info/emmo#EMMO_c10b7090_7284_4719_8e15_c743b13ca6ad>
                                                            ] ;
                                            skos:prefLabel "Pascal"@en .
 
@@ -1928,7 +1937,7 @@ Unalloyed construction, engineering and pressure vessel steels with C > 0,5 % (D
 :EMMO_7461cbb7_9056_48ba_87fc_a2693a086c71 rdf:type owl:Class ;
                                            owl:equivalentClass [ owl:intersectionOf ( :EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c
                                                                                       [ rdf:type owl:Restriction ;
-                                                                                        owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                                                        owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
                                                                                         owl:someValuesFrom :EMMO_44389354_4c50_4a74_b315_83cdc69d326d
                                                                                       ]
                                                                                     ) ;
@@ -1936,11 +1945,11 @@ Unalloyed construction, engineering and pressure vessel steels with C > 0,5 % (D
                                                                ] ;
                                            rdfs:subClassOf :EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
                                                              owl:someValuesFrom :EMMO_44389354_4c50_4a74_b315_83cdc69d326d
                                                            ] ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
                                                              owl:someValuesFrom :EMMO_5d4ab23c_859a_4def_844c_c57b82fea44d
                                                            ] ;
                                            skos:prefLabel "NanoindentationMeasurement"@en .
@@ -2042,11 +2051,11 @@ Unalloyed construction, engineering and pressure vessel steels with C > 0,5 % (D
                                            rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
                                                            <http://emmo.info/emmo#EMMO_463bcfda_867b_41d9_a967_211d4d437cfb> ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
                                                              owl:someValuesFrom :EMMO_3d31d98b_0620_4f58_858e_8aeedaf70dad
                                                            ] ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1> ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1> ;
                                                              owl:someValuesFrom :EMMO_535baaec_5360_48e8_ada4_72c6e6848957
                                                            ] ;
                                            skos:prefLabel "TensileTestMeasurement"@en .
@@ -2089,7 +2098,7 @@ Unalloyed construction, engineering and pressure vessel steels with C > 0,5 % (D
 :EMMO_82723ac0_2abd_46d4_a850_7616d1ac2fa0 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_442c0fb7_09d4_4dae_b45c_8eb1522da38f ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
                                                              owl:someValuesFrom :EMMO_2a7951e2_0f3d_4fe7_bf8a_0ce97b4cbab1
                                                            ] ;
                                            rdfs:comment "Technique for obtaining elastic modulus and hardness data continuously during a nanoindentation process." ;
@@ -2386,16 +2395,16 @@ Low-alloyed steels for machine structural use (JIS)""" ;
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_959181b4_1765_4fee_8ca7_139d4728b2a5
 :EMMO_959181b4_1765_4fee_8ca7_139d4728b2a5 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
-                                                           <http://emmo.info/emmo/middle/siunits#EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106> ,
+                                                           <http://emmo.info/emmo#EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106> ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty <http://emmo.info/emmo#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> ;
                                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                             owl:onClass <http://emmo.info/emmo/middle/siunits#EMMO_7db11dbf_a643_464a_9b56_07eabcc3e9c5>
+                                                             owl:onClass <http://emmo.info/emmo#EMMO_7db11dbf_a643_464a_9b56_07eabcc3e9c5>
                                                            ] ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty <http://emmo.info/emmo#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> ;
                                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                             owl:onClass <http://emmo.info/emmo/middle/siunits#EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7>
+                                                             owl:onClass <http://emmo.info/emmo#EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7>
                                                            ] ;
                                            skos:prefLabel "Millimetre"@en .
 
@@ -2476,7 +2485,7 @@ Roller bearing steels (DIN 10027-2)""" ;
                                                              owl:someValuesFrom :EMMO_ee09aa64_f477_4e8f_8b0c_f5d30177ba8d
                                                            ] ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
                                                              owl:someValuesFrom :EMMO_19afc39b_eb5c_46e0_b880_8e08ec831ebc
                                                            ] ;
                                            skos:prefLabel "IndentationMeasurement"@en .
@@ -2640,7 +2649,7 @@ Materials with special physical properties including Ni (DIN 10027-2)""" ;
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_ac324c09_8830_4b04_bda5_8646a8dee0d4
 :EMMO_ac324c09_8830_4b04_bda5_8646a8dee0d4 rdf:type owl:Class ;
-                                           rdfs:subClassOf <http://emmo.info/emmo/middle/units-extension#EMMO_c2f5ee66_579c_44c6_a2e9_fa2eaa9fa4da> ;
+                                           rdfs:subClassOf <http://emmo.info/emmo#EMMO_c2f5ee66_579c_44c6_a2e9_fa2eaa9fa4da> ;
                                            emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PERCENT" ;
                                            skos:prefLabel "Percent"@en .
 
@@ -2664,7 +2673,7 @@ Materials with special physical properties including Ni (DIN 10027-2)""" ;
 :EMMO_af7886a4_c996_469b_a0ed_23bb31448a19 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
                                                            emmo:EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81 ;
-                                           isq:physicalDimension "T-2 L-1 M+1 I0 Θ0 N0 J0" ;
+                                           emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d  "T-2 L-1 M+1 I0 Θ0 N0 J0" ;
                                            rdfs:comment "Corresponding strength value to a given number of cycles as determined from an S-N diagram (usually given for 50 % probability of survival)." ;
                                            rdfs:isDefinedBy "https://www.astm.org/Standards/E1823.htm" ;
                                            skos:prefLabel "FatigueStrength"@en .
@@ -2709,7 +2718,7 @@ Materials with special physical properties including Ni (DIN 10027-2)""" ;
 :EMMO_b4d92a5c_5267_46ab_abed_f000b890b9db rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
                                                            emmo:EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81 ;
-                                           isq:physicalDimension "T-2 L-1 M+1 I0 Θ0 N0 J0" ;
+                                           emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d  "T-2 L-1 M+1 I0 Θ0 N0 J0" ;
                                            rdfs:comment """According to \"FKM-Richtlinie - Rechnerischer Festigkeitsnachweis (2012)\", the alternating strength is a numerical value that is calculated via the fatigue strength of a material and the mean stress factor. The alternating strength allows the engineer to compare fatigue strengths obtained from tests with different stress ratios (mean stress). It converts the fatigue strength value to an alternate strength value for R=-1.
 alternating strength S_WK = fatigue strength / K_AK."""@en ;
                                            skos:prefLabel "AlternatingStrength"@en .
@@ -2767,16 +2776,16 @@ alternating strength S_WK = fatigue strength / K_AK."""@en ;
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_baf5bb96_05ea_4f78_bdb7_a556342c8b6a
 :EMMO_baf5bb96_05ea_4f78_bdb7_a556342c8b6a rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
-                                                           <http://emmo.info/emmo/middle/siunits#EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106> ,
+                                                           <http://emmo.info/emmo#EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106> ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty <http://emmo.info/emmo#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> ;
                                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                             owl:onClass <http://emmo.info/emmo/middle/siunits#EMMO_7db11dbf_a643_464a_9b56_07eabcc3e9c5>
+                                                             owl:onClass <http://emmo.info/emmo#EMMO_7db11dbf_a643_464a_9b56_07eabcc3e9c5>
                                                            ] ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty <http://emmo.info/emmo#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> ;
                                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                             owl:onClass <http://emmo.info/emmo/middle/siunits#EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae>
+                                                             owl:onClass <http://emmo.info/emmo#EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae>
                                                            ] ;
                                            skos:prefLabel "MicroMetre"@en .
 
@@ -2873,7 +2882,7 @@ alternating strength S_WK = fatigue strength / K_AK."""@en ;
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_c16d56fc_ad1f_420d_9d61_edbe4a28136a
 :EMMO_c16d56fc_ad1f_420d_9d61_edbe4a28136a rdf:type owl:Class ;
                                            owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                                 owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
                                                                  owl:someValuesFrom [ owl:intersectionOf ( :EMMO_76dba92f_a761_409f_83d8_5a0c9c73b349
                                                                                                            :EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c
                                                                                                          ) ;
@@ -2882,11 +2891,11 @@ alternating strength S_WK = fatigue strength / K_AK."""@en ;
                                                                ] ;
                                            rdfs:subClassOf :EMMO_0f73321c_c4fd_40ed_9b58_eccd9b7d8e15 ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
                                                              owl:someValuesFrom :EMMO_76dba92f_a761_409f_83d8_5a0c9c73b349
                                                            ] ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
                                                              owl:someValuesFrom :EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c
                                                            ] ;
                                            rdfs:comment "A single indentation experiment." ;
@@ -3079,23 +3088,23 @@ Construction, engineering and pressure vessel steels, Cr-Mo with Mo < 0,4 % and 
 :EMMO_d0a86d56_1b66_4562_bc96_4075527463ed rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_10f4d440_33d0_456d_b27c_83bf1d9811c0 ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
                                                              owl:someValuesFrom :EMMO_0b47a9ad_2854_43d0_9707_ff5f81f5b7d8
                                                            ] ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
                                                              owl:someValuesFrom :EMMO_3407d408_5d15_4090_8161_43d5e288a864
                                                            ] ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
                                                              owl:someValuesFrom :EMMO_400fa2bf_a1b9_4e03_b6bd_7540c8fe5b4a
                                                            ] ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
                                                              owl:someValuesFrom :EMMO_9b8fd21c_cf02_40bd_8d0b_748556612573
                                                            ] ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://emmo.info/emmo/middle/holistic#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
                                                              owl:someValuesFrom :EMMO_f77b52b9_0750_4dbf_a131_faecbbb7f6a4
                                                            ] ;
                                            rdfs:comment "A measurement performed using the MeSOMICS machine." ;
@@ -3576,7 +3585,7 @@ Construction steels (Misc.)""" ;
 :EMMO_fb0dd8d8_1dc7_489d_b3f5_7c04ba7df433 rdf:type owl:Class ;
                                            rdfs:subClassOf :NanoindentationUseCase ,
                                                            <http://emmo.info/emmo#EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55> ;
-                                           isq:physicalDimension "T-2 L+1 M+1 I0 Î˜0 N0 J0" ;
+                                           emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d  "T-2 L+1 M+1 I0 Î˜0 N0 J0" ;
                                            rdfs:comment "The amplitude of the force value oscillation reading, with respect to its quasi static value." ;
                                            skos:prefLabel "AmplitudeOfOscillatoryForce"@en .
 
@@ -3667,8 +3676,8 @@ emmo:EMMO_a293f923_954c_4af5_9f97_9600ebd362cb rdf:type owl:Class .
 emmo:EMMO_abf7efbe_6b04_41b8_8326_4dd0f6be753e rdf:type owl:Class .
 
 
-###  http://emmo.info/emmo/middle/holistic#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce
-<http://emmo.info/emmo/middle/holistic#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce> rdf:type owl:Class .
+###  http://emmo.info/emmo#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce
+<http://emmo.info/emmo#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce> rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_0329f1f5_8339_4ce4_8505_a264c6d606ba
@@ -3796,32 +3805,32 @@ emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef rdf:type owl:Class .
 <http://emmo.info/emmo#EMMO_d7788d1a_020d_4c78_85a1_13563fcec168> rdf:type owl:Class .
 
 
-###  http://emmo.info/emmo/middle/siunits#EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928
-<http://emmo.info/emmo/middle/siunits#EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928> rdf:type owl:Class .
+###  http://emmo.info/emmo#EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928
+<http://emmo.info/emmo#EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928> rdf:type owl:Class .
 
 
-###  http://emmo.info/emmo/middle/siunits#EMMO_7db11dbf_a643_464a_9b56_07eabcc3e9c5
-<http://emmo.info/emmo/middle/siunits#EMMO_7db11dbf_a643_464a_9b56_07eabcc3e9c5> rdf:type owl:Class .
+###  http://emmo.info/emmo#EMMO_7db11dbf_a643_464a_9b56_07eabcc3e9c5
+<http://emmo.info/emmo#EMMO_7db11dbf_a643_464a_9b56_07eabcc3e9c5> rdf:type owl:Class .
 
 
-###  http://emmo.info/emmo/middle/siunits#EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae
-<http://emmo.info/emmo/middle/siunits#EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae> rdf:type owl:Class .
+###  http://emmo.info/emmo#EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae
+<http://emmo.info/emmo#EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae> rdf:type owl:Class .
 
 
-###  http://emmo.info/emmo/middle/siunits#EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7
-<http://emmo.info/emmo/middle/siunits#EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7> rdf:type owl:Class .
+###  http://emmo.info/emmo#EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7
+<http://emmo.info/emmo#EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7> rdf:type owl:Class .
 
 
-###  http://emmo.info/emmo/middle/siunits#EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106
-<http://emmo.info/emmo/middle/siunits#EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106> rdf:type owl:Class .
+###  http://emmo.info/emmo#EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106
+<http://emmo.info/emmo#EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106> rdf:type owl:Class .
 
 
-###  http://emmo.info/emmo/middle/units-extension#EMMO_c10b7090_7284_4719_8e15_c743b13ca6ad
-<http://emmo.info/emmo/middle/units-extension#EMMO_c10b7090_7284_4719_8e15_c743b13ca6ad> rdf:type owl:Class .
+###  http://emmo.info/emmo#EMMO_c10b7090_7284_4719_8e15_c743b13ca6ad
+<http://emmo.info/emmo#EMMO_c10b7090_7284_4719_8e15_c743b13ca6ad> rdf:type owl:Class .
 
 
-###  http://emmo.info/emmo/middle/units-extension#EMMO_c2f5ee66_579c_44c6_a2e9_fa2eaa9fa4da
-<http://emmo.info/emmo/middle/units-extension#EMMO_c2f5ee66_579c_44c6_a2e9_fa2eaa9fa4da> rdf:type owl:Class .
+###  http://emmo.info/emmo#EMMO_c2f5ee66_579c_44c6_a2e9_fa2eaa9fa4da
+<http://emmo.info/emmo#EMMO_c2f5ee66_579c_44c6_a2e9_fa2eaa9fa4da> rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d
