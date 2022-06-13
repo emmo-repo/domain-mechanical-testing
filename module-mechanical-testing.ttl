@@ -1,12 +1,3 @@
-#################################################################
-#    Note
-#################################################################
-
-# This is the modular mechanical testing ontology aligned to EMMO-beta4 and CHAMEO (wip). 
-# The concepts contained in this ttl-file serve as basis for the more specific domain ontology modules Nanoindentation, Fatigue, Indentation, and Mesomics.
- 
-#################################################################
-
 @prefix : <http://emmo.info/emmo/domain/mechanical-testing#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -664,6 +655,8 @@ High speed tool steels (JIS)""" ;
                                                              owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
                                                              owl:someValuesFrom :EMMO_b50db598_cfea_4582_9168_46fbc0b9ec4f
                                                            ] ;
+                                           emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Notch_(engineering)"@en ;
+                                           rdfs:comment "A V-shaped, U-shaped, or semi-circular defect deliberately introduced into a planar specimen. Notches are used in materials characterization to determine fracture mechanics related properties such as fracture toughness and rates of fatigue crack growth. (c) Wikipedia"@en ;
                                            skos:prefLabel "SpecimenNotch"@en .
 
 
@@ -838,7 +831,18 @@ High speed tool steels (JIS)""" ;
                                                                                       [ rdf:type owl:Restriction ;
                                                                                         owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
                                                                                         owl:someValuesFrom [ owl:intersectionOf ( :EMMO_68ee637e_eee7_4edc_ab24_1fe4135fb71c
-                                                                                                                                  <http://org.semanticweb.owlapi/error#Error1>
+                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                    owl:onProperty emmo:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 ;
+                                                                                                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                                    owl:onClass [ owl:intersectionOf ( emmo:EMMO_18d180e4_5e3e_42f7_820c_e08951223486
+                                                                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                                                                         owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ;
+                                                                                                                                                                         owl:hasValue 1.0
+                                                                                                                                                                       ]
+                                                                                                                                                                     ) ;
+                                                                                                                                                  rdf:type owl:Class
+                                                                                                                                                ]
+                                                                                                                                  ]
                                                                                                                                 ) ;
                                                                                                              rdf:type owl:Class
                                                                                                            ]
@@ -1447,7 +1451,23 @@ Cr-Mo-V Tool Steels (DIN 10027-2)"""@en ;
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_68ee637e_eee7_4edc_ab24_1fe4135fb71c
 :EMMO_68ee637e_eee7_4edc_ab24_1fe4135fb71c rdf:type owl:Class ;
                                            rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
-                                                           <http://org.semanticweb.owlapi/error#Error5> ;
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass [ owl:intersectionOf ( emmo:EMMO_18d180e4_5e3e_42f7_820c_e08951223486
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ;
+                                                                                                  owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                       owl:onDatatype xsd:double ;
+                                                                                                                       owl:withRestrictions ( [ xsd:minInclusive "1.0"^^xsd:double
+                                                                                                                                              ]
+                                                                                                                                            )
+                                                                                                                     ]
+                                                                                                ]
+                                                                                              ) ;
+                                                                           rdf:type owl:Class
+                                                                         ]
+                                                           ] ;
                                            rdfs:comment "The stress concentration factor Kt expresses the ratio of the highest stress to a nominal stress of the cross cross section (Kt = S_max/S_nominal). For an unnotched specimen, K_t = 1, for notched specimens K_t > 1" ;
                                            skos:prefLabel "StressConcentrationFactor"@en .
 
@@ -2332,8 +2352,28 @@ Tempering is a heat treatment technique applied to ferrous alloys, such as steel
                                                                                       [ rdf:type owl:Restriction ;
                                                                                         owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
                                                                                         owl:someValuesFrom [ owl:intersectionOf ( :EMMO_68ee637e_eee7_4edc_ab24_1fe4135fb71c
-                                                                                                                                  <http://org.semanticweb.owlapi/error#Error3>
-                                                                                                                                  <http://org.semanticweb.owlapi/error#Error4>
+                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                    owl:onProperty emmo:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 ;
+                                                                                                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                                    owl:onClass :EMMO_ac324c09_8830_4b04_bda5_8646a8dee0d4
+                                                                                                                                  ]
+                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                    owl:onProperty emmo:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 ;
+                                                                                                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                                    owl:onClass [ owl:intersectionOf ( emmo:EMMO_18d180e4_5e3e_42f7_820c_e08951223486
+                                                                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                                                                         owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ;
+                                                                                                                                                                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                                                              owl:onDatatype xsd:double ;
+                                                                                                                                                                                              owl:withRestrictions ( [ xsd:minExclusive "100.0"^^xsd:double
+                                                                                                                                                                                                                     ]
+                                                                                                                                                                                                                   )
+                                                                                                                                                                                            ]
+                                                                                                                                                                       ]
+                                                                                                                                                                     ) ;
+                                                                                                                                                  rdf:type owl:Class
+                                                                                                                                                ]
+                                                                                                                                  ]
                                                                                                                                 ) ;
                                                                                                              rdf:type owl:Class
                                                                                                            ]
@@ -2678,30 +2718,10 @@ Stainless steels (JIS)""" ;
                         skos:prefLabel "NanoindentationUseCase"@en .
 
 
-###  http://org.semanticweb.owlapi/error#Error1
-<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error2
-<http://org.semanticweb.owlapi/error#Error2> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error3
-<http://org.semanticweb.owlapi/error#Error3> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error4
-<http://org.semanticweb.owlapi/error#Error4> rdf:type owl:Class .
-
-
-###  http://org.semanticweb.owlapi/error#Error5
-<http://org.semanticweb.owlapi/error#Error5> rdf:type owl:Class .
-
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ xsd:minInclusive "1.0"^^xsd:double
 ] .
 
-[ xsd:minInclusive "1.0"^^xsd:double
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -2719,10 +2739,10 @@ Stainless steels (JIS)""" ;
 [ owl:hasValue 1.0
  ] .
 
-[ xsd:minExclusive "100.0"^^xsd:double
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ xsd:minExclusive "100.0"^^xsd:double
  ] .
 
 ###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
