@@ -402,12 +402,6 @@ chameo:Sample rdfs:subClassOf emmo:EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b .
 chameo:Specimen rdfs:comment "Specimen is a limited quantity of a real world object which is intended to be similar to and represent a larger amount of it. It can be defined as a sample or a portion of a real world object that has been prepared based on the measureemnt protocol."@en .
 
 
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_04f76b8a_0cb9_4a9e_8c94_dab5eb82d0e8
-:EMMO_04f76b8a_0cb9_4a9e_8c94_dab5eb82d0e8 rdf:type owl:Class ;
-                                           rdfs:subClassOf emmo:EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba ,
-                                                           :NanoindentationUseCase ;
-                                           skos:prefLabel "LiquidDroplet"@en .
-
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_05dbcd32_bdf0_44d2_94c4_78ea47fec79a
 :EMMO_05dbcd32_bdf0_44d2_94c4_78ea47fec79a rdf:type owl:Class ;
@@ -423,14 +417,6 @@ chameo:Specimen rdfs:comment "Specimen is a limited quantity of a real world obj
                                            rdfs:comment "Microstructures are compositional/structural inhomogeneities that may consist of spatially distributed phases of different compositions/structures, grains of different orientations, structural defects." ;
                                            skos:prefLabel "Microstructure"@en .
 
-
-
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_07696442_2e6d_416a_b4f0_81c4aff90de8
-:EMMO_07696442_2e6d_416a_b4f0_81c4aff90de8 rdf:type owl:Class ;
-                                           rdfs:subClassOf emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ,
-                                                           emmo:EMMO_f2d5d3ad_2e00_417f_8849_686f3988d929 ,
-                                                           :NanoindentationUseCase ;
-                                           skos:prefLabel "ContactAngleMeter"@en .
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_08cb5a5f_ae54_4ad0_a63f_8170f3852f02
@@ -480,36 +466,6 @@ Stainless steels with special additives (DIN 10027-2)""" ;
                                            skos:prefLabel "RP1.0"@en .
 
 
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_0d867829_e08b_46b4_9549_0e158d2b6a35
-:EMMO_0d867829_e08b_46b4_9549_0e158d2b6a35 rdf:type owl:Class ;
-                                           rdfs:subClassOf emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb ,
-                                                           :NanoindentationUseCase ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
-                                                             owl:someValuesFrom :EMMO_2f9a266b_ffe6_4b3e_8222_eca6001174a2
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-                                                             owl:someValuesFrom :EMMO_04f76b8a_0cb9_4a9e_8c94_dab5eb82d0e8
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-                                                             owl:someValuesFrom :EMMO_07696442_2e6d_416a_b4f0_81c4aff90de8
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-                                                             owl:someValuesFrom :EMMO_0ece9cba_617c_4452_bbdc_1c564129e393
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-                                                             owl:someValuesFrom :EMMO_d4d0a51f_3b70_49ca_aca4_20b3f4648958
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-                                                             owl:someValuesFrom :EMMO_df1db910_9601_4420_82b0_3a6ddaf93094
-                                                           ] ;
-                                           skos:prefLabel "ContactAngleMeasurement"@en .
-
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_0d9c3564_5955_4804_9d96_dd15ff7ba441
 :EMMO_0d9c3564_5955_4804_9d96_dd15ff7ba441 rdf:type owl:Class ;
@@ -529,12 +485,6 @@ Stainless steels with special additives (DIN 10027-2)""" ;
                                            rdfs:subClassOf :EMMO_bf5ed681_bd31_4994_a05b_85d1443d23b1 ;
                                            skos:prefLabel "Nitration"@en .
 
-
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_0ece9cba_617c_4452_bbdc_1c564129e393
-:EMMO_0ece9cba_617c_4452_bbdc_1c564129e393 rdf:type owl:Class ;
-                                           rdfs:subClassOf chameo:DataPostProcessing ,
-                                                           :EMMO_e3665cba_b1a8_4fcf_8194_493187fcd25a ;
-                                           skos:prefLabel "ContactAngleMeasurementPostProcessing"@en .
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_0edc8739_b8c7_4bcc_a37d_5cc02a2bd572
@@ -910,12 +860,6 @@ Metals with special properties (SAE)""" ;
                                            rdfs:subClassOf :EMMO_4c57e181_8205_4e51_a164_d17c4bea891d ;
                                            skos:prefLabel "BulkHardening"@en .
 
-
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_2f9a266b_ffe6_4b3e_8222_eca6001174a2
-:EMMO_2f9a266b_ffe6_4b3e_8222_eca6001174a2 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_0f73321c_c4fd_40ed_9b58_eccd9b7d8e15 ,
-                                                           :NanoindentationUseCase ;
-                                           skos:prefLabel "ContactAngleMethod"@en .
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_2ff88734_1272_45d0_a720_0e476b55af26
@@ -1314,7 +1258,7 @@ Construction, engineering and pressure vessel steels, Cr-Mo with Mo < 0,35 % Cr-
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_5589aa4e_6cb7_4194_b549_73854ab8aaa6
 :EMMO_5589aa4e_6cb7_4194_b549_73854ab8aaa6 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_376c6456_5601_41c2_987c_3063f14408d4 ;
-                                           rdfs:comment "The maximum load attained during a nanoindentation test." ;
+                                           rdfs:comment "The maximum load attained during a measurement, e.g. during a nanoindentation test." ;
                                            skos:prefLabel "MaximumLoad"@en .
 
 
@@ -1553,11 +1497,6 @@ Unalloyed construction, engineering and pressure vessel steels with C > 0,5 % (D
                                            skos:prefLabel "HighCarbonSteelWireRodsJIS"@en .
 
 
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_7bbc9593_ad1d_4e80_a957_815b7daca408
-:EMMO_7bbc9593_ad1d_4e80_a957_815b7daca408 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_2f9a266b_ffe6_4b3e_8222_eca6001174a2 ;
-                                           skos:prefLabel "PendantDropMethod"@en .
-
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_7dc73553_7d3f_4dc2_bb7b_f47775207457
 :EMMO_7dc73553_7d3f_4dc2_bb7b_f47775207457 rdf:type owl:Class ;
@@ -1757,12 +1696,6 @@ Low-alloyed steels for machine structural use (JIS)""" ;
                                            skos:prefLabel "FlatNotchedSpecimen"@en .
 
 
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_9560b3d4_c573_458a_a9c4_5e00383979cf
-:EMMO_9560b3d4_c573_458a_a9c4_5e00383979cf rdf:type owl:Class ;
-                                           rdfs:subClassOf emmo:EMMO_d7788d1a_020d_4c78_85a1_13563fcec168 ,
-                                                           :NanoindentationUseCase ;
-                                           skos:prefLabel "ContactAngleMeasurementStateImage"@en .
-
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_959181b4_1765_4fee_8ca7_139d4728b2a5
 :EMMO_959181b4_1765_4fee_8ca7_139d4728b2a5 rdf:type owl:Class ;
@@ -1880,8 +1813,7 @@ Materials with special physical properties including Ni (DIN 10027-2)""" ;
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_b39aa045_49f3_4c29_a197_c2d65f352cfb
 :EMMO_b39aa045_49f3_4c29_a197_c2d65f352cfb rdf:type owl:Class ;
-                                           rdfs:subClassOf emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 ,
-                                                           :NanoindentationUseCase ;
+                                           rdfs:subClassOf emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 ;
                                            rdfs:comment "When the \"Target Load\" or the \"Target Depth\" is reached, the \"Load\" is held constant for this time." ;
                                            skos:prefLabel "MaximumLoadHoldingTime"@en .
 
@@ -2023,11 +1955,6 @@ Heat-resisting stainless steels (SAE)""" ;
                                            rdfs:label "Heat-resisting stainless steels (SAE)"@en ;
                                            skos:prefLabel "HeatResistingStainlessSteelsSAE"@en .
 
-
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_c1a5ffe0_4b14_45c4_9777_5b74a2f7eb1e
-:EMMO_c1a5ffe0_4b14_45c4_9777_5b74a2f7eb1e rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_2f9a266b_ffe6_4b3e_8222_eca6001174a2 ;
-                                           skos:prefLabel "SessileDropMethod"@en .
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_c21ab500_db9a_43a3_a7ef_d43fb64bf856
@@ -2179,12 +2106,6 @@ Tempering is a heat treatment technique applied to ferrous alloys, such as steel
                                            skos:prefLabel "QuenchingAndTempering"@en .
 
 
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_d4d0a51f_3b70_49ca_aca4_20b3f4648958
-:EMMO_d4d0a51f_3b70_49ca_aca4_20b3f4648958 rdf:type owl:Class ;
-                                           rdfs:subClassOf emmo:EMMO_f3dd74c0_f480_49e8_9764_33b78638c235 ,
-                                                           :NanoindentationUseCase ;
-                                           skos:prefLabel "ContactAngle"@en .
-
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_d502b7c5_e898_4dfe_a0fe_6c64e922d14b
 :EMMO_d502b7c5_e898_4dfe_a0fe_6c64e922d14b rdf:type owl:Class ;
@@ -2282,7 +2203,7 @@ Tempering is a heat treatment technique applied to ferrous alloys, such as steel
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_dc56a625_9376_4434_a554_2d1153348c97
 :EMMO_dc56a625_9376_4434_a554_2d1153348c97 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_ee09aa64_f477_4e8f_8b0c_f5d30177ba8d ;
-                                           rdfs:comment "The maximum penetration depth attained during a nanoindentation test." ;
+                                           rdfs:comment "The maximum penetration depth attained during a measurement, e.g. during a nanoindentation test." ;
                                            skos:prefLabel "MaximumDepth"@en .
 
 
@@ -2316,11 +2237,6 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
                                            rdfs:label "Heat-resisting and stainless steels"@en ;
                                            skos:prefLabel "HeatResistingAndStainlessSteels"@en .
 
-
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_e3665cba_b1a8_4fcf_8194_493187fcd25a
-:EMMO_e3665cba_b1a8_4fcf_8194_493187fcd25a rdf:type owl:Class ;
-                                           rdfs:subClassOf :MechanicalTestingOntology ;
-                                           skos:prefLabel "ContactAngleUseCase"@en .
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e
@@ -2528,12 +2444,6 @@ Stainless steels (JIS)""" ;
                            rdfs:comment "This is the root class of the Mechanical Testing Ontology." ;
                            skos:prefLabel "MechanicalTestingOntology"@en .
 
-
-###  http://emmo.info/emmo/domain/mechanical-testing#NanoindentationUseCase
-:NanoindentationUseCase rdf:type owl:Class ;
-                        rdfs:subClassOf :MechanicalTestingOntology ;
-                        rdfs:comment "This is the artificial parent concept of the classes related to the Nanoindentation Use Case within this ontology." ;
-                        skos:prefLabel "NanoindentationUseCase"@en .
 
 
 [ xsd:minInclusive "1.0"^^xsd:double
