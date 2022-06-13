@@ -11,7 +11,7 @@
 
 <http://emmo.info/emmo/domain/mechanical-testing/nanoindentation> rdf:type owl:Ontology ;
                                                    owl:versionIRI <http://emmo.info/emmo/domain/mechanical-testing/1.0.0/nanoindentation> ;
-                                                   owl:imports <http://emmo.info/emmo/domain/mechanical-testing> ;
+                                                   owl:imports <http://emmo.info/emmo/domain/mechanical-testing/mechanical-testing> ;
                                                    dcterms:creator "Adham Hashibon" ,
                                                                    "Yoav Nahshon" ;
                                                    owl:versionInfo "1.0.0" ;
@@ -89,6 +89,82 @@
                                            rdfs:comment "Represents the Nanoindentation method specification." ;
                                            skos:prefLabel "NanoindentationMethodSpecification"@en .
 
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_10e7f26e_4cb6_4fb8_84e8_f90fec466e75
+:EMMO_10e7f26e_4cb6_4fb8_84e8_f90fec466e75 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f ,
+                                                           :NanoindentationUseCase ,
+                                                           emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 ;
+                                           rdfs:comment "The time over which the drift rate is measured." ;
+                                           skos:prefLabel "DriftDeterminationTime"@en .
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_6a8bfa0e_ef96_4f38_b892_40389eb7d69d
+:EMMO_6a8bfa0e_ef96_4f38_b892_40389eb7d69d rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f ,
+                                                           :EMMO_ee09aa64_f477_4e8f_8b0c_f5d30177ba8d ;
+                                           rdfs:comment "The targeted maximum depth. The experiment will stop loading at this point or if the maximum target load is reached." ;
+                                           skos:prefLabel "TargetDepth"@en .
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_68856430_66a2_49fb_b93f_e7124effb6bd
+:EMMO_68856430_66a2_49fb_b93f_e7124effb6bd rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f ,
+                                                           :NanoindentationUseCase ,
+                                                           emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+                                           rdfs:comment "The distance from the last known value of the displacement associated with the surface at which the system will establish the “Approach Velocity” and start looking for the surface." ;
+                                           skos:prefLabel "SurfaceApproachDistance"@en .
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_68efbbca_549a_4209_bdfc_cf0ddfd27dc9
+:EMMO_68efbbca_549a_4209_bdfc_cf0ddfd27dc9 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f ,
+                                                           :NanoindentationUseCase ,
+                                                           emmo:EMMO_0329f1f5_8339_4ce4_8505_a264c6d606ba ;
+                                           rdfs:comment "The velocity of the probe as it approaches the surface." ;
+                                           skos:prefLabel "SurfaceApproachVelocity"@en .
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_03ed6a50_3b04_4189_a939_dad066ece197
+:EMMO_03ed6a50_3b04_4189_a939_dad066ece197 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f ,
+                                                           emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 ;
+                                           rdfs:comment "The time constant used to measure the Dynamic displacement (time over which the RMS value of the displacement is computed). Generally equivalent to at least five waves at the target frequency and being an integer number of waves. This dramatically reduces noise ." ;
+                                           skos:prefLabel "DynamicTimeConstant"@en .
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_8aa746fa_0cfa_4be7_9e5b_a691a860032e
+:EMMO_8aa746fa_0cfa_4be7_9e5b_a691a860032e rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f ;
+                                           rdfs:comment "In load frames of finite stiffness, the load applied via the indenter induces displacement in both the sample and the load frame. Frame compliance must be identified and subtracted from the total indenter displacement to account properly for sample deformation." ;
+                                           skos:prefLabel "LoadFrameCompliance"@en .                                           
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_73e0c7f8_20db_46c7_af69_22ad5616f8dc
+:EMMO_73e0c7f8_20db_46c7_af69_22ad5616f8dc rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f ;
+                                           rdfs:comment "The displacement resolution is typically found by dividing the maximum displacement voltage reading by the number of bits in the data acquisition system." ;
+                                           skos:prefLabel "DisplacementResolution"@en .
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_ebb3c390_173a_4c23_a338_12b6a75ddab2
+:EMMO_ebb3c390_173a_4c23_a338_12b6a75ddab2 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f ;
+                                           rdfs:comment "The noise floor in the displacement measurement system will determine what the minimum useable indentation depth." ;
+                                           skos:prefLabel "DisplacementNoiseFloor"@en .
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_ba4f6d96_699f_48ba_a432_6676521587f1
+:EMMO_ba4f6d96_699f_48ba_a432_6676521587f1 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f ,
+                                                           :NanoindentationUseCase ,
+                                                           emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 ;
+                                           rdfs:comment "This is the average time of a typical indentation cycle from load to full unload." ;
+                                           skos:prefLabel "IndentationTime"@en .
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_a1c92b74_411d_414c_85e0_36ddd8c8afb6
+:EMMO_a1c92b74_411d_414c_85e0_36ddd8c8afb6 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f ,
+                                                           :NanoindentationUseCase ,
+                                                           emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 ;
+                                           rdfs:comment "This is the time specified to linearly reduce the load on the contact form it’s maximum value to zero." ;
+                                           skos:prefLabel "TargetUnloadTime"@en .
+                                        
+
+
+
+
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_86a5bfa9_fb77_4365_9894_81c0454ad7d0
 :EMMO_86a5bfa9_fb77_4365_9894_81c0454ad7d0 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_ca42ed31_3983_4e1a_84f9_a84cab2cdb59 ,
@@ -128,6 +204,8 @@
                                                            ] ;
                                            rdfs:comment "Represents the properties properties of the NanoindentationSpecimen." ;
                                            skos:prefLabel "NanoindentationSpecimenProperty"@en .
+
+
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_dad694df_6f58_4f5f_bb1d_6eb9dea25fb1
 :EMMO_dad694df_6f58_4f5f_bb1d_6eb9dea25fb1 rdf:type owl:Class ;

@@ -11,7 +11,8 @@
 
 <http://emmo.info/emmo/domain/mechanical-testing/fatigue> rdf:type owl:Ontology ;
                                                    owl:versionIRI <http://emmo.info/emmo/domain/mechanical-testing/1.0.0/fatigue> ;
-                                                   owl:imports <http://emmo.info/emmo/domain/mechanical-testing/1.0.0> ;
+                                                   owl:imports <http://emmo.info/emmo/domain/mechanical-testing/mechanical-testing> ;
+
                                                    dcterms:creator "Adham Hashibon" ,
                                                                    "Yoav Nahshon" ;
                                                    owl:versionInfo "1.0.0" ;
@@ -92,6 +93,139 @@ R = -\"infinite\" is compression pulsating stress,
 R > 1 describes compression-compression loading""" ;
                                            skos:prefLabel "StressRatio"@en .
 
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e
+:EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_535baaec_5360_48e8_ada4_72c6e6848957 ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204> ;
+                                                             owl:someValuesFrom emmo:EMMO_7efd64d1_05a1_49cd_a7f0_783ca050d4f3
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_60577dea_9019_4537_ac41_80b0fb563d41> ;
+                                                             owl:someValuesFrom :EMMO_1481b773_15d8_4f1a_bf37_3a704958c9d3
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_60577dea_9019_4537_ac41_80b0fb563d41> ;
+                                                             owl:someValuesFrom :EMMO_3c93b3eb_f08f_4c25_940c_fac690e012c6
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_60577dea_9019_4537_ac41_80b0fb563d41> ;
+                                                             owl:someValuesFrom :EMMO_4d5b1eee_cda4_4bc7_8a0e_612fcf7f0c82
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_60577dea_9019_4537_ac41_80b0fb563d41> ;
+                                                             owl:someValuesFrom :EMMO_71200c24_44fe_4533_96be_55ecb299681c
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_60577dea_9019_4537_ac41_80b0fb563d41> ;
+                                                             owl:someValuesFrom :EMMO_9b84bd4e_adfa_48b6_b4f7_f597bb40dae1
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204> ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_37824926_963f_4e3d_ac3c_7c323e969ff6
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204> ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_3b07c236_fcaa_4d7f_9b2b_b59e247a1922
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204> ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_6294b181_baf5_460a_9880_7f183bba9aae
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204> ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_67869907_8e6e_45ac_87f7_41520e861b68
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204> ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_68ee637e_eee7_4edc_ab24_1fe4135fb71c
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204> ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_926d14c7_4f78_4c37_99b4_dfb0a531db64
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204> ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_a11352bc_9b81_4c0c_92e8_f47ea2c5c68b
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204> ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_b82033a4_faa1_4f97_8c31_ee9148e120be
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204> ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_bcfa65e9_ddf4_4a16_81ff_b02ae29c0a27
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_e1097637_70d2_4895_973f_2396f04fa204> ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_60577dea_9019_4537_ac41_80b0fb563d41> ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_3c93b3eb_f08f_4c25_940c_fac690e012c6
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_60577dea_9019_4537_ac41_80b0fb563d41> ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_4d5b1eee_cda4_4bc7_8a0e_612fcf7f0c82
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_60577dea_9019_4537_ac41_80b0fb563d41> ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_71200c24_44fe_4533_96be_55ecb299681c
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_60577dea_9019_4537_ac41_80b0fb563d41> ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_9b84bd4e_adfa_48b6_b4f7_f597bb40dae1
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_52813850_bc0e_450f_8a62_4832288ca1b2 ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                                               owl:oneOf [ rdf:type rdf:List ;
+                                                                                           rdf:first "false"^^xsd:string ;
+                                                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                                                      rdf:first "true"^^xsd:string ;
+                                                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                                                 rdf:first "unknown"^^xsd:string ;
+                                                                                                                 rdf:rest rdf:nil
+                                                                                                               ]
+                                                                                                    ]
+                                                                                         ]
+                                                                             ]
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_a7dddd8f_51f4_4cf5_a8a2_a7aba83e8a72 ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                                               owl:oneOf [ rdf:type rdf:List ;
+                                                                                           rdf:first "false"^^xsd:string ;
+                                                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                                                      rdf:first "true"^^xsd:string ;
+                                                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                                                 rdf:first "unknown"^^xsd:string ;
+                                                                                                                 rdf:rest rdf:nil
+                                                                                                               ]
+                                                                                                    ]
+                                                                                         ]
+                                                                             ]
+                                                           ] ;
+                                           skos:prefLabel "MechanicalTestingSpecimen"@en .
+
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_473ac6ab_620f_4195_97ed_23591b27a5ef
 :EMMO_473ac6ab_620f_4195_97ed_23591b27a5ef rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
@@ -134,6 +268,117 @@ alternating strength S_WK = fatigue strength / K_AK."""@en ;
                                            rdfs:comment "The minimum stress S_min is the lowest occuring stress during fatigue testing." ;
                                            skos:prefLabel "MinimumStress"@en .
 
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_44e81349_11f5_406c_beb1_457184586cf8
+:EMMO_44e81349_11f5_406c_beb1_457184586cf8 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_16d31733_248f_4e55_b870_dfc96d3e2c3b ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> ;
+                                                             owl:someValuesFrom :EMMO_4d5b1eee_cda4_4bc7_8a0e_612fcf7f0c82
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_f68030be_94b8_4c61_a161_886468558054> ;
+                                                             owl:someValuesFrom :EMMO_01751749_c384_4a73_b1f1_291447712a92
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_f68030be_94b8_4c61_a161_886468558054> ;
+                                                             owl:someValuesFrom :EMMO_4d5b1eee_cda4_4bc7_8a0e_612fcf7f0c82
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_f68030be_94b8_4c61_a161_886468558054> ;
+                                                             owl:someValuesFrom :EMMO_6294b181_baf5_460a_9880_7f183bba9aae
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_f68030be_94b8_4c61_a161_886468558054> ;
+                                                             owl:someValuesFrom :EMMO_68ee637e_eee7_4edc_ab24_1fe4135fb71c
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_f68030be_94b8_4c61_a161_886468558054> ;
+                                                             owl:someValuesFrom :EMMO_926d14c7_4f78_4c37_99b4_dfb0a531db64
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_f68030be_94b8_4c61_a161_886468558054> ;
+                                                             owl:someValuesFrom :EMMO_a11352bc_9b81_4c0c_92e8_f47ea2c5c68b
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_f68030be_94b8_4c61_a161_886468558054> ;
+                                                             owl:someValuesFrom :EMMO_b82033a4_faa1_4f97_8c31_ee9148e120be
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_f68030be_94b8_4c61_a161_886468558054> ;
+                                                             owl:someValuesFrom :EMMO_c799b443_c70f_4351_bb0f_e4ab29073481
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_f68030be_94b8_4c61_a161_886468558054> ;
+                                                             owl:someValuesFrom :EMMO_d7744a44_6cfe_47cd_9e10_9ec3be7f8d0c
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_f68030be_94b8_4c61_a161_886468558054> ;
+                                                             owl:someValuesFrom emmo:EMMO_7efd64d1_05a1_49cd_a7f0_783ca050d4f3
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_1481b773_15d8_4f1a_bf37_3a704958c9d3
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_37824926_963f_4e3d_ac3c_7c323e969ff6
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_71200c24_44fe_4533_96be_55ecb299681c
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_9b84bd4e_adfa_48b6_b4f7_f597bb40dae1
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_bcfa65e9_ddf4_4a16_81ff_b02ae29c0a27
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_60577dea_9019_4537_ac41_80b0fb563d41> ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_4ba72a55_218b_4ead_8a55_2ca1ac5fea33
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_52813850_bc0e_450f_8a62_4832288ca1b2 ;
+                                                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                  owl:oneOf [ rdf:type rdf:List ;
+                                                                                              rdf:first "false"^^xsd:string ;
+                                                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                                                         rdf:first "true"^^xsd:string ;
+                                                                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                                                                    rdf:first "unknown"^^xsd:string ;
+                                                                                                                    rdf:rest rdf:nil
+                                                                                                                  ]
+                                                                                                       ]
+                                                                                            ]
+                                                                                ]
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_a7dddd8f_51f4_4cf5_a8a2_a7aba83e8a72 ;
+                                                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                  owl:oneOf [ rdf:type rdf:List ;
+                                                                                              rdf:first "false"^^xsd:string ;
+                                                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                                                         rdf:first "true"^^xsd:string ;
+                                                                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                                                                    rdf:first "unknown"^^xsd:string ;
+                                                                                                                    rdf:rest rdf:nil
+                                                                                                                  ]
+                                                                                                       ]
+                                                                                            ]
+                                                                                ]
+                                                           ] ;
+                                           rdfs:comment "This label should be made more specific since it represents a very specific series to the FatigueTestUseCase" ,
+                                                        "Typically a series contains data from multiple experiments/specimens of similar type and material, but at different stress amplitude aiming at determination of a SN curve. Furthermore, a series contains secondary data such as the fatigue strength and slope of the SN-curve which puts the results of the individual experiments in a context." ;
+                                           skos:prefLabel "Series"@en .
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_d7744a44_6cfe_47cd_9e10_9ec3be7f8d0c
 :EMMO_d7744a44_6cfe_47cd_9e10_9ec3be7f8d0c rdf:type owl:Class ;
@@ -181,6 +426,16 @@ alternating strength S_WK = fatigue strength / K_AK."""@en ;
                                                            ] ;
                                            rdfs:comment "Fatigue testing is a specialised form of mechanical testing that is performed by applying cyclic loading to a coupon or structure. These tests are used either to generate fatigue life and crack growth data, identify critical locations or demonstrate the safety of a structure that may be susceptible to fatigue." ;
                                            skos:prefLabel "FatigueTesting"@en .
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_04de9b50_35ef_4531_afbd_ded7ce5fffa1
+:EMMO_04de9b50_35ef_4531_afbd_ded7ce5fffa1 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_23273603_7ee7_4012_a0bb_d484433083de ;
+                                           skos:prefLabel "StaircaseMethod" .
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_6e59c5d5_6b2c_46a6_a598_ae692a35a4dc
+:EMMO_6e59c5d5_6b2c_46a6_a598_ae692a35a4dc rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_23273603_7ee7_4012_a0bb_d484433083de ;
+                                           skos:prefLabel "SingleStepLoading" .
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_fe13168c_8e04_4cbf_8462_641669a4b7f3
 :EMMO_fe13168c_8e04_4cbf_8462_641669a4b7f3 rdf:type owl:Class ;
