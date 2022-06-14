@@ -402,7 +402,6 @@ chameo:Sample rdfs:subClassOf emmo:EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b .
 chameo:Specimen rdfs:comment "Specimen is a limited quantity of a real world object which is intended to be similar to and represent a larger amount of it. It can be defined as a sample or a portion of a real world object that has been prepared based on the measureemnt protocol."@en .
 
 
-
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_05dbcd32_bdf0_44d2_94c4_78ea47fec79a
 :EMMO_05dbcd32_bdf0_44d2_94c4_78ea47fec79a rdf:type owl:Class ;
                                            rdfs:subClassOf emmo:EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3 ;
@@ -416,7 +415,6 @@ chameo:Specimen rdfs:comment "Specimen is a limited quantity of a real world obj
                                            rdfs:subClassOf emmo:EMMO_c74da218_9147_4f03_92d1_8894abca55f3 ;
                                            rdfs:comment "Microstructures are compositional/structural inhomogeneities that may consist of spatially distributed phases of different compositions/structures, grains of different orientations, structural defects." ;
                                            skos:prefLabel "Microstructure"@en .
-
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_08cb5a5f_ae54_4ad0_a63f_8170f3852f02
@@ -466,7 +464,6 @@ Stainless steels with special additives (DIN 10027-2)""" ;
                                            skos:prefLabel "RP1.0"@en .
 
 
-
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_0d9c3564_5955_4804_9d96_dd15ff7ba441
 :EMMO_0d9c3564_5955_4804_9d96_dd15ff7ba441 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_3c93b3eb_f08f_4c25_940c_fac690e012c6 ;
@@ -484,7 +481,6 @@ Stainless steels with special additives (DIN 10027-2)""" ;
 :EMMO_0e30b15f_1b1e_4ff7_8699_a2fffdbc80d2 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_bf5ed681_bd31_4994_a05b_85d1443d23b1 ;
                                            skos:prefLabel "Nitration"@en .
-
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_0edc8739_b8c7_4bcc_a37d_5cc02a2bd572
@@ -511,8 +507,7 @@ Stainless steels with special additives (DIN 10027-2)""" ;
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_142c4b97_9011_4608_849b_08d1fdd642ce
 :EMMO_142c4b97_9011_4608_849b_08d1fdd642ce rdf:type owl:Class ;
-                                           rdfs:subClassOf emmo:EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81 ,
-                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
+                                           rdfs:subClassOf emmo:EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81 ;
                                            rdfs:comment "Residual stresses are stresses that remain in a solid material after the original cause of the stresses has been removed." ;
                                            skos:prefLabel "ResidualStress"@en .
 
@@ -555,18 +550,6 @@ High speed tool steels (JIS)""" ;
                                            rdfs:label "SteelNomenclature"@en ;
                                            skos:prefLabel "SteelNomenclature"@en .
 
-
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_16d31733_248f_4e55_b870_dfc96d3e2c3b
-:EMMO_16d31733_248f_4e55_b870_dfc96d3e2c3b rdf:type owl:Class ;
-                                           rdfs:subClassOf emmo:EMMO_89a0c87c_0804_4013_937a_6fe234d9499c ;
-                                           skos:prefLabel "DataSet"@en .
-
-
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_197b6afe_74cb_41bd_83a4_54fda6bea1e4
-:EMMO_197b6afe_74cb_41bd_83a4_54fda6bea1e4 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4 ;
-                                           rdfs:comment "A pore is a very small opening, cavity or depression. Pores occur in metals during melting and casting processes. Gases dissolved in the melt still escape while the melt solidifies, so the gas bubbles remain trapped and form pores in the material." ;
-                                           skos:prefLabel "Pore"@en .
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_19d0ed3f_38b8_4879_9ba1_7ce54c8443fd
@@ -737,12 +720,6 @@ High speed tool steels (JIS)""" ;
                                            skos:prefLabel "MechanicalTestingSpecimen"@en .
 
 
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_1f213db4_5e4d_45d3_963e_8b7c7693707b
-:EMMO_1f213db4_5e4d_45d3_963e_8b7c7693707b rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_cc6faafc_5942_4724_9af8_14c2be17a64a ;
-                                           rdfs:comment "{1..N} Elements the inclusion consists of." ;
-                                           skos:prefLabel "InclusionElements"@en .
-
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_1f2e03be_012a_4560_9d1b_417f530fdf3b
 :EMMO_1f2e03be_012a_4560_9d1b_417f530fdf3b rdf:type owl:Class ;
@@ -824,21 +801,6 @@ High speed tool steels (JIS)""" ;
                                            skos:prefLabel "Bending"@en .
 
 
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_2a706af8_27ae_468f_9688_fbbe4ca13a86
-:EMMO_2a706af8_27ae_468f_9688_fbbe4ca13a86 rdf:type owl:Class ;
-                                           rdfs:subClassOf emmo:EMMO_c74da218_9147_4f03_92d1_8894abca55f3 ,
-                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
-                                           rdfs:comment "Specifies, where the crack started on the cross section." ;
-                                           skos:prefLabel "FailureType"@en .
-
-
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_2aa65ba7_afb2_4deb_b566_3e2c25a89feb
-:EMMO_2aa65ba7_afb2_4deb_b566_3e2c25a89feb rdf:type owl:Class ;
-                                           rdfs:subClassOf emmo:EMMO_acf636d4_9ac2_4ce3_960a_d54338e6cae3 ,
-                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
-                                           rdfs:comment "Elongation at break, also known as fracture strain, is the ratio between changed length and initial length after breakage of the test specimen. Plastic strain at fracture." ;
-                                           skos:prefLabel "FractureStrain"@en .
-
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_2bd00836_2e7a_4e95_ad4e_50cb370c288c
 :EMMO_2bd00836_2e7a_4e95_ad4e_50cb370c288c rdf:type owl:Class ;
@@ -859,7 +821,6 @@ Metals with special properties (SAE)""" ;
 :EMMO_2e9a014f_9337_42f7_ad91_b73f150a9901 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_4c57e181_8205_4e51_a164_d17c4bea891d ;
                                            skos:prefLabel "BulkHardening"@en .
-
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_2ff88734_1272_45d0_a720_0e476b55af26
@@ -1027,7 +988,7 @@ Metals with special properties (SAE)""" ;
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_44e81349_11f5_406c_beb1_457184586cf8
 :EMMO_44e81349_11f5_406c_beb1_457184586cf8 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_16d31733_248f_4e55_b870_dfc96d3e2c3b ,
+                                           rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
                                                              owl:someValuesFrom :EMMO_4d5b1eee_cda4_4bc7_8a0e_612fcf7f0c82
@@ -1268,7 +1229,6 @@ Construction, engineering and pressure vessel steels, Cr-Mo with Mo < 0,35 % Cr-
                                            skos:prefLabel "TensileTestPostProcessing"@en .
 
 
-
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_58da328c_f504_44f9_9a78_ef62e50bb6b1
 :EMMO_58da328c_f504_44f9_9a78_ef62e50bb6b1 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_c83ab749_46e6_46fa_be0f_12575a28a30f ;
@@ -1420,7 +1380,6 @@ Unalloyed construction, engineering and pressure vessel steels with C > 0,5 % (D
                                            skos:prefLabel "UnalloyedConstructionEngineeringAndPressureVesselSteelsWithCAbove0p5PercentDIN10027"@en .
 
 
-
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_6e5dfdf2_c936_479c_a4dd_2eb50084c4a1
 :EMMO_6e5dfdf2_c936_479c_a4dd_2eb50084c4a1 rdf:type owl:Class ;
                                            rdfs:subClassOf emmo:EMMO_f3dd74c0_f480_49e8_9764_33b78638c235 ;
@@ -1450,19 +1409,6 @@ Unalloyed construction, engineering and pressure vessel steels with C > 0,5 % (D
                                            rdfs:seeAlso "https://www.beuth.de/en/standard/din-en-10027-1/262540217" ;
                                            skos:prefLabel "ShortName"@en .
 
-
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_71f86460_7451_43be_9e29_bb653724e231
-:EMMO_71f86460_7451_43be_9e29_bb653724e231 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_2a706af8_27ae_468f_9688_fbbe4ca13a86 ;
-                                           rdfs:comment "Crack-origin at specimen surface." ;
-                                           skos:prefLabel "SurfaceFailure"@en .
-
-
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_740dc009_8db5_4a11_b063_206016ec6cc9
-:EMMO_740dc009_8db5_4a11_b063_206016ec6cc9 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
-                                           rdfs:comment "Comment on unique features of the failure" ;
-                                           skos:prefLabel "FailureComment"@en .
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_7452b52c_82ea_47da_b84f_493317c8f03e
@@ -1495,7 +1441,6 @@ Unalloyed construction, engineering and pressure vessel steels with C > 0,5 % (D
                                            rdfs:comment "Steel category according to JIS standard: High carbon steel wire rods (JIS)" ;
                                            rdfs:label "High carbon steel wire rods (JIS)"@en ;
                                            skos:prefLabel "HighCarbonSteelWireRodsJIS"@en .
-
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_7dc73553_7d3f_4dc2_bb7b_f47775207457
@@ -1543,9 +1488,6 @@ Unalloyed construction, engineering and pressure vessel steels with C > 0,5 % (D
                                            skos:prefLabel "Polishing" .
 
 
-
-
-
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_8571817a_da81_42c2_b97d_ba974d0119b1
 :EMMO_8571817a_da81_42c2_b97d_ba974d0119b1 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_cc1df6d0_cf70_41e1_b757_7bdad7cc459e ;
@@ -1591,7 +1533,6 @@ Spring steels (JIS)""" ;
                                            skos:prefLabel "TargetLoad"@en .
 
 
-
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_89be8d21_79a7_4970_9b0a_ee18cec63e62
 :EMMO_89be8d21_79a7_4970_9b0a_ee18cec63e62 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_bb2485f3_e956_489b_8434_6f71333ae16c ;
@@ -1614,12 +1555,6 @@ Spring steels (JIS)""" ;
                                            skos:prefLabel "AverageDynamicHardness"@en .
 
 
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_8e789c90_a34a_425a_a685_36865e342c82
-:EMMO_8e789c90_a34a_425a_a685_36865e342c82 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4 ;
-                                           rdfs:comment "No special feature detected at crack-origin." ;
-                                           skos:prefLabel "Featureless"@en .
-
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_8e959570_c1a5_436f_bc54_08b423f4568d
 :EMMO_8e959570_c1a5_436f_bc54_08b423f4568d rdf:type owl:Class ;
@@ -1636,13 +1571,6 @@ Low-alloyed steels for machine structural use (JIS)""" ;
                                            rdfs:label "Low-alloyed steels for machine structural use (JIS)"@en ;
                                            skos:prefLabel "LowAlloyedSteelsForMachineStructuralUseJIS"@en .
 
-
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_8fb5442e_d864_4d85_aad1_8d638f6a5fd3
-:EMMO_8fb5442e_d864_4d85_aad1_8d638f6a5fd3 rdf:type owl:Class ;
-                                           rdfs:subClassOf emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb ,
-                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
-                                           rdfs:comment "Fractography describes all data resulting from examination of the fracture surface after fatigue testing. The goal is to find the information necessary to describe the failure behaviour and reason." ;
-                                           skos:prefLabel "Fractography"@en .
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_8fc8a9e8_e8c3_476c_a417_031267a0206a
@@ -1696,7 +1624,6 @@ Low-alloyed steels for machine structural use (JIS)""" ;
                                            skos:prefLabel "FlatNotchedSpecimen"@en .
 
 
-
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_959181b4_1765_4fee_8ca7_139d4728b2a5
 :EMMO_959181b4_1765_4fee_8ca7_139d4728b2a5 rdf:type owl:Class ;
                                            rdfs:subClassOf emmo:EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106 ,
@@ -1741,7 +1668,6 @@ Roller bearing steels (DIN 10027-2)""" ;
                                            skos:prefLabel "RollerBearingSteelsDIN10027"@en .
 
 
-
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_a0d796f3_02e1_47d4_b9c0_9995ebf6e7a4
 :EMMO_a0d796f3_02e1_47d4_b9c0_9995ebf6e7a4 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_8630b1ff_7985_444e_8572_373816c0d3b5 ;
@@ -1769,11 +1695,6 @@ Materials with special physical properties including Ni (DIN 10027-2)""" ;
                                            skos:prefLabel "MechanicalTestingMachine"@en .
 
 
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_a522e3fa_fde7_4d20_9246_ee6b0f073d6d
-:EMMO_a522e3fa_fde7_4d20_9246_ee6b0f073d6d rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
-                                           skos:prefLabel "FailureOrigin"@en .
-
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_a579af48_7803_4f5f_8f5f_ae1198b3eb85
 :EMMO_a579af48_7803_4f5f_8f5f_ae1198b3eb85 rdf:type owl:Class ;
@@ -1787,7 +1708,6 @@ Materials with special physical properties including Ni (DIN 10027-2)""" ;
                                            rdfs:subClassOf :EMMO_8e959570_c1a5_436f_bc54_08b423f4568d ;
                                            rdfs:comment "Deoxidization is a method used in metallurgy to remove the oxygen content during steel manufacturing. Deoxidation is important in the steelmaking process as oxygen is often detrimental to the quality of steel produced. Deoxidization is mainly achieved by adding a separate chemical species to neutralize the effects of oxygen or by directly removing the oxygen." ;
                                            skos:prefLabel "Deoxidization" .
-
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_ac324c09_8830_4b04_bda5_8646a8dee0d4
@@ -1956,7 +1876,6 @@ Heat-resisting stainless steels (SAE)""" ;
                                            skos:prefLabel "HeatResistingStainlessSteelsSAE"@en .
 
 
-
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_c21ab500_db9a_43a3_a7ef_d43fb64bf856
 :EMMO_c21ab500_db9a_43a3_a7ef_d43fb64bf856 rdf:type owl:Class ;
                                            rdfs:subClassOf emmo:EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8 ,
@@ -2038,12 +1957,6 @@ Construction, engineering and pressure vessel steels, Cr-Mo with Mo < 0,4 % and 
                                            skos:prefLabel "SpringSteels"@en .
 
 
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_cc6faafc_5942_4724_9af8_14c2be17a64a
-:EMMO_cc6faafc_5942_4724_9af8_14c2be17a64a rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4 ;
-                                           rdfs:comment "Non-metallic inclusions are chemical compounds and nonmetals that are present in steel and other alloys. They are the product of chemical reactions, physical effects, and contamination that occurs during the melting and pouring process." ;
-                                           skos:prefLabel "Inclusion"@en .
-
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_cd736720_7091_493d_a1ae_3fd31721ff36
 :EMMO_cd736720_7091_493d_a1ae_3fd31721ff36 rdf:type owl:Class ;
@@ -2086,12 +1999,6 @@ Construction, engineering and pressure vessel steels, Cr-Mo with Mo < 0,4 % and 
                                            skos:prefLabel "Tension"@en .
 
 
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_d291bbdb_322f_4758_a9cd_39ad0b91fac5
-:EMMO_d291bbdb_322f_4758_a9cd_39ad0b91fac5 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_2a706af8_27ae_468f_9688_fbbe4ca13a86 ;
-                                           rdfs:comment "Crack-origin in specimen volume." ;
-                                           skos:prefLabel "VolumeFailure"@en .
-
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_d39c0421_949a_41ad_96aa_bbf055760668
 :EMMO_d39c0421_949a_41ad_96aa_bbf055760668 rdf:type owl:Class ;
@@ -2104,7 +2011,6 @@ Construction, engineering and pressure vessel steels, Cr-Mo with Mo < 0,4 % and 
                                            rdfs:comment """Quenching is the rapid cooling of a workpiece in water, oil or air in order to obtain certain material properties. It is most commonly used to harden steel by inducing a martensite transformation.
 Tempering is a heat treatment technique applied to ferrous alloys, such as steel or cast iron, to achieve greater tougness by decreasing the hardness of the alloy. The reduction in hardness is usually accompanied by an increase in ductility, thereby decreasing the brittleness of the metal. It is usually applied after quenching.""" ;
                                            skos:prefLabel "QuenchingAndTempering"@en .
-
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_d502b7c5_e898_4dfe_a0fe_6c64e922d14b
@@ -2172,12 +2078,6 @@ Tempering is a heat treatment technique applied to ferrous alloys, such as steel
                                            skos:prefLabel "Tempering" .
 
 
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4
-:EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
-                                           rdfs:comment "Explanation for crack-initiation at origin." ;
-                                           skos:prefLabel "FailureReason"@en .
-
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_dbeee072_237a_42f9_845b_5f2bd3da5222
 :EMMO_dbeee072_237a_42f9_845b_5f2bd3da5222 rdf:type owl:Class ;
@@ -2239,13 +2139,6 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
 
 
 
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e
-:EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e rdf:type owl:Class ;
-                                           rdfs:subClassOf :MechanicalTestingOntology ;
-                                           rdfs:comment "This is the artificial parent concept of the classes related to the Fatigue Use Case within this ontology." ;
-                                           skos:prefLabel "FatigueUseCase"@en .
-
-
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_e6d1f1d4_6280_4c52_9a09_288c4b58e416
 :EMMO_e6d1f1d4_6280_4c52_9a09_288c4b58e416 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_4c57e181_8205_4e51_a164_d17c4bea891d ;
@@ -2276,8 +2169,7 @@ For instance, in the contact angle meadurement, the substrate is the sample to b
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_e8c8c152_484e_4053_8e35_82346b3fc927
 :EMMO_e8c8c152_484e_4053_8e35_82346b3fc927 rdf:type owl:Class ;
-                                           rdfs:subClassOf emmo:EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd ,
-                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
+                                           rdfs:subClassOf emmo:EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd ;
                                            rdfs:comment "Represents the geometry/shape of the cross section" ;
                                            skos:prefLabel "CrossSectionGeometry"@en .
 
@@ -2302,7 +2194,7 @@ Heat-resisting steel bars and wire rods (JIS)""" ;
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_ecb41be6_be55_4d5a_9c23_f5a1063cf74d
 :EMMO_ecb41be6_be55_4d5a_9c23_f5a1063cf74d rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
+                                           rdfs:subClassOf chameo:MeasurementParameter ;
                                            skos:prefLabel "ParameterSet"@en .
 
 
@@ -2345,12 +2237,10 @@ Heat-resisting steel bars and wire rods (JIS)""" ;
                                            skos:prefLabel "Torsion"@en .
 
 
-
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_f42ef6fc_110b_4491_8534_80bd6cfa80cb
 :EMMO_f42ef6fc_110b_4491_8534_80bd6cfa80cb rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_bf5ed681_bd31_4994_a05b_85d1443d23b1 ;
                                            skos:prefLabel "Nitrocarburizing"@en .
-
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_f7ce04b7_d252_4e30_b3ce_eb2346951a6b
@@ -2445,8 +2335,7 @@ Stainless steels (JIS)""" ;
                            skos:prefLabel "MechanicalTestingOntology"@en .
 
 
-
-[ xsd:minInclusive "1.0"^^xsd:double
+[ owl:hasValue 1.0
 ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -2458,19 +2347,19 @@ Stainless steels (JIS)""" ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:hasValue 1.0
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
 [ xsd:minExclusive "100.0"^^xsd:double
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ xsd:minInclusive "1.0"^^xsd:double
  ] .
 
 ###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
