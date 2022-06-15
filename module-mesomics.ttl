@@ -1,0 +1,224 @@
+@prefix : <http://emmo.info/emmo/domain/mechanical-testing#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix emmo: <http://emmo.info/emmo#> .
+@prefix chameo: <http://emmo.info/emmo/domain/chameo/chameo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://emmo.info/emmo/domain/mechanical-testing/mesomics> .
+
+<http://emmo.info/emmo/domain/mechanical-testing/mesomics> rdf:type owl:Ontology ;
+                                                   owl:versionIRI <http://emmo.info/emmo/domain/mechanical-testing/1.0.0/mesomics> ;
+                                                   owl:imports <http://emmo.info/emmo/domain/mechanical-testing/mechanical-testing> ;
+                                                   dcterms:creator "Adham Hashibon" ,
+                                                                   "Yoav Nahshon" ;
+                                                   owl:versionInfo "1.0.0" ;
+                                                   dcterms:contributor "Goldbeck Consulting Ltd (UK)" ;
+                                                   dcterms:publisher "EMMC ASBL" ;
+                                                   dcterms:title "Domain Mechanical Testing"@en ;
+                                                   rdfs:comment "This ontology is a joint colaboration between different projects: OYSTER, UrWerk and MarketPlace."@en ;
+                                                   dcterms:contributor "Fraunhofer IWM, DE" ;
+                                                   dcterms:creator "Joana Francisco Morgado" ;
+                                                   dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                                   dcterms:creator "Daniele Toti" ,
+                                                                   "Gerhard Goldbeck" ;
+                                                   dcterms:abstract "A domain ontology for Mechanical Testing based on EMMO."@en .
+                                                   
+#################################################################
+#    Classes
+#################################################################
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#CableBundleUseCase
+:CableBundleUseCase rdf:type owl:Class ;
+                    rdfs:subClassOf :MechanicalTestingOntology ;
+                    rdfs:comment "This is the artificial parent concept of the classes related to the Cable Bundle Use Case within this ontology." ;
+                    skos:prefLabel "CableBundleUseCase"@en .
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_0747262d_9356_4b7b_ac5d_90e2504e0968
+:EMMO_0747262d_9356_4b7b_ac5d_90e2504e0968 rdf:type owl:Class ;
+                                           rdfs:subClassOf chameo:DataPostProcessing ,
+                                                           :CableBundleUseCase ;
+                                           rdfs:comment "Bending test post processing is a generic class that holds for description of bending tests post-processing approaches." ;
+                                           skos:prefLabel "BendingTestPostProcessing"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_580f1bd6_5505_4f31_9a8a_b4e9a17bc604
+:EMMO_580f1bd6_5505_4f31_9a8a_b4e9a17bc604 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_ec7464a9_d99d_45f8_965b_4e9230ea8356 ,
+                                                           :CableBundleUseCase ;
+                                           rdfs:comment "Represents the cover of a Cable Bundle and it describes how it is spacially distributed across the cable bundle length." ;
+                                           skos:prefLabel "BundleCover"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_6f7f288a_ec43_41f7_ac6c_8e4941d2d29d
+:EMMO_6f7f288a_ec43_41f7_ac6c_8e4941d2d29d rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ,
+                                                           :CableBundleUseCase ;
+                                           rdfs:comment "An optional description of single cable details. The cable core usually corresponds to the conducting metal part." ;
+                                           skos:prefLabel "CableCore"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_8828c7d2_8f7d_4804_8e13_336d37d94ec2
+:EMMO_8828c7d2_8f7d_4804_8e13_336d37d94ec2 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ,
+                                                           :CableBundleUseCase ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+                                                             owl:someValuesFrom :EMMO_05dbcd32_bdf0_44d2_94c4_78ea47fec79a
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+                                                             owl:someValuesFrom :EMMO_0b47a9ad_2854_43d0_9707_ff5f81f5b7d8
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+                                                             owl:someValuesFrom :EMMO_3407d408_5d15_4090_8161_43d5e288a864
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+                                                             owl:someValuesFrom :EMMO_400fa2bf_a1b9_4e03_b6bd_7540c8fe5b4a
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+                                                             owl:someValuesFrom :EMMO_8a5f8323_d356_44a8_9840_af3bfac84505
+                                                           ] ;
+                                           rdfs:comment "A cable system is a generic term to represent different types of cable systems such as a cable bundle or a single cable." ;
+                                           skos:prefLabel "CableSystem"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_9ecbe4c2_0fdd_4ee9_8f68_31c290be4bde
+:EMMO_9ecbe4c2_0fdd_4ee9_8f68_31c290be4bde rdf:type owl:Class ;
+                                           owl:equivalentClass [ owl:intersectionOf ( :EMMO_8828c7d2_8f7d_4804_8e13_336d37d94ec2
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+                                                                                        owl:someValuesFrom :EMMO_580f1bd6_5505_4f31_9a8a_b4e9a17bc604
+                                                                                      ]
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+                                                                                        owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                                        owl:onClass :EMMO_e199bfdb_f084_4ab0_8951_706248d15c32
+                                                                                      ]
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ] ;
+                                           rdfs:subClassOf :EMMO_8828c7d2_8f7d_4804_8e13_336d37d94ec2 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+                                                             owl:someValuesFrom :EMMO_580f1bd6_5505_4f31_9a8a_b4e9a17bc604
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+                                                             owl:someValuesFrom :EMMO_709d4e04_e972_4f57_9589_bf99ea08d2ea
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+                                                             owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_e199bfdb_f084_4ab0_8951_706248d15c32
+                                                           ] ;
+                                           rdfs:comment "A component containing several single cables, that are bundled together by a certain type of taping. A cable bundle has simple effective properties (bending stiffness, etc.) describing the macroscopic structure." ;
+                                           skos:prefLabel "CableBundle"@en .    
+                                           
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_e199bfdb_f084_4ab0_8951_706248d15c32
+:EMMO_e199bfdb_f084_4ab0_8951_706248d15c32 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_8828c7d2_8f7d_4804_8e13_336d37d94ec2 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ;
+                                                             owl:someValuesFrom :EMMO_709d4e04_e972_4f57_9589_bf99ea08d2ea
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_6f7f288a_ec43_41f7_ac6c_8e4941d2d29d
+                                                           ] ;
+                                           rdfs:comment "One single cable, e.g. a sensor cable with effective properties (e.g. bending stiffness)." ;
+                                           skos:prefLabel "SingleCable"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_6e37e2b7_8cce_487c_ad40_36b4b7f030e3
+:EMMO_6e37e2b7_8cce_487c_ad40_36b4b7f030e3 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_0747262d_9356_4b7b_ac5d_90e2504e0968 ;
+                                           rdfs:comment "Mesomics bending analysis is a general class that is used to represent the set of Mesomics bensing analysis post-processing calculations." ;
+                                           skos:prefLabel "MesomicsBendingAnalysis"@en .
+
+                                           
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_81dd7f19_073d_4153_9517_823edac9fac7
+:EMMO_81dd7f19_073d_4153_9517_823edac9fac7 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_580f1bd6_5505_4f31_9a8a_b4e9a17bc604 ;
+                                           rdfs:comment "Represents a cable bundle cover based on Tape and how the tape is placed across the bundle." ;
+                                           skos:prefLabel "Taping"@en .
+                                           
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_851f6719_2e5c_454b_b0d1_439fbdac11b5
+:EMMO_851f6719_2e5c_454b_b0d1_439fbdac11b5 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_81dd7f19_073d_4153_9517_823edac9fac7 ;
+                                           rdfs:comment "Taping that covers half of he cable bundle lateral surface area." ;
+                                           skos:prefLabel "HalfTaping"@en .
+                                           
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_a9974b61_d31e_4f5c_9fee_13c777ad93ff
+:EMMO_a9974b61_d31e_4f5c_9fee_13c777ad93ff rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_81dd7f19_073d_4153_9517_823edac9fac7 ;
+                                           rdfs:comment "Taping that covers only at specific discrete locations across the cable bundle overall length." ;
+                                           skos:prefLabel "PartialTaping"@en .
+                                           
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_f8448aef_c62e_448a_87e3_b7e670566de3
+:EMMO_f8448aef_c62e_448a_87e3_b7e670566de3 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_81dd7f19_073d_4153_9517_823edac9fac7 ;
+                                           rdfs:comment "Taping that covers the cable bundle entire lateral surface area." ;
+                                           skos:prefLabel "FullyTaping"@en .
+
+                                           
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_f77b52b9_0750_4dbf_a131_faecbbb7f6a4
+:EMMO_f77b52b9_0750_4dbf_a131_faecbbb7f6a4 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e ;
+                                           rdfs:comment "Mesomics specimen is a mechanical testing specimen, sample that is used in a mesomics measurement. A mesomics specimen consists of a cable sample." ;
+                                           skos:prefLabel "MesomicsSpecimen"@en .
+                                           
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_9b8fd21c_cf02_40bd_8d0b_748556612573
+:EMMO_9b8fd21c_cf02_40bd_8d0b_748556612573 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_460d3ba4_a8e5_449d_8423_7d4d1cca6d76 ;
+                                           rdfs:comment "MeSOMICS, stands for Measurement System for the Optically Monitored Identification of Cable Stiffnesses. The mesomics measurement enables the determination of the bending stiffness of a cable bundle using a MeSOMICS machine." ;
+                                           rdfs:seeAlso "https://www.itwm.fraunhofer.de/content/dam/itwm/de/documents/MDF_Infomaterial/mdf_flyer_MeSOMICS_EN.pdf" ;
+                                           skos:prefLabel "Mesomics"@en .
+                                           
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_d0a86d56_1b66_4562_bc96_4075527463ed
+:EMMO_d0a86d56_1b66_4562_bc96_4075527463ed rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_10f4d440_33d0_456d_b27c_83bf1d9811c0 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                             owl:someValuesFrom :EMMO_0b47a9ad_2854_43d0_9707_ff5f81f5b7d8
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                             owl:someValuesFrom :EMMO_3407d408_5d15_4090_8161_43d5e288a864
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                             owl:someValuesFrom :EMMO_400fa2bf_a1b9_4e03_b6bd_7540c8fe5b4a
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                             owl:someValuesFrom :EMMO_9b8fd21c_cf02_40bd_8d0b_748556612573
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                             owl:someValuesFrom :EMMO_f77b52b9_0750_4dbf_a131_faecbbb7f6a4
+                                                           ] ;
+                                           rdfs:comment "A measurement performed using the MeSOMICS machine." ;
+                                           skos:prefLabel "MesomicsMeasurement"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_f386fe2e_f871_4dcb_ba95_90663bcd6129
+:EMMO_f386fe2e_f871_4dcb_ba95_90663bcd6129 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_709d4e04_e972_4f57_9589_bf99ea08d2ea ,
+                                                           :EMMO_dc637a06_1988_4f9a_a2b4_05dfbf7e246c ;
+                                           rdfs:comment "Insulating tape (electrical insulating tape) is a type of pressure-sensitive tape used to insulate electrical wires and other materials that conduct electricity. It describes the type of tape as insulating material in cable bundles." ;
+                                           skos:prefLabel "InsulatingTape"@en .

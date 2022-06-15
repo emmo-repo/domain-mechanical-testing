@@ -1,0 +1,453 @@
+@prefix : <http://emmo.info/emmo/domain/mechanical-testing#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix emmo: <http://emmo.info/emmo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix chameo: <http://emmo.info/emmo/domain/chameo/chameo#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://emmo.info/emmo/domain/mechanical-testing/fatigue> .
+
+<http://emmo.info/emmo/domain/mechanical-testing/fatigue> rdf:type owl:Ontology ;
+                                                           owl:versionIRI <http://emmo.info/emmo/domain/mechanical-testing/1.0.0/fatigue> ;
+                                                           owl:imports <http://emmo.info/emmo/domain/mechanical-testing/mechanical-testing> ;
+                                                           dcterms:creator "Adham Hashibon" ,
+                                                                           "Yoav Nahshon" ;
+                                                           owl:versionInfo "1.0.0" ;
+                                                           dcterms:contributor "Goldbeck Consulting Ltd (UK)" ;
+                                                           dcterms:publisher "EMMC ASBL" ;
+                                                           dcterms:title "Domain Mechanical Testing"@en ;
+                                                           rdfs:comment "This ontology is a joint colaboration between different projects: OYSTER, UrWerk and MarketPlace."@en ;
+                                                           dcterms:contributor "Fraunhofer IWM, DE" ;
+                                                           dcterms:creator "Joana Francisco Morgado" ;
+                                                           dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                                           dcterms:creator "Daniele Toti" ,
+                                                                           "Gerhard Goldbeck" ;
+                                                           dcterms:abstract "A domain ontology for Mechanical Testing based on EMMO."@en .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_01751749_c384_4a73_b1f1_291447712a92
+:EMMO_01751749_c384_4a73_b1f1_291447712a92 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty [ owl:inverseOf emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204
+                                                                            ] ;
+                                                             owl:someValuesFrom :EMMO_c4cb32e6_69d4_4807_b781_b1dcc867eef1
+                                                           ] ;
+                                           rdfs:comment "Slope k of the SN curve in high cycle fatigue regime (HCF). High cycle fatigue is the range of fatigue life Nf between 10^4 and approximately 10^6 cycles (depending on the material)." ;
+                                           skos:prefLabel "SNCurveSlope"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_04de9b50_35ef_4531_afbd_ded7ce5fffa1
+:EMMO_04de9b50_35ef_4531_afbd_ded7ce5fffa1 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_23273603_7ee7_4012_a0bb_d484433083de ;
+                                           skos:prefLabel "StaircaseMethod" .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_0527f1f8_41d4_4414_b1fa_8afbc8651ecb
+:EMMO_0527f1f8_41d4_4414_b1fa_8afbc8651ecb rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_ba882f34_0d71_4e4f_9d92_0c076c633a2c ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
+                                           rdfs:comment "Number of cycles until the fatigue test stopped due to failure or run out." ;
+                                           skos:prefLabel "Cycles"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_12e5e93b_764f_476f_8532_7aab62291399
+:EMMO_12e5e93b_764f_476f_8532_7aab62291399 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_acf636d4_9ac2_4ce3_960a_d54338e6cae3 ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
+                                           skos:prefLabel "FatigueStrain"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_13a8ef22_4ade_4c89_af34_0b4c7044517d
+:EMMO_13a8ef22_4ade_4c89_af34_0b4c7044517d rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81 ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
+                                           rdfs:comment "The mean stress S_m is the averaged value of the stresses during fatigue testing (S_m = (S_min + S_max)/2)." ;
+                                           skos:prefLabel "MeanStress"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_197b6afe_74cb_41bd_83a4_54fda6bea1e4
+:EMMO_197b6afe_74cb_41bd_83a4_54fda6bea1e4 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4 ;
+                                           rdfs:comment "A pore is a very small opening, cavity or depression. Pores occur in metals during melting and casting processes. Gases dissolved in the melt still escape while the melt solidifies, so the gas bubbles remain trapped and form pores in the material." ;
+                                           skos:prefLabel "Pore"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_1f213db4_5e4d_45d3_963e_8b7c7693707b
+:EMMO_1f213db4_5e4d_45d3_963e_8b7c7693707b rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_cc6faafc_5942_4724_9af8_14c2be17a64a ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+                                                             owl:someValuesFrom emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf
+                                                           ] ;
+                                           rdfs:comment "{1..N} Elements the inclusion consists of." ;
+                                           skos:prefLabel "InclusionElements"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_23273603_7ee7_4012_a0bb_d484433083de
+:EMMO_23273603_7ee7_4012_a0bb_d484433083de rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb ,
+                                                           :EMMO_207b3e76_c121_47f6_8278_7871292ce73f ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_a079cf37_e495_41f1_af01_d544e886eacb ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_0527f1f8_41d4_4414_b1fa_8afbc8651ecb
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_a079cf37_e495_41f1_af01_d544e886eacb ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_a5fb2228_53f8_4d1a_a929_ae166b9ea7ac
+                                                           ] ;
+                                           rdfs:comment "Fatigue testing is a specialised form of mechanical testing that is performed by applying cyclic loading to a coupon or structure. These tests are used either to generate fatigue life and crack growth data, identify critical locations or demonstrate the safety of a structure that may be susceptible to fatigue." ;
+                                           skos:prefLabel "FatigueTesting"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_2a706af8_27ae_468f_9688_fbbe4ca13a86
+:EMMO_2a706af8_27ae_468f_9688_fbbe4ca13a86 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_c74da218_9147_4f03_92d1_8894abca55f3 ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
+                                           rdfs:comment "Specifies, where the crack started on the cross section." ;
+                                           skos:prefLabel "FailureType"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_2aa65ba7_afb2_4deb_b566_3e2c25a89feb
+:EMMO_2aa65ba7_afb2_4deb_b566_3e2c25a89feb rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_acf636d4_9ac2_4ce3_960a_d54338e6cae3 ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
+                                           rdfs:comment "Elongation at break, also known as fracture strain, is the ratio between changed length and initial length after breakage of the test specimen. Plastic strain at fracture." ;
+                                           skos:prefLabel "FractureStrain"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_3fe87ba8_b79f_4c33_ad30_bf81eaaee46b
+:EMMO_3fe87ba8_b79f_4c33_ad30_bf81eaaee46b rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_89a0c87c_0804_4013_937a_6fe234d9499c ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_0527f1f8_41d4_4414_b1fa_8afbc8651ecb
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_a5fb2228_53f8_4d1a_a929_ae166b9ea7ac
+                                                           ] ;
+                                           rdfs:comment "The fatigue properties are determined by fatigue testing according to predefined test parameters. The fatigue properties may be direct data resulting from a experiment itself (specimen level) or data that is derived from the test result of many specimens (series level). The test result is input for the fatigue / series properties." ;
+                                           skos:prefLabel "FatigueTestResult"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_44e81349_11f5_406c_beb1_457184586cf8
+:EMMO_44e81349_11f5_406c_beb1_457184586cf8 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+                                                             owl:someValuesFrom :EMMO_4d5b1eee_cda4_4bc7_8a0e_612fcf7f0c82
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
+                                                             owl:someValuesFrom emmo:EMMO_7efd64d1_05a1_49cd_a7f0_783ca050d4f3
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
+                                                             owl:someValuesFrom :EMMO_01751749_c384_4a73_b1f1_291447712a92
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
+                                                             owl:someValuesFrom :EMMO_4d5b1eee_cda4_4bc7_8a0e_612fcf7f0c82
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
+                                                             owl:someValuesFrom :EMMO_6294b181_baf5_460a_9880_7f183bba9aae
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
+                                                             owl:someValuesFrom :EMMO_68ee637e_eee7_4edc_ab24_1fe4135fb71c
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
+                                                             owl:someValuesFrom :EMMO_926d14c7_4f78_4c37_99b4_dfb0a531db64
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
+                                                             owl:someValuesFrom :EMMO_a11352bc_9b81_4c0c_92e8_f47ea2c5c68b
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
+                                                             owl:someValuesFrom :EMMO_b82033a4_faa1_4f97_8c31_ee9148e120be
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
+                                                             owl:someValuesFrom :EMMO_c799b443_c70f_4351_bb0f_e4ab29073481
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
+                                                             owl:someValuesFrom :EMMO_d7744a44_6cfe_47cd_9e10_9ec3be7f8d0c
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_4ba72a55_218b_4ead_8a55_2ca1ac5fea33
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_1481b773_15d8_4f1a_bf37_3a704958c9d3
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_37824926_963f_4e3d_ac3c_7c323e969ff6
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_71200c24_44fe_4533_96be_55ecb299681c
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_9b84bd4e_adfa_48b6_b4f7_f597bb40dae1
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :EMMO_bcfa65e9_ddf4_4a16_81ff_b02ae29c0a27
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_52813850_bc0e_450f_8a62_4832288ca1b2 ;
+                                                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                  owl:oneOf [ rdf:type rdf:List ;
+                                                                                              rdf:first "false"^^xsd:string ;
+                                                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                                                         rdf:first "true"^^xsd:string ;
+                                                                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                                                                    rdf:first "unknown"^^xsd:string ;
+                                                                                                                    rdf:rest rdf:nil
+                                                                                                                  ]
+                                                                                                       ]
+                                                                                            ]
+                                                                                ]
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_a7dddd8f_51f4_4cf5_a8a2_a7aba83e8a72 ;
+                                                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                  owl:oneOf [ rdf:type rdf:List ;
+                                                                                              rdf:first "false"^^xsd:string ;
+                                                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                                                         rdf:first "true"^^xsd:string ;
+                                                                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                                                                    rdf:first "unknown"^^xsd:string ;
+                                                                                                                    rdf:rest rdf:nil
+                                                                                                                  ]
+                                                                                                       ]
+                                                                                            ]
+                                                                                ]
+                                                           ] ;
+                                           rdfs:comment "This label should be made more specific since it represents a very specific series to the FatigueTestUseCase" ,
+                                                        "Typically a series contains data from multiple experiments/specimens of similar type and material, but at different stress amplitude aiming at determination of a SN curve. Furthermore, a series contains secondary data such as the fatigue strength and slope of the SN-curve which puts the results of the individual experiments in a context." ;
+                                           skos:prefLabel "Series"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_46d03bc9_dc95_4fa3_82e5_25b499393275
+:EMMO_46d03bc9_dc95_4fa3_82e5_25b499393275 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_0527f1f8_41d4_4414_b1fa_8afbc8651ecb ,
+                                                           :EMMO_646b0170_e349_4382_8291_4fa2cca982ea ;
+                                           rdfs:comment "Number of load cycles after which the test is terminated and the specimen is treated as a run out." ;
+                                           skos:prefLabel "CycleLimit"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_473ac6ab_620f_4195_97ed_23591b27a5ef
+:EMMO_473ac6ab_620f_4195_97ed_23591b27a5ef rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
+                                           rdfs:comment """The mean stress sensitivity is a numerical value that indicates how sensible a steel is reacting to mean stress influence. It is calculated via the parameters/constants a_M and b_M (which are specified further in \"FKM-Richtlinie - Rechnerischer Festigkeitsnachweis (2012)\" and the tensile strength of the material. 
+mean stress sensitivity M_sig = f(Rm, a_M, b_M)"""@en ;
+                                           skos:prefLabel "MeanStressSensitivity"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_6294b181_baf5_460a_9880_7f183bba9aae
+:EMMO_6294b181_baf5_460a_9880_7f183bba9aae rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
+                                           rdfs:comment """Stress ratio is defined as the ratio of minimum stress to maximum stress.
+(need to add further logics)
+Relation of S_min to S_max (R = S_min / S_max).
+0 < R < 1 describes tension-tension loading,
+R = 0 describes pulsating stress (S_m = S_a = S_max),
+-1 < R < 0 describes partly reversed tension-compression loading,
+R = -1 describes fully reversed loading,
+-\"infinte\" < R < -1 describes partly reversed compression  loading,
+R = -\"infinite\" is compression pulsating stress,
+R > 1 describes compression-compression loading""" ;
+                                           skos:prefLabel "StressRatio"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_6e59c5d5_6b2c_46a6_a598_ae692a35a4dc
+:EMMO_6e59c5d5_6b2c_46a6_a598_ae692a35a4dc rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_23273603_7ee7_4012_a0bb_d484433083de ;
+                                           skos:prefLabel "SingleStepLoading" .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_71f86460_7451_43be_9e29_bb653724e231
+:EMMO_71f86460_7451_43be_9e29_bb653724e231 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_2a706af8_27ae_468f_9688_fbbe4ca13a86 ;
+                                           rdfs:comment "Crack-origin at specimen surface." ;
+                                           skos:prefLabel "SurfaceFailure"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_740dc009_8db5_4a11_b063_206016ec6cc9
+:EMMO_740dc009_8db5_4a11_b063_206016ec6cc9 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_64c72d00_7582_44ea_a0b5_3a14e50acc36 ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
+                                           rdfs:comment "Comment on unique features of the failure" ;
+                                           skos:prefLabel "FailureComment"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_78ddc826_66d5_4be3_8eeb_d8b39e02c9d6
+:EMMO_78ddc826_66d5_4be3_8eeb_d8b39e02c9d6 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
+                                           rdfs:comment "The mean stress factor is a numerical value calculated by the mean stress sensitivity and the stress ratio. The formula is depending on the stress ratio value. The mean stress factor indicates the influence of mean stress on the fatigue strength of a material (see \"FKM-Richtlinie - Rechnerischer Festigkeitsnachweis (2012)\") mean stress factor K_AK = f(M_sig, R)"@en ;
+                                           skos:prefLabel "MeanStressFactor"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_8e789c90_a34a_425a_a685_36865e342c82
+:EMMO_8e789c90_a34a_425a_a685_36865e342c82 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4 ;
+                                           rdfs:comment "No special feature detected at crack-origin." ;
+                                           skos:prefLabel "Featureless"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_8fb5442e_d864_4d85_aad1_8d638f6a5fd3
+:EMMO_8fb5442e_d864_4d85_aad1_8d638f6a5fd3 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
+                                           rdfs:comment "Fractography describes all data resulting from examination of the fracture surface after fatigue testing. The goal is to find the information necessary to describe the failure behaviour and reason." ;
+                                           skos:prefLabel "Fractography"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_a522e3fa_fde7_4d20_9246_ee6b0f073d6d
+:EMMO_a522e3fa_fde7_4d20_9246_ee6b0f073d6d rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
+                                           skos:prefLabel "FailureOrigin"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_a5fb2228_53f8_4d1a_a929_ae166b9ea7ac
+:EMMO_a5fb2228_53f8_4d1a_a929_ae166b9ea7ac rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3 ,
+                                                           :EMMO_646b0170_e349_4382_8291_4fa2cca982ea ;
+                                           rdfs:comment "One half the algebraic difference between the maximum and minimum stress in one fatigue test cycle." ;
+                                           skos:prefLabel "StressAmplitude"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_af7886a4_c996_469b_a0ed_23bb31448a19
+:EMMO_af7886a4_c996_469b_a0ed_23bb31448a19 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81 ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
+                                           emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d "T-2 L-1 M+1 I0 Θ0 N0 J0" ;
+                                           rdfs:comment "Corresponding strength value to a given number of cycles as determined from an S-N diagram (usually given for 50 % probability of survival)." ;
+                                           rdfs:isDefinedBy "https://www.astm.org/Standards/E1823.htm" ;
+                                           skos:prefLabel "FatigueStrength"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_b4d92a5c_5267_46ab_abed_f000b890b9db
+:EMMO_b4d92a5c_5267_46ab_abed_f000b890b9db rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81 ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
+                                           emmo:EMMO_de178b12_5d35_4bca_8efa_a4193162571d "T-2 L-1 M+1 I0 Θ0 N0 J0" ;
+                                           rdfs:comment """According to \"FKM-Richtlinie - Rechnerischer Festigkeitsnachweis (2012)\", the alternating strength is a numerical value that is calculated via the fatigue strength of a material and the mean stress factor. The alternating strength allows the engineer to compare fatigue strengths obtained from tests with different stress ratios (mean stress). It converts the fatigue strength value to an alternate strength value for R=-1.
+alternating strength S_WK = fatigue strength / K_AK."""@en ;
+                                           skos:prefLabel "AlternatingStrength"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_c4cb32e6_69d4_4807_b781_b1dcc867eef1
+:EMMO_c4cb32e6_69d4_4807_b781_b1dcc867eef1 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd ,
+                                                           emmo:EMMO_e56ee3eb_7609_4ae1_8bed_51974f0960a6 ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+                                                             owl:someValuesFrom :EMMO_01751749_c384_4a73_b1f1_291447712a92
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+                                                             owl:someValuesFrom :EMMO_af7886a4_c996_469b_a0ed_23bb31448a19
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+                                                             owl:someValuesFrom :EMMO_d7744a44_6cfe_47cd_9e10_9ec3be7f8d0c
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
+                                                             owl:someValuesFrom :EMMO_3fe87ba8_b79f_4c33_ad30_bf81eaaee46b
+                                                           ] ;
+                                           skos:prefLabel "SNCurve"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_cc6faafc_5942_4724_9af8_14c2be17a64a
+:EMMO_cc6faafc_5942_4724_9af8_14c2be17a64a rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4 ;
+                                           rdfs:comment "Non-metallic inclusions are chemical compounds and nonmetals that are present in steel and other alloys. They are the product of chemical reactions, physical effects, and contamination that occurs during the melting and pouring process." ;
+                                           skos:prefLabel "Inclusion"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_d291bbdb_322f_4758_a9cd_39ad0b91fac5
+:EMMO_d291bbdb_322f_4758_a9cd_39ad0b91fac5 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_2a706af8_27ae_468f_9688_fbbe4ca13a86 ;
+                                           rdfs:comment "Crack-origin in specimen volume." ;
+                                           skos:prefLabel "VolumeFailure"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_d7744a44_6cfe_47cd_9e10_9ec3be7f8d0c
+:EMMO_d7744a44_6cfe_47cd_9e10_9ec3be7f8d0c rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty [ owl:inverseOf emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204
+                                                                            ] ;
+                                                             owl:someValuesFrom :EMMO_c4cb32e6_69d4_4807_b781_b1dcc867eef1
+                                                           ] ;
+                                           rdfs:comment "Depending on the type of the SN-curve model, one or several knee points exist, where the SN curve changes its slope. For ferritic steels, there is usually a constant, non-zero slope of the SN-curve in the high cycle fatigue regime (e.g. 10^4 < n < 10^6), followed by a horizontal shape of the SN curve after reaching the fatigue strength / endurance limit. In this case the knee point corresponds to the endurance limit. For other materials (e.g. aluminium or austenitic steels), a horizontal slope is never reached, but there are at least two regions with different slope, which are separated by the knee point (in terms of cycles)." ;
+                                           skos:prefLabel "KneePoint"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_d87db143_a9d9_4fe4_a61b_05ea26355783
+:EMMO_d87db143_a9d9_4fe4_a61b_05ea26355783 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81 ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
+                                           rdfs:comment "The minimum stress S_min is the lowest occuring stress during fatigue testing." ;
+                                           skos:prefLabel "MinimumStress"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4
+:EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
+                                           rdfs:comment "Explanation for crack-initiation at origin." ;
+                                           skos:prefLabel "FailureReason"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e
+:EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e rdf:type owl:Class ;
+                                           rdfs:subClassOf :MechanicalTestingOntology ;
+                                           rdfs:comment "This is the artificial parent concept of the classes related to the Fatigue Use Case within this ontology." ;
+                                           skos:prefLabel "FatigueUseCase"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_fe13168c_8e04_4cbf_8462_641669a4b7f3
+:EMMO_fe13168c_8e04_4cbf_8462_641669a4b7f3 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_a30a7cdc_f652_4b01_b8c2_cd056f3e3d85 ;
+                                           skos:prefLabel "FatigueTestingMachine"@en .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

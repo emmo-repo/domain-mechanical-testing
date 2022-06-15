@@ -1,30 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
-        <uri name="http://emmo.info/emmo-mechanical-testing/1.0.0" uri="./emmo-mechanical-testing.owl"/>
-        <uri name="http://emmo.info/emmo/middle/chemistry" uri="./chemistry.owl"/>
+        <uri name="http://emmo.info/emmo/domain/mechanical-testing/mechanical-testing" uri="./module-mechanical-testing.ttl"/>
+        <uri name="http://emmo.info/emmo/domain/mechanical-testing/indentation" uri="./module-indentation.ttl"/>
+        <uri name="http://emmo.info/emmo/domain/mechanical-testing/nanoindentation" uri="./module-nanoindentation.ttl"/>
+        <uri name="http://emmo.info/emmo/domain/mechanical-testing/mesomics" uri="./module-mesomics.ttl"/>
+        <uri name="http://emmo.info/emmo/domain/mechanical-testing/fatigue" uri="./module-fatigue.ttl"/>
 
-        <uri name="http://emmo.info/emmo/middle/ordinal" uri="./ordinal.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4" uri="../EMMO/emmo.ttl"/>
 
-        <uri name="http://emmo.info/emmo/1.0.0-alpha2" uri="../EMMO/emmo.owl"/>
-        <uri name="http://emmo.info/emmo/1.0.0-alpha2/top/annotations" uri="../EMMO/top/annotations.owl"/>
-        <uri name="http://emmo.info/emmo/1.0.0-alpha2/top/mereotopology" uri="../EMMO/top/mereotopology.owl"/>
-        <uri name="http://emmo.info/emmo/1.0.0-alpha2/top/physical" uri="../EMMO/top/physical.owl"/>
-        <uri name="http://emmo.info/emmo/1.0.0-alpha2/top" uri="../EMMO/top/top.owl"/>
-        <uri name="http://emmo.info/emmo/1.0.0-alpha2/middle/semiotics" uri="../EMMO/middle/semiotics.owl"/>
-        <uri name="http://emmo.info/emmo/1.0.0-alpha2/middle/perceptual" uri="../EMMO/middle/perceptual.owl"/>
-        <uri name="http://emmo.info/emmo/1.0.0-alpha2/middle/reductionistic" uri="../EMMO/middle/reductionistic.owl"/>
-        <uri name="http://emmo.info/emmo/1.0.0-alpha2/middle/holistic" uri="../EMMO/middle/holistic.owl"/>
-        <uri name="http://emmo.info/emmo/1.0.0-alpha2/middle/physicalistic" uri="../EMMO/middle/physicalistic.owl"/>
-        <uri name="http://emmo.info/emmo/1.0.0-alpha2/middle/math" uri="../EMMO/middle/math.owl"/>
-        <uri name="http://emmo.info/emmo/1.0.0-alpha2/middle/properties" uri="../EMMO/middle/properties.owl"/>
-        <uri name="http://emmo.info/emmo/1.0.0-alpha2/middle/materials" uri="../EMMO/middle/materials.owl"/>
-        <uri name="http://emmo.info/emmo/1.0.0-alpha2/middle/metrology" uri="../EMMO/middle/metrology.owl"/>
-        <uri name="http://emmo.info/emmo/1.0.0-alpha2/middle/models" uri="../EMMO/middle/models.owl"/>
-        <uri name="http://emmo.info/emmo/1.0.0-alpha2/middle/manufacturing" uri="../EMMO/middle/manufacturing.owl"/>
-        <uri name="http://emmo.info/emmo/1.0.0-alpha2/middle/isq" uri="../EMMO/middle/isq.owl"/>
-        <uri name="http://emmo.info/emmo/1.0.0-alpha2/middle/siunits" uri="../EMMO/middle/siunits.owl"/>
-        <uri name="http://emmo.info/emmo/1.0.0-alpha2/middle/units-extension" uri="../EMMO/middle/units-extension.owl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/mereocausality"                  uri="../EMMO/mereocausality/mereocausality.ttl"/>
+
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/perspectives"                    uri="../EMMO/perspectives/perspectives.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/perspectives/perspective"        uri="../EMMO/perspectives/perspective.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/perspectives/semiotics"          uri="../EMMO/perspectives/semiotics.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/perspectives/perceptual"         uri="../EMMO/perspectives/perceptual.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/perspectives/reductionistic"     uri="../EMMO/perspectives/reductionistic.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/perspectives/holistic"           uri="../EMMO/perspectives/holistic.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/perspectives/persistence"        uri="../EMMO/perspectives/persistence.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/perspectives/physicalistic"      uri="../EMMO/perspectives/physicalistic.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/perspectives/data"               uri="../EMMO/perspectives/data.ttl"/>
+        
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/multiperspective"                uri="../EMMO/multiperspective/multiperspective.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/multiperspective/persholistic"   uri="../EMMO/multiperspective/persholistic.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/multiperspective/properties"     uri="../EMMO/multiperspective/properties.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/multiperspective/symbolic"       uri="../EMMO/multiperspective/symbolic.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/multiperspective/information"    uri="../EMMO/multiperspective/information.ttl"/>
+
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines"                     uri="../EMMO/disciplines/disciplines.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/chemistry"           uri="../EMMO/disciplines/chemistry.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/computerscience"     uri="../EMMO/disciplines/computerscience.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/isq"                 uri="../EMMO/disciplines/isq.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/manufacturing"       uri="../EMMO/disciplines/manufacturing.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/materials"           uri="../EMMO/disciplines/materials.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/math"                uri="../EMMO/disciplines/math.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/metrology"           uri="../EMMO/disciplines/metrology.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/disciplines/models"              uri="../EMMO/disciplines/models.ttl"/>
+
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/domain"                          uri="../EMMO/domain/domain.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/domain/siunits"                  uri="../EMMO/domain/siunits.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/domain/units-extension"          uri="../EMMO/domain/units-extension.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/domain/periodic-table"           uri="../EMMO/domain/periodic-table.ttl"/>
+
+        <uri name="http://emmo.info/emmo/domain/chameo/chameo"                        uri="../domain-characterisation-methodology/chameo-imports-inferred.ttl"/>
         
     </group>
 </catalog>

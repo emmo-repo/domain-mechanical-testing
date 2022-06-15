@@ -1,0 +1,348 @@
+#################################################################
+#    Note
+#################################################################
+
+# This file comprises all classes that had been implemented in the original mechanical testing ontology and, in scope of the modularisation and alignment, have been replaced by classes already existing in EMMO-beta4 or CHAMEO, which have the same meaning and label.
+# For detailed information on the replacement of the classes listed below, please see the excel file "alignments".
+
+
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_535baaec_5360_48e8_ada4_72c6e6848957
+:EMMO_535baaec_5360_48e8_ada4_72c6e6848957 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b ,
+                                                           emmo:EMMO_ec7464a9_d99d_45f8_965b_4e9230ea8356 ;
+                                           rdfs:comment "Specimen is a limited quantity of a real world object which is intended to be similar to and represent a larger amount of it. It can be defined as a sample or a portion of a real world object that has been prepared based on the measureemnt protocol." ;
+                                           skos:prefLabel "Specimen"@en .
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_35d0fcf5_b574_4e43_94ae_874a6117aab3
+:EMMO_35d0fcf5_b574_4e43_94ae_874a6117aab3 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b ,
+                                                           :CableBundleUseCase ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           :NanoindentationUseCase ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ;
+                                                             owl:someValuesFrom chameo:Specimen
+                                                           ] ;
+                                           skos:prefLabel "Sample"@en .
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_6bc4fa0e_67f8_4638_bfa4_6f660a00c687
+:EMMO_6bc4fa0e_67f8_4638_bfa4_6f660a00c687 rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://emmo.info/emmo#EMMO_3ee80521_3c23_4dd1_935d_9d522614a3e2> ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty [ owl:inverseOf <http://emmo.info/emmo#EMMO_60577dea_9019_4537_ac41_80b0fb563d41>
+                                                                            ] ;
+                                                             owl:someValuesFrom <http://emmo.info/emmo#EMMO_c10b7090_7284_4719_8e15_c743b13ca6ad>
+                                                           ] ;
+                                           skos:prefLabel "Pascal"@en .                                           
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_f210d615_89a5_483f_a8b2_923ff6fcf4ab
+:EMMO_f210d615_89a5_483f_a8b2_923ff6fcf4ab rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_3c835c69_11a9_458d_9b3f_bc68c0348c7d ;
+                                           rdfs:comment "Post processing is a process/operation on the data set that enables extrating useful information from the data.  There are diffrent type of post-processors such as visualizers, converters, extractors." ;
+                                           skos:prefLabel "DataPostProcessing"@en .                                   
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_d552bbb0_ea25_40dc_bb74_ed8ff63b7998
+:EMMO_d552bbb0_ea25_40dc_bb74_ed8ff63b7998 rdf:type owl:Class ;
+                                           rdfs:subClassOf :NanoindentationUseCase ,
+                                                           <http://emmo.info/emmo#EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55> ;
+                                           skos:prefLabel "DataAcquisitionRate"@en .                                                   
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_0059f168_0cf0_4a84_8bab_ab313a2d27d7
+:EMMO_0059f168_0cf0_4a84_8bab_ab313a2d27d7 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "Nb"
+                                                           ] ;
+                                           skos:prefLabel "NiobiumSymbol"@en .
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_12c76f15_6daa_43a9_b535_c2df84dbf9e1
+:EMMO_12c76f15_6daa_43a9_b535_c2df84dbf9e1 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "Co"
+                                                           ] ;
+                                           skos:prefLabel "CobaltSymbol"@en .
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_1834f628_a7ad_460a_b858_3112c906ef00
+:EMMO_1834f628_a7ad_460a_b858_3112c906ef00 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "Be"
+                                                           ] ;
+                                           skos:prefLabel "BerylliumSymbol"@en .
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_3261d0d2_d0f7_4ec5_bd5a_0e0ad8372311
+:EMMO_3261d0d2_d0f7_4ec5_bd5a_0e0ad8372311 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "P"
+                                                           ] ;
+                                           skos:prefLabel "PhosphorusSymbol"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_326d02f6_8ca0_42ac_9658_ba041231574a
+:EMMO_326d02f6_8ca0_42ac_9658_ba041231574a rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "Fe"
+                                                           ] ;
+                                           skos:prefLabel "IronSymbol"@en .
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_416da557_8833_4161_b469_7cc7373399a1
+:EMMO_416da557_8833_4161_b469_7cc7373399a1 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "As"
+                                                           ] ;
+                                           skos:prefLabel "ArsenicSymbol"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_43db3609_c443_4f24_8bc2_0b7cf27ac12a
+:EMMO_43db3609_c443_4f24_8bc2_0b7cf27ac12a rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "Sr"
+                                                           ] ;
+                                           skos:prefLabel "StrontiumSymbol"@en .             
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_4e0b694c_0a16_4cac_b5e3_991aa7f282eb
+:EMMO_4e0b694c_0a16_4cac_b5e3_991aa7f282eb rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "Ti"
+                                                           ] ;
+                                           skos:prefLabel "TitaniumSymbol"@en .                                   
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_5f4390fd_cc6a_4f20_8af4_fe76d54af476
+:EMMO_5f4390fd_cc6a_4f20_8af4_fe76d54af476 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "Cr"
+                                                           ] ;
+                                           skos:prefLabel "ChromiumSymbol"@en .                          
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_6354c7de_cb63_446e_a6d0_f832844f0633
+:EMMO_6354c7de_cb63_446e_a6d0_f832844f0633 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "S"
+                                                           ] ;
+                                           skos:prefLabel "SulfurSymbol"@en .            
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_795fa324_2330_44ee_90c7_5bbf59c1ec53
+:EMMO_795fa324_2330_44ee_90c7_5bbf59c1ec53 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "Cu"
+                                                           ] ;
+                                           skos:prefLabel "CopperSymbol"@en .           
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_7ac33acb_e6b5_4660_86d3_3a174c3486b7
+:EMMO_7ac33acb_e6b5_4660_86d3_3a174c3486b7 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "Mn"
+                                                           ] ;
+                                           skos:prefLabel "ManganeseSymbol"@en .             
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_8101f160_1b9c_49cc_8e37_6eb832f85b4b
+:EMMO_8101f160_1b9c_49cc_8e37_6eb832f85b4b rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "C"
+                                                           ] ;
+                                           skos:prefLabel "CarbonSymbol"@en .        
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_841ccb1b_518f_4277_baf5_8f97529dfb00
+:EMMO_841ccb1b_518f_4277_baf5_8f97529dfb00 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "Ni"
+                                                           ] ;
+                                           skos:prefLabel "NickelSymbol"@en .                
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_8fab8d45_c53b_475f_997a_125646067051
+:EMMO_8fab8d45_c53b_475f_997a_125646067051 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "Mg"
+                                                           ] ;
+                                           skos:prefLabel "MagnesiumSymbol"@en .                
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_9294b602_0926_4063_9c68_7d541728856d
+:EMMO_9294b602_0926_4063_9c68_7d541728856d rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "Zr"
+                                                           ] ;
+                                           skos:prefLabel "ZirconiumSymbol"@en .  
+                                           
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_962bea7f_4fd4_4a16_8dc0_183efcc620bb
+:EMMO_962bea7f_4fd4_4a16_8dc0_183efcc620bb rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "B"
+                                                           ] ;
+                                           skos:prefLabel "BoronSymbol"@en .             
+                                           
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_9d12d5ce_2af4_4784_a2b0_6c19db27d8ce
+:EMMO_9d12d5ce_2af4_4784_a2b0_6c19db27d8ce rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "Pb"
+                                                           ] ;
+                                           skos:prefLabel "LeadSymbol"@en .                                                                                                                                                                              
+                                           
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_9ee6424d_55a9_4645_891d_58dac89c5ee6
+:EMMO_9ee6424d_55a9_4645_891d_58dac89c5ee6 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "O"
+                                                           ] ;
+                                           skos:prefLabel "OxygenSymbol"@en .
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_a7841c32_22a5_46ee_8298_fe4f4d6473b0
+:EMMO_a7841c32_22a5_46ee_8298_fe4f4d6473b0 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "Mo"
+                                                           ] ;
+                                           skos:prefLabel "MolybdenumSymbol"@en .
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_ab7acd0c_c199_47f7_ae2a_0ea5f579771b
+:EMMO_ab7acd0c_c199_47f7_ae2a_0ea5f579771b rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "Ca"
+                                                           ] ;
+                                           skos:prefLabel "CalciumSymbol"@en .    
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_b3ad6907_7206_4cc9_952b_2cdf34b578ea
+:EMMO_b3ad6907_7206_4cc9_952b_2cdf34b578ea rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "N"
+                                                           ] ;
+                                           skos:prefLabel "NitrogenSymbol"@en .             
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_b70a0653_b4aa_4cc5_81a7_594fa04d0730
+:EMMO_b70a0653_b4aa_4cc5_81a7_594fa04d0730 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "Ag"
+                                                           ] ;
+                                           skos:prefLabel "SilverSymbol"@en .                  
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_c9cc79d7_37cd_4b8b_b4e4_95b09ffa20b3
+:EMMO_c9cc79d7_37cd_4b8b_b4e4_95b09ffa20b3 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "Sn"
+                                                           ] ;
+                                           skos:prefLabel "TinSymbol"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_c9e3e11c_a837_4b6f_a0f6_48f1a3447616
+:EMMO_c9e3e11c_a837_4b6f_a0f6_48f1a3447616 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "Zn"
+                                                           ] ;
+                                           skos:prefLabel "ZincSymbol"@en .  
+                                           
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_d7029930_e902_418a_91b1_76040840d977
+:EMMO_d7029930_e902_418a_91b1_76040840d977 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "V"
+                                                           ] ;
+                                           skos:prefLabel "VanadiumSymbol"@en .         
+                                           
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_e30fc4f3_fbb6_4bf0_afc3_d3aeb802f2e0
+:EMMO_e30fc4f3_fbb6_4bf0_afc3_d3aeb802f2e0 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "Al"
+                                                           ] ;
+                                           skos:prefLabel "AluminiumSymbol"@en .       
+                                           
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_a1fb2461_3dc8_45bd_a7f3_4c1cff1ba432
+:EMMO_a1fb2461_3dc8_45bd_a7f3_4c1cff1ba432 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
+                                                           emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://emmo.info/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42> ;
+                                                             owl:hasValue "Si"
+                                                           ] ;
+                                           skos:prefLabel "SiliconElement"@en .                  
+                                           
+
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_16d31733_248f_4e55_b870_dfc96d3e2c3b
+:EMMO_16d31733_248f_4e55_b870_dfc96d3e2c3b rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_89a0c87c_0804_4013_937a_6fe234d9499c ;
+                                           skos:prefLabel "DataSet"@en .                                                                                                     
