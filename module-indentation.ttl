@@ -8,298 +8,308 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix chameo: <http://emmo.info/emmo/domain/chameo/chameo#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://emmo.info/emmo/domain/mechanical-testing/indentation> .
 
-<http://emmo.info/emmo/domain/mechanical-testing/indentation> a owl:Ontology ;
-	owl:versionIRI <http://emmo.info/emmo/domain/mechanical-testing/1.0.0/indentation> ;
-	owl:imports <http://emmo.info/emmo/domain/mechanical-testing/mechanical-testing> ;
-	dcterms:creator "Adham Hashibon" , "Yoav Nahshon" ;
-	owl:versionInfo "1.0.0" ;
-	dcterms:contributor "Goldbeck Consulting Ltd (UK)" ;
-	dcterms:publisher "EMMC ASBL" ;
-	dcterms:title "Domain Mechanical Testing"@en ;
-	rdfs:comment "This ontology is a joint colaboration between different projects: OYSTER, UrWerk and MarketPlace."@en ;
-	dcterms:contributor "Fraunhofer IWM, DE" ;
-	dcterms:creator "Joana Francisco Morgado" ;
-	dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-	dcterms:creator "Daniele Toti" , "Gerhard Goldbeck" ;
-	dcterms:abstract "A domain ontology for Mechanical Testing based on EMMO."@en .
-# 
-# 
-# #################################################################
-# #
-# #    Classes
-# #
-# #################################################################
-# 
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_03e264fd_ee9f_4ac0_a9f4_b0a975ddaded
+<http://emmo.info/emmo/domain/mechanical-testing/indentation> rdf:type owl:Ontology ;
+                                                               owl:versionIRI <http://emmo.info/emmo/domain/mechanical-testing/1.0.0/indentation> ;
+                                                               owl:imports <http://emmo.info/emmo/domain/mechanical-testing/mechanical-testing> ;
+                                                               dcterms:creator "Adham Hashibon" ,
+                                                                               "Yoav Nahshon" ;
+                                                               owl:versionInfo "1.0.0" ;
+                                                               dcterms:contributor "Goldbeck Consulting Ltd (UK)" ;
+                                                               dcterms:publisher "EMMC ASBL" ;
+                                                               dcterms:title "Domain Mechanical Testing"@en ;
+                                                               rdfs:comment "This ontology is a joint colaboration between different projects: OYSTER, UrWerk and MarketPlace."@en ;
+                                                               dcterms:contributor "Fraunhofer IWM, DE" ;
+                                                               dcterms:creator "Joana Francisco Morgado" ;
+                                                               dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                                               dcterms:creator "Daniele Toti" ,
+                                                                               "Gerhard Goldbeck" ;
+                                                               dcterms:abstract "A domain ontology for Mechanical Testing based on EMMO."@en .
 
-:EMMO_03e264fd_ee9f_4ac0_a9f4_b0a975ddaded a owl:Class ;
-	rdfs:subClassOf emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 , _:genid1 .
+#################################################################
+#    Classes
+#################################################################
 
-_:genid1 a owl:Restriction ;
-	owl:onProperty emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ;
-	owl:someValuesFrom :EMMO_f2d6622f_83f7_4b66_b75c_d4576ad5d986 .
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_03e264fd_ee9f_4ac0_a9f4_b0a975ddaded
+:EMMO_03e264fd_ee9f_4ac0_a9f4_b0a975ddaded rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ;
+                                                             owl:someValuesFrom :EMMO_f2d6622f_83f7_4b66_b75c_d4576ad5d986
+                                                           ] ;
+                                           rdfs:comment "The hardware set consisting of the indenter column, indenter tip, the support springs, the displacement capacitive sensor, the actuation coil the metal case and the interface with the control electronics." ;
+                                           skos:prefLabel "IndenterHead"@en .
 
-:EMMO_03e264fd_ee9f_4ac0_a9f4_b0a975ddaded rdfs:comment "The hardware set consisting of the indenter column, indenter tip, the support springs, the displacement capacitive sensor, the actuation coil the metal case and the interface with the control electronics." ;
-	skos:prefLabel "IndenterHead"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_03ed6a50_3b04_4189_a939_dad066ece197
 
-:EMMO_03ed6a50_3b04_4189_a939_dad066ece197 a owl:Class ;
-	rdfs:subClassOf emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 , :EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 ;
-	rdfs:comment "The time constant used to measure the Dynamic displacement (time over which the RMS value of the displacement is computed). Generally equivalent to at least five waves at the target frequency and being an integer number of waves. This dramatically reduces noise ." ;
-	skos:prefLabel "DynamicTimeConstant"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_0ae01f99_b2ed_4dd0_959d_60baad0ab475
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_03ed6a50_3b04_4189_a939_dad066ece197
+:EMMO_03ed6a50_3b04_4189_a939_dad066ece197 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 ,
+                                                           :EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ;
+                                           rdfs:comment "The time constant used to measure the Dynamic displacement (time over which the RMS value of the displacement is computed). Generally equivalent to at least five waves at the target frequency and being an integer number of waves. This dramatically reduces noise ." ;
+                                           skos:prefLabel "DynamicTimeConstant"@en .
 
-:EMMO_0ae01f99_b2ed_4dd0_959d_60baad0ab475 a owl:Class ;
-	rdfs:subClassOf emmo:EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55 ;
-	rdfs:comment "The amplitude of the displacement value oscillation reading while in contact with the sample, with respect to its quasi static value." ;
-	skos:prefLabel "AmplitudeOfOscillatoryDepthReading"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_10e7f26e_4cb6_4fb8_84e8_f90fec466e75
 
-:EMMO_10e7f26e_4cb6_4fb8_84e8_f90fec466e75 a owl:Class ;
-	rdfs:subClassOf emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 , :EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 ;
-	rdfs:comment "The time over which the drift rate is measured." ;
-	skos:prefLabel "DriftDeterminationTime"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_19afc39b_eb5c_46e0_b880_8e08ec831ebc
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_0ae01f99_b2ed_4dd0_959d_60baad0ab475
+:EMMO_0ae01f99_b2ed_4dd0_959d_60baad0ab475 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55 ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ;
+                                           rdfs:comment "The amplitude of the displacement value oscillation reading while in contact with the sample, with respect to its quasi static value." ;
+                                           skos:prefLabel "AmplitudeOfOscillatoryDepthReading"@en .
 
-:EMMO_19afc39b_eb5c_46e0_b880_8e08ec831ebc a owl:Class ;
-	rdfs:subClassOf :EMMO_a30a7cdc_f652_4b01_b8c2_cd056f3e3d85 , _:genid2 .
 
-_:genid2 a owl:Restriction ;
-	owl:onProperty emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ;
-	owl:someValuesFrom :EMMO_de2e853c_c30e_4710_9c8a_671dba758955 .
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_10e7f26e_4cb6_4fb8_84e8_f90fec466e75
+:EMMO_10e7f26e_4cb6_4fb8_84e8_f90fec466e75 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 ,
+                                                           :EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ;
+                                           rdfs:comment "The time over which the drift rate is measured." ;
+                                           skos:prefLabel "DriftDeterminationTime"@en .
 
-:EMMO_19afc39b_eb5c_46e0_b880_8e08ec831ebc skos:prefLabel "IndentationMachine"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_2ebac53b_0902_43c3_abe5_fc110fbec98f
 
-:EMMO_2ebac53b_0902_43c3_abe5_fc110fbec98f a owl:Class ;
-	rdfs:subClassOf :EMMO_4877705b_70a3_453e_b7f2_510965fa2ff7 , :EMMO_ca42ed31_3983_4e1a_84f9_a84cab2cdb59 ;
-	rdfs:comment "The displacement difference between the beginning of the pull-off phenomenon and its end during an adhesion experiment." ;
-	skos:prefLabel "PulloffDisplacement"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_301113f2_d390_4b1d_8cff_4d4ef9c1fc55
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_19afc39b_eb5c_46e0_b880_8e08ec831ebc
+:EMMO_19afc39b_eb5c_46e0_b880_8e08ec831ebc rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_a30a7cdc_f652_4b01_b8c2_cd056f3e3d85 ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ;
+                                                             owl:someValuesFrom :EMMO_de2e853c_c30e_4710_9c8a_671dba758955
+                                                           ] ;
+                                           skos:prefLabel "IndentationMachine"@en .
 
-:EMMO_301113f2_d390_4b1d_8cff_4d4ef9c1fc55 a owl:Class ;
-	rdfs:subClassOf :EMMO_ba4f6d96_699f_48ba_a432_6676521587f1 ;
-	skos:prefLabel "MaximumIndentationTime"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_3226bd7c_b9d8_436d_ae5f_8a69a92ea128
 
-:EMMO_3226bd7c_b9d8_436d_ae5f_8a69a92ea128 a owl:Class ;
-	rdfs:subClassOf emmo:EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55 ;
-	rdfs:comment "Constant strain rate testing involves the application of load so that the depth measurements follow a pre-defined relationship. Set the loading rate to give a constant rate of strain within the specimen material." ;
-	skos:prefLabel "ConstantStrainRate"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_2ebac53b_0902_43c3_abe5_fc110fbec98f
+:EMMO_2ebac53b_0902_43c3_abe5_fc110fbec98f rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_4877705b_70a3_453e_b7f2_510965fa2ff7 ,
+                                                           :EMMO_ca42ed31_3983_4e1a_84f9_a84cab2cdb59 ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ;
+                                           rdfs:comment "The displacement difference between the beginning of the pull-off phenomenon and its end during an adhesion experiment." ;
+                                           skos:prefLabel "PulloffDisplacement"@en .
 
-:EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 a owl:Class ;
-	rdfs:subClassOf emmo:EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8 ;
-	rdfs:label "IndentationMethodSpecification"@de .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_37056c17_4800_42c6_8827_1873cb7e417d
 
-:EMMO_37056c17_4800_42c6_8827_1873cb7e417d a owl:Class ;
-	rdfs:subClassOf emmo:EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba , _:genid3 .
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_301113f2_d390_4b1d_8cff_4d4ef9c1fc55
+:EMMO_301113f2_d390_4b1d_8cff_4d4ef9c1fc55 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_ba4f6d96_699f_48ba_a432_6676521587f1 ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ;
+                                           skos:prefLabel "MaximumIndentationTime"@en .
 
-_:genid3 a owl:Restriction ;
-	owl:onProperty _:genid4 .
 
-_:genid4 owl:inverseOf emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 .
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_3226bd7c_b9d8_436d_ae5f_8a69a92ea128
+:EMMO_3226bd7c_b9d8_436d_ae5f_8a69a92ea128 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55 ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ;
+                                           rdfs:comment "Constant strain rate testing involves the application of load so that the depth measurements follow a pre-defined relationship. Set the loading rate to give a constant rate of strain within the specimen material." ;
+                                           skos:prefLabel "ConstantStrainRate"@en .
 
-_:genid3 owl:someValuesFrom :EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e .
 
-:EMMO_37056c17_4800_42c6_8827_1873cb7e417d rdfs:label "SpecimenProperty"@de .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_3fdd2c2f_762b_4d0f_b883_4cf47a2da2f9
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5
+:EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8 ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ;
+                                           rdfs:label "IndentationMethodSpecification"@de .
 
-:EMMO_3fdd2c2f_762b_4d0f_b883_4cf47a2da2f9 a owl:Class ;
-	rdfs:subClassOf emmo:EMMO_1f087811_06cb_42d5_90fb_25d0e7e068ef , :EMMO_4877705b_70a3_453e_b7f2_510965fa2ff7 ;
-	rdfs:comment "The force needed to overcome the adhesion phenomena between indenter tip and material under investigation." ;
-	skos:prefLabel "PulloffForce"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_4877705b_70a3_453e_b7f2_510965fa2ff7
 
-:EMMO_4877705b_70a3_453e_b7f2_510965fa2ff7 a owl:Class ;
-	rdfs:subClassOf :EMMO_37056c17_4800_42c6_8827_1873cb7e417d ;
-	rdfs:label "IndentationSpecimenProperty"@de .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_68856430_66a2_49fb_b93f_e7124effb6bd
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_37056c17_4800_42c6_8827_1873cb7e417d
+:EMMO_37056c17_4800_42c6_8827_1873cb7e417d rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty [ owl:inverseOf emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204
+                                                                            ] ;
+                                                             owl:someValuesFrom :EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e
+                                                           ] ;
+                                           rdfs:label "SpecimenProperty"@de .
 
-:EMMO_68856430_66a2_49fb_b93f_e7124effb6bd a owl:Class ;
-	rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac , :EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 ;
-	rdfs:comment "The distance from the last known value of the displacement associated with the surface at which the system will establish the “Approach Velocity” and start looking for the surface." ;
-	skos:prefLabel "SurfaceApproachDistance"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_68efbbca_549a_4209_bdfc_cf0ddfd27dc9
 
-:EMMO_68efbbca_549a_4209_bdfc_cf0ddfd27dc9 a owl:Class ;
-	rdfs:subClassOf emmo:EMMO_0329f1f5_8339_4ce4_8505_a264c6d606ba , :EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 ;
-	rdfs:comment "The velocity of the probe as it approaches the surface." ;
-	skos:prefLabel "SurfaceApproachVelocity"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_6a8bfa0e_ef96_4f38_b892_40389eb7d69d
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_3fdd2c2f_762b_4d0f_b883_4cf47a2da2f9
+:EMMO_3fdd2c2f_762b_4d0f_b883_4cf47a2da2f9 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_1f087811_06cb_42d5_90fb_25d0e7e068ef ,
+                                                           :EMMO_4877705b_70a3_453e_b7f2_510965fa2ff7 ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ;
+                                           rdfs:comment "The force needed to overcome the adhesion phenomena between indenter tip and material under investigation." ;
+                                           skos:prefLabel "PulloffForce"@en .
 
-:EMMO_6a8bfa0e_ef96_4f38_b892_40389eb7d69d a owl:Class ;
-	rdfs:subClassOf :EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 , :EMMO_ee09aa64_f477_4e8f_8b0c_f5d30177ba8d ;
-	rdfs:comment "The targeted maximum depth. The experiment will stop loading at this point or if the maximum target load is reached." ;
-	skos:prefLabel "TargetDepth"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_73e0c7f8_20db_46c7_af69_22ad5616f8dc
 
-:EMMO_73e0c7f8_20db_46c7_af69_22ad5616f8dc a owl:Class ;
-	rdfs:subClassOf :EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 ;
-	rdfs:comment "The displacement resolution is typically found by dividing the maximum displacement voltage reading by the number of bits in the data acquisition system." ;
-	skos:prefLabel "DisplacementResolution"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_76dba92f_a761_409f_83d8_5a0c9c73b349
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_4877705b_70a3_453e_b7f2_510965fa2ff7
+:EMMO_4877705b_70a3_453e_b7f2_510965fa2ff7 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_37056c17_4800_42c6_8827_1873cb7e417d ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ;
+                                           rdfs:label "IndentationSpecimenProperty"@de .
 
-:EMMO_76dba92f_a761_409f_83d8_5a0c9c73b349 a owl:Class ;
-	rdfs:subClassOf chameo:DataPostProcessing ;
-	skos:prefLabel "IndentationTestPostProcessing"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_7aa20434_165d_414f_a945_b57bd849e43b
 
-:EMMO_7aa20434_165d_414f_a945_b57bd849e43b a owl:Class ;
-	rdfs:subClassOf emmo:EMMO_4bc29b0f_8fcc_4026_a291_f9774a66d9b8 ;
-	rdfs:comment "The area function that describes the geometry according to which the indenter tip diamond end is cut: three sided pyramids, four sided pyramids, wedges, cones, cylinders or spheres. The tip end of the indenter can be made sharp, flat, or rounded to a cylindrical or spherical shape. All these features of the indenter tip can be described with a mathematical function." ;
-	skos:prefLabel "IndenterTipAreaFunction"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_8aa746fa_0cfa_4be7_9e5b_a691a860032e
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_68856430_66a2_49fb_b93f_e7124effb6bd
+:EMMO_68856430_66a2_49fb_b93f_e7124effb6bd rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ,
+                                                           :EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ;
+                                           rdfs:comment "The distance from the last known value of the displacement associated with the surface at which the system will establish the “Approach Velocity” and start looking for the surface." ;
+                                           skos:prefLabel "SurfaceApproachDistance"@en .
 
-:EMMO_8aa746fa_0cfa_4be7_9e5b_a691a860032e a owl:Class ;
-	rdfs:subClassOf :EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 ;
-	rdfs:comment "In load frames of finite stiffness, the load applied via the indenter induces displacement in both the sample and the load frame. Frame compliance must be identified and subtracted from the total indenter displacement to account properly for sample deformation." ;
-	skos:prefLabel "LoadFrameCompliance"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c
 
-:EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c a owl:Class ;
-	rdfs:subClassOf emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb , _:genid5 .
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_68efbbca_549a_4209_bdfc_cf0ddfd27dc9
+:EMMO_68efbbca_549a_4209_bdfc_cf0ddfd27dc9 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_0329f1f5_8339_4ce4_8505_a264c6d606ba ,
+                                                           :EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ;
+                                           rdfs:comment "The velocity of the probe as it approaches the surface." ;
+                                           skos:prefLabel "SurfaceApproachVelocity"@en .
 
-_:genid5 a owl:Restriction ;
-	owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-	owl:someValuesFrom :EMMO_19afc39b_eb5c_46e0_b880_8e08ec831ebc .
 
-:EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c rdfs:subClassOf _:genid6 .
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_6a8bfa0e_ef96_4f38_b892_40389eb7d69d
+:EMMO_6a8bfa0e_ef96_4f38_b892_40389eb7d69d rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 ,
+                                                           :EMMO_ee09aa64_f477_4e8f_8b0c_f5d30177ba8d ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ;
+                                           rdfs:comment "The targeted maximum depth. The experiment will stop loading at this point or if the maximum target load is reached." ;
+                                           skos:prefLabel "TargetDepth"@en .
 
-_:genid6 a owl:Restriction ;
-	owl:onProperty :EMMO_a079cf37_e495_41f1_af01_d544e886eacb ;
-	owl:someValuesFrom :EMMO_376c6456_5601_41c2_987c_3063f14408d4 .
 
-:EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c rdfs:subClassOf _:genid7 .
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_73e0c7f8_20db_46c7_af69_22ad5616f8dc
+:EMMO_73e0c7f8_20db_46c7_af69_22ad5616f8dc rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ;
+                                           rdfs:comment "The displacement resolution is typically found by dividing the maximum displacement voltage reading by the number of bits in the data acquisition system." ;
+                                           skos:prefLabel "DisplacementResolution"@en .
 
-_:genid7 a owl:Restriction ;
-	owl:onProperty :EMMO_a079cf37_e495_41f1_af01_d544e886eacb ;
-	owl:someValuesFrom :EMMO_ca42ed31_3983_4e1a_84f9_a84cab2cdb59 .
 
-:EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c rdfs:subClassOf _:genid8 .
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_76dba92f_a761_409f_83d8_5a0c9c73b349
+:EMMO_76dba92f_a761_409f_83d8_5a0c9c73b349 rdf:type owl:Class ;
+                                           rdfs:subClassOf chameo:DataPostProcessing ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ;
+                                           skos:prefLabel "IndentationTestPostProcessing"@en .
 
-_:genid8 a owl:Restriction ;
-	owl:onProperty :EMMO_a079cf37_e495_41f1_af01_d544e886eacb ;
-	owl:someValuesFrom :EMMO_ee09aa64_f477_4e8f_8b0c_f5d30177ba8d .
 
-:EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c skos:prefLabel "IndentationMeasurement"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_a1c92b74_411d_414c_85e0_36ddd8c8afb6
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_7aa20434_165d_414f_a945_b57bd849e43b
+:EMMO_7aa20434_165d_414f_a945_b57bd849e43b rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_4bc29b0f_8fcc_4026_a291_f9774a66d9b8 ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ;
+                                           rdfs:comment "The area function that describes the geometry according to which the indenter tip diamond end is cut: three sided pyramids, four sided pyramids, wedges, cones, cylinders or spheres. The tip end of the indenter can be made sharp, flat, or rounded to a cylindrical or spherical shape. All these features of the indenter tip can be described with a mathematical function." ;
+                                           skos:prefLabel "IndenterTipAreaFunction"@en .
 
-:EMMO_a1c92b74_411d_414c_85e0_36ddd8c8afb6 a owl:Class ;
-	rdfs:subClassOf emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 , :EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 ;
-	rdfs:comment "This is the time specified to linearly reduce the load on the contact form it’s maximum value to zero." ;
-	skos:prefLabel "TargetUnloadTime"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_ba4f6d96_699f_48ba_a432_6676521587f1
 
-:EMMO_ba4f6d96_699f_48ba_a432_6676521587f1 a owl:Class ;
-	rdfs:subClassOf emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 , :EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 ;
-	rdfs:comment "This is the average time of a typical indentation cycle from load to full unload." ;
-	skos:prefLabel "IndentationTime"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_c16d56fc_ad1f_420d_9d61_edbe4a28136a
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_8aa746fa_0cfa_4be7_9e5b_a691a860032e
+:EMMO_8aa746fa_0cfa_4be7_9e5b_a691a860032e rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ;
+                                           rdfs:comment "In load frames of finite stiffness, the load applied via the indenter induces displacement in both the sample and the load frame. Frame compliance must be identified and subtracted from the total indenter displacement to account properly for sample deformation." ;
+                                           skos:prefLabel "LoadFrameCompliance"@en .
 
-:EMMO_c16d56fc_ad1f_420d_9d61_edbe4a28136a a owl:Class ;
-	owl:equivalentClass _:genid9 .
 
-_:genid9 a owl:Restriction ;
-	owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-	owl:someValuesFrom _:genid10 .
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c
+:EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                             owl:someValuesFrom :EMMO_19afc39b_eb5c_46e0_b880_8e08ec831ebc
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_a079cf37_e495_41f1_af01_d544e886eacb ;
+                                                             owl:someValuesFrom :EMMO_376c6456_5601_41c2_987c_3063f14408d4
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_a079cf37_e495_41f1_af01_d544e886eacb ;
+                                                             owl:someValuesFrom :EMMO_ca42ed31_3983_4e1a_84f9_a84cab2cdb59
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_a079cf37_e495_41f1_af01_d544e886eacb ;
+                                                             owl:someValuesFrom :EMMO_ee09aa64_f477_4e8f_8b0c_f5d30177ba8d
+                                                           ] ;
+                                           skos:prefLabel "IndentationMeasurement"@en .
 
-_:genid10 owl:intersectionOf _:genid12 .
 
-_:genid12 a rdf:List ;
-	rdf:first :EMMO_76dba92f_a761_409f_83d8_5a0c9c73b349 ;
-	rdf:rest _:genid11 .
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_a1c92b74_411d_414c_85e0_36ddd8c8afb6
+:EMMO_a1c92b74_411d_414c_85e0_36ddd8c8afb6 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 ,
+                                                           :EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ;
+                                           rdfs:comment "This is the time specified to linearly reduce the load on the contact form it’s maximum value to zero." ;
+                                           skos:prefLabel "TargetUnloadTime"@en .
 
-_:genid11 a rdf:List ;
-	rdf:first :EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c ;
-	rdf:rest rdf:nil .
 
-_:genid10 a owl:Class .
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_ba4f6d96_699f_48ba_a432_6676521587f1
+:EMMO_ba4f6d96_699f_48ba_a432_6676521587f1 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 ,
+                                                           :EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ;
+                                           rdfs:comment "This is the average time of a typical indentation cycle from load to full unload." ;
+                                           skos:prefLabel "IndentationTime"@en .
 
-:EMMO_c16d56fc_ad1f_420d_9d61_edbe4a28136a rdfs:subClassOf :EMMO_0f73321c_c4fd_40ed_9b58_eccd9b7d8e15 , _:genid13 .
 
-_:genid13 a owl:Restriction ;
-	owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-	owl:someValuesFrom :EMMO_76dba92f_a761_409f_83d8_5a0c9c73b349 .
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_c16d56fc_ad1f_420d_9d61_edbe4a28136a
+:EMMO_c16d56fc_ad1f_420d_9d61_edbe4a28136a rdf:type owl:Class ;
+                                           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                 owl:someValuesFrom [ owl:intersectionOf ( :EMMO_76dba92f_a761_409f_83d8_5a0c9c73b349
+                                                                                                           :EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c
+                                                                                                         ) ;
+                                                                                      rdf:type owl:Class
+                                                                                    ]
+                                                               ] ;
+                                           rdfs:subClassOf :EMMO_0f73321c_c4fd_40ed_9b58_eccd9b7d8e15 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                             owl:someValuesFrom :EMMO_76dba92f_a761_409f_83d8_5a0c9c73b349
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                             owl:someValuesFrom :EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c
+                                                           ] ;
+                                           rdfs:comment "A single indentation experiment." ;
+                                           skos:prefLabel "IndentationTest"@en .
 
-:EMMO_c16d56fc_ad1f_420d_9d61_edbe4a28136a rdfs:subClassOf _:genid14 .
 
-_:genid14 a owl:Restriction ;
-	owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-	owl:someValuesFrom :EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c .
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_de2e853c_c30e_4710_9c8a_671dba758955
+:EMMO_de2e853c_c30e_4710_9c8a_671dba758955 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ;
+                                                             owl:someValuesFrom :EMMO_03e264fd_ee9f_4ac0_a9f4_b0a975ddaded
+                                                           ] ;
+                                           skos:prefLabel "IndenterDevice"@en .
 
-:EMMO_c16d56fc_ad1f_420d_9d61_edbe4a28136a rdfs:comment "A single indentation experiment." ;
-	skos:prefLabel "IndentationTest"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_de2e853c_c30e_4710_9c8a_671dba758955
 
-:EMMO_de2e853c_c30e_4710_9c8a_671dba758955 a owl:Class ;
-	rdfs:subClassOf emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 , _:genid15 .
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_ebb3c390_173a_4c23_a338_12b6a75ddab2
+:EMMO_ebb3c390_173a_4c23_a338_12b6a75ddab2 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ;
+                                           rdfs:comment "The noise floor in the displacement measurement system will determine what the minimum useable indentation depth." ;
+                                           skos:prefLabel "DisplacementNoiseFloor"@en .
 
-_:genid15 a owl:Restriction ;
-	owl:onProperty emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ;
-	owl:someValuesFrom :EMMO_03e264fd_ee9f_4ac0_a9f4_b0a975ddaded .
 
-:EMMO_de2e853c_c30e_4710_9c8a_671dba758955 skos:prefLabel "IndenterDevice"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_ebb3c390_173a_4c23_a338_12b6a75ddab2
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_ecc66886_7f39_42a5_99f4_c260b74ed7f5
+:EMMO_ecc66886_7f39_42a5_99f4_c260b74ed7f5 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_c16d56fc_ad1f_420d_9d61_edbe4a28136a ;
+                                           rdfs:comment "An indentation test where only the maximum applied load is controlled." ;
+                                           skos:prefLabel "StaticIndentation"@en .
 
-:EMMO_ebb3c390_173a_4c23_a338_12b6a75ddab2 a owl:Class ;
-	rdfs:subClassOf :EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 ;
-	rdfs:comment "The noise floor in the displacement measurement system will determine what the minimum useable indentation depth." ;
-	skos:prefLabel "DisplacementNoiseFloor"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_ecc66886_7f39_42a5_99f4_c260b74ed7f5
 
-:EMMO_ecc66886_7f39_42a5_99f4_c260b74ed7f5 a owl:Class ;
-	rdfs:subClassOf :EMMO_c16d56fc_ad1f_420d_9d61_edbe4a28136a ;
-	rdfs:comment "An indentation test where only the maximum applied load is controlled." ;
-	skos:prefLabel "StaticIndentation"@en .
-# 
-# http://emmo.info/emmo/domain/mechanical-testing#EMMO_f2d6622f_83f7_4b66_b75c_d4576ad5d986
-
-:EMMO_f2d6622f_83f7_4b66_b75c_d4576ad5d986 a owl:Class ;
-	rdfs:subClassOf emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 , _:genid16 .
-
-_:genid16 a owl:Restriction ;
-	owl:onProperty emmo:EMMO_24c71baf_6db6_48b9_86c8_8c70cf36db0c ;
-	owl:someValuesFrom :EMMO_7aa20434_165d_414f_a945_b57bd849e43b .
-
-:EMMO_f2d6622f_83f7_4b66_b75c_d4576ad5d986 rdfs:subClassOf _:genid17 .
-
-_:genid17 a owl:Restriction ;
-	owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
-	owl:someValuesFrom :EMMO_b50db598_cfea_4582_9168_46fbc0b9ec4f .
-
-:EMMO_f2d6622f_83f7_4b66_b75c_d4576ad5d986 rdfs:comment """The probe used during an indentation test, generally composed by three parts:
+###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_f2d6622f_83f7_4b66_b75c_d4576ad5d986
+:EMMO_f2d6622f_83f7_4b66_b75c_d4576ad5d986 rdf:type owl:Class ;
+                                           rdfs:subClassOf emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ,
+                                                           :EMMO_b3f940e0_bb6f_4bac_b230_971456997944 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_24c71baf_6db6_48b9_86c8_8c70cf36db0c ;
+                                                             owl:someValuesFrom :EMMO_7aa20434_165d_414f_a945_b57bd849e43b
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+                                                             owl:someValuesFrom :EMMO_b50db598_cfea_4582_9168_46fbc0b9ec4f
+                                                           ] ;
+                                           rdfs:comment """The probe used during an indentation test, generally composed by three parts:
 1.	The diamond;
 2.	The holder;
 3.	The bond;""" ;
-	skos:prefLabel "IndenterTip"@en .
-# 
-# Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
+                                           skos:prefLabel "IndenterTip"@en .
+
+
+###  http://emmo.info/emmo/domain/mechanical-testing/indentation#EMMO_b3f940e0_bb6f_4bac_b230_971456997944
+:EMMO_b3f940e0_bb6f_4bac_b230_971456997944 rdf:type owl:Class ;
+                                           rdfs:subClassOf :MechanicalTestingOntology ;
+                                           rdfs:label "IndentationUseCase"@de .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
