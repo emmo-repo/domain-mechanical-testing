@@ -46,7 +46,8 @@
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_04de9b50_35ef_4531_afbd_ded7ce5fffa1
 :EMMO_04de9b50_35ef_4531_afbd_ded7ce5fffa1 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_23273603_7ee7_4012_a0bb_d484433083de ;
+                                           rdfs:subClassOf :EMMO_23273603_7ee7_4012_a0bb_d484433083de ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
                                            skos:prefLabel "StaircaseMethod" .
 
 
@@ -75,7 +76,8 @@
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_197b6afe_74cb_41bd_83a4_54fda6bea1e4
 :EMMO_197b6afe_74cb_41bd_83a4_54fda6bea1e4 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4 ;
+                                           rdfs:subClassOf :EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4 ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
                                            rdfs:comment "A pore is a very small opening, cavity or depression. Pores occur in metals during melting and casting processes. Gases dissolved in the melt still escape while the melt solidifies, so the gas bubbles remain trapped and form pores in the material." ;
                                            skos:prefLabel "Pore"@en .
 
@@ -83,6 +85,7 @@
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_1f213db4_5e4d_45d3_963e_8b7c7693707b
 :EMMO_1f213db4_5e4d_45d3_963e_8b7c7693707b rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_cc6faafc_5942_4724_9af8_14c2be17a64a ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
                                                              owl:someValuesFrom emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf
@@ -95,6 +98,7 @@
 :EMMO_23273603_7ee7_4012_a0bb_d484433083de rdf:type owl:Class ;
                                            rdfs:subClassOf emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb ,
                                                            :EMMO_207b3e76_c121_47f6_8278_7871292ce73f ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
                                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -152,20 +156,8 @@
 :EMMO_44e81349_11f5_406c_beb1_457184586cf8 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
                                                            [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
-                                                             owl:someValuesFrom :EMMO_4d5b1eee_cda4_4bc7_8a0e_612fcf7f0c82
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
-                                                             owl:someValuesFrom emmo:EMMO_7efd64d1_05a1_49cd_a7f0_783ca050d4f3
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
                                                              owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
                                                              owl:someValuesFrom :EMMO_01751749_c384_4a73_b1f1_291447712a92
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
-                                                             owl:someValuesFrom :EMMO_4d5b1eee_cda4_4bc7_8a0e_612fcf7f0c82
                                                            ] ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
@@ -173,97 +165,15 @@
                                                            ] ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
-                                                             owl:someValuesFrom :EMMO_68ee637e_eee7_4edc_ab24_1fe4135fb71c
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
-                                                             owl:someValuesFrom :EMMO_926d14c7_4f78_4c37_99b4_dfb0a531db64
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
-                                                             owl:someValuesFrom :EMMO_a11352bc_9b81_4c0c_92e8_f47ea2c5c68b
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
-                                                             owl:someValuesFrom :EMMO_b82033a4_faa1_4f97_8c31_ee9148e120be
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
-                                                             owl:someValuesFrom :EMMO_c799b443_c70f_4351_bb0f_e4ab29073481
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
                                                              owl:someValuesFrom :EMMO_d7744a44_6cfe_47cd_9e10_9ec3be7f8d0c
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 ;
-                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                             owl:onClass :EMMO_4ba72a55_218b_4ead_8a55_2ca1ac5fea33
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
-                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                             owl:onClass :EMMO_1481b773_15d8_4f1a_bf37_3a704958c9d3
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
-                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                             owl:onClass :EMMO_37824926_963f_4e3d_ac3c_7c323e969ff6
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
-                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                             owl:onClass :EMMO_71200c24_44fe_4533_96be_55ecb299681c
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
-                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                             owl:onClass :EMMO_9b84bd4e_adfa_48b6_b4f7_f597bb40dae1
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
-                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                             owl:onClass :EMMO_bcfa65e9_ddf4_4a16_81ff_b02ae29c0a27
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty :EMMO_52813850_bc0e_450f_8a62_4832288ca1b2 ;
-                                                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
-                                                                                  owl:oneOf [ rdf:type rdf:List ;
-                                                                                              rdf:first "false"^^xsd:string ;
-                                                                                              rdf:rest [ rdf:type rdf:List ;
-                                                                                                         rdf:first "true"^^xsd:string ;
-                                                                                                         rdf:rest [ rdf:type rdf:List ;
-                                                                                                                    rdf:first "unknown"^^xsd:string ;
-                                                                                                                    rdf:rest rdf:nil
-                                                                                                                  ]
-                                                                                                       ]
-                                                                                            ]
-                                                                                ]
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty :EMMO_a7dddd8f_51f4_4cf5_a8a2_a7aba83e8a72 ;
-                                                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
-                                                                                  owl:oneOf [ rdf:type rdf:List ;
-                                                                                              rdf:first "false"^^xsd:string ;
-                                                                                              rdf:rest [ rdf:type rdf:List ;
-                                                                                                         rdf:first "true"^^xsd:string ;
-                                                                                                         rdf:rest [ rdf:type rdf:List ;
-                                                                                                                    rdf:first "unknown"^^xsd:string ;
-                                                                                                                    rdf:rest rdf:nil
-                                                                                                                  ]
-                                                                                                       ]
-                                                                                            ]
-                                                                                ]
-                                                           ] ;
-                                           rdfs:comment "This label should be made more specific since it represents a very specific series to the FatigueTestUseCase" ,
-                                                        "Typically a series contains data from multiple experiments/specimens of similar type and material, but at different stress amplitude aiming at determination of a SN curve. Furthermore, a series contains secondary data such as the fatigue strength and slope of the SN-curve which puts the results of the individual experiments in a context." ;
-                                           skos:prefLabel "Series"@en .
+                                                           ] .
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_46d03bc9_dc95_4fa3_82e5_25b499393275
 :EMMO_46d03bc9_dc95_4fa3_82e5_25b499393275 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_0527f1f8_41d4_4414_b1fa_8afbc8651ecb ,
-                                                           :EMMO_646b0170_e349_4382_8291_4fa2cca982ea ;
+                                                           :EMMO_646b0170_e349_4382_8291_4fa2cca982ea ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
                                            rdfs:comment "Number of load cycles after which the test is terminated and the specimen is treated as a run out." ;
                                            skos:prefLabel "CycleLimit"@en .
 
@@ -296,13 +206,15 @@ R > 1 describes compression-compression loading""" ;
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_6e59c5d5_6b2c_46a6_a598_ae692a35a4dc
 :EMMO_6e59c5d5_6b2c_46a6_a598_ae692a35a4dc rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_23273603_7ee7_4012_a0bb_d484433083de ;
+                                           rdfs:subClassOf :EMMO_23273603_7ee7_4012_a0bb_d484433083de ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
                                            skos:prefLabel "SingleStepLoading" .
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_71f86460_7451_43be_9e29_bb653724e231
 :EMMO_71f86460_7451_43be_9e29_bb653724e231 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_2a706af8_27ae_468f_9688_fbbe4ca13a86 ;
+                                           rdfs:subClassOf :EMMO_2a706af8_27ae_468f_9688_fbbe4ca13a86 ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
                                            rdfs:comment "Crack-origin at specimen surface." ;
                                            skos:prefLabel "SurfaceFailure"@en .
 
@@ -325,7 +237,8 @@ R > 1 describes compression-compression loading""" ;
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_8e789c90_a34a_425a_a685_36865e342c82
 :EMMO_8e789c90_a34a_425a_a685_36865e342c82 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4 ;
+                                           rdfs:subClassOf :EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4 ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
                                            rdfs:comment "No special feature detected at crack-origin." ;
                                            skos:prefLabel "Featureless"@en .
 
@@ -347,7 +260,8 @@ R > 1 describes compression-compression loading""" ;
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_a5fb2228_53f8_4d1a_a929_ae166b9ea7ac
 :EMMO_a5fb2228_53f8_4d1a_a929_ae166b9ea7ac rdf:type owl:Class ;
                                            rdfs:subClassOf emmo:EMMO_71f6ab56_342c_484b_bbe0_de86b7367cb3 ,
-                                                           :EMMO_646b0170_e349_4382_8291_4fa2cca982ea ;
+                                                           :EMMO_646b0170_e349_4382_8291_4fa2cca982ea ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
                                            rdfs:comment "One half the algebraic difference between the maximum and minimum stress in one fatigue test cycle." ;
                                            skos:prefLabel "StressAmplitude"@en .
 
@@ -398,14 +312,16 @@ alternating strength S_WK = fatigue strength / K_AK."""@en ;
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_cc6faafc_5942_4724_9af8_14c2be17a64a
 :EMMO_cc6faafc_5942_4724_9af8_14c2be17a64a rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4 ;
+                                           rdfs:subClassOf :EMMO_da87d0e5_8e93_4fc3_81b9_53f8568d4cc4 ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
                                            rdfs:comment "Non-metallic inclusions are chemical compounds and nonmetals that are present in steel and other alloys. They are the product of chemical reactions, physical effects, and contamination that occurs during the melting and pouring process." ;
                                            skos:prefLabel "Inclusion"@en .
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_d291bbdb_322f_4758_a9cd_39ad0b91fac5
 :EMMO_d291bbdb_322f_4758_a9cd_39ad0b91fac5 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_2a706af8_27ae_468f_9688_fbbe4ca13a86 ;
+                                           rdfs:subClassOf :EMMO_2a706af8_27ae_468f_9688_fbbe4ca13a86 ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
                                            rdfs:comment "Crack-origin in specimen volume." ;
                                            skos:prefLabel "VolumeFailure"@en .
 
@@ -413,6 +329,7 @@ alternating strength S_WK = fatigue strength / K_AK."""@en ;
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_d7744a44_6cfe_47cd_9e10_9ec3be7f8d0c
 :EMMO_d7744a44_6cfe_47cd_9e10_9ec3be7f8d0c rdf:type owl:Class ;
                                            rdfs:subClassOf emmo:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty [ owl:inverseOf emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204
                                                                             ] ;
@@ -446,7 +363,8 @@ alternating strength S_WK = fatigue strength / K_AK."""@en ;
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_fe13168c_8e04_4cbf_8462_641669a4b7f3
 :EMMO_fe13168c_8e04_4cbf_8462_641669a4b7f3 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_a30a7cdc_f652_4b01_b8c2_cd056f3e3d85 ;
+                                           rdfs:subClassOf :EMMO_a30a7cdc_f652_4b01_b8c2_cd056f3e3d85 ,
+                                                           :EMMO_e5d45f40_f9e9_47b9_934b_4c463a38b08e ;
                                            skos:prefLabel "FatigueTestingMachine"@en .
 
 
