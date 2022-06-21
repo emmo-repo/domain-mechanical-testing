@@ -34,14 +34,16 @@
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_01a098aa_19c5_46f7_83bc_4dd01f8e0d4b
 :EMMO_01a098aa_19c5_46f7_83bc_4dd01f8e0d4b rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_442c0fb7_09d4_4dae_b45c_8eb1522da38f ;
+                                           rdfs:subClassOf :EMMO_442c0fb7_09d4_4dae_b45c_8eb1522da38f ,
+                                                           :NanoindentationUseCase ;
                                            rdfs:comment "Method that performs multiple nanoindentation tests in different locations at extremely high- throughputs(2-5 s between one test and the subsequent)." ;
                                            skos:prefLabel "HighSpeedNanoindentation"@en .
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_03dd3972_9de0_4872_a0f5_c6ff0cacf241
 :EMMO_03dd3972_9de0_4872_a0f5_c6ff0cacf241 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_f0ad542d_ff13_4998_9e7f_ea27583c5f31 ;
+                                           rdfs:subClassOf :EMMO_f0ad542d_ff13_4998_9e7f_ea27583c5f31 ,
+                                                           :NanoindentationUseCase ;
                                            rdfs:comment "The modulus calculated from dynamics and the Oliver and Pharr method." ;
                                            skos:prefLabel "DynamicModulus"@en .
 
@@ -110,7 +112,8 @@
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_18be2e24_9665_4349_8dd3_6335c921a0ef
 :EMMO_18be2e24_9665_4349_8dd3_6335c921a0ef rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_ee09aa64_f477_4e8f_8b0c_f5d30177ba8d ;
+                                           rdfs:subClassOf :EMMO_ee09aa64_f477_4e8f_8b0c_f5d30177ba8d ,
+                                                           :NanoindentationUseCase ;
                                            rdfs:comment "The depth of the indentation when dynamics are in use. It is the zeroed value of the Filtered Displacement corrected for load frame stiffness, drift rate and the Dynamic Displacement. It is zero prior to surface detection." ;
                                            skos:prefLabel "FilteredDepthWithDynamics"@en .
 
@@ -118,6 +121,7 @@
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_26708d5b_4bf7_4059_969f_3ba03c587051
 :EMMO_26708d5b_4bf7_4059_969f_3ba03c587051 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_442c0fb7_09d4_4dae_b45c_8eb1522da38f ,
+                                                           :NanoindentationUseCase ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
                                                              owl:someValuesFrom :EMMO_897678f5_488b_4489_8b84_1ab548db1512
@@ -129,6 +133,7 @@
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_2a7951e2_0f3d_4fe7_bf8a_0ce97b4cbab1
 :EMMO_2a7951e2_0f3d_4fe7_bf8a_0ce97b4cbab1 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_35a4d47f_452e_4234_9183_3b835ca02091 ,
+                                                           :NanoindentationUseCase ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty :EMMO_a079cf37_e495_41f1_af01_d544e886eacb ;
                                                              owl:someValuesFrom :EMMO_03dd3972_9de0_4872_a0f5_c6ff0cacf241
@@ -166,14 +171,16 @@
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_2b89063d_6ed4_4bf0_9443_e0d3dcb265b8
 :EMMO_2b89063d_6ed4_4bf0_9443_e0d3dcb265b8 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_c16d56fc_ad1f_420d_9d61_edbe4a28136a ;
+                                           rdfs:subClassOf :EMMO_c16d56fc_ad1f_420d_9d61_edbe4a28136a ,
+                                                           :NanoindentationUseCase ;
                                            rdfs:comment "An indentation test where both the applied load and resulting displacement are monitored during the test." ;
                                            skos:prefLabel "DepthSensingIndentation"@en .
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_2d48b136_0b7f_4c7c_86a8_cb9a1a287893
 :EMMO_2d48b136_0b7f_4c7c_86a8_cb9a1a287893 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_76dba92f_a761_409f_83d8_5a0c9c73b349 ;
+                                           rdfs:subClassOf :EMMO_76dba92f_a761_409f_83d8_5a0c9c73b349 ,
+                                                           :NanoindentationUseCase ;
                                            skos:prefLabel "IndentationDepthCalibration"@en .
 
 
@@ -184,13 +191,10 @@
                                            skos:prefLabel "ContactAngleMethod"@en .
 
 
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5
-:EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 owl:equivalentClass :EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f .
-
-
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_35a4d47f_452e_4234_9183_3b835ca02091
 :EMMO_35a4d47f_452e_4234_9183_3b835ca02091 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_76dba92f_a761_409f_83d8_5a0c9c73b349 ,
+                                                           :NanoindentationUseCase ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty :EMMO_dc4c5477_e02e_40ac_b5a4_0d4e8e36c74d ;
                                                              owl:someValuesFrom :EMMO_376c6456_5601_41c2_987c_3063f14408d4
@@ -204,7 +208,8 @@
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_3c970e96_4876_4d83_bafa_c79cf5b5916b
 :EMMO_3c970e96_4876_4d83_bafa_c79cf5b5916b rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_f0ad542d_ff13_4998_9e7f_ea27583c5f31 ;
+                                           rdfs:subClassOf :EMMO_f0ad542d_ff13_4998_9e7f_ea27583c5f31 ,
+                                                           :NanoindentationUseCase ;
                                            rdfs:comment "The modulus of the specimen as calculated from the maximum load, the maximum depth and the unloading data following the “Oliver and Pharr” calculation steps." ;
                                            skos:prefLabel "ElasticModulusFromUnload"@en .
 
@@ -212,7 +217,8 @@
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_40af5a74_ab01_4457_83aa_216a5d7889ee
 :EMMO_40af5a74_ab01_4457_83aa_216a5d7889ee rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_c799b443_c70f_4351_bb0f_e4ab29073481 ,
-                                                           :EMMO_eda29fc2_7d48_4997_8593_38fd9b344fe2 ;
+                                                           :EMMO_eda29fc2_7d48_4997_8593_38fd9b344fe2 ,
+                                                           :NanoindentationUseCase ;
                                            rdfs:comment "The hardness of the specimen as calculated form the maximum load, the maximum depth and the unloading data following the “Oliver and Pharr” calculation steps." ;
                                            skos:prefLabel "HardnessFromUnload"@en .
 
@@ -220,6 +226,7 @@
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_442c0fb7_09d4_4dae_b45c_8eb1522da38f
 :EMMO_442c0fb7_09d4_4dae_b45c_8eb1522da38f rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_2b89063d_6ed4_4bf0_9443_e0d3dcb265b8 ,
+                                                           :NanoindentationUseCase ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
                                                              owl:someValuesFrom :EMMO_7461cbb7_9056_48ba_87fc_a2693a086c71
@@ -230,7 +237,8 @@
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_44389354_4c50_4a74_b315_83cdc69d326d
 :EMMO_44389354_4c50_4a74_b315_83cdc69d326d rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_19afc39b_eb5c_46e0_b880_8e08ec831ebc ;
+                                           rdfs:subClassOf :EMMO_19afc39b_eb5c_46e0_b880_8e08ec831ebc ,
+                                                           :NanoindentationUseCase ;
                                            skos:prefLabel "NanoindentationMachine"@en .
 
 
@@ -244,7 +252,8 @@
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_5d4ab23c_859a_4def_844c_c57b82fea44d
 :EMMO_5d4ab23c_859a_4def_844c_c57b82fea44d rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e ;
+                                           rdfs:subClassOf :EMMO_1cbdb7f5_47e4_468a_8d87_b25093803b8e ,
+                                                           :NanoindentationUseCase ;
                                            skos:prefLabel "NanoindentationSpecimen"@en .
 
 
@@ -259,7 +268,8 @@
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_6dee097b_7b39_4299_a322_b83eb2948428
 :EMMO_6dee097b_7b39_4299_a322_b83eb2948428 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f ;
+                                           rdfs:subClassOf :EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f ,
+                                                           :NanoindentationUseCase ;
                                            rdfs:comment "This value is used to control Dynamic Force to obtain a constant value of Dynamic Displacement." ;
                                            skos:prefLabel "DynamicLoadRequired"@en .
 
@@ -267,22 +277,16 @@
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_6f7c111f_ac09_48e9_9a26_575bf4ed878e
 :EMMO_6f7c111f_ac09_48e9_9a26_575bf4ed878e rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f ,
-                                                           :EMMO_ca42ed31_3983_4e1a_84f9_a84cab2cdb59 ;
+                                                           :EMMO_ca42ed31_3983_4e1a_84f9_a84cab2cdb59 ,
+                                                           :NanoindentationUseCase ;
                                            rdfs:comment "The system will try to maintain this value of the Dynamic displacement as long as the Dynamic load is less than Dynamic max fraction of load fraction of the applied load." ;
                                            skos:prefLabel "TargetDynamicDisplacement"@en .
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_7461cbb7_9056_48ba_87fc_a2693a086c71
 :EMMO_7461cbb7_9056_48ba_87fc_a2693a086c71 rdf:type owl:Class ;
-                                           owl:equivalentClass [ owl:intersectionOf ( :EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c
-                                                                                      [ rdf:type owl:Restriction ;
-                                                                                        owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-                                                                                        owl:someValuesFrom :EMMO_44389354_4c50_4a74_b315_83cdc69d326d
-                                                                                      ]
-                                                                                    ) ;
-                                                                 rdf:type owl:Class
-                                                               ] ;
                                            rdfs:subClassOf :EMMO_9d621c9b_9c52_4084_af20_b2dfda89fe6c ,
+                                                           :NanoindentationUseCase ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
                                                              owl:someValuesFrom :EMMO_44389354_4c50_4a74_b315_83cdc69d326d
@@ -303,6 +307,7 @@
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_82723ac0_2abd_46d4_a850_7616d1ac2fa0
 :EMMO_82723ac0_2abd_46d4_a850_7616d1ac2fa0 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_442c0fb7_09d4_4dae_b45c_8eb1522da38f ,
+                                                           :NanoindentationUseCase ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
                                                              owl:someValuesFrom :EMMO_2a7951e2_0f3d_4fe7_bf8a_0ce97b4cbab1
@@ -314,7 +319,8 @@
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_86a5bfa9_fb77_4365_9894_81c0454ad7d0
 :EMMO_86a5bfa9_fb77_4365_9894_81c0454ad7d0 rdf:type owl:Class ;
                                            rdfs:subClassOf emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ,
-                                                           :EMMO_ca42ed31_3983_4e1a_84f9_a84cab2cdb59 ;
+                                                           :EMMO_ca42ed31_3983_4e1a_84f9_a84cab2cdb59 ,
+                                                           :NanoindentationUseCase ;
                                            rdfs:comment "The RMS value of the displacement at the target frequency when dynamics are switched on during the test (e.g. Continuous Stiffness Measurement )." ;
                                            skos:prefLabel "DynamicDisplacement"@en .
 
@@ -322,6 +328,7 @@
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_897678f5_488b_4489_8b84_1ab548db1512
 :EMMO_897678f5_488b_4489_8b84_1ab548db1512 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_35a4d47f_452e_4234_9183_3b835ca02091 ,
+                                                           :NanoindentationUseCase ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty :EMMO_a079cf37_e495_41f1_af01_d544e886eacb ;
                                                              owl:someValuesFrom :EMMO_3c970e96_4876_4d83_bafa_c79cf5b5916b
@@ -338,12 +345,14 @@
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_8beaaf27_f05f_4235_ae3d_6af594eadf87
-:EMMO_8beaaf27_f05f_4235_ae3d_6af594eadf87 rdfs:subClassOf :EMMO_eda29fc2_7d48_4997_8593_38fd9b344fe2 .
+:EMMO_8beaaf27_f05f_4235_ae3d_6af594eadf87 rdfs:subClassOf :EMMO_eda29fc2_7d48_4997_8593_38fd9b344fe2 ,
+                                                           :NanoindentationUseCase .
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f
 :EMMO_91e9c813_b277_48ad_b5b0_a781a05b9c1f rdf:type owl:Class ;
                                            rdfs:subClassOf emmo:EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8 ,
+                                                           :EMMO_347cecd5_9d8b_42cb_b12b_76c6fa4090e5 ,
                                                            :NanoindentationUseCase ,
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty [ owl:inverseOf emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204
@@ -371,7 +380,8 @@
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_ab528a3a_cb4b_40de_acaa_7752ccd968b9
 :EMMO_ab528a3a_cb4b_40de_acaa_7752ccd968b9 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_f0ad542d_ff13_4998_9e7f_ea27583c5f31 ;
+                                           rdfs:subClassOf :EMMO_f0ad542d_ff13_4998_9e7f_ea27583c5f31 ,
+                                                           :NanoindentationUseCase ;
                                            rdfs:comment "The reduced modulus of the specimen and indenter tip as calculated from the maximum load, the maximum depth and the unloading data following the “Oliver and Pharr” calculation steps." ;
                                            skos:prefLabel "ReducedModulusFromUnload"@en .
 
@@ -393,7 +403,8 @@
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_b5e76617_a340_4ab5_8fee_4c9de18db6c6
-:EMMO_b5e76617_a340_4ab5_8fee_4c9de18db6c6 rdfs:subClassOf :EMMO_eda29fc2_7d48_4997_8593_38fd9b344fe2 .
+:EMMO_b5e76617_a340_4ab5_8fee_4c9de18db6c6 rdfs:subClassOf :EMMO_eda29fc2_7d48_4997_8593_38fd9b344fe2 ,
+                                                           :NanoindentationUseCase .
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_c1a5ffe0_4b14_45c4_9777_5b74a2f7eb1e
@@ -440,7 +451,7 @@
 :EMMO_f45d46c8_1ee5_4e71_a666_12e5eedc2770 rdf:type owl:Class ;
                                            rdfs:subClassOf emmo:EMMO_96f39f77_44dc_491b_8fa7_30d887fe0890 ,
                                                            :NanoindentationUseCase ;
-                                           rdfs:comment "The area of contact between the tip and the specimen calculated from the maximum applied load, the maximum depth of penetration and the unloading data using the €œOliver and Pharr€� technique." ;
+                                           rdfs:comment "The area of contact between the tip and the specimen calculated from the maximum applied load, the maximum depth of penetration and the unloading data using the Oliver-Pharr technique." ;
                                            skos:prefLabel "ContactAreaFromUnload"@en .
 
 
