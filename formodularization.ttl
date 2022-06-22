@@ -2,7 +2,8 @@
 #    Note
 #################################################################
 
-# This is the mechanical testing ontology aligned to EMMO-beta4 and importing CHAMEO. The content of this ttl-file is equal to the original mechanical testing ontology in emmo-mechanical-testing.owl.
+# This is the mechanical testing ontology aligned to EMMO-beta4 and importing CHAMEO. 
+# The content of this ttl-file is equal to the original mechanical testing ontology in emmo-mechanical-testing.owl.
  
 #################################################################
 

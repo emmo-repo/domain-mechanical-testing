@@ -2,8 +2,10 @@
 #    Note
 #################################################################
 
-# This file comprises all classes that had been implemented in the original mechanical testing ontology and, in scope of the modularisation and alignment, have been replaced by classes already existing in EMMO-beta4 or CHAMEO, which have the same meaning and label.
-# For detailed information on the replacement of the classes listed below, please see the excel file "alignments".
+# This file comprises all classes that had been implemented in the original mechanical testing ontology and, in 
+# scope of the modularisation and alignment, have been replaced by classes already existing in EMMO-beta4 or CHAMEO, 
+# which have the same meaning and label.
+# For detailed information on the replacement of the classes listed below, please see the excel file "alignments-and-comments".
 
 
 

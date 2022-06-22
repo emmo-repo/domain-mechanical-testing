@@ -18,7 +18,7 @@ The Mechanical Testing ontology is built on top of EMMO. The following table des
 | Ontology            | Version           |
 | ------------------- | ----------------- |
 | Mechanical Testing  | 0.9.0             |
-| EMMO                | 1.0.0-alpha2      |
+| EMMO                | 1.0.0-beta4       |
 
 
 # Maintainers
@@ -30,24 +30,28 @@ The Mechanical Testing ontology is built on top of EMMO. The following table des
 # Contributers
 
 * [Oyster Project](http://www.oyster-project.eu/)
-    - Yoav Nahshon from Fraunhofer IWM
+    - Yoav Nahshon from Fraunhofer IWM, Gemrany
     - Gerhard Goldbeck from Goldbeck Consulting Ltd, Cambridge, UK
     - Marco Sebastiani from Roma Tre University, Rome, Italy
     - Pierluigi Del Nostro from Goldbeck Consulting Ltd, Cambridge, UK
 * [Urwerk Project](https://www.itwm.fraunhofer.de/en/departments/mf/cables-hoses-flexible-structures/urwerk.html)
 
 * [MarketPlace](https://www.the-marketplace-project.eu/)
+* [nanoMECommons](https://www.nanomecommons.net/)
+    - Joana Francisco Morgando from Fraunhofer IWM, Germany
+    - Kathrin Frei from Fraunhofer IWM, Germany
 
 
 # Acknowledgements (WIP, if you think your name is missing, please create an issue), 
 The partial contributions from the following projects and actions are acknowledged 
-* **The MarketPlace** project is funded by Horizon 2020 under H2020-NMBP-25-2017 call with Grant agreement number: 760173
-* **Oyster** project is funded by Horizon 2020 under H2020-NMBP-2017 call with Grant agreement number: 760827
+* **The MarketPlace** project is funded by Horizon 2020 under H2020-NMBP-25-2017 call with Grant Agreement no. 760173
+* **Oyster** project is funded by Horizon 2020 under H2020-NMBP-2017 call with Grant Agreement no. 760827
 * **UrWerk**
+* **nanoMECommons** project is funded by the EU under the HORIZON2020 Framework Programme Grant Agreement no. 952869
 
 
 # License
-The license is the same as main EMMO CORE.
+The license is the same as main EMMO CORE. 
 "EMMO is released under a Creative Commons license Attribution 4.0
 International (CC BY 4.0)
 https://creativecommons.org/licenses/by/4.0/legalcode"
