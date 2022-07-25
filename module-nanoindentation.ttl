@@ -48,50 +48,6 @@
                                            skos:prefLabel "DynamicModulus"@en .
 
 
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_04f76b8a_0cb9_4a9e_8c94_dab5eb82d0e8
-:EMMO_04f76b8a_0cb9_4a9e_8c94_dab5eb82d0e8 rdf:type owl:Class ;
-                                           rdfs:subClassOf emmo:EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba ,
-                                                           :NanoindentationUseCase ;
-                                           skos:prefLabel "LiquidDroplet"@en .
-
-
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_07696442_2e6d_416a_b4f0_81c4aff90de8
-:EMMO_07696442_2e6d_416a_b4f0_81c4aff90de8 rdf:type owl:Class ;
-                                           rdfs:subClassOf emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ,
-                                                           emmo:EMMO_f2d5d3ad_2e00_417f_8849_686f3988d929 ,
-                                                           :NanoindentationUseCase ;
-                                           skos:prefLabel "ContactAngleMeter"@en .
-
-
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_0d867829_e08b_46b4_9549_0e158d2b6a35
-:EMMO_0d867829_e08b_46b4_9549_0e158d2b6a35 rdf:type owl:Class ;
-                                           rdfs:subClassOf emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb ,
-                                                           :NanoindentationUseCase ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
-                                                             owl:someValuesFrom :EMMO_2f9a266b_ffe6_4b3e_8222_eca6001174a2
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-                                                             owl:someValuesFrom :EMMO_04f76b8a_0cb9_4a9e_8c94_dab5eb82d0e8
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-                                                             owl:someValuesFrom :EMMO_07696442_2e6d_416a_b4f0_81c4aff90de8
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-                                                             owl:someValuesFrom :EMMO_0ece9cba_617c_4452_bbdc_1c564129e393
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-                                                             owl:someValuesFrom :EMMO_d4d0a51f_3b70_49ca_aca4_20b3f4648958
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-                                                             owl:someValuesFrom :EMMO_df1db910_9601_4420_82b0_3a6ddaf93094
-                                                           ] ;
-                                           skos:prefLabel "ContactAngleMeasurement"@en .
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_0e559791_8595_4d85_b666_3d75baba8cc8
@@ -103,11 +59,6 @@
                                            skos:prefLabel "DynamicStiffness"@en .
 
 
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_0ece9cba_617c_4452_bbdc_1c564129e393
-:EMMO_0ece9cba_617c_4452_bbdc_1c564129e393 rdf:type owl:Class ;
-                                           rdfs:subClassOf chameo:DataPostProcessing ,
-                                                           :EMMO_e3665cba_b1a8_4fcf_8194_493187fcd25a ;
-                                           skos:prefLabel "ContactAngleMeasurementPostProcessing"@en .
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_18be2e24_9665_4349_8dd3_6335c921a0ef
@@ -184,11 +135,6 @@
                                            skos:prefLabel "IndentationDepthCalibration"@en .
 
 
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_2f9a266b_ffe6_4b3e_8222_eca6001174a2
-:EMMO_2f9a266b_ffe6_4b3e_8222_eca6001174a2 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_0f73321c_c4fd_40ed_9b58_eccd9b7d8e15 ,
-                                                           :NanoindentationUseCase ;
-                                           skos:prefLabel "ContactAngleMethod"@en .
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_35a4d47f_452e_4234_9183_3b835ca02091
@@ -298,11 +244,6 @@
                                            skos:prefLabel "NanoindentationMeasurement"@en .
 
 
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_7bbc9593_ad1d_4e80_a957_815b7daca408
-:EMMO_7bbc9593_ad1d_4e80_a957_815b7daca408 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_2f9a266b_ffe6_4b3e_8222_eca6001174a2 ;
-                                           skos:prefLabel "PendantDropMethod"@en .
-
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_82723ac0_2abd_46d4_a850_7616d1ac2fa0
 :EMMO_82723ac0_2abd_46d4_a850_7616d1ac2fa0 rdf:type owl:Class ;
@@ -371,12 +312,6 @@
                                            skos:prefLabel "DynamicContactArea"@en .
 
 
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_9560b3d4_c573_458a_a9c4_5e00383979cf
-:EMMO_9560b3d4_c573_458a_a9c4_5e00383979cf rdf:type owl:Class ;
-                                           rdfs:subClassOf emmo:EMMO_d7788d1a_020d_4c78_85a1_13563fcec168 ,
-                                                           :NanoindentationUseCase ;
-                                           skos:prefLabel "ContactAngleMeasurementStateImage"@en .
-
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_ab528a3a_cb4b_40de_acaa_7752ccd968b9
 :EMMO_ab528a3a_cb4b_40de_acaa_7752ccd968b9 rdf:type owl:Class ;
@@ -407,18 +342,6 @@
                                                            :NanoindentationUseCase .
 
 
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_c1a5ffe0_4b14_45c4_9777_5b74a2f7eb1e
-:EMMO_c1a5ffe0_4b14_45c4_9777_5b74a2f7eb1e rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_2f9a266b_ffe6_4b3e_8222_eca6001174a2 ;
-                                           skos:prefLabel "SessileDropMethod"@en .
-
-
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_d4d0a51f_3b70_49ca_aca4_20b3f4648958
-:EMMO_d4d0a51f_3b70_49ca_aca4_20b3f4648958 rdf:type owl:Class ;
-                                           rdfs:subClassOf emmo:EMMO_f3dd74c0_f480_49e8_9764_33b78638c235 ,
-                                                           :NanoindentationUseCase ;
-                                           skos:prefLabel "ContactAngle"@en .
-
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_dad694df_6f58_4f5f_bb1d_6eb9dea25fb1
 :EMMO_dad694df_6f58_4f5f_bb1d_6eb9dea25fb1 rdf:type owl:Class ;
@@ -427,11 +350,6 @@
                                            rdfs:comment "The contact depth calculated from dynamics and the Oliver and Pharr method." ;
                                            skos:prefLabel "DynamicContactDepth"@en .
 
-
-###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_e3665cba_b1a8_4fcf_8194_493187fcd25a
-:EMMO_e3665cba_b1a8_4fcf_8194_493187fcd25a rdf:type owl:Class ;
-                                           rdfs:subClassOf :MechanicalTestingOntology ;
-                                           skos:prefLabel "ContactAngleUseCase"@en .
 
 
 ###  http://emmo.info/emmo/domain/mechanical-testing#EMMO_eda29fc2_7d48_4997_8593_38fd9b344fe2
