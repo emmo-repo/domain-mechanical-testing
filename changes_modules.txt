@@ -1,0 +1,12 @@
+
+####Deleted:
+### http://emmo.info/emmo/domain/mechanical-testing#MechanicalTestingOntology --> MechanicalTestingOntology
+### http://emmo.info/emmo/domain/mechanical-testing#EMMO_7653c210_8f7b_4f4f_8d43_efe917186201 --> MechanicalTestingModule
+### DataAquisitionRate subClssOf CategorizedPhysicalQuantity (previous axiom from mt) 
+### DataPost-Processing subClassOf Calculation (previous axiom from mt)
+
+
+####Alignment with CHAMEO:
+### TensileTestPostProcessing SubClassOf MeasurementDataPost-Processing
+
+Corrected catalog
